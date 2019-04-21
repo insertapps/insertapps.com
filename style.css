@@ -1,0 +1,37 @@
+/*
+Theme Name: InsertApps
+Theme URI: https://www.insertapps.com/themplate/insertapps
+Author: InsertApps
+Author URI: https://fzn.my.id/
+Description: InsertApps HTML site themplate 
+Version: 0.1
+*/
+
+/* basscss: buttons */
+@import 'css/btn.css';
+@import 'css/btn-primary.css';
+@import 'css/btn-outline.css';
+@import 'css/btn-sizes.css';
+/* basscss: colors */
+@import 'css/colors.css';
+@import 'css/background-colors.css';
+@import 'css/background-images.css';
+@import 'css/darken.css';
+@import 'css/lighten.css';
+@import 'css/border-colors.css';
+/* basscss: responsive */
+@import 'css/responsive-layout.css';
+@import 'css/responsive-margin.css';
+@import 'css/responsive-padding.css';
+@import 'css/responsive-position.css';
+@import 'css/responsive-typography.css';
+@import 'css/responsive-type-scale.css';
+@import 'css/media-object.css';
+/* basscss: core */
+@import 'css/basscss.min.css';
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, sans-serif;
+	line-height: 1.5;
+	margin: 0;
+}
