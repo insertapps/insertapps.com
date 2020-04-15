@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code on InsertApps</title>
+    <link>https://www.insertapps.com/tags/code/</link>
+    <description>Recent content in code on InsertApps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Feb 2020 22:19:15 +0700</lastBuildDate>
+    
+	<atom:link href="https://www.insertapps.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara simpel css layout vertical center</title>
+      <link>https://www.insertapps.com/blog/cara-simpel-css-layout-vertical-center/</link>
+      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/cara-simpel-css-layout-vertical-center/</guid>
+      <description>Cara simpel css layout vertical center.
+&amp;lt;div class=&amp;#34;flex items-center flex-wrap border bg-teal&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;md-col-6 border&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{{ .Site.BaseURL }}assets/bg-design.png&amp;#34; alt=&amp;#34;Top view illustration of coding and design&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;md-col-6 px2 border&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;content-center&amp;#34;&amp;gt; Your text here.. &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WordPress on InsertApps</title>
+    <link>https://www.insertapps.com/categories/wordpress/</link>
+    <description>Recent content in WordPress on InsertApps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Feb 2020 11:13:43 +0700</lastBuildDate>
+    
+	<atom:link href="https://www.insertapps.com/categories/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WP Error: Response is not a valid json response</title>
+      <link>https://www.insertapps.com/blog/error-response-is-not-a-valid-json-response/</link>
+      <pubDate>Tue, 18 Feb 2020 11:13:43 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/error-response-is-not-a-valid-json-response/</guid>
+      <description>Wordpress error updating failed error message the response is not a valid json response
+Pertama jangan terlalu panik. Pada kasus yang saya alami, sudah melakukan berbagai cara untuk menangani error wordpres tersebut. Mulai dari update sistem wordpress secara manual, menon-aktifkan plugin satu persatu juga tidak menyelesaikan masalah.
+Belum lagi percobaan dari berbagai saran dan tips hasil browsing bahkan dalam forum dev Wp.
+Terakhir, dari dapat saran dari https://passionwp.com/response-is-not-a-valid-json-response-error/ untuk kembali menggunakan classic editor.</description>
+    </item>
+    
+    <item>
+      <title>WP Error: Briefly unavailable for scheduled maintenance check back in a minute</title>
+      <link>https://www.insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</link>
+      <pubDate>Tue, 18 Feb 2020 11:12:44 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</guid>
+      <description>Error ini sering terjadi saat gagal update system wordpres, yang sering kali terjadi pada gagal update plugin.
+Solusinya gampang sekali, masuk ke control Panel hosting blog, dalam cari file .maintenace dalam root instalasi wodpress. Hapus file tersebut, kemudian refress ulang.
+Tadaa. Sudah normal kembali.</description>
+    </item>
+    
+  </channel>
+</rss>

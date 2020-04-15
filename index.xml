@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>InsertApps</title>
+    <link>https://www.insertapps.com/</link>
+    <description>Recent content on InsertApps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jan 2020 15:06:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.insertapps.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara simpel css layout vertical center</title>
+      <link>https://www.insertapps.com/blog/cara-simpel-css-layout-vertical-center/</link>
+      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/cara-simpel-css-layout-vertical-center/</guid>
+      <description>Cara simpel css layout vertical center.
+&amp;lt;div class=&amp;#34;flex items-center flex-wrap border bg-teal&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;md-col-6 border&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{{ .Site.BaseURL }}assets/bg-design.png&amp;#34; alt=&amp;#34;Top view illustration of coding and design&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;md-col-6 px2 border&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;content-center&amp;#34;&amp;gt; Your text here.. &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Cara upgrade system hugo</title>
+      <link>https://www.insertapps.com/blog/cara-upgrade-hugo/</link>
+      <pubDate>Fri, 21 Feb 2020 10:31:07 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/cara-upgrade-hugo/</guid>
+      <description>Bagaimana cara upgrade system hugo: Mudah saja, dalam documentasi Gohugo sudah dijelaskan secara jelas. Tapi, ada saja kendala yang dialami, atau bisa jadi lupa karena jarang update hugo.
+Untuk kasus saya, saat update system hugo di macOS El Capitan terkendala di Homebrew. El Capitan gagal eksekusi upgrade system Hugo, karena homebrew sudah tidak mendukung os lawas seperti El Capitan.
+Homebrew butuh operatin system terbau, catilana baru bisa melakukan auto upgrade systen hugo.</description>
+    </item>
+    
+    <item>
+      <title>WP Error: Response is not a valid json response</title>
+      <link>https://www.insertapps.com/blog/error-response-is-not-a-valid-json-response/</link>
+      <pubDate>Tue, 18 Feb 2020 11:13:43 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/error-response-is-not-a-valid-json-response/</guid>
+      <description>Wordpress error updating failed error message the response is not a valid json response
+Pertama jangan terlalu panik. Pada kasus yang saya alami, sudah melakukan berbagai cara untuk menangani error wordpres tersebut. Mulai dari update sistem wordpress secara manual, menon-aktifkan plugin satu persatu juga tidak menyelesaikan masalah.
+Belum lagi percobaan dari berbagai saran dan tips hasil browsing bahkan dalam forum dev Wp.
+Terakhir, dari dapat saran dari https://passionwp.com/response-is-not-a-valid-json-response-error/ untuk kembali menggunakan classic editor.</description>
+    </item>
+    
+    <item>
+      <title>WP Error: Briefly unavailable for scheduled maintenance check back in a minute</title>
+      <link>https://www.insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</link>
+      <pubDate>Tue, 18 Feb 2020 11:12:44 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</guid>
+      <description>Error ini sering terjadi saat gagal update system wordpres, yang sering kali terjadi pada gagal update plugin.
+Solusinya gampang sekali, masuk ke control Panel hosting blog, dalam cari file .maintenace dalam root instalasi wodpress. Hapus file tersebut, kemudian refress ulang.
+Tadaa. Sudah normal kembali.</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://www.insertapps.com/privacy/</link>
+      <pubDate>Thu, 02 Jan 2020 15:06:26 +0000</pubDate>
+      
+      <guid>https://www.insertapps.com/privacy/</guid>
+      <description>Kebijakan Privasi
+Kebijakan Privasi ini mengatur cara di mana InsertApps mengumpulkan, menggunakan, menjaga dan mengungkapkan informasi yang dikumpulkan dari pengguna (masing-masing, &amp;ldquo;Pengguna&amp;rdquo;) dari situs https://insertapps.com (&amp;ldquo;Situs&amp;rdquo;). Kebijakan privasi ini berlaku untuk Situs dan semua produk dan jasa yang ditawarkan oleh InsertApps.
+Informasi identifikasi pribadi
+Kami dapat mengumpulkan informasi identifikasi pribadi dari Pengguna dalam beragam cara, termasuk, namun tidak terbatas pada, ketika Pengguna mengunjungi situs kami, mengisi formulir, dan sehubungan dengan kegiatan lain, jasa, fitur atau sumber daya yang kita sediakan pada Situs kami.</description>
+    </item>
+    
+    <item>
+      <title>Terms of Use</title>
+      <link>https://www.insertapps.com/terms/</link>
+      <pubDate>Thu, 02 Jan 2020 15:06:16 +0000</pubDate>
+      
+      <guid>https://www.insertapps.com/terms/</guid>
+      <description>SELAMAT datang di InsertApps, situs portofolio pribadi dan informasi dunia pemograman yang dikelola secara personal oleh Fauzan My. Terms of Use berikut adalah ketentuan dalam penggunaan situs, konten, layanan dan fitur yang ada di insertapps.
+Harap Anda membaca Terms of Use ini dengan sebaik-baiknya. Dengan mengakses dan menggunakan insertapps berarti Anda telah memahami dan setuju untuk terikat dengan semua peraturan yang berlaku di situs ini. Jika Anda tidak setuju untuk terikat dengan semua peraturan yang berlaku, silahkan untuk tidak menggunakan situs ini.</description>
+    </item>
+    
+    <item>
+      <title>About Us</title>
+      <link>https://www.insertapps.com/about/</link>
+      <pubDate>Wed, 01 Jan 2020 15:06:06 +0000</pubDate>
+      
+      <guid>https://www.insertapps.com/about/</guid>
+      <description>InsertApps adalah situs portofolio produk digital yang telah dibuat oleh team InsertApps serta berisi tutorial, potongan kode, tips dan trik dunia pemograman sebagai rekam jejak informasi untuk kepentingan insertApp maupun pengunjung setia InsertApps.</description>
+    </item>
+    
+    <item>
+      <title>Disclaimer</title>
+      <link>https://www.insertapps.com/disclaimer/</link>
+      <pubDate>Wed, 01 Jan 2020 15:06:06 +0000</pubDate>
+      
+      <guid>https://www.insertapps.com/disclaimer/</guid>
+      <description>Seluruh layanan yang diberikan mengikuti aturan main yang berlaku dan ditetapkan oleh InsertApps.
+Seluruh layanan yang diberikan di situs InsertApps ditujukan untuk kebutuhan pribadi juga pembaca dan bukan untuk digunakan kembali secara komersial. Seluruh konten yang ada di dalam situs termasuk teks, tutorial, code program, themplate, ilustrasi, infografik, video, dan lainnya dilindungi oleh undang-undang hak cipta yang dimiliki InsertApps, dan atau pihak ketiga penyedia isi di situs ini.
+InsertApps berhak memuat, atau tidak memuat, melakukan penyuntingan atau menghapus data atau informasi dari pembaca.</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>https://www.insertapps.com/license/</link>
+      <pubDate>Mon, 06 Jun 2016 15:06:36 +0000</pubDate>
+      
+      <guid>https://www.insertapps.com/license/</guid>
+      <description>You Can
+All images on freebiespic are released for any number of personal and commercial projects for yourself or on behalf of a client. Therefore, the images can be modified and may be used freely for any application. But for printed format we do appreciate if you want to give us photo credit.
+You Can’t
+Sell or distribute the photos on its own even for free. If you want to share the photo, make sure to link back to the our page.</description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>https://www.insertapps.com/faq/</link>
+      <pubDate>Mon, 06 Jun 2016 15:06:26 +0000</pubDate>
+      
+      <guid>https://www.insertapps.com/faq/</guid>
+      <description>Apa itu InsertApps?
+InsertApps adalah situs portofolio produk digital yang telah dibuat oleh team InsertApps serta berisi tutorial, potongan kode, tips dan trik dunia pemograman sebagai rekam jejak informasi untuk kepentingan insertApp maupun pengunjung setia InsertApps.
+Bisakah saya menggunakan themplate, potongan kode, bahkan grafis yang disediakan gratis oleh insertApps untuk kepentingan pribadi maupun komesial
+Ya. Anda boleh menggunakan resouce yang kami publis di Insertapps untuk kepentingan personal, komunitas, lembaga sosial lainnya atau untuk kebutuhan bisnis.</description>
+    </item>
+    
+  </channel>
+</rss>

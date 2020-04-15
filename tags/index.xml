@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on InsertApps</title>
+    <link>https://www.insertapps.com/tags/</link>
+    <description>Recent content in Tags on InsertApps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Feb 2020 22:19:15 +0700</lastBuildDate>
+    
+	<atom:link href="https://www.insertapps.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>code</title>
+      <link>https://www.insertapps.com/tags/code/</link>
+      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://www.insertapps.com/tags/css/</link>
+      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://www.insertapps.com/tags/html/</link>
+      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>https://www.insertapps.com/tags/php/</link>
+      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
+      <link>https://www.insertapps.com/tags/tips/</link>
+      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terminal</title>
+      <link>https://www.insertapps.com/tags/terminal/</link>
+      <pubDate>Fri, 21 Feb 2020 10:31:07 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>error</title>
+      <link>https://www.insertapps.com/tags/error/</link>
+      <pubDate>Tue, 18 Feb 2020 11:13:43 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/error/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hosting</title>
+      <link>https://www.insertapps.com/tags/hosting/</link>
+      <pubDate>Tue, 18 Feb 2020 11:12:44 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/hosting/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
