@@ -6,53 +6,62 @@
     <description>Recent content in Tags on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2020 22:19:15 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2020 19:51:14 +0700</lastBuildDate>
     
 	<atom:link href="https://www.insertapps.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>code</title>
-      <link>https://www.insertapps.com/tags/code/</link>
-      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
+      <title>mikrotik</title>
+      <link>https://www.insertapps.com/tags/mikrotik/</link>
+      <pubDate>Wed, 15 Jul 2020 19:51:14 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/tags/code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>css</title>
-      <link>https://www.insertapps.com/tags/css/</link>
-      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
-      
-      <guid>https://www.insertapps.com/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>html</title>
-      <link>https://www.insertapps.com/tags/html/</link>
-      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
-      
-      <guid>https://www.insertapps.com/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>php</title>
-      <link>https://www.insertapps.com/tags/php/</link>
-      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
-      
-      <guid>https://www.insertapps.com/tags/php/</guid>
+      <guid>https://www.insertapps.com/tags/mikrotik/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tips</title>
       <link>https://www.insertapps.com/tags/tips/</link>
-      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
+      <pubDate>Wed, 15 Jul 2020 19:51:14 +0700</pubDate>
       
       <guid>https://www.insertapps.com/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://www.insertapps.com/tags/css/</link>
+      <pubDate>Sun, 05 Jul 2020 19:52:51 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>https://www.insertapps.com/tags/php/</link>
+      <pubDate>Fri, 05 Jun 2020 22:58:33 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code</title>
+      <link>https://www.insertapps.com/tags/code/</link>
+      <pubDate>Sat, 18 Apr 2020 14:39:28 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://www.insertapps.com/tags/html/</link>
+      <pubDate>Sat, 18 Apr 2020 14:39:28 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/html/</guid>
       <description></description>
     </item>
     

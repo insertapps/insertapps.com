@@ -6,10 +6,23 @@
     <description>Recent content in php on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2020 22:19:15 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2020 22:58:33 +0700</lastBuildDate>
     
 	<atom:link href="https://www.insertapps.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Editor Brackets Error: PHP7 runtime not found</title>
+      <link>https://www.insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</link>
+      <pubDate>Fri, 05 Jun 2020 22:58:33 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</guid>
+      <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
+Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
+PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
+Untuk bracket versi yang lebih lama, pesan erronya begini:
+PHP runtime not found.</description>
+    </item>
     
     <item>
       <title>Cara simpel css layout vertical center</title>

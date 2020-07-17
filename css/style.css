@@ -211,11 +211,16 @@ hr {
 }
 
 /* -> Menu Scroll */
-.menu-scrolling {
+.scrolling {
+	scrollbar-width: thin;
+	scrollbar-color: #0074d9 #005dae; 
     overflow-y: hidden;
     overflow-x: auto;
     margin-left: auto;
     white-space: nowrap;
+}
+.scrolling::-webkit-scrollbar {
+    display: none;
 }
 
 /* -> Menu Sidenav */
@@ -2044,6 +2049,14 @@ Basscss core here
 
 .bg-maroon {
     background-color: #85144B
+}
+
+.bg-dark {
+	background-color: #1d262d;
+}
+
+.bg-dark-light {
+	background-color: #293741;
 }
 
 

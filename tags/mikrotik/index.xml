@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mikrotik on InsertApps</title>
+    <link>https://www.insertapps.com/tags/mikrotik/</link>
+    <description>Recent content in mikrotik on InsertApps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jul 2020 19:51:14 +0700</lastBuildDate>
+    
+	<atom:link href="https://www.insertapps.com/tags/mikrotik/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mikrotik system error critical router was rebooted without proper shutdown</title>
+      <link>https://www.insertapps.com/blog/mikrotik-system-error-critical/</link>
+      <pubDate>Wed, 15 Jul 2020 19:51:14 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/mikrotik-system-error-critical/</guid>
+      <description>Akhirnya saya memiliki sebuah perangkat Mikrotik untuk mengelola jaringan internet lelet di lingkungan rumah.
+Setelah membaca review Mikrotik dan berbagai vidoe rekomendasi, serta tutorial setting Mikrotik, akhirnya saya memilih seri Mikrotik RB952Ui-5ac2nD TC.
+Oya, untuk review lengkap Mikrotik RB952Ui-5ac2nD TC sudah di publish di Breedie.com. Disini, fokus pada self problemnya saja.
+Setelah saya setting dan siap pakai, maka si Mikrotik HAP AC Lite warna hitam itu saya biarkan 24 jam hidup terus selamanya.</description>
+    </item>
+    
+  </channel>
+</rss>

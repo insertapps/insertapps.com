@@ -6,10 +6,47 @@
     <description>Recent content in tips on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2020 22:19:15 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2020 19:51:14 +0700</lastBuildDate>
     
 	<atom:link href="https://www.insertapps.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mikrotik system error critical router was rebooted without proper shutdown</title>
+      <link>https://www.insertapps.com/blog/mikrotik-system-error-critical/</link>
+      <pubDate>Wed, 15 Jul 2020 19:51:14 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/mikrotik-system-error-critical/</guid>
+      <description>Akhirnya saya memiliki sebuah perangkat Mikrotik untuk mengelola jaringan internet lelet di lingkungan rumah.
+Setelah membaca review Mikrotik dan berbagai vidoe rekomendasi, serta tutorial setting Mikrotik, akhirnya saya memilih seri Mikrotik RB952Ui-5ac2nD TC.
+Oya, untuk review lengkap Mikrotik RB952Ui-5ac2nD TC sudah di publish di Breedie.com. Disini, fokus pada self problemnya saja.
+Setelah saya setting dan siap pakai, maka si Mikrotik HAP AC Lite warna hitam itu saya biarkan 24 jam hidup terus selamanya.</description>
+    </item>
+    
+    <item>
+      <title>Editor Brackets Error: PHP7 runtime not found</title>
+      <link>https://www.insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</link>
+      <pubDate>Fri, 05 Jun 2020 22:58:33 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</guid>
+      <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
+Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
+PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
+Untuk bracket versi yang lebih lama, pesan erronya begini:
+PHP runtime not found.</description>
+    </item>
+    
+    <item>
+      <title>Membuat header HTML keren responsive horizontal navbar auto scroll</title>
+      <link>https://www.insertapps.com/blog/html-header-keren-menu-scroll/</link>
+      <pubDate>Sat, 18 Apr 2020 14:39:28 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/html-header-keren-menu-scroll/</guid>
+      <description>Ada beberapa header web yang pernah saya buat, kali ini header HTML paling keren yang berhasil saya buat, setidaknya menurut selera pribadi.
+Desain header HTML ini termasuk yang sangat saya idam-idamkan. Selain desain yang simple dan sangat fungsional sekali di tampilan mobile view, menu horizontal scroll.
+Model header HTML keren dengan menu scroll di samping logo ini sekarang banyak di implementasi oleh web-web populer.
+Dalam satu balok header diisi tiga item, icon burger, logo dan jejeran nav menu.</description>
+    </item>
     
     <item>
       <title>Cara simpel css layout vertical center</title>

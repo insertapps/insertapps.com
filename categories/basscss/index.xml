@@ -6,10 +6,22 @@
     <description>Recent content in Basscss on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2020 22:19:15 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 14:39:28 +0700</lastBuildDate>
     
 	<atom:link href="https://www.insertapps.com/categories/basscss/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Membuat header HTML keren responsive horizontal navbar auto scroll</title>
+      <link>https://www.insertapps.com/blog/html-header-keren-menu-scroll/</link>
+      <pubDate>Sat, 18 Apr 2020 14:39:28 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/html-header-keren-menu-scroll/</guid>
+      <description>Ada beberapa header web yang pernah saya buat, kali ini header HTML paling keren yang berhasil saya buat, setidaknya menurut selera pribadi.
+Desain header HTML ini termasuk yang sangat saya idam-idamkan. Selain desain yang simple dan sangat fungsional sekali di tampilan mobile view, menu horizontal scroll.
+Model header HTML keren dengan menu scroll di samping logo ini sekarang banyak di implementasi oleh web-web populer.
+Dalam satu balok header diisi tiga item, icon burger, logo dan jejeran nav menu.</description>
+    </item>
     
     <item>
       <title>Cara simpel css layout vertical center</title>
