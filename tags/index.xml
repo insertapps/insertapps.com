@@ -6,10 +6,28 @@
     <description>Recent content in Tags on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jul 2020 19:51:14 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2020 18:18:07 +0700</lastBuildDate>
     
 	<atom:link href="https://www.insertapps.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>go</title>
+      <link>https://www.insertapps.com/tags/go/</link>
+      <pubDate>Thu, 16 Jul 2020 18:18:07 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://www.insertapps.com/tags/html/</link>
+      <pubDate>Thu, 16 Jul 2020 18:18:07 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/tags/html/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>mikrotik</title>
@@ -53,15 +71,6 @@
       <pubDate>Sat, 18 Apr 2020 14:39:28 +0700</pubDate>
       
       <guid>https://www.insertapps.com/tags/code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>html</title>
-      <link>https://www.insertapps.com/tags/html/</link>
-      <pubDate>Sat, 18 Apr 2020 14:39:28 +0700</pubDate>
-      
-      <guid>https://www.insertapps.com/tags/html/</guid>
       <description></description>
     </item>
     

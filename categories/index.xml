@@ -6,10 +6,19 @@
     <description>Recent content in Categories on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jul 2020 19:51:14 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2020 18:18:07 +0700</lastBuildDate>
     
 	<atom:link href="https://www.insertapps.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gohugo</title>
+      <link>https://www.insertapps.com/categories/gohugo/</link>
+      <pubDate>Thu, 16 Jul 2020 18:18:07 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/categories/gohugo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Networking</title>
@@ -35,15 +44,6 @@
       <pubDate>Sat, 18 Apr 2020 14:39:28 +0700</pubDate>
       
       <guid>https://www.insertapps.com/categories/basscss/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gohugo</title>
-      <link>https://www.insertapps.com/categories/gohugo/</link>
-      <pubDate>Fri, 21 Feb 2020 10:31:07 +0700</pubDate>
-      
-      <guid>https://www.insertapps.com/categories/gohugo/</guid>
       <description></description>
     </item>
     

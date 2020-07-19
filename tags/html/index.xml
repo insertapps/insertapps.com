@@ -6,10 +6,23 @@
     <description>Recent content in html on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2020 14:39:28 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2020 18:18:07 +0700</lastBuildDate>
     
 	<atom:link href="https://www.insertapps.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Setting tanggal &#39;last updated&#39; atau &#39;last modified date&#39; posting di system Hugo</title>
+      <link>https://www.insertapps.com/blog/hugo-last-modified-date-setting/</link>
+      <pubDate>Thu, 16 Jul 2020 18:18:07 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/hugo-last-modified-date-setting/</guid>
+      <description>Memperbaharui posting blog yang sudah lama termasuk salah satu cara optimasi SEO pada artikel lama.
+Artikel yang diperbaharui, biasanya tanggal posting ikut berubah, menjadi &amp;lsquo;telah di perbaharui&amp;rsquo; atau &amp;lsquo;last update&amp;rsquo; dan &amp;lsquo;last modified&amp;rsquo;.
+Blog berbasis WordPress atau Blogger, sistem tanggal berjalan secara dinamis, setiap ada perubahan dalam isi posting, system juga akan mencatat log tanggal perubahan terakhir dalam database.
+Log itu yang akan ditampilkan dalam single page artikel.
+Bagaimana dengan blog berbasis Hugo yang men generate posting secara statis?</description>
+    </item>
     
     <item>
       <title>Membuat header HTML keren responsive horizontal navbar auto scroll</title>

@@ -17,9 +17,9 @@
       <pubDate>Fri, 21 Feb 2020 10:31:07 +0700</pubDate>
       
       <guid>https://www.insertapps.com/blog/cara-upgrade-hugo/</guid>
-      <description>Bagaimana cara upgrade system hugo: Mudah saja, dalam documentasi Gohugo sudah dijelaskan secara jelas. Tapi, ada saja kendala yang dialami, atau bisa jadi lupa karena jarang update hugo.
-Untuk kasus saya, saat update system hugo di macOS El Capitan terkendala di Homebrew. El Capitan gagal eksekusi upgrade system Hugo, karena homebrew sudah tidak mendukung os lawas seperti El Capitan.
-Homebrew butuh operatin system terbau, catilana baru bisa melakukan auto upgrade systen hugo.</description>
+      <description>Bagaimana cara upgrade system hugo: Mudah saja, dalam dokumentasi Gohugo sudah dijelaskan secara jelas. Tapi, ada saja kendala yang dialami, atau bisa jadi lupa karena jarang update hugo.
+Untuk kasus saya, saat update system hugo di macOS El Capitan terkendala di Homebrew. El Capitan gagal eksekusi upgrade sistem Hugo, karena homebrew sudah tidak mendukung os lawas seperti El Capitan.
+Homebrew butuh macOS terbaru, minimal OS Catalina, baru bisa melakukan auto upgrade sisten hugo.</description>
     </item>
     
   </channel>
