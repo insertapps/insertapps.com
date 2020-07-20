@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rem on InsertApps</title>
+    <link>https://www.insertapps.com/tags/rem/</link>
+    <description>Recent content in rem on InsertApps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Mar 2020 18:48:21 +0700</lastBuildDate>
+    
+	<atom:link href="https://www.insertapps.com/tags/rem/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Konversi ukuran Pixel ke ukuran REM dalam CSS</title>
+      <link>https://www.insertapps.com/blog/convert-pixel-to-rem/</link>
+      <pubDate>Tue, 10 Mar 2020 18:48:21 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/convert-pixel-to-rem/</guid>
+      <description>1 rem sama dengan 16 pixel.
+Cara menulis nilai angka rem di bawah nilai angka 1, boleh dengan:
+0.5rem  Kebanyakan programmer cukup menulis dengan:
+.5rem  Menghilangkan angka nol.
+Berikut tabel ukuran konversi pixel ke ukuran rem.
+   Pixel  REM     1px = 0.0625rem   2px = 0.125rem   3px = 0.1875rem   4px = 0.25rem   5px = 0.</description>
+    </item>
+    
+  </channel>
+</rss>

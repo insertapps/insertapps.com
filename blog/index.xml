@@ -75,6 +75,20 @@ Dalam satu balok header diisi tiga item, icon burger, logo dan jejeran nav menu.
     </item>
     
     <item>
+      <title>Konversi ukuran Pixel ke ukuran REM dalam CSS</title>
+      <link>https://www.insertapps.com/blog/convert-pixel-to-rem/</link>
+      <pubDate>Tue, 10 Mar 2020 18:48:21 +0700</pubDate>
+      
+      <guid>https://www.insertapps.com/blog/convert-pixel-to-rem/</guid>
+      <description>1 rem sama dengan 16 pixel.
+Cara menulis nilai angka rem di bawah nilai angka 1, boleh dengan:
+0.5rem  Kebanyakan programmer cukup menulis dengan:
+.5rem  Menghilangkan angka nol.
+Berikut tabel ukuran konversi pixel ke ukuran rem.
+   Pixel  REM     1px = 0.0625rem   2px = 0.125rem   3px = 0.1875rem   4px = 0.25rem   5px = 0.</description>
+    </item>
+    
+    <item>
       <title>Cara simpel css layout vertical center</title>
       <link>https://www.insertapps.com/blog/cara-simpel-css-layout-vertical-center/</link>
       <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
