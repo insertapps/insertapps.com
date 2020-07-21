@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>InsertApps</title>
-    <link>https://www.insertapps.com/</link>
+    <link>https://insertapps.com/</link>
     <description>Recent content on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Jan 2020 15:06:26 +0000</lastBuildDate>
     
-	<atom:link href="https://www.insertapps.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://insertapps.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Setting tanggal &#39;last updated&#39; atau &#39;last modified date&#39; posting di system Hugo</title>
-      <link>https://www.insertapps.com/blog/hugo-last-modified-date-setting/</link>
+      <link>https://insertapps.com/blog/hugo-last-modified-date-setting/</link>
       <pubDate>Thu, 16 Jul 2020 18:18:07 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/hugo-last-modified-date-setting/</guid>
+      <guid>https://insertapps.com/blog/hugo-last-modified-date-setting/</guid>
       <description>Memperbaharui posting blog yang sudah lama termasuk salah satu cara optimasi SEO pada artikel lama.
 Artikel yang diperbaharui, biasanya tanggal posting ikut berubah, menjadi &amp;lsquo;telah di perbaharui&amp;rsquo; atau &amp;lsquo;last update&amp;rsquo; dan &amp;lsquo;last modified&amp;rsquo;.
 Blog berbasis WordPress atau Blogger, sistem tanggal berjalan secara dinamis, setiap ada perubahan dalam isi posting, system juga akan mencatat log tanggal perubahan terakhir dalam database.
@@ -26,10 +26,10 @@ Bagaimana dengan blog berbasis Hugo yang men generate posting secara statis?</de
     
     <item>
       <title>Mikrotik system error critical router was rebooted without proper shutdown</title>
-      <link>https://www.insertapps.com/blog/mikrotik-system-error-critical/</link>
+      <link>https://insertapps.com/blog/mikrotik-system-error-critical/</link>
       <pubDate>Wed, 15 Jul 2020 19:51:14 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/mikrotik-system-error-critical/</guid>
+      <guid>https://insertapps.com/blog/mikrotik-system-error-critical/</guid>
       <description>Akhirnya saya memiliki sebuah perangkat Mikrotik untuk mengelola jaringan internet lelet di lingkungan rumah.
 Setelah membaca review Mikrotik dan berbagai vidoe rekomendasi, serta tutorial setting Mikrotik, akhirnya saya memilih seri Mikrotik RB952Ui-5ac2nD TC.
 Oya, untuk review lengkap Mikrotik RB952Ui-5ac2nD TC sudah di publish di Breedie.com. Disini, fokus pada self problemnya saja.
@@ -38,10 +38,10 @@ Setelah saya setting dan siap pakai, maka si Mikrotik HAP AC Lite warna hitam it
     
     <item>
       <title>Super simpel css center container secara vertical dan horizontal</title>
-      <link>https://www.insertapps.com/blog/super-simpel-css-center-container/</link>
+      <link>https://insertapps.com/blog/super-simpel-css-center-container/</link>
       <pubDate>Sun, 05 Jul 2020 19:52:51 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/super-simpel-css-center-container/</guid>
+      <guid>https://insertapps.com/blog/super-simpel-css-center-container/</guid>
       <description>Inilah cara super simpel agar sebuah teks, gambar, div container dan element html lainnya berada di tengah secara vertikal dan horizontal.
 Sebelumnya, sudah ada juga code Cara simpel css layout vertical center, tapi menggunakan framework Basscss.
 Code itu, baru bisa jalan sempurna di lingkungan Basscss, untuk menampilkan box di browser pas tepat ditengah-tengah.
@@ -51,10 +51,10 @@ Implementasi yang sering digunakan pada halaman login sebuah website, seperti ha
     
     <item>
       <title>Editor Brackets Error: PHP7 runtime not found</title>
-      <link>https://www.insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</link>
+      <link>https://insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</link>
       <pubDate>Fri, 05 Jun 2020 22:58:33 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</guid>
+      <guid>https://insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</guid>
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
@@ -64,10 +64,10 @@ PHP runtime not found.</description>
     
     <item>
       <title>Membuat header HTML keren responsive horizontal navbar auto scroll</title>
-      <link>https://www.insertapps.com/blog/html-header-keren-menu-scroll/</link>
+      <link>https://insertapps.com/blog/html-header-keren-menu-scroll/</link>
       <pubDate>Sat, 18 Apr 2020 14:39:28 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/html-header-keren-menu-scroll/</guid>
+      <guid>https://insertapps.com/blog/html-header-keren-menu-scroll/</guid>
       <description>Ada beberapa header web yang pernah saya buat, kali ini header HTML paling keren yang berhasil saya buat, setidaknya menurut selera pribadi.
 Desain header HTML ini termasuk yang sangat saya idam-idamkan. Selain desain yang simple dan sangat fungsional sekali di tampilan mobile view, menu horizontal scroll.
 Model header HTML keren dengan menu scroll di samping logo ini sekarang banyak di implementasi oleh web-web populer.
@@ -76,10 +76,10 @@ Dalam satu balok header diisi tiga item, icon burger, logo dan jejeran nav menu.
     
     <item>
       <title>Konversi ukuran Pixel ke ukuran REM dalam CSS</title>
-      <link>https://www.insertapps.com/blog/convert-pixel-to-rem/</link>
+      <link>https://insertapps.com/blog/convert-pixel-to-rem/</link>
       <pubDate>Tue, 10 Mar 2020 18:48:21 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/convert-pixel-to-rem/</guid>
+      <guid>https://insertapps.com/blog/convert-pixel-to-rem/</guid>
       <description>1 rem sama dengan 16 pixel.
 Cara menulis nilai angka rem di bawah nilai angka 1, boleh dengan:
 0.5rem  Kebanyakan programmer cukup menulis dengan:
@@ -90,20 +90,20 @@ Berikut tabel ukuran konversi pixel ke ukuran rem.
     
     <item>
       <title>Cara simpel css layout vertical center</title>
-      <link>https://www.insertapps.com/blog/cara-simpel-css-layout-vertical-center/</link>
+      <link>https://insertapps.com/blog/cara-simpel-css-layout-vertical-center/</link>
       <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/cara-simpel-css-layout-vertical-center/</guid>
+      <guid>https://insertapps.com/blog/cara-simpel-css-layout-vertical-center/</guid>
       <description>Cara simpel css layout vertical center.
 &amp;lt;div class=&amp;#34;flex items-center flex-wrap border bg-teal&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;md-col-6 border&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{{ .Site.BaseURL }}assets/bg-design.png&amp;#34; alt=&amp;#34;Top view illustration of coding and design&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;md-col-6 px2 border&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;content-center&amp;#34;&amp;gt; Your text here.. &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;</description>
     </item>
     
     <item>
       <title>Cara upgrade system hugo</title>
-      <link>https://www.insertapps.com/blog/cara-upgrade-hugo/</link>
+      <link>https://insertapps.com/blog/cara-upgrade-hugo/</link>
       <pubDate>Fri, 21 Feb 2020 10:31:07 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/cara-upgrade-hugo/</guid>
+      <guid>https://insertapps.com/blog/cara-upgrade-hugo/</guid>
       <description>Bagaimana cara upgrade system hugo: Mudah saja, dalam dokumentasi Gohugo sudah dijelaskan secara jelas. Tapi, ada saja kendala yang dialami, atau bisa jadi lupa karena jarang update hugo.
 Untuk kasus saya, saat update system hugo di macOS El Capitan terkendala di Homebrew. El Capitan gagal eksekusi upgrade sistem Hugo, karena homebrew sudah tidak mendukung os lawas seperti El Capitan.
 Homebrew butuh macOS terbaru, minimal OS Catalina, baru bisa melakukan auto upgrade sisten hugo.</description>
@@ -111,10 +111,10 @@ Homebrew butuh macOS terbaru, minimal OS Catalina, baru bisa melakukan auto upgr
     
     <item>
       <title>WP Error: Response is not a valid json response</title>
-      <link>https://www.insertapps.com/blog/error-response-is-not-a-valid-json-response/</link>
+      <link>https://insertapps.com/blog/error-response-is-not-a-valid-json-response/</link>
       <pubDate>Tue, 18 Feb 2020 11:13:43 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/error-response-is-not-a-valid-json-response/</guid>
+      <guid>https://insertapps.com/blog/error-response-is-not-a-valid-json-response/</guid>
       <description>Wordpress error updating failed error message the response is not a valid json response
 Pertama jangan terlalu panik. Pada kasus yang saya alami, sudah melakukan berbagai cara untuk menangani error wordpres tersebut. Mulai dari update sistem wordpress secara manual, menon-aktifkan plugin satu persatu juga tidak menyelesaikan masalah.
 Belum lagi percobaan dari berbagai saran dan tips hasil browsing bahkan dalam forum dev Wp.
@@ -123,10 +123,10 @@ Terakhir, dari dapat saran dari https://passionwp.com/response-is-not-a-valid-js
     
     <item>
       <title>WP Error: Briefly unavailable for scheduled maintenance check back in a minute</title>
-      <link>https://www.insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</link>
+      <link>https://insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</link>
       <pubDate>Tue, 18 Feb 2020 11:12:44 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</guid>
+      <guid>https://insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</guid>
       <description>Error ini sering terjadi saat gagal update system wordpres, yang sering kali terjadi pada gagal update plugin.
 Solusinya gampang sekali, masuk ke control Panel hosting blog, dalam cari file .maintenace dalam root instalasi wodpress. Hapus file tersebut, kemudian refress ulang.
 Tadaa. Sudah normal kembali.</description>
@@ -134,10 +134,10 @@ Tadaa. Sudah normal kembali.</description>
     
     <item>
       <title>Privacy Policy</title>
-      <link>https://www.insertapps.com/privacy/</link>
+      <link>https://insertapps.com/privacy/</link>
       <pubDate>Thu, 02 Jan 2020 15:06:26 +0000</pubDate>
       
-      <guid>https://www.insertapps.com/privacy/</guid>
+      <guid>https://insertapps.com/privacy/</guid>
       <description>Kebijakan Privasi
 Kebijakan Privasi ini mengatur cara di mana InsertApps mengumpulkan, menggunakan, menjaga dan mengungkapkan informasi yang dikumpulkan dari pengguna (masing-masing, &amp;ldquo;Pengguna&amp;rdquo;) dari situs https://insertapps.com (&amp;ldquo;Situs&amp;rdquo;). Kebijakan privasi ini berlaku untuk Situs dan semua produk dan jasa yang ditawarkan oleh InsertApps.
 Informasi identifikasi pribadi
@@ -146,29 +146,29 @@ Kami dapat mengumpulkan informasi identifikasi pribadi dari Pengguna dalam berag
     
     <item>
       <title>Terms of Use</title>
-      <link>https://www.insertapps.com/terms/</link>
+      <link>https://insertapps.com/terms/</link>
       <pubDate>Thu, 02 Jan 2020 15:06:16 +0000</pubDate>
       
-      <guid>https://www.insertapps.com/terms/</guid>
+      <guid>https://insertapps.com/terms/</guid>
       <description>SELAMAT datang di InsertApps, situs portofolio pribadi dan informasi dunia pemograman yang dikelola secara personal oleh Fauzan My. Terms of Use berikut adalah ketentuan dalam penggunaan situs, konten, layanan dan fitur yang ada di insertapps.
 Harap Anda membaca Terms of Use ini dengan sebaik-baiknya. Dengan mengakses dan menggunakan insertapps berarti Anda telah memahami dan setuju untuk terikat dengan semua peraturan yang berlaku di situs ini. Jika Anda tidak setuju untuk terikat dengan semua peraturan yang berlaku, silahkan untuk tidak menggunakan situs ini.</description>
     </item>
     
     <item>
       <title>About Us</title>
-      <link>https://www.insertapps.com/about/</link>
+      <link>https://insertapps.com/about/</link>
       <pubDate>Wed, 01 Jan 2020 15:06:06 +0000</pubDate>
       
-      <guid>https://www.insertapps.com/about/</guid>
+      <guid>https://insertapps.com/about/</guid>
       <description>InsertApps adalah situs portofolio produk digital yang telah dibuat oleh team InsertApps serta berisi tutorial, potongan kode, tips dan trik dunia pemograman sebagai rekam jejak informasi untuk kepentingan insertApp maupun pengunjung setia InsertApps.</description>
     </item>
     
     <item>
       <title>Disclaimer</title>
-      <link>https://www.insertapps.com/disclaimer/</link>
+      <link>https://insertapps.com/disclaimer/</link>
       <pubDate>Wed, 01 Jan 2020 15:06:06 +0000</pubDate>
       
-      <guid>https://www.insertapps.com/disclaimer/</guid>
+      <guid>https://insertapps.com/disclaimer/</guid>
       <description>Seluruh layanan yang diberikan mengikuti aturan main yang berlaku dan ditetapkan oleh InsertApps.
 Seluruh layanan yang diberikan di situs InsertApps ditujukan untuk kebutuhan pribadi juga pembaca dan bukan untuk digunakan kembali secara komersial. Seluruh konten yang ada di dalam situs termasuk teks, tutorial, code program, themplate, ilustrasi, infografik, video, dan lainnya dilindungi oleh undang-undang hak cipta yang dimiliki InsertApps, dan atau pihak ketiga penyedia isi di situs ini.
 InsertApps berhak memuat, atau tidak memuat, melakukan penyuntingan atau menghapus data atau informasi dari pembaca.</description>
@@ -176,10 +176,10 @@ InsertApps berhak memuat, atau tidak memuat, melakukan penyuntingan atau menghap
     
     <item>
       <title>License</title>
-      <link>https://www.insertapps.com/license/</link>
+      <link>https://insertapps.com/license/</link>
       <pubDate>Mon, 06 Jun 2016 15:06:36 +0000</pubDate>
       
-      <guid>https://www.insertapps.com/license/</guid>
+      <guid>https://insertapps.com/license/</guid>
       <description>You Can
 All images on freebiespic are released for any number of personal and commercial projects for yourself or on behalf of a client. Therefore, the images can be modified and may be used freely for any application. But for printed format we do appreciate if you want to give us photo credit.
 You Can’t
@@ -188,10 +188,10 @@ Sell or distribute the photos on its own even for free. If you want to share the
     
     <item>
       <title>FAQ</title>
-      <link>https://www.insertapps.com/faq/</link>
+      <link>https://insertapps.com/faq/</link>
       <pubDate>Mon, 06 Jun 2016 15:06:26 +0000</pubDate>
       
-      <guid>https://www.insertapps.com/faq/</guid>
+      <guid>https://insertapps.com/faq/</guid>
       <description>Apa itu InsertApps?
 InsertApps adalah situs portofolio produk digital yang telah dibuat oleh team InsertApps serta berisi tutorial, potongan kode, tips dan trik dunia pemograman sebagai rekam jejak informasi untuk kepentingan insertApp maupun pengunjung setia InsertApps.
 Bisakah saya menggunakan themplate, potongan kode, bahkan grafis yang disediakan gratis oleh insertApps untuk kepentingan pribadi maupun komesial

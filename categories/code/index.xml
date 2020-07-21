@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on InsertApps</title>
-    <link>https://www.insertapps.com/categories/code/</link>
+    <link>https://insertapps.com/categories/code/</link>
     <description>Recent content in Code on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Jul 2020 19:52:51 +0700</lastBuildDate>
     
-	<atom:link href="https://www.insertapps.com/categories/code/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://insertapps.com/categories/code/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Super simpel css center container secara vertical dan horizontal</title>
-      <link>https://www.insertapps.com/blog/super-simpel-css-center-container/</link>
+      <link>https://insertapps.com/blog/super-simpel-css-center-container/</link>
       <pubDate>Sun, 05 Jul 2020 19:52:51 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/super-simpel-css-center-container/</guid>
+      <guid>https://insertapps.com/blog/super-simpel-css-center-container/</guid>
       <description>Inilah cara super simpel agar sebuah teks, gambar, div container dan element html lainnya berada di tengah secara vertikal dan horizontal.
 Sebelumnya, sudah ada juga code Cara simpel css layout vertical center, tapi menggunakan framework Basscss.
 Code itu, baru bisa jalan sempurna di lingkungan Basscss, untuk menampilkan box di browser pas tepat ditengah-tengah.
@@ -26,10 +26,10 @@ Implementasi yang sering digunakan pada halaman login sebuah website, seperti ha
     
     <item>
       <title>Editor Brackets Error: PHP7 runtime not found</title>
-      <link>https://www.insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</link>
+      <link>https://insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</link>
       <pubDate>Fri, 05 Jun 2020 22:58:33 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</guid>
+      <guid>https://insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</guid>
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.

@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on InsertApps</title>
-    <link>https://www.insertapps.com/categories/</link>
+    <link>https://insertapps.com/categories/</link>
     <description>Recent content in Categories on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 16 Jul 2020 18:18:07 +0700</lastBuildDate>
     
-	<atom:link href="https://www.insertapps.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://insertapps.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gohugo</title>
-      <link>https://www.insertapps.com/categories/gohugo/</link>
+      <link>https://insertapps.com/categories/gohugo/</link>
       <pubDate>Thu, 16 Jul 2020 18:18:07 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/categories/gohugo/</guid>
+      <guid>https://insertapps.com/categories/gohugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Networking</title>
-      <link>https://www.insertapps.com/categories/networking/</link>
+      <link>https://insertapps.com/categories/networking/</link>
       <pubDate>Wed, 15 Jul 2020 19:51:14 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/categories/networking/</guid>
+      <guid>https://insertapps.com/categories/networking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>https://www.insertapps.com/categories/code/</link>
+      <link>https://insertapps.com/categories/code/</link>
       <pubDate>Sun, 05 Jul 2020 19:52:51 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/categories/code/</guid>
+      <guid>https://insertapps.com/categories/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Basscss</title>
-      <link>https://www.insertapps.com/categories/basscss/</link>
+      <link>https://insertapps.com/categories/basscss/</link>
       <pubDate>Sat, 18 Apr 2020 14:39:28 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/categories/basscss/</guid>
+      <guid>https://insertapps.com/categories/basscss/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CSS</title>
-      <link>https://www.insertapps.com/categories/css/</link>
+      <link>https://insertapps.com/categories/css/</link>
       <pubDate>Tue, 10 Mar 2020 18:48:21 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/categories/css/</guid>
+      <guid>https://insertapps.com/categories/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WordPress</title>
-      <link>https://www.insertapps.com/categories/wordpress/</link>
+      <link>https://insertapps.com/categories/wordpress/</link>
       <pubDate>Tue, 18 Feb 2020 11:13:43 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/categories/wordpress/</guid>
+      <guid>https://insertapps.com/categories/wordpress/</guid>
       <description></description>
     </item>
     

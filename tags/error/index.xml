@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>error on InsertApps</title>
-    <link>https://www.insertapps.com/tags/error/</link>
+    <link>https://insertapps.com/tags/error/</link>
     <description>Recent content in error on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 18 Feb 2020 11:13:43 +0700</lastBuildDate>
     
-	<atom:link href="https://www.insertapps.com/tags/error/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://insertapps.com/tags/error/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>WP Error: Response is not a valid json response</title>
-      <link>https://www.insertapps.com/blog/error-response-is-not-a-valid-json-response/</link>
+      <link>https://insertapps.com/blog/error-response-is-not-a-valid-json-response/</link>
       <pubDate>Tue, 18 Feb 2020 11:13:43 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/error-response-is-not-a-valid-json-response/</guid>
+      <guid>https://insertapps.com/blog/error-response-is-not-a-valid-json-response/</guid>
       <description>Wordpress error updating failed error message the response is not a valid json response
 Pertama jangan terlalu panik. Pada kasus yang saya alami, sudah melakukan berbagai cara untuk menangani error wordpres tersebut. Mulai dari update sistem wordpress secara manual, menon-aktifkan plugin satu persatu juga tidak menyelesaikan masalah.
 Belum lagi percobaan dari berbagai saran dan tips hasil browsing bahkan dalam forum dev Wp.

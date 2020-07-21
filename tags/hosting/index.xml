@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hosting on InsertApps</title>
-    <link>https://www.insertapps.com/tags/hosting/</link>
+    <link>https://insertapps.com/tags/hosting/</link>
     <description>Recent content in hosting on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 18 Feb 2020 11:12:44 +0700</lastBuildDate>
     
-	<atom:link href="https://www.insertapps.com/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://insertapps.com/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>WP Error: Briefly unavailable for scheduled maintenance check back in a minute</title>
-      <link>https://www.insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</link>
+      <link>https://insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</link>
       <pubDate>Tue, 18 Feb 2020 11:12:44 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</guid>
+      <guid>https://insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</guid>
       <description>Error ini sering terjadi saat gagal update system wordpres, yang sering kali terjadi pada gagal update plugin.
 Solusinya gampang sekali, masuk ke control Panel hosting blog, dalam cari file .maintenace dalam root instalasi wodpress. Hapus file tersebut, kemudian refress ulang.
 Tadaa. Sudah normal kembali.</description>

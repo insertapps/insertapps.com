@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>css on InsertApps</title>
-    <link>https://www.insertapps.com/tags/css/</link>
+    <link>https://insertapps.com/tags/css/</link>
     <description>Recent content in css on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Jul 2020 19:52:51 +0700</lastBuildDate>
     
-	<atom:link href="https://www.insertapps.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://insertapps.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Super simpel css center container secara vertical dan horizontal</title>
-      <link>https://www.insertapps.com/blog/super-simpel-css-center-container/</link>
+      <link>https://insertapps.com/blog/super-simpel-css-center-container/</link>
       <pubDate>Sun, 05 Jul 2020 19:52:51 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/super-simpel-css-center-container/</guid>
+      <guid>https://insertapps.com/blog/super-simpel-css-center-container/</guid>
       <description>Inilah cara super simpel agar sebuah teks, gambar, div container dan element html lainnya berada di tengah secara vertikal dan horizontal.
 Sebelumnya, sudah ada juga code Cara simpel css layout vertical center, tapi menggunakan framework Basscss.
 Code itu, baru bisa jalan sempurna di lingkungan Basscss, untuk menampilkan box di browser pas tepat ditengah-tengah.
@@ -26,10 +26,10 @@ Implementasi yang sering digunakan pada halaman login sebuah website, seperti ha
     
     <item>
       <title>Membuat header HTML keren responsive horizontal navbar auto scroll</title>
-      <link>https://www.insertapps.com/blog/html-header-keren-menu-scroll/</link>
+      <link>https://insertapps.com/blog/html-header-keren-menu-scroll/</link>
       <pubDate>Sat, 18 Apr 2020 14:39:28 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/html-header-keren-menu-scroll/</guid>
+      <guid>https://insertapps.com/blog/html-header-keren-menu-scroll/</guid>
       <description>Ada beberapa header web yang pernah saya buat, kali ini header HTML paling keren yang berhasil saya buat, setidaknya menurut selera pribadi.
 Desain header HTML ini termasuk yang sangat saya idam-idamkan. Selain desain yang simple dan sangat fungsional sekali di tampilan mobile view, menu horizontal scroll.
 Model header HTML keren dengan menu scroll di samping logo ini sekarang banyak di implementasi oleh web-web populer.
@@ -38,10 +38,10 @@ Dalam satu balok header diisi tiga item, icon burger, logo dan jejeran nav menu.
     
     <item>
       <title>Konversi ukuran Pixel ke ukuran REM dalam CSS</title>
-      <link>https://www.insertapps.com/blog/convert-pixel-to-rem/</link>
+      <link>https://insertapps.com/blog/convert-pixel-to-rem/</link>
       <pubDate>Tue, 10 Mar 2020 18:48:21 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/convert-pixel-to-rem/</guid>
+      <guid>https://insertapps.com/blog/convert-pixel-to-rem/</guid>
       <description>1 rem sama dengan 16 pixel.
 Cara menulis nilai angka rem di bawah nilai angka 1, boleh dengan:
 0.5rem  Kebanyakan programmer cukup menulis dengan:
@@ -52,10 +52,10 @@ Berikut tabel ukuran konversi pixel ke ukuran rem.
     
     <item>
       <title>Cara simpel css layout vertical center</title>
-      <link>https://www.insertapps.com/blog/cara-simpel-css-layout-vertical-center/</link>
+      <link>https://insertapps.com/blog/cara-simpel-css-layout-vertical-center/</link>
       <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
       
-      <guid>https://www.insertapps.com/blog/cara-simpel-css-layout-vertical-center/</guid>
+      <guid>https://insertapps.com/blog/cara-simpel-css-layout-vertical-center/</guid>
       <description>Cara simpel css layout vertical center.
 &amp;lt;div class=&amp;#34;flex items-center flex-wrap border bg-teal&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;md-col-6 border&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{{ .Site.BaseURL }}assets/bg-design.png&amp;#34; alt=&amp;#34;Top view illustration of coding and design&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;md-col-6 px2 border&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;content-center&amp;#34;&amp;gt; Your text here.. &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;</description>
     </item>
