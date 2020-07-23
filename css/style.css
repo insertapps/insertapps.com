@@ -46,12 +46,20 @@ body {
     background-color: #fff
 }
 
+/* Drop Cap*/
+.article p:first-child:first-letter { 
+	float: left; 
+	color: gray; 
+	font-size: 4em; 
+	line-height: 0.85em; 
+	padding-right: 0.1em;
+	font-weight: bolder;
+  }
 
 img {
     max-width: 100%;
     height: auto
 }
-
 
 /* SVG STYLE */
 svg {
@@ -282,6 +290,16 @@ li span {
     100% {
         opacity: 1;
     }
+}
+
+.hero {
+	height: 500px;
+}
+
+@media (max-width:40em) {
+	.hero {
+		height: 350px;
+	}
 }
 
 /*

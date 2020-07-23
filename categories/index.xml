@@ -6,10 +6,19 @@
     <description>Recent content in Categories on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2020 18:18:07 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2020 22:40:09 +0700</lastBuildDate>
     
 	<atom:link href="https://insertapps.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Code</title>
+      <link>https://insertapps.com/categories/code/</link>
+      <pubDate>Thu, 23 Jul 2020 22:40:09 +0700</pubDate>
+      
+      <guid>https://insertapps.com/categories/code/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Gohugo</title>
@@ -30,20 +39,20 @@
     </item>
     
     <item>
-      <title>Code</title>
-      <link>https://insertapps.com/categories/code/</link>
-      <pubDate>Sun, 05 Jul 2020 19:52:51 +0700</pubDate>
-      
-      <guid>https://insertapps.com/categories/code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Basscss</title>
       <link>https://insertapps.com/categories/basscss/</link>
       <pubDate>Sat, 18 Apr 2020 14:39:28 +0700</pubDate>
       
       <guid>https://insertapps.com/categories/basscss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>https://insertapps.com/categories/tutorial/</link>
+      <pubDate>Tue, 10 Mar 2020 19:07:35 +0700</pubDate>
+      
+      <guid>https://insertapps.com/categories/tutorial/</guid>
       <description></description>
     </item>
     

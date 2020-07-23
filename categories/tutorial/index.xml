@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on InsertApps</title>
+    <link>https://insertapps.com/categories/tutorial/</link>
+    <description>Recent content in Tutorial on InsertApps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Mar 2020 19:07:35 +0700</lastBuildDate>
+    
+	<atom:link href="https://insertapps.com/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara simpel membuat icon menu hamburger website</title>
+      <link>https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/</link>
+      <pubDate>Tue, 10 Mar 2020 19:07:35 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/</guid>
+      <description>Icon menu hamburger adalah tiga baris horizontal yang disusun secara vertikal. Icon burger ini sudah menjadi icon wajib web responsive, aplikasi Android maupun web app lainnya untuk menyembunyikan listing menu.
+Dalam irisan icon hamburger tersebut menu-menu yang disajikan oleh sebuah website disembunyikan, untuk merapikan tampilan website.
+Sama halnya seperti isi dalam sebuah hamburger, ada sayuran, daging, telur dadar, lapisan keju dan terakhir ada saus, yang susun rapi kemudian dalam satu potong roti belah dua.</description>
+    </item>
+    
+  </channel>
+</rss>

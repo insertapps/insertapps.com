@@ -6,10 +6,28 @@
     <description>Recent content in Tags on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2020 18:18:07 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2020 22:40:09 +0700</lastBuildDate>
     
 	<atom:link href="https://insertapps.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>css</title>
+      <link>https://insertapps.com/tags/css/</link>
+      <pubDate>Thu, 23 Jul 2020 22:40:09 +0700</pubDate>
+      
+      <guid>https://insertapps.com/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
+      <link>https://insertapps.com/tags/tips/</link>
+      <pubDate>Thu, 23 Jul 2020 22:40:09 +0700</pubDate>
+      
+      <guid>https://insertapps.com/tags/tips/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>go</title>
@@ -35,24 +53,6 @@
       <pubDate>Wed, 15 Jul 2020 19:51:14 +0700</pubDate>
       
       <guid>https://insertapps.com/tags/mikrotik/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tips</title>
-      <link>https://insertapps.com/tags/tips/</link>
-      <pubDate>Wed, 15 Jul 2020 19:51:14 +0700</pubDate>
-      
-      <guid>https://insertapps.com/tags/tips/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>css</title>
-      <link>https://insertapps.com/tags/css/</link>
-      <pubDate>Sun, 05 Jul 2020 19:52:51 +0700</pubDate>
-      
-      <guid>https://insertapps.com/tags/css/</guid>
       <description></description>
     </item>
     
