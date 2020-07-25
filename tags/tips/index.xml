@@ -6,10 +6,24 @@
     <description>Recent content in tips on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2020 22:40:09 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2020 23:29:44 +0700</lastBuildDate>
     
 	<atom:link href="https://insertapps.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cara membuat &#39;close button icon&#39; dengan HTML dan CSS</title>
+      <link>https://insertapps.com/blog/close-button-icon-css/</link>
+      <pubDate>Sat, 25 Jul 2020 23:29:44 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/close-button-icon-css/</guid>
+      <description>Ada icon hamburger menu, ada juga tombol &amp;lsquo;icon close&amp;rsquo; untuk menutup kembali listing menux.
+Sebelumnya sudah ada tutorial singkat cara simpel membuat icon menu hamburger website.
+Cara membuat icon close button tidak jauh berbeda dengan tutorial sebelumnya. Yaitu dengan cara memanipulasi element HTML itu sendiri dengan style CSS.
+Cara Pertama
+Selalu mengawali dengan cara newbie dulu.
+Ketik sintak HTML dasar seperti berikut ini, sekalian dengan nama identifier class CSS nya.</description>
+    </item>
     
     <item>
       <title>Cara membuat dropcap di website</title>
@@ -38,10 +52,10 @@ Setelah saya setting dan siap pakai, maka si Mikrotik HAP AC Lite warna hitam it
     
     <item>
       <title>Editor Brackets Error: PHP7 runtime not found</title>
-      <link>https://insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</link>
+      <link>https://insertapps.com/blog/brackets-error-php7-runtime/</link>
       <pubDate>Fri, 05 Jun 2020 22:58:33 +0700</pubDate>
       
-      <guid>https://insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</guid>
+      <guid>https://insertapps.com/blog/brackets-error-php7-runtime/</guid>
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.

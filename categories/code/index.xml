@@ -39,10 +39,10 @@ Implementasi yang sering digunakan pada halaman login sebuah website, seperti ha
     
     <item>
       <title>Editor Brackets Error: PHP7 runtime not found</title>
-      <link>https://insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</link>
+      <link>https://insertapps.com/blog/brackets-error-php7-runtime/</link>
       <pubDate>Fri, 05 Jun 2020 22:58:33 +0700</pubDate>
       
-      <guid>https://insertapps.com/blog/2020-05-06__editor-brackets-error-php7-runtime/</guid>
+      <guid>https://insertapps.com/blog/brackets-error-php7-runtime/</guid>
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.

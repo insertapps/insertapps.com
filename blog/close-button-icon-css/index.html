@@ -3,10 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cara membuat dropcap di website - InsertApps</title>
-    <link rel="canonical" href="https://insertapps.com/blog/css-dropcap/">
+    <title>Cara membuat &#39;close button icon&#39; dengan HTML dan CSS - InsertApps</title>
+    <link rel="canonical" href="https://insertapps.com/blog/close-button-icon-css/">
     <link rel="manifest" href="https://insertapps.com//manifest.json">
-    <meta name="description" content="Drop Cap dekorasi huruf pertama di awal paragraf pertama dibuat lebih menonjol dengan memperbesar ukuran huruf. Berikut cara membuat Drop Cap dengan css." />
+    <meta name="description" content="Tombol &#39;close button icon&#39; berguna untuk menutup kembali listing menu. Berikut ini tutorial cara membuat close button icon css." />
     
     <link rel="stylesheet" href="https://insertapps.com/css/style.css">
     <link rel="stylesheet" href="https://insertapps.com/css/glider.css">
@@ -28,10 +28,10 @@
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@https://www.twitter.com/insertapps" />
-    <meta property="og:url" content="https://insertapps.com/blog/css-dropcap/" />
-    <meta property="og:title" content="Cara membuat dropcap di website" />
-    <meta property="og:description" content="Drop Cap dekorasi huruf pertama di awal paragraf pertama dibuat lebih menonjol dengan memperbesar ukuran huruf. Berikut cara membuat Drop Cap dengan css." />
-    <meta property="og:image" content="https://insertapps.com/images/blog/2020/07_dropcap-Cover-Image.jpg" />
+    <meta property="og:url" content="https://insertapps.com/blog/close-button-icon-css/" />
+    <meta property="og:title" content="Cara membuat &#39;close button icon&#39; dengan HTML dan CSS" />
+    <meta property="og:description" content="Tombol &#39;close button icon&#39; berguna untuk menutup kembali listing menu. Berikut ini tutorial cara membuat close button icon css." />
+    <meta property="og:image" content="https://insertapps.com/images/blog/2020/07_close-cover-image.jpg" />
     <meta property="og:type" content="article">
     
     <meta property="fb:app_id" content="2000697846886370">
@@ -137,32 +137,39 @@ if (!doNotTrack) {
     
     
     <li class="inline-block active mr1">
-        <a class="text-decoration-none gray" href="https://insertapps.com/blog/css-dropcap/">Cara membuat dropcap di website</a>
+        <a class="text-decoration-none gray" href="https://insertapps.com/blog/close-button-icon-css/">Cara membuat &#39;close button icon&#39; dengan HTML dan CSS</a>
     </li>
     
     </ol>
     
 </div><figure class="max-width-4 mx-auto m0">
-		<img class="block mb1" src="/images/blog/2020/07_dropcap-Cover-Image.jpg" alt="Cara membuat dropcap di website">
+		<img class="block mb1" src="/images/blog/2020/07_close-cover-image.jpg" alt="Cara membuat &#39;close button icon&#39; dengan HTML dan CSS">
 		
-		<figcaption class="max-width-3 mx-auto h6 muted italic px2 mb2">Icon drop cap.</figcaption>
+		<figcaption class="max-width-3 mx-auto h6 muted italic px2 mb2">Close button icon</figcaption>
 		
 	</figure>
 	<div class="max-width-3 mx-auto px2">
 		<header class="">
-			<h1 class="h1">Cara membuat dropcap di website</h1>
+			<h1 class="h1">Cara membuat &#39;close button icon&#39; dengan HTML dan CSS</h1>
 		</header>
 		<div class="meta-post">
 			
 			
 			<ul class="list-reset h5">
-				<li class="fb-like inline-block mr1" data-href="https://insertapps.com/blog/css-dropcap/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="false"></li>
+				<li class="fb-like inline-block mr1" data-href="https://insertapps.com/blog/close-button-icon-css/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="false"></li>
 				<li class="inline-block mr1 gray h6">
-					23 Jul 2020<time title="Originally published Thursday, July 23, 2020"
-						datetime="2020-07-23 22:40:09 &#43;0700 WIB">
+					25 Jul 2020<time title="Originally published Saturday, July 25, 2020"
+						datetime="2020-07-25 23:29:44 &#43;0700 WIB">
 						
 						</time>
 				</li>
+				
+				
+				
+				<li class="inline-block mr1">
+					<a class="text-decoration-none bold" href="https://insertapps.com/tags/html/">#html</a>
+				</li>
+				
 				
 				
 				
@@ -181,52 +188,147 @@ if (!doNotTrack) {
 			</ul>
 		</div>
 		<div class="article mb3">
-			<p>Drop cap dekorasi karakter pertama di awal paragraf pertama dibuat lebih menonjol dengan memperbesar ukuran huruf.</p>
-<p>Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.</p>
-<p>Beberapa theme blog WordPress sudah menyediakan fitur tambahan untuk membuat &lsquo;Drop Cap&rsquo;.</p>
-<p>Bila thema WordPress atau Blogspot kamu tidak ada fitur tersebut, jangan berkecil hati.</p>
-<p>Kamu bisa menambahkan sendiri fitur drop cap. Caranya cukup sederhana, tambahkan style CSS berikut dalam child theme WordPress kamu:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Drop Cap Style*/</span>
-<span style="color:#f92672">p</span>:<span style="color:#a6e22e">first-child</span>:<span style="color:#a6e22e">first-letter</span> { 
-	<span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>; 
-	<span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">em</span>;
-	<span style="color:#66d9ef">padding-right</span>: <span style="color:#ae81ff">0.1</span><span style="color:#66d9ef">em</span>;
-	<span style="color:#75715e">/* Kode Opsinal */</span>
-	<span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">0.85</span><span style="color:#66d9ef">em</span>; 
-	<span style="color:#66d9ef">font-weight</span>: <span style="color:#66d9ef">bolder</span>;
-	<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">gray</span>;  
+			<p>Ada icon hamburger menu, ada juga tombol &lsquo;icon close&rsquo; untuk menutup kembali listing menux.</p>
+<p>Sebelumnya sudah ada tutorial singkat <a href="https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/" target="_blank" rel="noopener">cara simpel membuat icon menu hamburger website</a>.</p>
+<p>Cara membuat icon close button tidak jauh berbeda dengan tutorial sebelumnya. Yaitu dengan cara memanipulasi element <code>HTML</code> itu sendiri dengan style <code>CSS</code>.</p>
+<p><strong>Cara Pertama</strong></p>
+<p>Selalu mengawali dengan cara newbie dulu.</p>
+<p>Ketik sintak HTML dasar seperti berikut ini, sekalian dengan nama identifier class <code>CSS</code> nya.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn pointer grid&#34;</span>&gt;
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cross-red&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cross-black&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p>Dari tiga baris kode di atas, pasti sudah terbayang bentuknya kira-kira seperti apa?</p>
+<p>Class <code>grid</code> sendiri sebagai <code>class</code> bantuan pembentuk garis grid, agar waktu running kode-nya akan memperjelas bentuk tombolnya.</p>
+<p>Kemudian tambahkan style <code>CSS</code> berikut ini:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* # CARA PERTAMA */</span>
+.<span style="color:#a6e22e">btn</span> {
+	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">32</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
 }
-</code></pre></div><p>Arti dari <code>p:first-child:first-letter</code> untuk memberitahukan kepada HTML, agar merender karakter pertama (<code>first-letter</code>) di awal paragram pertama (<code>first-child</code>), ukuran hurufnya lebih besar/menonjol dari ukuran normal.</p>
-<p>Sedangkan pada paragraf-paragraf yang lain tidak ada penekanan style.</p>
-<p>Pada beberapa blog, web, kode tersebut juga akan menciptakan efek drop cap pada tempat lain, misalnya; di bagian footer, sidebar atau page lain.</p>
-<p>Setelah insert kode tadi, tiba-tiba muncul drop cap dimana-mana, jangan panik.</p>
-<p>Kemungkinan besar, theme blog kamu tidak membungkus tag <code>&lt;p&gt;&lt;/p&gt;</code> dalam element <code>&lt;article&gt;</code>, tapi dalam tag <code>&lt;div&gt;</code> biasa.</p>
-<p>Cukup tambahkan element <code>article</code> seperti ini:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Drop Cap Style*/</span>
-<span style="color:#f92672">article</span> <span style="color:#f92672">p</span>:<span style="color:#a6e22e">first-child</span>:<span style="color:#a6e22e">first-letter</span> { 
-	<span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>; 
-	<span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">em</span>;
-	<span style="color:#66d9ef">padding-right</span>: <span style="color:#ae81ff">0.1</span><span style="color:#66d9ef">em</span>;
-	<span style="color:#75715e">/* Kode Opsinal */</span>
-	<span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">0.85</span><span style="color:#66d9ef">em</span>; 
-	<span style="color:#66d9ef">font-weight</span>: <span style="color:#66d9ef">bolder</span>;
-	<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">gray</span>;  
+
+.<span style="color:#a6e22e">pointer</span> {
+	<span style="color:#66d9ef">cursor</span>: <span style="color:#66d9ef">pointer</span>;
 }
-</code></pre></div><p>Maksudnya, HTML akan merender drop cap jika ada tag <code>&lt;p&gt;</code> di dalam element <code>&lt;article&gt; &lt;p&gt;Lorem ipsum... &lt;/p&gt; &lt;/article&gt;</code>.</p>
-<p>Biasanya, tag <code>&lt;article&gt;</code> cuma boleh dipanggil sekali saja di dalam <code>body</code> HTML. Jadi, ruang lingkup render drop cap hanya terbatas di dalam element itu saja.</p>
-<p>Ingin menampilkan drop cap di sidebar, di footer, atau dalam tag <code>div</code> khusus lainnya?</p>
-<p>Cukup tambahkan class <code>.drop-cap</code> seperti berikut:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Drop Cap Style*/</span>
-.<span style="color:#a6e22e">drop-cap</span> <span style="color:#f92672">p</span>:<span style="color:#a6e22e">first-child</span>:<span style="color:#a6e22e">first-letter</span> { 
-	<span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>; 
-	<span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">em</span>;
-	<span style="color:#66d9ef">padding-right</span>: <span style="color:#ae81ff">0.1</span><span style="color:#66d9ef">em</span>;
-	<span style="color:#75715e">/* Kode Opsinal */</span>
-	<span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">0.85</span><span style="color:#66d9ef">em</span>; 
-	<span style="color:#66d9ef">font-weight</span>: <span style="color:#66d9ef">bolder</span>;
-	<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">gray</span>; 
+
+.<span style="color:#a6e22e">cross-red</span> {
+	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+	<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">33</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">red</span>;
+	<span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>);
 }
-</code></pre></div><p>Kemudian, panggil class <code> &lt;div class=&quot;drop-cap&quot;&gt;&lt;p&gt;Lorem ipsum...&lt;/p&gt;&lt;/div&gt;</code> dimana saja sesuai keinginan kamu. Mudah bukan?</p>
+
+.<span style="color:#a6e22e">cross-black</span> {
+	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+	<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">33</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">black</span>;
+	<span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-45</span><span style="color:#66d9ef">deg</span>);
+}
+</code></pre></div><p>Blok code CSS pertama <code>.btn { width: 32px; height: 32px; position: relative; }</code> untuk membentuk sebuah kotak dengan ukuran <code>32 x 32 pixel</code> yang akan menampung isi dari garis silang.</p>
+<p>Kemudian, perilaku kotak diberi posisi <code>position: relative;</code>, apa pun isi yang akan ditampung si kotak akan terisi/mengacu ke dalam kotak, bukan di luar kotak. Kotak sebagai parent, garis sebagai children.</p>
+<p>Lanjut ke class <code>.pointer { cursor: pointer; }</code> untuk merubah pointer mouse menjadi icon klik. Sebenarnya, style <code>cursor: pointer;</code> bisa langsung ditambah ke dalam class <code>btn</code>. InsertApps lebih menyukai penulisan sintak <code>class</code> mutable, yang terpisah, sehingga bisa dipakai ditempat lain.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">cross-red</span> {
+	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+	<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">33</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">red</span>;
+	<span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>);
+}
+
+.<span style="color:#a6e22e">cross-black</span> {
+	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+	<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">33</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">black</span>;
+	<span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-45</span><span style="color:#66d9ef">deg</span>);
+}
+</code></pre></div><p>Pada kedua class <code>.cross-red</code> dan <code>.cross-black</code> menciptakan sebuah objek garis dengan ukuran panjang <code>33px x 2px</code>. Kedua style garis sama, yang berbeda cuma style <code>transform: rotate();</code> yang satu miring 45° dan satunya kebalikan dari -45°.</p>
+<p>Kedua garis silang, perilaku posisinya dibuat <code>position: absolute;</code> ke <code>position: relative</code> nya si kotak, class <code>.btn</code>.</p>
+<p>Dengan adanya style <code>position: absolute;</code> maka perilaku objek garis, bisa disematkan style <code>left: 15px;</code>. Yang artinya, objek garis bisa digeser posisinya, dari sisi paling kiri layar sejauh 15 piksel ke kanan.</p>
+<p>Kenapa harus ada pergeseran posisi di objek garis?</p>
+<p>Pada saat <code>cross-red</code> dan <code>cross-black</code> dibuat miring, maka titik nol garis miring berada di tengah. Maka, posisi titik nol garis yang miring harus digeser sejauh <code>15px</code> untuk mencapai posisi center dalam kotak. Karena ukuran kotak <code>32px</code> dibagi <code>15px</code> masih ada selisih <code>2px</code> sebagai ruang, karena tinggi garis <code>height: 33px;</code> yang dimiringkan jadi lebih panjang.</p>
+<p>Selain itu, warna garis sengaja dibuat berbeda warna, agar yang masih newbie bisa lebih paham.</p>
+<p>Hasilnya kodingnya lihat <a href="https://insertapps.com/demo/html-css-close-button-icon.html#cara-satu" target="_blank" rel="noopener">Demo</a></p>
+<p><strong>Cara Kedua</strong></p>
+<p>Cara ini memanfaatkan CSS Flexbox (Flexible Layout), pengaturan layout tombol close icon secara automatis automatis. Kebalikan dari cara pertama, tata letak pergeseran garis silang dilakukan secara manual.</p>
+<p>Bentuk tag <code>HTML</code> masih sama dengan cara pertama.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box pointer grid&#34;</span>&gt;
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cross left&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cross right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p>Untuk kasus kedua, penamaan class <code>btn</code> InsertApps ganti dengan nama class <code>box</code> karena model DEMO dibuat satu file, sehingga tidak terjadi benturan class.</p>
+<p>Di bagian <code>CSS</code> pada dasarnya sama, yang berbeda cuma CSS property dan value-nya saja. <em>Sedangkan bentuk penulisan kode CSS, menggunakan konsep modular—tidak mengulangi pengetikan kode yang sama secara berulang-ulang, seperti cara yang pertama.</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">box</span> {
+	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">rem</span>;
+	<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">rem</span>;
+	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+	<span style="color:#75715e">/* Add flexbox property*/</span>
+	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+	<span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+	<span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
+}
+
+.<span style="color:#a6e22e">cross</span> {
+	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+	<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;
+	<span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">red</span>;
+}
+
+.<span style="color:#a6e22e">left</span> {
+	<span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>);
+}
+
+.<span style="color:#a6e22e">right</span> {
+	<span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">-45</span><span style="color:#66d9ef">deg</span>);
+}
+
+.<span style="color:#a6e22e">pointer</span> {
+	<span style="color:#66d9ef">cursor</span>: <span style="color:#66d9ef">pointer</span>;
+}
+</code></pre></div><p>Penjelasan kode:</p>
+<ul>
+<li>Blok code <code>.box { }</code> dengan tiga property yang paling atas <code>width: 2rem; height: 2rem; position: relative;</code> fungsinya sama dengan cara yang pertama, membuat sebuah kotak.</li>
+<li>Tiga property tambahan <code>display: flex; align-items: center; justify-content: center;</code>, kotak yang di render akan mendapatkan tambahan perilaku flexible layout. Jadi, isi yang ditampung si kotak posisinya bersifat fleksibel.</li>
+<li>Blok code <code>.cross { }</code> fungsinya juga masih sama, menciptakan sebuah objek garis <code>33x2 piksel</code> dengan posisinya yang absolut.</li>
+<li>Blok code <code>.left { }</code> dan <code>.right { }</code> menampung property <code>transform</code> dengan value <code>rotate ()</code> untuk memutar sebuah objek sesuai dengan nilai derajat yang input.</li>
+<li>Block code <code>.pointer { }</code> untuk merubah pointer mouse menjadi icon tangan.</li>
+</ul>
+<p>Hasilnya <a href="https://insertapps.com/demo/html-css-close-button-icon.html#cara-dua" target="_blank" rel="noopener">Demo</a></p>
+<p><strong>BONUS: Add effect</strong></p>
+<p>Menambah efek animasi yang sederhana pada saat mouse diarahkan ke tombol.</p>
+<p>Tambahkan class <code>animation</code> di tag HTML.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box pointer animation&#34;</span>&gt;
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cross left&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cross right&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p>Code CSS untuk class <code>animation</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">animation</span>:<span style="color:#a6e22e">hover</span> {
+	<span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">360</span><span style="color:#66d9ef">deg</span>);
+	<span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">ease</span><span style="color:#f92672">-</span>in-out <span style="color:#ae81ff">1</span><span style="color:#66d9ef">s</span>;
+}
+</code></pre></div><p>Hasilnya <a href="#add-effect">Demo</a></p>
+<p><strong>CONCLUSION</strong></p>
+<p>Dari kedua cara yang digunakan untuk membuat sebuah &lsquo;close button icon&rsquo; dengan memanipulasi tag <code>HTML</code> dan <code>CSS</code>, mana yang lebih tepat:</p>
+<ul>
+<li>Apapun caranya, yang penting hasilnya berjalan dengan baik.</li>
+<li>Kekurangan dari cara pertama, hasil akhir dari sebuah tombol close icon, sedikit kurang presisi, karena pengaturan layout tombolnya, berdasarkan nilai <code>width</code>, <code>height</code> dan <code>left</code>. Bila nilai tersebut berubah, maka posisi isi dalam tombol tidak bergerak secara dinamis. <em>(Untuk melihat perubahan, coba ikuti code challenge normor 2)</em></li>
+<li>Dengan memanfaatkan fitur CSS Flexbox, kekurangan cara pertama dapat diselesaikan dengan baik.</li>
+<li>Hasil akhir cara kedua, renderin garis dan tata letaknya lebih presisi, karena kalkulasi perhitungan dilakukan auto sistem browser.</li>
+<li>Untuk lebih memahami Flexbox, baca lagi dokumentasi di <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank" rel="noopener">w3schools.com</a> atau ikuti code challenge nomor 2 berikut ini:</li>
+</ul>
+<p><strong>CODE CHALLENGE</strong></p>
+<ol>
+<li>Lakukan perubahan nilai pada setiap property <code>width</code> dan <code>height</code>. Lihat apa yang terjadi?</li>
+<li>Coba bikin sintak yang sudah kamu pelajari, menjadi code yang lebih sederhana lagi.</li>
+</ol>
 
 		</div>
 		
@@ -286,26 +388,26 @@ if (!doNotTrack) {
 			</div>
 			
 			<div class="rounded border border-silver mr2" style="width: 256px;">
-				<a href="https://insertapps.com/blog/mikrotik-system-error-critical/"><img class="fit block m0" src="/images/blog/2020/07_Mikrotik-RB952Ui-5ac2nD-TC-500x333px.jpg"
-						alt="Mikrotik system error critical router was rebooted without proper shutdown"></a>
+				<a href="https://insertapps.com/blog/css-dropcap/"><img class="fit block m0" src="/images/blog/2020/07_dropcap-Cover-thumbnail.jpg"
+						alt="Cara membuat dropcap di website"></a>
 				<div class="p2">
-					<h4 class="h5 m0"><a class="text-decoration-none" href="https://insertapps.com/blog/mikrotik-system-error-critical/">Mikrotik system error critical router was rebooted without proper shutdown</a></h4>
+					<h4 class="h5 m0"><a class="text-decoration-none" href="https://insertapps.com/blog/css-dropcap/">Cara membuat dropcap di website</a></h4>
 				</div>
 			</div>
 			
 			<div class="rounded border border-silver mr2" style="width: 256px;">
-				<a href="https://insertapps.com/blog/super-simpel-css-center-container/"><img class="fit block m0" src="/images/blog/CSS_cover-thumbnail.jpg"
-						alt="Super simpel css center container secara vertical dan horizontal"></a>
+				<a href="https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/"><img class="fit block m0" src="/images/blog/2020/07_burge-icon_cover-thumbnail.jpg"
+						alt="Cara simpel membuat icon menu hamburger website"></a>
 				<div class="p2">
-					<h4 class="h5 m0"><a class="text-decoration-none" href="https://insertapps.com/blog/super-simpel-css-center-container/">Super simpel css center container secara vertical dan horizontal</a></h4>
+					<h4 class="h5 m0"><a class="text-decoration-none" href="https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/">Cara simpel membuat icon menu hamburger website</a></h4>
 				</div>
 			</div>
 			
 			<div class="rounded border border-silver mr2" style="width: 256px;">
-				<a href="https://insertapps.com/blog/brackets-error-php7-runtime/"><img class="fit block m0" src="/images/blog/Brackets_cover-thumbnail.jpg"
-						alt="Editor Brackets Error: PHP7 runtime not found"></a>
+				<a href="https://insertapps.com/blog/hugo-last-modified-date-setting/"><img class="fit block m0" src="/images/blog/Hugo_cover-thumbnail.jpg"
+						alt="Setting tanggal &#39;last updated&#39; atau &#39;last modified date&#39; posting di system Hugo"></a>
 				<div class="p2">
-					<h4 class="h5 m0"><a class="text-decoration-none" href="https://insertapps.com/blog/brackets-error-php7-runtime/">Editor Brackets Error: PHP7 runtime not found</a></h4>
+					<h4 class="h5 m0"><a class="text-decoration-none" href="https://insertapps.com/blog/hugo-last-modified-date-setting/">Setting tanggal &#39;last updated&#39; atau &#39;last modified date&#39; posting di system Hugo</a></h4>
 				</div>
 			</div>
 			

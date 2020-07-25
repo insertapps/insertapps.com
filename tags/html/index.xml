@@ -6,10 +6,24 @@
     <description>Recent content in html on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2020 18:18:07 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2020 23:29:44 +0700</lastBuildDate>
     
 	<atom:link href="https://insertapps.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cara membuat &#39;close button icon&#39; dengan HTML dan CSS</title>
+      <link>https://insertapps.com/blog/close-button-icon-css/</link>
+      <pubDate>Sat, 25 Jul 2020 23:29:44 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/close-button-icon-css/</guid>
+      <description>Ada icon hamburger menu, ada juga tombol &amp;lsquo;icon close&amp;rsquo; untuk menutup kembali listing menux.
+Sebelumnya sudah ada tutorial singkat cara simpel membuat icon menu hamburger website.
+Cara membuat icon close button tidak jauh berbeda dengan tutorial sebelumnya. Yaitu dengan cara memanipulasi element HTML itu sendiri dengan style CSS.
+Cara Pertama
+Selalu mengawali dengan cara newbie dulu.
+Ketik sintak HTML dasar seperti berikut ini, sekalian dengan nama identifier class CSS nya.</description>
+    </item>
     
     <item>
       <title>Setting tanggal &#39;last updated&#39; atau &#39;last modified date&#39; posting di system Hugo</title>
@@ -43,8 +57,8 @@ Dalam satu balok header diisi tiga item, icon burger, logo dan jejeran nav menu.
       
       <guid>https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/</guid>
       <description>Icon menu hamburger adalah tiga baris horizontal yang disusun secara vertikal. Icon burger ini sudah menjadi icon wajib web responsive, aplikasi Android maupun web app lainnya untuk menyembunyikan listing menu.
-Dalam irisan icon hamburger tersebut menu-menu yang disajikan oleh sebuah website disembunyikan, untuk merapikan tampilan website.
-Sama halnya seperti isi dalam sebuah hamburger, ada sayuran, daging, telur dadar, lapisan keju dan terakhir ada saus, yang susun rapi kemudian dalam satu potong roti belah dua.</description>
+Dalam irisan icon hamburger tersebut menu-menu yang disajikan oleh sebuah blog secara automatis tersembunyi dengan rapi di layar mobile
+Sama halnya seperti isi dalam sebuah hamburger, ada sayuran, daging, telur dadar, lapisan keju dan terakhir ada saus dan mayonnaise, disusun dengan rapi dalam satu potong roti belah dua.</description>
     </item>
     
     <item>
