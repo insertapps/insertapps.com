@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Demo HTML CSS close button icon - by InsertApps</title>
+
+	<style>
+		/* # CARA PERTAMA */
+		.btn {
+			width: 32px;
+			height: 32px;
+			position: relative;
+		}
+
+		.pointer {
+			cursor: pointer;
+		}
+
+		.cross-red {
+			position: absolute;
+			height: 33px;
+			width: 2px;
+			transform: rotate(45deg);
+			background-color: red;
+			left: 15px;
+		}
+
+		.cross-black {
+			position: absolute;
+			height: 33px;
+			width: 2px;
+			transform: rotate(-45deg);
+			background-color: black;
+			left: 15px;
+		}
+
+		/* # CARA KEDUA */
+
+		.box {
+			width: 2rem;
+			height: 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
+
+		.cross {
+			height: 30px;
+			width: 2px;
+			background-color: red;
+			position: absolute;
+		}
+
+		.left {
+			transform: rotate(45deg);
+		}
+
+		.right {
+			transform: rotate(-45deg);
+		}
+
+		/* CSS ANIMATION */
+		.animation:hover {
+			transform: rotate(360deg);
+			transition: ease-in-out 1s;
+		}
+
+		/*///////////////////////////////////*/
+
+		/* CSS GRID / GARIS BANTU */
+		.grid {
+			border-style: solid;
+			border-width: 1px;
+			border-color: cyan;
+		}
+
+		hr {
+			margin: 2rem 0;
+			height: 1px;
+			border: none;
+			color: silver;
+			background-color: silver;
+		}
+	</style>
+</head>
+
+<body style="padding: 1rem;">
+
+	<h2 id="cara-satu">Cara Pertama</h2>
+
+	<header>
+		<div class="btn pointer grid">
+			<div class="cross-red"></div>
+			<div class="cross-black"></div>
+		</div>
+	</header>
+
+	<hr style="margin: 2rem 0; color: silver; border: none; height: 1px;  background-color:silver;">
+
+	<h2 id="cara-dua">Cara Kedua</h2>
+
+	<div class="box pointer grid">
+		<div class="cross left"></div>
+		<div class="cross right"></div>
+	</div>
+
+	<hr style="margin: 2rem 0; color: silver;">
+
+	<h2 id="add-effect">Tambahan Animasi</h2>
+
+	<div class="box pointer animation">
+		<div class="cross left"></div>
+		<div class="cross right"></div>
+	</div>
+
+</body>
+
+</html>
