@@ -17,7 +17,7 @@
       <pubDate>Sat, 25 Jul 2020 23:29:44 +0700</pubDate>
       
       <guid>https://insertapps.com/blog/close-button-icon-css/</guid>
-      <description>Ada icon hamburger menu, ada juga tombol &amp;lsquo;icon close&amp;rsquo; untuk menutup kembali listing menux.
+      <description>Ada icon hamburger menu, ada juga tombol &amp;lsquo;icon close&amp;rsquo; untuk menutup kembali listing menu.
 Sebelumnya sudah ada tutorial singkat cara simpel membuat icon menu hamburger website.
 Cara membuat icon close button tidak jauh berbeda dengan tutorial sebelumnya. Yaitu dengan cara memanipulasi element HTML itu sendiri dengan style CSS.
 Cara Pertama
@@ -32,10 +32,9 @@ Ketik sintak HTML dasar seperti berikut ini, sekalian dengan nama identifier cla
       
       <guid>https://insertapps.com/blog/css-dropcap/</guid>
       <description>Drop cap dekorasi karakter pertama di awal paragraf pertama dibuat lebih menonjol dengan memperbesar ukuran huruf.
-Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.
+ Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.
 Beberapa theme blog WordPress sudah menyediakan fitur tambahan untuk membuat &amp;lsquo;Drop Cap&amp;rsquo;.
-Bila thema WordPress atau Blogspot kamu tidak ada fitur tersebut, jangan berkecil hati.
-Kamu bisa menambahkan sendiri fitur drop cap.</description>
+Bila thema WordPress atau Blogspot kamu tidak ada fitur tersebut, jangan berkecil hati.</description>
     </item>
     
     <item>
@@ -85,7 +84,7 @@ Implementasi yang sering digunakan pada halaman login sebuah website, seperti ha
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
-Untuk bracket versi yang lebih lama, pesan erronya begini:
+ Untuk bracket versi yang lebih lama, pesan erronya begini:
 PHP runtime not found.</description>
     </item>
     
@@ -168,6 +167,18 @@ Terakhir, dari dapat saran dari https://passionwp.com/response-is-not-a-valid-js
       <description>Error ini sering terjadi saat gagal update system wordpres, yang sering kali terjadi pada gagal update plugin.
 Solusinya gampang sekali, masuk ke control Panel hosting blog, dalam cari file .maintenace dalam root instalasi wodpress. Hapus file tersebut, kemudian refress ulang.
 Tadaa. Sudah normal kembali.</description>
+    </item>
+    
+    <item>
+      <title>Basscss the best Bootstrap alternatives</title>
+      <link>https://insertapps.com/blog/css-framework-basscss/</link>
+      <pubDate>Wed, 22 Jan 2020 18:15:25 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/css-framework-basscss/</guid>
+      <description>Sebelum jatuh hati dan mantap menggunakan framework Basscss, InsertApps sudah mencoba framework CSS Bootstrap sejak versi 2.3.
+Setelah sekian lama ngulik Bootstrap, kami baru berhasil menyelesai sebuah WordPress theme siap pakai saat rilis Bootstrap 4 beta 2.
+Begitu Bootstrap 4.0 versi stabil release ke publik, kami sudah migrasi ke Basscss karya Brent Jackson dari Brooklyn, New York
+Alasan beralih ke framework Basscss karena Bootstrap susah lolos Google PageSpeed Insights ke predikat hijau—performa dengan nilai skor 50–89 Google PageSpeed test.</description>
     </item>
     
     <item>
