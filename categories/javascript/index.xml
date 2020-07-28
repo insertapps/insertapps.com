@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on InsertApps</title>
+    <link>https://insertapps.com/categories/javascript/</link>
+    <description>Recent content in JavaScript on InsertApps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jul 2020 21:06:58 +0700</lastBuildDate>
+    
+	<atom:link href="https://insertapps.com/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Library JavaScript untuk membuat menu sidebar responsive</title>
+      <link>https://insertapps.com/blog/javascript-sidebar-menu/</link>
+      <pubDate>Tue, 28 Jul 2020 21:06:58 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/javascript-sidebar-menu/</guid>
+      <description>Library JavaScript ini untuk membuat menu sidebar responsive yang sangat-sangat keren sekali. Layaknya UI navigasi aplikasi Android dengan konsep Material Design (standarisasi desain antar muka aplikasi Android).
+Source code JavaScript ini dikembangkan oleh AMP Project—sekarang berubah menjadi amp.dev—untuk membuat beberapa sample template web AMP (Accelerated Mobile Pages) siap pakai. Lihat demo AMP template HTML.
+AMP adalah proyek Google untuk meningkatkan kecepatan akses sebuah situs web. Fitur AMP ini baru berfungsi bila user mengakses pencarian Google melalui perangkat smartphone.</description>
+    </item>
+    
+  </channel>
+</rss>
