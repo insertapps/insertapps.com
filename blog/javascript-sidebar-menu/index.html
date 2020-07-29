@@ -183,17 +183,17 @@ if (!doNotTrack) {
 		<div class="article mb3">
 			<p>Library JavaScript ini untuk membuat menu sidebar responsive yang sangat-sangat keren sekali. Layaknya UI navigasi aplikasi Android dengan konsep <a href="https://id.wikipedia.org/wiki/Desain_material" target="_blank" rel="noopener">Material Design</a> (standarisasi desain antar muka aplikasi Android).</p>
 <p>Source code JavaScript ini dikembangkan oleh AMP Project—sekarang berubah menjadi amp.dev—untuk membuat beberapa sample template web AMP (Accelerated Mobile Pages) siap pakai. Lihat demo <a href="https://amp.dev/documentation/templates/preview/websites/blog/templates/blog.amp.html" target="_blank" rel="noopener">AMP template HTML</a>.</p>
-<p>AMP adalah proyek Google untuk meningkatkan kecepatan akses sebuah situs web. Fitur AMP ini baru berfungsi bila user mengakses pencarian Google melalui perangkat smartphone.</p>
-<p>Jadi, library ini sangat &lsquo;worth it&rsquo; sekali lah.</p>
+<p>AMP adalah proyek Google untuk meningkatkan kecepatan akses situs web. Fitur AMP ini baru berfungsi bila user mengakses pencarian Google melalui perangkat smartphone.</p>
+<p>Jadi, library ini sangat &lsquo;worth it&rsquo; sekali lah. Plugin JavaScript &lsquo;two in one&rsquo; bisa untuk UI di front end home page utama sekaligus untuk laman AMP.</p>
 <p>Hasil render transisi open-close menu sidebar navigation-nya sangat smooth dan indah sekali.</p>
 <p>Untuk implementasinya juga mudah, cukup panggil library <code>https://cdn.ampproject.org/v0/amp-sidebar-0.1.js</code>.</p>
 <p>Kemudian tambahkan kode <code>on=&quot;tap:header-sidebar.toggle&quot;</code> di dalam element <code>HTML</code> yang membungkus sebuah tombol <a href="https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/" target="_blank" rel="noopener">icon menu hamburger</a>.</p>
 <p>Dan kode yang sama juga ditambahkan pada tag <code>HTML</code> yang membungkus tombol <a href="https://insertapps.com/blog/close-button-icon-css/" target="_blank" rel="noopener">close button icon</a>.</p>
 <p>Sepotong kode <code>on=&quot;tap:header-sidebar.toggle&quot;</code> sudah dibuat dwi fungsi, layaknya tombol switch on-off.</p>
 <p>Kemudahanan lainnya, kamu juga tidak perlu pusing mikiran style CSS untuk  menampilkan screen overlay sidebar menu navigation.</p>
-<p>Karena fungsi tesebut langsung ditanam dalam library <code>amp-sidebar-0.1.js</code>. Selengkapnya langsung saja lihat lampiran source code asli versi unminify pada bagian paling bawah sekali.</p>
-<p>Masih bingung juga dengan cara kerja kode tersebut, baca tutorial <a href="https://insertapps.com/blog/#" target="_blank" rel="noopener">membuat menu sidebar responsive</a>.</p>
-<p>Lanpiran source code amp-sidebar-0.1.js versi unminify:</p>
+<p>Karena fungsi tersebut langsung ditanam dalam library <code>amp-sidebar-0.1.js</code>. Selengkapnya lihat saja lampiran source code asli versi unminify pada bagian paling bawah sekali.</p>
+<p>Masih bingung juga dengan cara kerja kode tersebut, baca tutorial <a href="https://insertapps.com/blog/#" target="_blank" rel="noopener">membuat menu sidebar responsive</a>. &lt;&ndash; <strong><em>Tutorial sedang ditulis</em>.</strong></p>
+<p><strong>Lampiran source code <code>amp-sidebar-0.1.js</code> versi unminify:</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">(<span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">AMP</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">AMP</span> <span style="color:#f92672">||</span> []).<span style="color:#a6e22e">push</span>({
     <span style="color:#a6e22e">n</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;amp-sidebar&#34;</span>,
     <span style="color:#a6e22e">v</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;2007102309001&#34;</span>,
