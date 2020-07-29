@@ -1,7 +1,8 @@
+/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
+
 *{
   box-sizing:border-box;
 }
-
 
 body{
   font-family:-apple-system,
@@ -16,7 +17,6 @@ body{
   color:#111;
   background-color:#fff;
 }
-
 
 img{
   max-width:100%;
