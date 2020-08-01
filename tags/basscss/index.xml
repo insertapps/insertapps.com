@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>basscss on InsertApps</title>
+    <link>https://insertapps.com/tags/basscss/</link>
+    <description>Recent content in basscss on InsertApps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Aug 2020 10:39:37 +0700</lastBuildDate>
+    
+	<atom:link href="https://insertapps.com/tags/basscss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tutorial membuat website dengan Basscss</title>
+      <link>https://insertapps.com/blog/tutorial-membuat-website-dengan-basscss/</link>
+      <pubDate>Sat, 01 Aug 2020 10:39:37 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/tutorial-membuat-website-dengan-basscss/</guid>
+      <description>Akhirnya kesampaian juga menulis tutorial dasar membuat website dengan framework Basscss mulai dari nol hingga menjadi sebuah template siap pakai.
+Sebenarnya, keinginan menulis tutorial tentang web programming sudah lama terpendam, baru bisa terealisasi tahun 2020. Alasanya, yang pasti teknologi dan media tempat menulis tutorial itu sendiri.
+Awalnya draf-draf tulisan tutorial disimpan dalam blog WordPress, ternyata untuk menambah dan mengedit draf tutorial terkendala dengan koneksi internet yang tidak boleh putus.
+Setelah ada Hugo SSG, menulis blog sama dengan ngoding.</description>
+    </item>
+    
+  </channel>
+</rss>

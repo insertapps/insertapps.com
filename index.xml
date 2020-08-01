@@ -6,20 +6,21 @@
     <description>Recent content on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jan 2020 15:06:26 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2020 10:39:37 +0700</lastBuildDate>
     
 	<atom:link href="https://insertapps.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Library JavaScript untuk membuat menu sidebar responsive</title>
-      <link>https://insertapps.com/blog/javascript-sidebar-menu/</link>
-      <pubDate>Tue, 28 Jul 2020 21:06:58 +0700</pubDate>
+      <title>Tutorial membuat website dengan Basscss</title>
+      <link>https://insertapps.com/blog/tutorial-membuat-website-dengan-basscss/</link>
+      <pubDate>Sat, 01 Aug 2020 10:39:37 +0700</pubDate>
       
-      <guid>https://insertapps.com/blog/javascript-sidebar-menu/</guid>
-      <description>Library JavaScript ini untuk membuat menu sidebar responsive yang sangat-sangat keren sekali. Layaknya UI navigasi aplikasi Android dengan konsep Material Design (standarisasi desain antar muka aplikasi Android).
-Source code JavaScript ini dikembangkan oleh AMP Project—sekarang berubah menjadi amp.dev—untuk membuat beberapa sample template web AMP (Accelerated Mobile Pages) siap pakai. Lihat demo AMP template HTML.
-AMP adalah proyek Google untuk meningkatkan kecepatan akses situs web. Fitur AMP ini baru berfungsi bila user mengakses pencarian Google melalui perangkat smartphone.</description>
+      <guid>https://insertapps.com/blog/tutorial-membuat-website-dengan-basscss/</guid>
+      <description>Akhirnya kesampaian juga menulis tutorial dasar membuat website dengan framework Basscss mulai dari nol hingga menjadi sebuah template siap pakai.
+Sebenarnya, keinginan menulis tutorial tentang web programming sudah lama terpendam, baru bisa terealisasi tahun 2020. Alasanya, yang pasti teknologi dan media tempat menulis tutorial itu sendiri.
+Awalnya draf-draf tulisan tutorial disimpan dalam blog WordPress, ternyata untuk menambah dan mengedit draf tutorial terkendala dengan koneksi internet yang tidak boleh putus.
+Setelah ada Hugo SSG, menulis blog sama dengan ngoding.</description>
     </item>
     
     <item>
