@@ -133,7 +133,7 @@ if (!doNotTrack) {
              
             <li class="inline-block mr1 h5"><a class="white text-decoration-none" href="/tags/php">#php</a></li>
              
-            <li class="inline-block mr1 h5"><a class="white text-decoration-none" href="/tags/code">#code</a></li>
+            <li class="inline-block mr1 h5"><a class="white text-decoration-none" href="/tags/basscss">#basscss</a></li>
             
 		</ul>
 	</div>
@@ -203,9 +203,7 @@ if (!doNotTrack) {
 
 
 </div>
-        <aside class="sm-col sm-col-3 p2"><div class="fb-page mb2" data-href="https://www.facebook.com/insertapps/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/insertapps/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/insertapps/">Insertapps.com</a></blockquote>
-</div>
-<a href="https://ats.insertapps.com/" target="_blank"><img class="fit mb2" src="/assets/ads-1.jpg" alt="Top Ten Media Online di Aceh"></a>
+        <aside class="sm-col sm-col-3 p2"><a href="https://ats.insertapps.com/" target="_blank"><img class="fit mb2" src="/assets/ads-1.jpg" alt="Top Ten Media Online di Aceh"></a>
 <a href="https://insertapps.com/spell-checker" target="_blank"><img class="fit mb2" src="/assets/ads-2.jpg" alt="Top Ten Media Online di Aceh"></a></aside>
     </div>
 </article>
@@ -301,19 +299,22 @@ if (!doNotTrack) {
 <script src="https://insertapps.com/js/jquery-3.3.1.slim.min.js"></script>
 <script>
     
-$(function() {
-    var header = $("#headerian");
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-    
-        if (scroll >= 444) {
-            header.removeClass('py2').addClass("box-shadow py1 transition");
-        } else {
-            header.removeClass("box-shadow py1 transition").addClass('py2 transition');
-        }
-    });
-});
+
+
+
+window.onscroll = function(){
+var top =	 window.pageYOffset || document.documentElement.scrollTop;
+if (top > 444) {
+	document.getElementById('headerian').classList.remove("py2");
+	document.getElementById('headerian').classList.add("box-shadow", "py1", "transition");
+} else {
+	document.getElementById('headerian').classList.remove("box-shadow", "py1", "transition");
+	document.getElementById('headerian').classList.add("py2", "transition");
+}
+};
+
 </script>
+
     <script>
         new Glider(document.querySelector('.glider'), {
             

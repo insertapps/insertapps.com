@@ -6,10 +6,23 @@
     <description>Recent content on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2020 10:39:37 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2020 14:39:37 +0700</lastBuildDate>
     
 	<atom:link href="https://insertapps.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tutorial membuat website: Menyiapkan template dasar Dokument HTML</title>
+      <link>https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/</link>
+      <pubDate>Sun, 02 Aug 2020 14:39:37 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/</guid>
+      <description>Ini adalah bagian pertama dari sesi tutorial membuat website dengan basscss. Tahap ini sangat sangat simple, hanya konfigurasi dasar, apa saja yang diperlukan oleh dokument HTML baru.
+Pertama sekali, create satu folder untuk menyimpan file-file proyek tutorial web desain ini. Kemudian open folder tersebut melalui aplikasi editor pilihan kamu.
+Untuk kasus tutorial ini, InsertApps menggunakan Brackets editor yang dikembang oleh Adobe.
+Membuat file baru
+Klik kanan pada bagian sidebar aplikasi Brackets, lalu pilih New File.</description>
+    </item>
     
     <item>
       <title>Tutorial membuat website dengan Basscss</title>

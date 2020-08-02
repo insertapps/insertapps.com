@@ -1,230 +1,131 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://insertapps.com/categories/basscss/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+    <loc>https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/</loc>
+    
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/basscss/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/categories/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/css/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/html/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/</loc>
-    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/tutorial-membuat-website-dengan-basscss/</loc>
+    
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/close-button-icon-css/</loc>
+    
     <lastmod>2020-07-25T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/tips/</loc>
-    <lastmod>2020-07-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/categories/tutorial/</loc>
-    <lastmod>2020-07-25T00:00:00+00:00</lastmod>
-  </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/css-dropcap/</loc>
+    
     <lastmod>2020-07-23T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
-  <url>
-    <loc>https://insertapps.com/categories/code/</loc>
-    <lastmod>2020-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/go/</loc>
-    <lastmod>2020-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/categories/gohugo/</loc>
-    <lastmod>2020-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/hugo-last-modified-date-setting/</loc>
+    
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/mikrotik/</loc>
-    <lastmod>2020-07-15T19:51:14+07:00</lastmod>
-  </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/mikrotik-system-error-critical/</loc>
+    
     <lastmod>2020-07-15T19:51:14+07:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
-  <url>
-    <loc>https://insertapps.com/categories/networking/</loc>
-    <lastmod>2020-07-15T19:51:14+07:00</lastmod>
-  </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/super-simpel-css-center-container/</loc>
+    
     <lastmod>2020-07-05T19:52:51+07:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/brackets-error-php7-runtime/</loc>
-    <lastmod>2020-06-05T22:58:33+07:00</lastmod>
+    
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/php/</loc>
-    <lastmod>2020-06-05T22:58:33+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/code/</loc>
-    <lastmod>2020-04-18T14:39:28+07:00</lastmod>
-  </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/html-header-keren-menu-scroll/</loc>
+    
     <lastmod>2020-04-18T14:39:28+07:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/</loc>
+    
     <lastmod>2020-07-23T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
-  <url>
-    <loc>https://insertapps.com/categories/css/</loc>
-    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/convert-pixel-to-rem/</loc>
+    
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/pixel/</loc>
-    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/rem/</loc>
-    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/cara-simpel-css-layout-vertical-center/</loc>
+    
     <lastmod>2020-02-27T22:19:15+07:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/cara-upgrade-hugo/</loc>
+    
     <lastmod>2020-02-21T10:31:07+07:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/terminal/</loc>
-    <lastmod>2020-02-21T10:31:07+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/error/</loc>
-    <lastmod>2020-02-18T11:13:43+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/categories/wordpress/</loc>
-    <lastmod>2020-02-18T11:13:43+07:00</lastmod>
-  </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/error-response-is-not-a-valid-json-response/</loc>
+    
     <lastmod>2020-02-18T11:13:43+07:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
-  <url>
-    <loc>https://insertapps.com/tags/hosting/</loc>
-    <lastmod>2020-02-18T11:12:44+07:00</lastmod>
-  </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/briefly-unavailable-for-scheduled-maintenance-check-back-in-a-minute/</loc>
+    
     <lastmod>2020-02-18T11:12:44+07:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
+
   <url>
     <loc>https://insertapps.com/blog/css-framework-basscss/</loc>
+    
     <lastmod>2020-07-22T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
   </url>
-  
-  <url>
-    <loc>https://insertapps.com/privacy/</loc>
-    <lastmod>2020-01-02T15:06:26+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/terms/</loc>
-    <lastmod>2020-01-02T15:06:16+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/about/</loc>
-    <lastmod>2020-01-01T15:06:06+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/disclaimer/</loc>
-    <lastmod>2020-01-01T15:06:06+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/blog/</loc>
-    <lastmod>2018-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/license/</loc>
-    <lastmod>2016-06-06T15:06:36+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://insertapps.com/faq/</loc>
-    <lastmod>2016-06-06T15:06:26+00:00</lastmod>
-  </url>
-  
+
 </urlset>

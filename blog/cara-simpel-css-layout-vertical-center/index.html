@@ -389,19 +389,22 @@ if (!doNotTrack) {
 <script src="https://insertapps.com/js/jquery-3.3.1.slim.min.js"></script>
 <script>
     
-$(function() {
-    var header = $("#headerian");
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-    
-        if (scroll >= 444) {
-            header.removeClass('py2').addClass("box-shadow py1 transition");
-        } else {
-            header.removeClass("box-shadow py1 transition").addClass('py2 transition');
-        }
-    });
-});
+
+
+
+window.onscroll = function(){
+var top =	 window.pageYOffset || document.documentElement.scrollTop;
+if (top > 444) {
+	document.getElementById('headerian').classList.remove("py2");
+	document.getElementById('headerian').classList.add("box-shadow", "py1", "transition");
+} else {
+	document.getElementById('headerian').classList.remove("box-shadow", "py1", "transition");
+	document.getElementById('headerian').classList.add("py2", "transition");
+}
+};
+
 </script>
+
     <script>
         new Glider(document.querySelector('.glider'), {
             

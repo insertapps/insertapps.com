@@ -314,6 +314,15 @@ if (!doNotTrack) {
             
 
             <div class="rounded border border-silver mx1 bg-white" style="width: 256px;">
+                <a href="https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/"><img class="fit block m0" src="/images/blog/Webdesain_cover-thumbnail.jpg"
+                        alt="Tutorial membuat website: Menyiapkan template dasar Dokument HTML"></a>
+                <div class="p2 left-align">
+                    <h4 class="h5 m0"><a class="text-decoration-none" href="https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/">Tutorial membuat website: Menyiapkan template dasar Dokument HTML</a></h4>
+                </div>
+            </div>
+            
+
+            <div class="rounded border border-silver mx1 bg-white" style="width: 256px;">
                 <a href="https://insertapps.com/blog/tutorial-membuat-website-dengan-basscss/"><img class="fit block m0" src="/images/blog/Webdesain_cover-thumbnail.jpg"
                         alt="Tutorial membuat website dengan Basscss"></a>
                 <div class="p2 left-align">
@@ -547,19 +556,22 @@ if (!doNotTrack) {
 <script src="https://insertapps.com/js/jquery-3.3.1.slim.min.js"></script>
 <script>
     
-$(function() {
-    var header = $("#headerian");
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-    
-        if (scroll >= 444) {
-            header.removeClass('py2').addClass("box-shadow py1 transition");
-        } else {
-            header.removeClass("box-shadow py1 transition").addClass('py2 transition');
-        }
-    });
-});
+
+
+
+window.onscroll = function(){
+var top =	 window.pageYOffset || document.documentElement.scrollTop;
+if (top > 444) {
+	document.getElementById('headerian').classList.remove("py2");
+	document.getElementById('headerian').classList.add("box-shadow", "py1", "transition");
+} else {
+	document.getElementById('headerian').classList.remove("box-shadow", "py1", "transition");
+	document.getElementById('headerian').classList.add("py2", "transition");
+}
+};
+
 </script>
+
     <script>
         new Glider(document.querySelector('.glider'), {
             

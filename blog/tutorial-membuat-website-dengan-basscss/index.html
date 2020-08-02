@@ -145,7 +145,7 @@ if (!doNotTrack) {
 </div><figure class="max-width-4 mx-auto m0">
 		<img class="block mb1" src="/images/blog/Webdesain_cover-image.jpg" alt="Tutorial membuat website dengan Basscss">
 		
-		<figcaption class="max-width-3 mx-auto h6 muted italic px2 mb2">Web design.</figcaption>
+		<figcaption class="max-width-3 mx-auto h6 muted italic px2 mb2">Tutorial web design part 1.</figcaption>
 		
 	</figure>
 	<div class="max-width-3 mx-auto px2">
@@ -205,12 +205,14 @@ if (!doNotTrack) {
 <p>Untuk pemula, akan lebih mudah paham kerana sintaknya itu-itu saja yang dirangkai-rangkai, dan bebas insert dimana saja (modularitas nya super bebas).</p>
 <p>Basscss tidak ada komponen siap pakai, seperti Bootstrap, user bebas merangkai atau mendesain komponen web sendiri sesuai selera.</p>
 <p>Payah dong kalau begitu?</p>
+<blockquote>
 <p>Nah disinilah letak pembelajarannya, untuk membuat satu komponen web, user jadi tahu, element dan style css apa saja yang terlibat dan cara kerjanya.</p>
+</blockquote>
 <p>Tapi tenang, tutorial membuat website dengan Bootstrap akan dibuat juga oleh InsertApps.</p>
-<p>Tutorial ngoding disini, fokus penulisan sintaksnya lebih banyak di file HTML saja, style CSS-nya sudah disediakan oleh Css Framework Basscss.</p>
+<p>Tutorial ngoding disini, fokus penulisan sintaksnya lebih banyak di file HTML saja, style CSS-nya sudah disediakan oleh Css <a href="https://insertapps.com/blog/css-framework-basscss/" target="_blank" rel="noopener">Framework Basscss</a>.</p>
 <p>Layaknya coding drag and drop komponen dan pernak-pernik apa saja yang ingin dipasang di halaman HTML.</p>
 <p>Fitur yang sudah didesain oleh Basscss kita &lsquo;drop&rsquo; lalu &lsquo;drag&rsquo; ke dalam halaman <code>HTML</code>.</p>
-<p>Tapi ingat ya, cara kerjanya tidak seperti &lsquo;drag and drop&rsquo; dalam aplikasi software desain grafis. Tidak juga desain web drag and drop seperti yang ditawarkan oleh <code>wix.com</code>.</p>
+<p>Tapi ingat ya, cara kerjanya tidak seperti &lsquo;drag and drop&rsquo; dalam aplikasi software desain grafis. Tidak juga desain web drag and drop seperti yang ditawarkan oleh <code>wix dot com</code>.</p>
 <p>No&hellip; no&hellip;</p>
 <p>Prosesnya tetap dengan menulis sintak HTML secara manual. Yang kita &lsquo;drop&rsquo; adalah kepingan &lsquo;puzzle&rsquo; dari class-class yang sudah disediakan gratis oleh framework Basscss, lalu kita insert secara manual dalam file <code>HTML</code>.</p>
 <p>Sesimple dan semudah itu?</p>
@@ -233,7 +235,7 @@ if (!doNotTrack) {
 <ol>
 <li>Komputer atau Laptop yang lumayan kencang.</li>
 <li>Menginstall salah satu browser modern (Chrome, Firefox, dan Edge)</li>
-<li>Menginstal salah satu software editor (Brackets. Visual Studio Code, Sublime etc)</li>
+<li>Menginstal salah satu software editor (<a href="https://insertapps.com/blog/brackets-error-php7-runtime/" target="_blank" rel="noopener">Brackets</a>. Visual Studio Code, Sublime etc)</li>
 <li>Untuk bahannya sendiri, Framework Basscss yang full package, ambil di basscss.com/ace/.</li>
 </ol>
 <h3 id="cara-membuat-website">Cara Membuat Website</h3>
@@ -457,19 +459,22 @@ if (!doNotTrack) {
 <script src="https://insertapps.com/js/jquery-3.3.1.slim.min.js"></script>
 <script>
     
-$(function() {
-    var header = $("#headerian");
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-    
-        if (scroll >= 444) {
-            header.removeClass('py2').addClass("box-shadow py1 transition");
-        } else {
-            header.removeClass("box-shadow py1 transition").addClass('py2 transition');
-        }
-    });
-});
+
+
+
+window.onscroll = function(){
+var top =	 window.pageYOffset || document.documentElement.scrollTop;
+if (top > 444) {
+	document.getElementById('headerian').classList.remove("py2");
+	document.getElementById('headerian').classList.add("box-shadow", "py1", "transition");
+} else {
+	document.getElementById('headerian').classList.remove("box-shadow", "py1", "transition");
+	document.getElementById('headerian').classList.add("py2", "transition");
+}
+};
+
 </script>
+
     <script>
         new Glider(document.querySelector('.glider'), {
             
