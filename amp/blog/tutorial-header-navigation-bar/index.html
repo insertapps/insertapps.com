@@ -10,11 +10,11 @@
 <script type="application/ld+json">{
                 "@context": "http://schema.org",
                 "@type": "NewsArticle",
-                "mainEntityOfPage": "https:\/\/insertapps.com\/amp\/blog\/tutorial-membuat-website-menyiapkan-template-dasar\/",
-                "headline": "Tutorial membuat website #1: Menyiapkan template dasar Dokument HTML",
-                "datePublished": "Sunday, August 2, 2020",
-                "dateModified": "Sunday, August 2, 2020",
-                "description": "Tahap pertama sekali membuat website adalah dengan menyiapkan template dasar dokument HTML baru.",
+                "mainEntityOfPage": "https:\/\/insertapps.com\/amp\/blog\/tutorial-header-navigation-bar\/",
+                "headline": "Tutorial membuat website #2: Desain header navigation bar",
+                "datePublished": "Monday, August 3, 2020",
+                "dateModified": "Monday, August 3, 2020",
+                "description": "Tutorial membuat website #2: Desain header navigation bar",
                 "author": {
                     "@type": "Person",
                     "name": "Fauzan My"
@@ -47,12 +47,12 @@
 				},{
 				  "@type": "ListItem",
 				  "position": 2,
-				  "name": "Tutorial membuat website #1: Menyiapkan template dasar Dokument HTML",
-				  "item": "https:\/\/insertapps.com\/amp\/blog\/tutorial-membuat-website-menyiapkan-template-dasar\/"
+				  "name": "Tutorial membuat website #2: Desain header navigation bar",
+				  "item": "https:\/\/insertapps.com\/amp\/blog\/tutorial-header-navigation-bar\/"
 				},{
 				  "@type": "ListItem",
 				  "position": 3,
-				  "name": "Tutorial membuat website #1: Menyiapkan template dasar Dokument HTML"
+				  "name": "Tutorial membuat website #2: Desain header navigation bar"
 				}]
 			  }</script>
 	<style amp-boilerplate="">
@@ -1740,11 +1740,11 @@
     
 				
 
-				<h1 class="h2 mb1">Tutorial membuat website #1: Menyiapkan template dasar Dokument HTML</h1>
+				<h1 class="h2 mb1">Tutorial membuat website #2: Desain header navigation bar</h1>
 
 				<div class="clearfix">
 					<time class="h6 muted" datetime="2020-08-08">
-						Sunday, August 2, 2020
+						Monday, August 3, 2020
 					</time>
 				</div>
 			</header>
@@ -1755,46 +1755,18 @@
 			</div>
 
 			<div id="content" class="mb2">
-				<p>Ini adalah bagian pertama dari sesi <a href="https://insertapps.com/blog/tutorial-membuat-website-dengan-basscss/" target="_blank" rel="noopener"><strong>tutorial membuat website dengan basscss</strong></a>. Tahap ini sangat sangat simple, hanya konfigurasi dasar, apa saja yang diperlukan oleh dokument HTML baru.</p>
-<p>Pertama sekali, create satu folder untuk menyimpan file-file proyek tutorial web desain ini. Kemudian open folder tersebut melalui aplikasi editor pilihan kamu.</p>
-<p>Untuk kasus tutorial ini, InsertApps menggunakan <a href="http://brackets.io/" target="_blank" rel="noopener">Brackets</a> editor yang dikembang oleh Adobe.</p>
-<p><strong>Membuat file baru</strong></p>
-<p>Klik kanan pada bagian sidebar aplikasi Brackets, lalu pilih <code>New File</code>.</p>
-<p>
-  <img src="/images/blog/2020/08_membuat-file-baru-app-brackets.jpg" alt="Screenshoot new file Brackets editor">
-</p>
-<p>Namakan file baru tersebut dengan <code>index.html</code>.</p>
-<p>Pada sisi bilah kanan aplikasi Brackets, akan terbuka file <code>index.html</code> lembaran dokumen HTML baru yang akan kita ketik baris demi baris sintak <code>HMTL</code> hingga menjadi sebuah halaman web siap pakai.</p>
-<p>Tambahkan struktur dasar sintak <strong><code>HTML</code></strong> ( <a href="https://id.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">Hypertext Markup Language</a> ) berikut ini:</p>
-<p>
-  <img src="/images/blog/2020/08_sintak-dasar-html-app-brackets.jpg" alt="Screenshoot new file Brackets editor">
-</p>
-<p>🔥 <em><strong>QUICK TIPS:</strong> Aplikasi editor terbaru biasanya sudah terintegrasi dengan plugin <code>Emmet</code>, toolkit untuk mempercepat pengetikan sintak program.  Cukup ketik tanda seru <strong>!</strong> lalu tekan tombol <strong>Tap</strong>, secara otomatis aplikasi akan mengenerate sintak dasar dokumen HTML.</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-	&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-	&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-    &lt;<span style="color:#f92672">title</span>&gt;Document&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-    
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
-</code></pre></div><p>Penjelasan Kode:</p>
-<ul>
-<li>Setiap halaman <code>HTML</code> dimulai dengan tag <code>&lt;!DOCTYPE html&gt;</code> untuk mendeklarasikan tipe dokumen yang akan dirender oleh peramban; Firefox, Chrome atau Microsoft Edge. Tag <code>&lt;!DOCTYPE html&gt;</code> menandakan bahasa markup yang dipakai adalah <code>HTML versi 5</code>. Sebelumnya, pada <code>HTML v4</code> tag deklarasi tipe dokumen seperti ini <code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</code>. 😭</li>
-<li>Baris berikutnya setelah tag <code>&lt;!DOCTYPE html&gt;</code> deklarasi tipe dokumen, semua element yang dipanggil ada tag pembuka <code>&lt; &gt;</code> dan tag penutup <code>&lt;/ &gt;</code>.</li>
-<li>Tag <code>&lt;html&gt;</code> hingga tag penutup <code>&lt;/html&gt;</code> di posisi paling akhir adalah &lsquo;akar rumput&rsquo; dari dokumen HTML itu sendiri.</li>
-<li>Dalam tag <code>&lt;html lang=&quot;en&quot;&gt;</code> juga ada atribut <code>lang=&quot;en&quot;</code>, ini  untuk memberitahukan Browser dan mesin pencarian bahwa isi konten website berbahasa apa? Kalau kode ISO <code>en</code> berarti bahasa Inggris. Kalau isi web kamu Bahasa Indonesia, ganti kode negara menjadi <code>lang=&quot;id&quot;</code>.</li>
-<li>Pada baris berikutnya memuat tag <code>&lt;head&gt; ... &lt;/head&gt;</code>. Semua informasi yang ditampung dalam wadah <code>head</code> berisi meta data konten website, seperti; judul dokumen, meta data SEO, meta data Open Graph untuk potongan informasi share ke Media sosial. Apapun isi dalam tag <code>&lt;head&gt; ... &lt;/head&gt;</code> bersifat informasi untuk keperluan mesin, bukan untuk human.</li>
-<li>Baris kode <code>&lt;body&gt; ... &lt;/body&gt;</code> inilah yang akan menampung semua konten dokumen web yang bersifat human readable. Apapun isi yang diinput oleh user ke dalam wadah <code>&lt;body&gt; ... &lt;/body&gt;</code>, Browser akan merender dalan bentuk visual, sehingga kita bisa membaca dan menikmati isi konten website, seperti artikel, gambar, vidoe, suara, table, link-link yang saling terkait dan lain-lainnya.</li>
-</ul>
-<p><strong>Sekarang saatnya untuk memulai koding yang sebenarnya.</strong></p>
-<p>Pertama sekali, ganti judul halaman yang di dalam tag <code>&lt;title&gt;Tutorial Web Desain oleh ... &lt;/title&gt;</code>.</p>
-<p>Berikutnya memanggil style CSS untuk memberitahukan kepada Browser, bahwa halaman web yang kita koding berdasarkan styling dari framework Basscss. Sehingga peramban web tidak salah render tampilan halaman web, maunya Basscss, eh yang dirender malah style dari Bootstrap. 😱</p>
-<p>Caranya, insert code berikut: <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/ace-css/css/ace.min.css&quot;&gt;</code> di dalam wadah <code>&lt;head&gt; ... &lt;/head&gt;</code>.</p>
-<p>Hasilnya kode sementara:</p>
+				<p>Tutorial desain <strong>header navigation bar</strong> ini adalah part ke dua dari seri tutorial <a href="https://insertapps.com/blog/tutorial-membuat-website-dengan-basscss/" target="_blank" rel="noopener">membuat website bagian pertama</a>. Sesi ini mulai coding secara &lsquo;drag and drop&rsquo; kepingan ‘puzzle’ class-class Basscss, lalu insert ke dalam file HTML.</p>
+<p>Sebelum &lsquo;lets go to coding&rsquo;, seperti biasa izinkan InsertApps menjelaskan beberapa rule dan konsep koding nya seperti apa? Yang sudah paham dasar web design, silahkan scroll down ke <strong>cara membuat header navigation bar yang responsive.</strong></p>
+<p>Untuk lebih mudah memahami konsep <em>web design programming.</em> tutorial ini, InsertApps mencoba pendekatan konsep desain grafis. Desainer biasanya menggunakan beberapa alat bantu untuk memvisualisasi bentuk desain.</p>
+<p>Layaknya tukang bangunan, konstruksi bangunan tidak terlepas dari namanya alat bantu perancah (scaffolding). Tampa menggunakan perancah, sulit sekali membangun dan membentuk sebuah bangunan.</p>
+<p>Graphic Designer pun tidak terlepas dari alat bantu saat layout majalah, desain logo dan lainnya. Alat bantu yang sering sekali dipakai desainer grafis adalah grid (garis bantu), colorful (warna-warni), rectangle dan circle tool untuk membuat objek kotak maupun bulat.</p>
+<p>Alat bantu coding dalam tutorial ini juga sama, yaitu memanfaatkan utilitas dari class-class framework Basscss itu sendiri, sebagai garis bantu juga sekaligus komponen objek desainnya.</p>
+<p>Untuk perancah garis bantu tutorial ini akan kita pakai class <code>border</code>. Utilitas dan variasi model border lainnya lihat di <a href="https://basscss.com/#basscss-border" target="_blank" rel="noopener">basscss-border</a>.</p>
+<p>Cat warna-warni, nama class sesuai dengan identitas warna asli, seperti; <code>black</code>, <code>gray</code>, <code>siver</code>, <code>purple</code> dll untuk warna text. Class <code>bg-blue</code> untuk mewarnai isi (fill) kotak container dan class <code>border-teal</code> untuk mewarnai garis kotak container.</p>
+<p>Utilitas dan variasi warna yang sudah include dalam <code>Basscss Ace</code> ini jumlahnya terbatas, modul warna hasil import dari <em>color palette</em> pihak ketiga clrs.cc. Lihat juga dokumentasi masing-masing perilaku dari class Basscss beserta class Add on di <a href="https://github.com/basscss/addons">https://github.com/basscss/addons</a>.</p>
+<p>Sedangkan &lsquo;grid&rsquo; dalam framework css adalah real grid untuk layout kolom dalam berbagai variasi (responsive) web desain. Oya, tidak ada nama class <code>grid</code>, <a href="https://basscss.com/#basscss-grid" target="_blank" rel="noopener">grid</a> hanya istilah saja.</p>
+<h3 id="coding-cara-membuat-header-navigator-bar-yang-responsive">Coding cara membuat header navigator bar yang responsive</h3>
+<p>Buka kembali file template dasar <code>index.html</code> lalu fokus codingnya di bagian tag <code>&lt;header&gt; &lt;p&gt;InsertApps&lt;/p&gt; &lt;/header&gt;</code> dan abaikan dulu tag yang lain.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
 &lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
 &lt;<span style="color:#f92672">head</span>&gt;
@@ -1804,55 +1776,17 @@
 	&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/ace-css/css/ace.min.css&#34;</span>&gt;
 &lt;/<span style="color:#f92672">head</span>&gt;
 &lt;<span style="color:#f92672">body</span>&gt;
-    
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
-</code></pre></div><p><strong>Penjelasan kode yang ditampung dalam wadah <code>&lt;head&gt;</code>:</strong></p>
-<ul>
-<li>Baris kode <code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code> berisi meta data yang ditujukan untuk mesin browser, robot mesin pencarian untuk menterjemah karakter-karakter dalam format UTF-8, penjelasan lebih rinci, Googling saja apa itu format UTF-8?</li>
-<li>Baris kode <code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code> untuk memberi instruksi kepada mesin peramban, hasil rendering laman web bersifat responsif. Parameter <code>width=device-width</code> instruksi untuk set ukuran layar berdasarkan ukuran perangkat user yang akses. Parameter skala <code>inital-scale=1.0</code> berarti situs web memungkinkan untuk di zoom atau sebaliknya pada layar smartphone.</li>
-<li>Tag <code>&lt;title&gt; ... &lt;/title&gt;</code> memuat informasi judul website, juga info yang ditampilkan pada tap head Browser.</li>
-<li>Baris kode <code>&lt;link rel=&quot;&quot; href=&quot;&quot;&gt;</code> berfungsi untuk memanggil resource &lsquo;sumber daya&rsquo; lain secara external. Tag <code>&lt;link&gt;</code> ini memiliki dua atribut: <code>rel=&quot;&quot;</code> dan <code>href=&quot;&quot;</code>. Atribut <code>rel=&quot;stylesheet&quot;</code> dengan nilai inputan <code>stylesheet</code> berarti yang dipanggil adalah berkas <code>CSS</code> yang berada di tempat lain diluar dokumen HTML itu sendiri, maka alamat file yang dituju diinput dalam atribut <code>href=&quot;https://unpkg.com/ace-css/css/ace.min.css&quot;</code>.</li>
-</ul>
-<p><strong>Mari lanjutkan ketik sintaknya.</strong></p>
-<p>Sekarang, fokus coding dalam wadah <code>&lt;body&gt;... &lt;/body&gt;</code>. Bagian yang akan menampung isi konten web site.</p>
-<p>Tambahkan beberapa struktur dasar tag HTML yang semantik seperti <code>&lt;header&gt;</code>,<code>&lt;main&gt;</code>,<code>&lt;footer&gt;</code> yang akan mengorganisir isi dari pada konten website berdasarkan fungsinya masing-masing.</p>
-<p>Tag <code>HTML</code> yang semantik artinya tag atau wadah atau kontainer yang memiliki makna dan filosofi yang melekat pada tag atau wadah itu sendiri.</p>
-<p>Setiap nilai yang ditampung dalam tag yang semantik representatif dari bobot nilai tersebut. Sedangkan tag <code>&lt;div&gt;</code> dan tag <code>&lt;span&gt;</code> adalah tag <code>HTML</code> non semantik, yang tidak memiliki makna dan filosofi yang melekat pada kedua tag tersebut.</p>
-<p>Berikut tambahan kodenya.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">body</span>&gt;
+
+	<span style="color:#75715e">&lt;!-- ## START FOCUS ON CODING HERE --&gt;</span>
+
     &lt;<span style="color:#f92672">header</span>&gt;
+
         &lt;<span style="color:#f92672">p</span>&gt;InsertApps&lt;/<span style="color:#f92672">p</span>&gt;
+
     &lt;/<span style="color:#f92672">header</span>&gt;
-    
-    &lt;<span style="color:#f92672">main</span>&gt;
-       &lt;<span style="color:#f92672">h1</span>&gt;Hello World...&lt;/<span style="color:#f92672">h1</span>&gt;
-    &lt;/<span style="color:#f92672">main</span>&gt;
-    
-    &lt;<span style="color:#f92672">footer</span>&gt;
-        &lt;<span style="color:#f92672">p</span>&gt;Copyright&lt;/<span style="color:#f92672">p</span>&gt;
-    &lt;/<span style="color:#f92672">footer</span>&gt;
-&lt;/<span style="color:#f92672">body</span>&gt;
-</code></pre></div><p><strong>Penjelasan kode yang ditampung dalam wadah <code>&lt;body&gt;</code>:</strong></p>
-<ul>
-<li>Tag <code>&lt;header&gt; ... &lt;/header&gt;</code> wadah untuk menampung informasi brand website dan navigasi menu-menu. Tag <code>&lt;header&gt;</code> tidak boleh disematkan dalam tag <code>&lt;footer&gt;</code>, <code>&lt;address&gt;</code> atau dalam tag <code>&lt;header&gt;</code> itu sendiri.</li>
-<li>Tag <code>&lt;main&gt; ... &lt;/main&gt;</code> wadah paling luar untuk membungkus isi konten utama sebuah web site, seperti <code>&lt;article&gt;</code>, bilah sidebar <code>&lt;aside&gt;</code> dan <code>&lt;section&gt;</code> informasi lainnya.</li>
-<li>Terakhir tag <code>&lt;footer&gt; ... &lt;/footer&gt;</code> wadah untuk menampung informasi tambahan, seperti <code>&lt;address&gt;</code>, info copyright, dan informasi pendukung lainnya.</li>
-</ul>
-<p>Rekap code selengkapnya:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-	&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-	&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-	&lt;<span style="color:#f92672">title</span>&gt;Tutorial Web Desain oleh InsertApps&lt;/<span style="color:#f92672">title</span>&gt;
-	&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/ace-css/css/ace.min.css&#34;</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-    &lt;<span style="color:#f92672">header</span>&gt;
-        &lt;<span style="color:#f92672">p</span>&gt;InsertApps&lt;/<span style="color:#f92672">p</span>&gt;
-    &lt;/<span style="color:#f92672">header</span>&gt;
-    
+
+    <span style="color:#75715e">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+
     &lt;<span style="color:#f92672">main</span>&gt;
         &lt;<span style="color:#f92672">h1</span>&gt;Hello World...&lt;/<span style="color:#f92672">h1</span>&gt;
     &lt;/<span style="color:#f92672">main</span>&gt;
@@ -1862,27 +1796,193 @@
     &lt;/<span style="color:#f92672">footer</span>&gt;
 &lt;/<span style="color:#f92672">body</span>&gt;
 &lt;/<span style="color:#f92672">html</span>&gt;
-</code></pre></div><p>Hasil akhir dari sesi coding hari ini adalah:</p>
-<p>
-  <img src="/images/blog/2020/08_hasil-akhir-sesi-coding-pertama.jpg" alt="Hasil akhir sesi tutorial ini">
-</p>
-<p>🔥 <em><strong>QUICK TIPS:</strong> Bagi yang menggunakan app <strong>Brackets</strong>, untuk merender hasil akhir coding, cukup jalankan fitur <code>Live Preview</code>, tekan <code>Ctrl + Alt + P</code> sistem Windows dan <code>⌥ ⌘ P</code> di macOS. Dengan adanya fitur buil in <code>Live Preview</code> app Brackets, aktivitas ngoding jadi lebih asyik. Setiap ada perubahan kode, peramban web secara auto render menampilkan perubahan langsung. Bye-bye&hellip; refresh manual.</em> 😆</p>
-<p>
-  <figure class="mb3 m0 center mxn2">
-    <img class="fit m0" src="/images/blog/2020/08_Brackets-live-preview.jpg" alt="Hasil akhir sesi tutorial ini">
-    <figcaption class="muted italic h5">Cara mengaktifkan Live Preview di app Brackets.</figcaption>
-  </figure>
-</p>
-<p><em>Untuk mengaktifkan <code>Live Preview</code> app <strong>Visual Studio Code</strong>, tambahkan extension <code>Live Server</code>, sedangkan untuk app <strong>Sublime Text 3</strong> tambah plugin <code>LiveReload</code>.</em> 😓</p>
-<p>⬅ <a href="https://insertapps.com/blog/tutorial-membuat-website-dengan-basscss/" target="_blank" rel="noopener">Tutorial sebelumnya</a></p>
-<p>➡ <a href="https://insertapps.com/blog/tutorial-header-navigation-bar/" target="_blank" rel="noopener">Tutorial Selanjutnya </a></p>
+</code></pre></div><p>🔥 <em><strong>QUICK TIPS:</strong> Penjelasan lengkap kode di atas baca tutorial Part #1: <a href="https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/" target="_blank" rel="noopener">Menyiapkan template dasar Dokument HTML</a>.</em></p>
+<p>Langkah pertama, kita akan memvisualisasi bentuk desain dulu dengan menampilkan garis bantu, yaitu add class <code>border</code> ke dalam tiga wadah semantic html tag; <code>&lt;header class=&quot;border&quot;&gt;</code>, <code>&lt;main class=&quot;border&quot;&gt;</code> dan<code> &lt;footer class=&quot;border&quot;&gt;</code>.</p>
+<p>Hasilnya render browser akan menampilkan tiga balok kontainer yang isinya sesuai dengan yang kalian input.</p>
+<blockquote>
+<p><em>Ngoding dengan app editor Brackets, langsung saja aktifkan fitur <strong>Live Preview</strong> dan layar desktop kamu, di-split dua layar, agar aktifitas ngoding kamu lebih menyenangkan.</em></p>
+</blockquote>
+<p>Selanjutnya kembali fokus ke bagian <code>#FOCUS ON CODING</code> tag <code>&lt;header&gt;</code> hingga selesai coding tutorial part kedua ini.</p>
+<p>Tambahkan lagi class <code>bg-blue</code> ke dalam tag header pembuka <code>&lt;header class=&quot;border bg-blue&quot;&gt;</code> dan jangan pernah mengganggu tag penutup <code>&lt;/header&gt;</code>. Tapi jaga-jaga saja, agar tidak hilang, otomatis desain kamu berubah berantakan.</p>
+<p>Masih dalam tag header, tambah class <code>px2</code> untuk menambah white space di dalam wadah container <code>&lt;header&gt; &lt;header&gt;</code>. Class <code>px2</code> adalah class name Basscss dari struktur style CSS berikut: <code>.px2 { padding-left: 1rem; padding-right: 1rem; }</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
+
+&lt;<span style="color:#f92672">header</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border bg-blue px2&#34;</span>&gt;
+
+	&lt;<span style="color:#f92672">p</span>&gt;InsertApps&lt;/<span style="color:#f92672">p</span>&gt;
+	
+&lt;/<span style="color:#f92672">header</span>&gt;
+
+<span style="color:#75715e">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+</code></pre></div><p><code>Padding</code> adalah properti CSS untuk menciptakan white space dari dalam element <code>HTML</code>, memberi spasi di antara konten dan border wadah pembungkus itu sendiri. Lawan dari property padding adalah property <code>margin</code> untuk menciptakan white space ke luar elemen <code>HTML</code>, sama seperti perilaku setting margin dalam dokumen MS Word and friend.</p>
+<p>Kemudian tambahkan satu elemen kosong tag <code>div</code>, lalu isi dengan karakter burger → ☰ ← <em>Copy paste saja kode itu</em>.</p>
+<p>Tambakan juga tag <code>&lt;nav&gt;</code> beserta isi menu-menu web dev—di sini terserah kamu ketik apapun boleh—misalnya <code>&lt;nav&gt; About Blog Contact &lt;/nav&gt;</code>. Tag nav adalah elemen HTML yang semantik untuk membungkus menu-menu navigasi website; | <code>About</code> | <code>Blog</code> | <code>Contact</code> |.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
+&lt;<span style="color:#f92672">header</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border bg-blue px2&#34;</span>&gt;
+	
+	&lt;<span style="color:#f92672">div</span>&gt;
+		☰
+	&lt;/<span style="color:#f92672">div</span>&gt;
+	
+	&lt;<span style="color:#f92672">p</span>&gt;InsertApps&lt;/<span style="color:#f92672">p</span>&gt;
+
+	&lt;<span style="color:#f92672">nav</span>&gt;
+		About Blog Contact
+	&lt;/<span style="color:#f92672">nav</span>&gt;
+	
+&lt;/<span style="color:#f92672">header</span>&gt;
+<span style="color:#75715e">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+</code></pre></div><p>Sementara hasil render desain <code>&lt;header&gt;</code> kamu di peramban sedikit berantakan. 😱 Jangan panik, enjoy saja, namanya juga web desain.</p>
+<p>Kemudian add class <code>flex</code> dan <code>items-center</code> ke dalam tag <code>&lt;header class=&quot;border bg-blue px2 flex items-center&quot;&gt;</code>. Tambah juga utility <code>mr1</code> ke dalam tag <code>div</code> pembungkus tombol burger <code>&lt;div class=&quot;mr1&quot;&gt;</code>.</p>
+<p>Sedangkan dalam tag <code>&lt;nav&gt;</code> add class <code>ml-auto</code> menjadi seperti ini: <code>&lt;nav class=&quot;ml-auto&quot;&gt;</code>.</p>
+<p>Struktur code sementara menjadi seperti ini:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
+&lt;<span style="color:#f92672">header</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border bg-blue px2 flex items-center&#34;</span>&gt;
+	
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mr1&#34;</span>&gt;
+		☰
+	&lt;/<span style="color:#f92672">div</span>&gt;
+	
+	&lt;<span style="color:#f92672">p</span>&gt;InsertApps&lt;/<span style="color:#f92672">p</span>&gt;
+	
+	&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ml-auto&#34;</span>&gt;
+		About Blog Contact 
+	&lt;/<span style="color:#f92672">nav</span>&gt;
+	
+&lt;/<span style="color:#f92672">header</span>&gt;
+<span style="color:#75715e">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+</code></pre></div><p>Hasil render peramban web sudah membentuk sebuah navbar yang lengkap dengan tombol burger, logo web, dan menu category di posisi kanan. 😄</p>
+<p>Berikut penjelasan code yang sudah berhasil kamu insert ke dalam file web desain kamu.</p>
+<ul>
+<li>Class name <code>border bg-blue px2</code> adalah utility style Basscss, perilaku dari class tersebut sudah dijelaskan di bagian atas.</li>
+<li>Code <code>flex</code> class name Basscss. Flex itu sendiri salah satu atribut baru di CSS3 yang berfungsi untuk pengaturan display layout yang lebih fleksibel. Nama kelas  <code>flex</code> dalam utility Basscss, struktur penulisan style CSS-nya seperti ini: <code>.flex { display: flex; }</code>.</li>
+<li>Sedangkan untuk <code>items-center</code> class name Basscss, untuk memaksa isi (item-item) dalam  kontainer pembungkus <a href="https://insertapps.com/blog/cara-simpel-css-layout-vertical-center/" target="_blank" rel="noopener">header berjejer secara vertikal</a>. Struktur penulisan style CSS-nya seperti ini: <code>.items-center { align-items: center; }</code>. Properti CSS <code>align-items</code> dengan value input <code>center;</code> tidak bisa berdiri sendiri, ia sangat bergantung ke property <code>flex</code>.</li>
+<li>Pada baris kode yang menampung tombol burger, ada tambahan kode <code>mr1</code> adalah utility class name dari Basscss. Tugas <code>mr1</code> memberi jarak <code>margin-right: 1rem;</code> white space sebelah tombol sejauh <code>1rem</code>. Bingung dengan pengukuran <code>rem</code>? Lihat posting <a href="https://insertapps.com/blog/convert-pixel-to-rem/" target="_blank" rel="noopener">Konversi ukuran Pixel ke ukuran REM dalam CSS.</a></li>
+<li>Baris code <code>&lt;p&gt;InsertApps&lt;/p&gt;</code>, biarin dulu, karena belum di apa-apain. Lanjut ke;</li>
+<li>Baris <code>&lt;nav class=&quot;ml-auto&quot;&gt;</code> ada penambahan kode <code>ml-auto</code>, masih kode class name Basscss. Berfungsi untuk meratakan suatu objek berada pada pojok kanan layar. Struktur asli penulisan style CSS-nya seperti ini: <code>.ml-auto { margin-left: auto; }</code>.</li>
+</ul>
+<p>Lanjut coding lagi. Penulisan sintak berikutnya perbaikan dan penambahan warna, agar hasilnya lebih cantik.</p>
+<p>Pada baris kode <code>&lt;header class=&quot;border bg-blue px2 flex items-center&quot;&gt;</code> tambahkan class warna <code>white</code>, kemudian hapus class <code>border</code>. Boleh add class bantu <code>mb4</code> untuk menambah jarak <em>white space</em> antara batas tag <code>&lt;header&gt;</code> dengan batas tag <code>&lt;main&gt;</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
+&lt;<span style="color:#f92672">header</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bg-blue px2 flex items-center white mb4&#34;</span>&gt;
+	
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mr1&#34;</span>&gt;
+		☰
+	&lt;/<span style="color:#f92672">div</span>&gt;
+	
+	&lt;<span style="color:#f92672">p</span>&gt;InsertApps&lt;/<span style="color:#f92672">p</span>&gt;
+	
+	&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ml-auto&#34;</span>&gt;
+		About Blog Contact 
+	&lt;/<span style="color:#f92672">nav</span>&gt;
+	
+&lt;/<span style="color:#f92672">header</span>&gt;
+<span style="color:#75715e">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+</code></pre></div><p>Dalam wadah pembungkus tombol burger, tambah class name <code>btn</code>. Add juga class <code>px0</code> untuk reset space padding, lalu sertakan <code>mr2</code> untuk jarak margin kanan sejauh <code>1rem</code> (16pixel) dengan batas logo.</p>
+<p>Baris code <code>&lt;p&gt;InsertApps&lt;/p&gt;</code> yang dari tadi belum ada sentuhan manis, rombak sintak code-nya menjadi link hidup <code>&lt;a href=&quot;#&quot;&gt;Brand&lt;/a&gt;</code>.</p>
+<p>Perbaiki juga struktur kode <code>&lt;nav&gt; ... &lt;/nav&gt;</code> yang membungkus menu-menu website kalian dengan cara yang benar, seperti berikut ini;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ml-auto&#34;</span>&gt;
+	&lt;<span style="color:#f92672">ul</span>&gt;
+		&lt;<span style="color:#f92672">li</span>&gt;About&lt;/<span style="color:#f92672">li</span>&gt;
+		&lt;<span style="color:#f92672">li</span>&gt;BLog&lt;/<span style="color:#f92672">li</span>&gt;
+		&lt;<span style="color:#f92672">li</span>&gt;Contact&lt;/<span style="color:#f92672">li</span>&gt;
+	&lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><p>Kalau hasilnya berantakan lagi, mari lanjutkan dengan menghias lagi header website nya.</p>
+<p>Drop lagi class name Basscss berikut: <code>btn</code>, <code>caps</code>, <code>h3</code> dan jangan lupa add class <code>px0</code> reset padding, insert ke dalam baris kode <code>&lt;a href=&quot;#&quot;&gt;Logo&lt;/a&gt;</code> sehingga menjadi:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn caps h3 px0&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Logo&lt;/<span style="color:#f92672">a</span>&gt; <span style="color:#75715e">&lt;!-- Ganti logo dengan nama yang kamu suka --&gt;</span>
+</code></pre></div><p>Insert juga class name <code>list-reset</code> ke dalam tag <code>&lt;ul&gt;</code> menjadi:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;list-reset&#34;</span>&gt;
+</code></pre></div><p>Baris code tersebut untuk menghilangkan bullet dalam tag <code>&lt;li&gt;</code>.</p>
+<p>Dalam list <code>&lt;li&gt; ... &lt;/li&gt;</code> insert class name Basscss <code>inline-block</code> menjadi:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block btn&#34;</span>&gt;About&lt;/<span style="color:#f92672">li</span>&gt;
+</code></pre></div><p>Code itu berfungsi merubah listing secara default: vertical menjadi listing berjejer secara horizontal.</p>
+<p>Hasil akhir perbaikan kode menjadi:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
+&lt;<span style="color:#f92672">header</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bg-blue px2 flex items-center white mb4&#34;</span>&gt;
+	
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn px0 mr2&#34;</span>&gt;
+		☰
+	&lt;/<span style="color:#f92672">div</span>&gt;
+	
+	&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn caps h3 px0&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Logo&lt;/<span style="color:#f92672">a</span>&gt;
+	
+	&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ml-auto&#34;</span>&gt;
+		&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;list-reset&#34;</span>&gt;
+			&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block btn&#34;</span>&gt;About&lt;/<span style="color:#f92672">li</span>&gt;
+			&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block btn&#34;</span>&gt;BLog&lt;/<span style="color:#f92672">li</span>&gt;
+			&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block btn&#34;</span>&gt;Contact&lt;/<span style="color:#f92672">li</span>&gt;
+		&lt;/<span style="color:#f92672">ul</span>&gt;
+	&lt;/<span style="color:#f92672">nav</span>&gt;
+	
+&lt;/<span style="color:#f92672">header</span>&gt;
+<span style="color:#75715e">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+</code></pre></div><p>Hasil akhir rendering di peramban setelah perbaikan kode di atas, lihat <a href="https://insertapps.com/demo/tutorial-basscss/2-desain-header#" target="_blank" rel="noopener">Demo.</a></p>
+<p>Penjelasan code hasil akhir sementara.</p>
+<ul>
+<li>Setiap baris yang ada penambahan code <code>btn</code>, berarti element yang dibungkus akan berubah sifatnya menjadi sebuah tombol. Pointer mouse secara otomatis berubah menjadi fungsi click.</li>
+<li>Bari code yang ditambah class name <code>caps</code> adalah struktur style CSS dari <code>.caps { text-transform: uppercase; letter-spacing: .2em;</code> untuk merubah text, menjadi huruf besar semua (uppercase), dan jarak antar karakter sedikit renggang (<code>letter-spacing: .2em</code>)</li>
+<li>Sedangkan <code>h3</code> bukanlah tag heading <code>&lt;h3&gt;</code>, tapi sebuah class name Basscss dari struktur kode style css <code>.h3 { font-size: 1.25rem; }</code> untuk memperbesar ukuran huruf (font size) logo sebesar <code>20px</code> (1.25rem). Kreator Basscss secara sengaja menulis class name yang modular dan readable seperti itu, selengkapnya baca dokumentasinya di <a href="https://basscss.com/#basscss-type-scale">https://basscss.com/#basscss-type-scale</a>.</li>
+</ul>
+<p><strong>Rekap Kode Keseluruhan</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+&lt;<span style="color:#f92672">head</span>&gt;
+	&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+	&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+	&lt;<span style="color:#f92672">title</span>&gt;Tutorial Web Desain oleh InsertApps&lt;/<span style="color:#f92672">title</span>&gt;
+	&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/ace-css/css/ace.min.css&#34;</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">body</span>&gt;
+   
+    <span style="color:#75715e">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
+    &lt;<span style="color:#f92672">header</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bg-blue px2 flex items-center white mb4&#34;</span>&gt;
+       
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn px0 mr2&#34;</span>&gt;
+            ☰
+        &lt;/<span style="color:#f92672">div</span>&gt;
+        
+        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn caps h3 px0&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Logo&lt;/<span style="color:#f92672">a</span>&gt;
+        
+        &lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ml-auto&#34;</span>&gt;
+            &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;list-reset&#34;</span>&gt;
+                &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block btn&#34;</span>&gt;About&lt;/<span style="color:#f92672">li</span>&gt;
+                &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block btn&#34;</span>&gt;BLog&lt;/<span style="color:#f92672">li</span>&gt;
+                &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block btn&#34;</span>&gt;Contact&lt;/<span style="color:#f92672">li</span>&gt;
+            &lt;/<span style="color:#f92672">ul</span>&gt;
+        &lt;/<span style="color:#f92672">nav</span>&gt;
+        
+    &lt;/<span style="color:#f92672">header</span>&gt;
+    <span style="color:#75715e">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+    
+    &lt;<span style="color:#f92672">main</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border&#34;</span>&gt;
+        &lt;<span style="color:#f92672">h1</span>&gt;Hello World...&lt;/<span style="color:#f92672">h1</span>&gt;
+    &lt;/<span style="color:#f92672">main</span>&gt;
+    
+    &lt;<span style="color:#f92672">footer</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border&#34;</span>&gt;
+        &lt;<span style="color:#f92672">p</span>&gt;Copyright&lt;/<span style="color:#f92672">p</span>&gt;
+    &lt;/<span style="color:#f92672">footer</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><p><strong>CONCLUSION</strong></p>
+<ul>
+<li>Hingga kode terakhir sudah diketik dalam tutorial ini, belum ada satupun kode CSS tambahan lainnya. Semua class yang barusan kalian insert satu-persatu hingga menjadi banyak, murni class utility bawaan dari framework Basscss.</li>
+<li>Untuk lebih lancar familiar lagi dengan class Basscss, sering-sering baca dokumentasi di web resmi Basscss.</li>
+</ul>
+<p><strong>CODE CHALLENGE</strong></p>
+<ul>
+<li>Tombol burger pada tutorial di atas, masih belum perfect. Tugas kalian untuk membuat tombol burger yang lebih keren lagi. Caranya sudah ada tutorial <a href="https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/" target="_blank" rel="noopener"><strong>cara simple membuat icon burger</strong></a></li>
+<li>Pada menu <strong>LOGO</strong>, setelah click mouse, muncul frame kotak tebal. Tugas kalian untuk menghilangkan border box bekas click mouse itu.</li>
+</ul>
+<p>⬅ <a href="https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/" target="_blank" rel="noopener">Tutorial sebelumnya</a></p>
+<p>➡ <a href="https://insertapps.com/blog/#" target="_blank" rel="noopener">Tutorial Selanjutnya </a></p>
 
 			</div>
 			
 			<h3 class="h6 caps muted mb2">Sharing</h3>
-  			<amp-social-share type="facebook" width="50" height="36" data-param-text="Tutorial membuat website #1: Menyiapkan template dasar Dokument HTML" data-param-href="https://insertapps.com/amp/blog/tutorial-membuat-website-menyiapkan-template-dasar/?ref=URL" data-param-app_id="145634995501895" aria-label="Share this on Facebook"></amp-social-share>
-			<amp-social-share type="twitter" width="50" height="36" data-param-text="Tutorial membuat website #1: Menyiapkan template dasar Dokument HTML" data-param-url="https://insertapps.com/amp/blog/tutorial-membuat-website-menyiapkan-template-dasar/" aria-label="Share this on Twitter"></amp-social-share>
-			<amp-social-share type="whatsapp" width="50" height="36" data-param-text="Check out this article: Tutorial membuat website #1: Menyiapkan template dasar Dokument HTML - https://insertapps.com/amp/blog/tutorial-membuat-website-menyiapkan-template-dasar/">
+  			<amp-social-share type="facebook" width="50" height="36" data-param-text="Tutorial membuat website #2: Desain header navigation bar" data-param-href="https://insertapps.com/amp/blog/tutorial-header-navigation-bar/?ref=URL" data-param-app_id="145634995501895" aria-label="Share this on Facebook"></amp-social-share>
+			<amp-social-share type="twitter" width="50" height="36" data-param-text="Tutorial membuat website #2: Desain header navigation bar" data-param-url="https://insertapps.com/amp/blog/tutorial-header-navigation-bar/" aria-label="Share this on Twitter"></amp-social-share>
+			<amp-social-share type="whatsapp" width="50" height="36" data-param-text="Check out this article: Tutorial membuat website #2: Desain header navigation bar - https://insertapps.com/amp/blog/tutorial-header-navigation-bar/">
 </amp-social-share>
 			
 		</article>
@@ -1890,6 +1990,17 @@
 			<h3 class="caps h4 mb2 px2">Related Post</h3>
 			
 			
+			
+			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
+				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/tutorial-membuat-website-menyiapkan-template-dasar/">
+					<figure class="m0 block border rounded border-silver">
+						<amp-img src="/images/blog/Webdesain_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
+							alt="Tutorial membuat website #1: Menyiapkan template dasar Dokument HTML" class="block m0"></amp-img>
+						<figcaption class="p2 m0">
+							<h1 class="xs-h3 h5">Tutorial membuat website #1: Menyiapkan template dasar Dokument HTML</h1>
+						</figcaption>
+					</figure>
+				</a></div>
 			
 			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
 				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/tutorial-membuat-website-dengan-basscss/">
@@ -1909,17 +2020,6 @@
 							alt="Cara membuat &#39;close button icon&#39; dengan HTML dan CSS" class="block m0"></amp-img>
 						<figcaption class="p2 m0">
 							<h1 class="xs-h3 h5">Cara membuat &#39;close button icon&#39; dengan HTML dan CSS</h1>
-						</figcaption>
-					</figure>
-				</a></div>
-			
-			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
-				<a class="text-decoration-none" href="https://insertapps.com/blog/html-header-keren-menu-scroll/">
-					<figure class="m0 block border rounded border-silver">
-						<amp-img src="/images/blog/HTML_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
-							alt="Membuat header HTML keren responsive horizontal navbar auto scroll" class="block m0"></amp-img>
-						<figcaption class="p2 m0">
-							<h1 class="xs-h3 h5">Membuat header HTML keren responsive horizontal navbar auto scroll</h1>
 						</figcaption>
 					</figure>
 				</a></div>

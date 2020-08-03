@@ -6,13 +6,23 @@
     <description>Recent content on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2020 14:39:37 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2020 11:40:23 +0700</lastBuildDate>
     
 	<atom:link href="https://insertapps.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Tutorial membuat website: Menyiapkan template dasar Dokument HTML</title>
+      <title>Tutorial membuat website #2: Desain header navigation bar</title>
+      <link>https://insertapps.com/blog/tutorial-header-navigation-bar/</link>
+      <pubDate>Mon, 03 Aug 2020 11:40:23 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/tutorial-header-navigation-bar/</guid>
+      <description>Tutorial desain header navigation bar ini adalah part ke dua dari seri tutorial membuat website bagian pertama. Sesi ini mulai coding secara &amp;lsquo;drag and drop&amp;rsquo; kepingan ‘puzzle’ class-class Basscss, lalu insert ke dalam file HTML.
+Sebelum &amp;lsquo;lets go to coding&amp;rsquo;, seperti biasa izinkan InsertApps menjelaskan beberapa rule dan konsep koding nya seperti apa? Yang sudah paham dasar web design, silahkan scroll down ke cara membuat header navigation bar yang responsive.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial membuat website #1: Menyiapkan template dasar Dokument HTML</title>
       <link>https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/</link>
       <pubDate>Sun, 02 Aug 2020 14:39:37 +0700</pubDate>
       
