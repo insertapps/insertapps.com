@@ -1252,7 +1252,9 @@
 			min-width: 315px;
 			overflow-x: hidden;
 			font-smooth: always;
-			-webkit-font-smoothing: antialiased
+			-webkit-font-smoothing: antialiased;
+			line-height:1.5rem;
+			letter-spacing:normal;
 		}
 
 		a,
@@ -1260,6 +1262,18 @@
 		a:visited {
 			color: inherit
 		}
+
+		h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
 
 		 
 		article p:first-child:first-letter {
@@ -1411,7 +1425,6 @@
 			}
 		}
 
-		blockquote,
 		dl,
 		ol,
 		p,
@@ -1446,11 +1459,25 @@
 			overflow: auto;
 		}
 
-		blockquote {
-			font-size: 1.25em;
-			font-style: italic;
-			margin-left: 0
-		}
+		 
+blockquote {
+  background: #f9f9f9;
+  border-left: 8px solid #ccc;
+  padding: 1.5rem;
+  quotes: "\201C""\201D""\2018""\2019";
+  margin: 0;
+}
+blockquote:before {
+  color: gray;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
 
 		 
 		.white {
@@ -1910,7 +1937,7 @@
 	&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ml-auto&#34;</span>&gt;
 		&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;list-reset&#34;</span>&gt;
 			&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block btn&#34;</span>&gt;About&lt;/<span style="color:#f92672">li</span>&gt;
-			&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block btn&#34;</span>&gt;BLog&lt;/<span style="color:#f92672">li</span>&gt;
+			&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block btn&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">li</span>&gt;
 			&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block btn&#34;</span>&gt;Contact&lt;/<span style="color:#f92672">li</span>&gt;
 		&lt;/<span style="color:#f92672">ul</span>&gt;
 	&lt;/<span style="color:#f92672">nav</span>&gt;
@@ -1967,7 +1994,7 @@
 </code></pre></div><p><strong>CONCLUSION</strong></p>
 <ul>
 <li>Hingga kode terakhir sudah diketik dalam tutorial ini, belum ada satupun kode CSS tambahan lainnya. Semua class yang barusan kalian insert satu-persatu hingga menjadi banyak, murni class utility bawaan dari framework Basscss.</li>
-<li>Untuk lebih lancar familiar lagi dengan class Basscss, sering-sering baca dokumentasi di web resmi Basscss.</li>
+<li>Untuk lebih familiar lagi dengan class Basscss, sering-sering baca dokumentasinya.</li>
 </ul>
 <p><strong>CODE CHALLENGE</strong></p>
 <ul>
@@ -1975,7 +2002,7 @@
 <li>Pada menu <strong>LOGO</strong>, setelah click mouse, muncul frame kotak tebal. Tugas kalian untuk menghilangkan border box bekas click mouse itu.</li>
 </ul>
 <p>⬅ <a href="https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/" target="_blank" rel="noopener">Tutorial sebelumnya</a></p>
-<p>➡ <a href="https://insertapps.com/blog/#" target="_blank" rel="noopener">Tutorial Selanjutnya </a></p>
+<p>➡ <a href="https://insertapps.com/blog/html-design-main-content/" target="_blank" rel="noopener">Tutorial Selanjutnya </a></p>
 
 			</div>
 			

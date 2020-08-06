@@ -1,6 +1,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
+    <loc>https://insertapps.com/blog/html-design-main-content/</loc>
+    
+    <lastmod>2020-08-05T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
+  </url>
+
+  <url>
     <loc>https://insertapps.com/blog/tutorial-header-navigation-bar/</loc>
     
     <lastmod>2020-08-03T00:00:00+00:00</lastmod>
