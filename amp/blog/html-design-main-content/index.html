@@ -1786,7 +1786,7 @@ blockquote p {
 <p>Untuk layout main content web desain ini, tata letak desainnya yang simpel-simpel saja seperti template blog dua kolom dengan desain minimalis dan mobile first responsive.</p>
 <p>Di layar desktop tampilan normal dua kolom. Di layar smartphone auto responsive menjadi satu grid list baris.</p>
 <p>Main container yang akan menampung isi konten dibelah dua kolom dengan perbandingan 7:3. Kolom kiri seluas 70% untuk listing artikel. Sedangkan kolom kanan, sisa 30% sebagai sidebar.</p>
-<p>Sebelum lanjut ngoding serius, seperti biasa, fokus code pindah dalam tag <code>&lt;main&gt; ... &lt;/main&gt;</code>. Dan inilah hasil akhir sintak tutorial yang sebelumnya, header bar navigasi:</p>
+<p>Sebelum lanjut ngoding serius, seperti biasa, fokus code pindah dalam tag <code>&lt;main&gt; ... &lt;/main&gt;</code>. Dan inilah hasil akhir sintak tutorial yang sebelumnya, <a href="https://insertapps.com/blog/tutorial-header-navigation-bar/" target="_blank" rel="noopener">header bar navigasi</a>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
 &lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
 <span style="color:#75715e">&lt;!--
@@ -1823,7 +1823,7 @@ blockquote p {
 </code></pre></div><blockquote>
 <p><em>Hingga selesai tutorial part #2, jumlah baris sintak yang sudah ditulis kurang lebih sekitar 40 baris. Masih sangat sedikit sekali, tapi sudah menampakkan hasil desain yang serius.</em></p>
 </blockquote>
-<p>Pendekatan desain web yang responsive, akan banyak berkutat dengan sistem grid. Dalam CSS3 sudah ada fungsi <code>display: grid</code> element layout grid dua dimensi yang lebih modern lagi. Karena tutorial ini mmenggunakan CSS framework Basscss, sistem grid layout masih menggunakan media breakpoint (setting lebar pembagian kolom berdasarkan ukuran layar viewport).</p>
+<p>Pendekatan desain web yang responsive, akan banyak berkutat dengan sistem grid. Dalam CSS3 sudah ada fungsi <code>display: grid</code> value layout grid dua dimensi yang lebih modern lagi. Karena tutorial ini menggunakan CSS framework Basscss, sistem grid layout masih menggunakan media breakpoint (setting lebar pembagian kolom berdasarkan ukuran layar viewport).</p>
 <p>Modul dan class name grid Basscss untuk layout responsive, serta kombinasi variasi kolom yang akan kita pakai, selengkapnya ada di <a href="https://basscss.com/#basscss-grid" target="_blank" rel="noopener">Basscss#basscss-grid</a>.</p>
 <p>Semua css framework, secara default jumlah grid terbatas 12 kolom saja. Tapi jumlah kolom yang mau dibuat bisa lebih dari 12 kolom.</p>
 <p>Dari 12 kolom grid, kreatifitas desainer web bisa membuat berbagai bentuk layout di inginkan.</p>
@@ -1859,11 +1859,11 @@ blockquote p {
 <ul>
 <li>Kode baris pertama <code>&lt;main class=&quot;max-width-4 mx-auto border&quot;&gt;</code> ada yang baru, yaitu ada penambahan <code>max-width-4</code> dan <code>mx-auto</code> masih utility dari modul Basscss.
 <ul>
-<li>Fungsi dari <code>max-width-4</code> untuk membatasi lebar maksimal wadah <code>main</code> selebar 64rem (1024px) di layar komputer.</li>
+<li>Fungsi dari <code>max-width-4</code> untuk membatasi lebar maksimal wadah <code>main</code> selebar 64rem (1024px) khusus untuk layar komputer yang wide. Kalau tidak ada pembatasan <code>max-width</code> maka lebar kolom full kiri-kanan.</li>
 <li>Fungsi dari <code>mx-auto</code> untuk memposisikan sebuah elemen HTML berada di tengah. Class <code>mx-auto</code> bentuk penulisan style CSS-nya seperti ini: <code>.mx-auto { margin-right: auto;  margin-left: auto}</code>.</li>
 </ul>
 </li>
-<li>Baris berikutnya ada penambahan kontainer baru <code>&lt;div class=&quot;clearfix&quot;&gt; ... &lt;/div&gt;</code> untuk membungkus grid kolom. Di dalam kontainer ini, ada class utiliti <code>clearfix</code> dari Basscss yang berfungsi untuk membersihkan wadah <code>&lt;main&gt;</code> dari element sebelum atau sesudahnya mengalami float sehingga tidak tumpang tindih.</li>
+<li>Baris berikutnya ada penambahan kontainer baru <code>&lt;div class=&quot;clearfix&quot;&gt; ... &lt;/div&gt;</code> untuk membungkus grid kolom. Di dalam kontainer ini, ada class utiliti <code>clearfix</code> dari Basscss yang berfungsi untuk membersihkan wadah <code>&lt;main&gt;</code> dari element sebelum atau sesudahnya agar tidak tumpang tindih. Pada beberapa khasus layout kolom, utiliti <code>clearfix</code> bisa di abaikan.</li>
 <li>Selanjutnya dalam wadah yang sudah <code>clearfix</code> tadi, ada dua buah kotak kosong: tag <code>&lt;div&gt;... &lt;/div&gt;</code> dan tag <code>&lt;aside&gt;&lt;/aside&gt;</code>, lalu insert class grid kolom, yaitu: class name <code>col</code> dan <code>p2</code>.
 <ul>
 <li>Class name <code>col</code> adalah kolom grid paling awal yang tidak memiliki batasan lebar, secara default float left, lawannya ada <code>col-right</code> untuk posisi tata letak sebelah kanan.</li>
