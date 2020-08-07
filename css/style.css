@@ -340,6 +340,18 @@ blockquote p {
   display: inline;
 }
 
+/* SOCIAL COLORS*/
+.bg-fb {
+	background-color: #4267B2
+}
+.bg-tt {
+	background-color: #00acee
+}
+.box-btn {
+	width: 40px;
+	height: 40px
+}	
+
 /*
 BASSCSS ADONS
 
