@@ -6,10 +6,23 @@
     <description>Recent content on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Aug 2020 21:09:19 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 19:26:02 +0700</lastBuildDate>
     
 	<atom:link href="https://insertapps.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Extensions VS Code untuk support code Golang dengan Emmet snippet</title>
+      <link>https://insertapps.com/blog/extension-vs-code-golang-emmet-snippet/</link>
+      <pubDate>Sat, 15 Aug 2020 19:26:02 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/extension-vs-code-golang-emmet-snippet/</guid>
+      <description>Blogging sambil coding dengan SSG Hugo enaknya di app Visual Studio Code. Editor VS Code sudah auto built in dengan Emmet, plugin snippet untuk mempercepat penulisan sintag html.
+Hugo di program dengan bahasa Golang.
+Untuk mencampuraduk sintak html dengan sintak template engine Hugo, perlu install sebuah ektensi khusus agar &amp;lsquo;perkawinan&amp;rsquo; antara Go dengan HTML akur, sintagnya tidak berantakan.
+Sebenarnya biar lebih enak dilihat saja.
+Nama extensions-nya: &amp;ldquo;gotemplate-syntax Language support for go text/template&amp;rdquo; karya Casualjim.</description>
+    </item>
     
     <item>
       <title>Tutorial membuat website #3: Design main content</title>

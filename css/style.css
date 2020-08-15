@@ -118,6 +118,7 @@ pre {
   padding: 1em;
   border-radius: 3px;
   overflow: auto;
+  background-color: #282a36;
 }
 
 hr {

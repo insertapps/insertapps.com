@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on InsertApps</title>
+    <link>https://insertapps.com/tags/hugo/</link>
+    <description>Recent content in hugo on InsertApps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Aug 2020 19:26:02 +0700</lastBuildDate>
+    
+	<atom:link href="https://insertapps.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Extensions VS Code untuk support code Golang dengan Emmet snippet</title>
+      <link>https://insertapps.com/blog/extension-vs-code-golang-emmet-snippet/</link>
+      <pubDate>Sat, 15 Aug 2020 19:26:02 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/extension-vs-code-golang-emmet-snippet/</guid>
+      <description>Blogging sambil coding dengan SSG Hugo enaknya di app Visual Studio Code. Editor VS Code sudah auto built in dengan Emmet, plugin snippet untuk mempercepat penulisan sintag html.
+Hugo di program dengan bahasa Golang.
+Untuk mencampuraduk sintak html dengan sintak template engine Hugo, perlu install sebuah ektensi khusus agar &amp;lsquo;perkawinan&amp;rsquo; antara Go dengan HTML akur, sintagnya tidak berantakan.
+Sebenarnya biar lebih enak dilihat saja.
+Nama extensions-nya: &amp;ldquo;gotemplate-syntax Language support for go text/template&amp;rdquo; karya Casualjim.</description>
+    </item>
+    
+    <item>
+      <title>Setting tanggal &#39;last updated&#39; atau &#39;last modified date&#39; posting di system Hugo</title>
+      <link>https://insertapps.com/blog/hugo-last-modified-date-setting/</link>
+      <pubDate>Thu, 16 Jul 2020 18:18:07 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/hugo-last-modified-date-setting/</guid>
+      <description>Memperbaharui posting blog yang sudah lama termasuk salah satu cara optimasi SEO pada artikel lama.
+Artikel yang diperbaharui, biasanya tanggal posting ikut berubah, menjadi &amp;lsquo;telah di perbaharui&amp;rsquo; atau &amp;lsquo;last update&amp;rsquo; dan &amp;lsquo;last modified&amp;rsquo;.
+Blog berbasis WordPress atau Blogger, sistem tanggal berjalan secara dinamis, setiap ada perubahan dalam isi posting, system juga akan mencatat log tanggal perubahan terakhir dalam database.
+Log itu yang akan ditampilkan dalam single page artikel.
+Bagaimana dengan blog berbasis Hugo yang men generate posting secara statis?</description>
+    </item>
+    
+    <item>
+      <title>Cara upgrade system hugo</title>
+      <link>https://insertapps.com/blog/cara-upgrade-hugo/</link>
+      <pubDate>Fri, 21 Feb 2020 10:31:07 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/cara-upgrade-hugo/</guid>
+      <description>Bagaimana cara upgrade system hugo: Mudah saja, dalam dokumentasi Gohugo sudah dijelaskan secara jelas. Tapi, ada saja kendala yang dialami, atau bisa jadi lupa karena jarang update hugo.
+Untuk kasus saya, saat update system hugo di macOS El Capitan terkendala di Homebrew. El Capitan gagal eksekusi upgrade sistem Hugo, karena homebrew sudah tidak mendukung os lawas seperti El Capitan.
+Homebrew butuh macOS terbaru, minimal OS Catalina, baru bisa melakukan auto upgrade sisten hugo.</description>
+    </item>
+    
+  </channel>
+</rss>
