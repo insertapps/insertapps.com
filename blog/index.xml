@@ -12,6 +12,19 @@
     
     
     <item>
+      <title>App VS Code error: The window has crashed (reason: &#39;clean exit&#39;)</title>
+      <link>https://insertapps.com/blog/visual-studio-code-the-window-has-crashed/</link>
+      <pubDate>Wed, 06 Jan 2021 16:48:32 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/visual-studio-code-the-window-has-crashed/</guid>
+      <description>Lama tidak membuka app visual studio code, pas opening lagi aplikasi VS Code, malah dapat pesan error. ❌
+Layar jendela aplikasi yang tampil bukan seperti biasanya, tapi layar blank dengan dialog box pesan error:
+The window has crashed (reason: &#39;clean exit&#39;)
+We are sorry for the inconvenience! You can reopen the window to continue where you left off.
+Kayaknya app editor Visual Studio Code versi mac yang saya pakai mengalami crash &amp;lsquo;landing&amp;rsquo;.</description>
+    </item>
+    
+    <item>
       <title>Extensions VS Code untuk support code Golang dengan Emmet snippet</title>
       <link>https://insertapps.com/blog/extension-vs-code-golang-emmet-snippet/</link>
       <pubDate>Sat, 15 Aug 2020 19:26:02 +0700</pubDate>

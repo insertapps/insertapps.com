@@ -6,10 +6,23 @@
     <description>Recent content in error on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Feb 2020 11:13:43 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jan 2021 16:48:32 +0700</lastBuildDate>
     
 	<atom:link href="https://insertapps.com/tags/error/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>App VS Code error: The window has crashed (reason: &#39;clean exit&#39;)</title>
+      <link>https://insertapps.com/blog/visual-studio-code-the-window-has-crashed/</link>
+      <pubDate>Wed, 06 Jan 2021 16:48:32 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/visual-studio-code-the-window-has-crashed/</guid>
+      <description>Lama tidak membuka app visual studio code, pas opening lagi aplikasi VS Code, malah dapat pesan error. ❌
+Layar jendela aplikasi yang tampil bukan seperti biasanya, tapi layar blank dengan dialog box pesan error:
+The window has crashed (reason: &#39;clean exit&#39;)
+We are sorry for the inconvenience! You can reopen the window to continue where you left off.
+Kayaknya app editor Visual Studio Code versi mac yang saya pakai mengalami crash &amp;lsquo;landing&amp;rsquo;.</description>
+    </item>
     
     <item>
       <title>WP Error: Response is not a valid json response</title>
