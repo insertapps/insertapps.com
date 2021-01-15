@@ -6,11 +6,7 @@
     <description>Recent content in Networking on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jul 2020 19:51:14 +0700</lastBuildDate>
-    
-	<atom:link href="https://insertapps.com/categories/networking/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 15 Jul 2020 19:51:14 +0700</lastBuildDate><atom:link href="https://insertapps.com/categories/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mikrotik system error critical router was rebooted without proper shutdown</title>
       <link>https://insertapps.com/blog/mikrotik-system-error-critical/</link>

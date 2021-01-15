@@ -6,10 +6,17 @@
     <description>Recent content in Gohugo on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2020 18:18:07 +0700</lastBuildDate>
-    
-	<atom:link href="https://insertapps.com/categories/gohugo/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 13 Jan 2021 14:19:21 +0700</lastBuildDate><atom:link href="https://insertapps.com/categories/gohugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021 01 14__hugo display individual tags</title>
+      <link>https://insertapps.com/blog/2021-01-14__hugo-display-individual-tags/</link>
+      <pubDate>Wed, 13 Jan 2021 14:19:21 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/2021-01-14__hugo-display-individual-tags/</guid>
+      <description>Bagaimana cara menampilkan list posting khusus &amp;lsquo;featured&amp;rsquo; dalam sistem SSG Gohugo?
+Ada banyak cara. Pilihan saya ada dua cara yang cukup sederhana dan paling keren.
+ Hugo dispalay post featured dengan menambahkan parameter feature: true di dalam data front matter posting artikel.  --- title: &amp;#34;My post title&amp;#34; date: 2021-02-21 author: Your Name draft: false featured: true tags: - hugo - featured - code --- Untuk merender ke dalam template</description>
+    </item>
     
     <item>
       <title>Setting tanggal &#39;last updated&#39; atau &#39;last modified date&#39; posting di system Hugo</title>
