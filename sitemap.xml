@@ -1,14 +1,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://insertapps.com/blog/2021-01-14__hugo-display-individual-tags/</loc>
-    
-    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
-	
-	<changefreq>monthly</changefreq>
-  </url>
-
-  <url>
     <loc>https://insertapps.com/blog/visual-studio-code-the-window-has-crashed/</loc>
     
     <lastmod>2021-01-06T00:00:00+00:00</lastmod>

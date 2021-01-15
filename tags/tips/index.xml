@@ -6,18 +6,7 @@
     <description>Recent content in tips on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Jan 2021 14:19:21 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2021 01 14__hugo display individual tags</title>
-      <link>https://insertapps.com/blog/2021-01-14__hugo-display-individual-tags/</link>
-      <pubDate>Wed, 13 Jan 2021 14:19:21 +0700</pubDate>
-      
-      <guid>https://insertapps.com/blog/2021-01-14__hugo-display-individual-tags/</guid>
-      <description>Bagaimana cara menampilkan list posting khusus &amp;lsquo;featured&amp;rsquo; dalam sistem SSG Gohugo?
-Ada banyak cara. Pilihan saya ada dua cara yang cukup sederhana dan paling keren.
- Hugo dispalay post featured dengan menambahkan parameter feature: true di dalam data front matter posting artikel.  --- title: &amp;#34;My post title&amp;#34; date: 2021-02-21 author: Your Name draft: false featured: true tags: - hugo - featured - code --- Untuk merender ke dalam template</description>
-    </item>
-    
+    <lastBuildDate>Sat, 25 Jul 2020 23:29:44 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cara membuat &#39;close button icon&#39; dengan HTML dan CSS</title>
       <link>https://insertapps.com/blog/close-button-icon-css/</link>
