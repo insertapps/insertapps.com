@@ -170,87 +170,109 @@ hr {
 
 /* -> Menu Sidenav */
 
-#menu-sidenav {
-  height: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease-in-out;
-  transform: translate(-150%, 0px);
-  -webkit-transform: translate(-150%, 0px);
-  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -ms-transform: translate(-150%, 0px);
+#sidenav {
+	max-height: 100vh;
+	height: 100vh;
+	max-width: 70vw;
+	min-width: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	transition: all .3s ease-in-out;
+	transform: translate(-150%, 0px);
+	-webkit-transform: translate(-150%, 0px);
+	/* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-ms-transform: translate(-150%, 0px);
+
 }
 
-#menu-sidenav.active {
-  z-index: 999;
-  transition: all 0.3s ease-in-out;
-  transform: translate(0%, 0px);
-  -webkit-transform: translate(0%, 0px);
-  -ms-transform: translate(0%, 0px);
+#sidenav.active {
+	transition: all .3s ease-in-out;
+	transform: translate(0%, 0px);
+	-webkit-transform: translate(0%, 0px);
+	-ms-transform: translate(0%, 0px);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, .4);
 }
-
-.menu-sidenav-hover:hover {
-  background-color: #dddddd;
-}
-
-li span {
-  display: inline-block;
-  vertical-align: top;
-}
-
-/* -> Overlay menu*/
 
 #overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-animation: fade 500ms;
-  -moz-animation: fade 500ms;
-  -o-animation: fade 500ms;
-  animation: fade 500ms;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	animation: fade 5s;
+	-webkit-animation: fade 500ms;
+	-moz-animation: fade 500ms;
+	-o-animation: fade 500ms;
+}
+
+#overlay.active {
+	display: block;
 }
 
 @keyframes fade {
-  0% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
 }
 
 @-moz-keyframes fade {
-  0% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
 }
 
 @-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
 }
 
 @-o-keyframes fade {
-  0% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.close {
+	width: 23px;
+	height: 23px;
+}
+
+.cross {
+	height: 23px;
+	width: 2px;
+	border-radius: 3px;
+}
+
+.cross.left {
+	transform: rotate(45deg);
+}
+
+.cross.right {
+	transform: rotate(-45deg);
+}
+
+.align-middle {
+	vertical-align: middle
 }
 
 .hero {
