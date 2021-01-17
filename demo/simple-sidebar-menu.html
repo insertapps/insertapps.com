@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Simple Sidebar Menu with Body Overlay Template → by InsertApps.com</title>
+	<title>HTML Template Simple Sidebar Menu → by InsertApps.com</title>
 	<meta name="description"
-		content="Simple sidebar menu template built with css framework Basscss and simple toggle javascript.">
+		content="HTML template sidebar menu with burger buttons using vanilla javascript with classList add/remove function without jQuery">
 	<meta name="keywords" content="html, css, basscss, javascript, classList, toggle, overlay">
 	<meta name="author" content="Fauzan My">
 	<link rel="stylesheet" href="https://unpkg.com/ace-css/css/ace.min.css">
 	<style>
 		/*Addtional Style */
-
 		#sidenav {
 			max-height: 100vh;
 			height: 100vh;
@@ -20,13 +18,11 @@
 			min-width: 300px;
 			overflow-x: hidden;
 			overflow-y: auto;
-
 			transition: all .3s ease-in-out;
 			transform: translate(-150%, 0px);
 			-webkit-transform: translate(-150%, 0px);
 			/* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
 			-ms-transform: translate(-150%, 0px);
-
 		}
 
 		#sidenav.active {
@@ -35,60 +31,6 @@
 			-webkit-transform: translate(0%, 0px);
 			-ms-transform: translate(0%, 0px);
 			box-shadow: 0 4px 6px rgba(0, 0, 0, .4);
-		}
-
-		#overlay {
-			width: 100vw;
-			height: 100vh;
-			display: none;
-			animation: fade 5s;
-			-webkit-animation: fade 500ms;
-			-moz-animation: fade 500ms;
-			-o-animation: fade 500ms;
-		}
-
-		#overlay.active {
-			display: block;
-		}
-
-		@keyframes fade {
-			0% {
-				opacity: 0;
-			}
-
-			100% {
-				opacity: 1;
-			}
-		}
-
-		@-moz-keyframes fade {
-			0% {
-				opacity: 0;
-			}
-
-			100% {
-				opacity: 1;
-			}
-		}
-
-		@-webkit-keyframes fade {
-			0% {
-				opacity: 0;
-			}
-
-			100% {
-				opacity: 1;
-			}
-		}
-
-		@-o-keyframes fade {
-			0% {
-				opacity: 0;
-			}
-
-			100% {
-				opacity: 1;
-			}
 		}
 
 		.burger {
@@ -100,7 +42,6 @@
 			width: 20px;
 			height: 2px;
 			border-radius: 3px;
-			background-color: white
 		}
 
 		.pointer {
@@ -131,17 +72,13 @@
 		}
 	</style>
 </head>
-
-<body class="bg-silver">
-
-	<header class="bg-maroon px2 py1 m0 flex items-center white">
-
+<body>
+	<header class="bg-blue px2 py1 m0 flex items-center white">
 		<div class="burger pointer flex flex-column justify-between mr2">
-			<span></span>
-			<span></span>
-			<span></span>
+			<span class="bg-white"></span>
+			<span class="bg-white"></span>
+			<span class="bg-white"></span>
 		</div>
-
 		<a class="white caps text-decoration-none h3 bold" href="#">Logo</a>
 
 		<nav class="ml-auto">
@@ -150,13 +87,8 @@
 				<li class="inline-block btn p0">Blog</li>
 			</ul>
 		</nav>
-
 	</header>
-
-	<div id="overlay" class="fixed z3 top-0 left-0 bg-darken-4"></div>
-
 	<div id="sidenav" class="fixed z4 top-0 left-0 bg-white p2">
-
 		<div class="close flex items-center justify-center relative pointer mb2 right">
 			<div class="absolute cross bg-gray left"></div>
 			<div class="absolute cross bg-gray right"></div>
@@ -182,7 +114,6 @@
 		<p class="m0 muted bold">InsertApps</p>
 
 		<hr>
-
 		<ul class="list-reset muted m0">
 			<li class="h6 caps mb2">about</li>
 			<li class="pointer mb2">
@@ -341,66 +272,44 @@
 	</div>
 
 	<main class="max-width-4 mx-auto bg-white p2" style="min-height: 100vh">
-
-		<img class="fit block" src="https://freebiespic.com/images/2017/07/Picture-of-a-red-rose-flower_fbp-1590.jpg"
+		<img class="fit block" src="https://freebiespic.com/images/2019/0506_wireless-keyboard-image_1129m.jpg"
 			alt="Red ros flower">
 
-		<h1>Simple Sidebar Menu with Body Overlay Template</h1>
+		<h1>HTML Template Simple Sidebar Menu</h1>
 
 		<h2 class="h3 muted">Click burger icon to open sidenav</h2>
 
-		<p>Lorem ipsum dolor sit amet, ne nec laoreet pericula principes, causae recusabo ne his, qui soluta maluisset
-			ne. Id suas quas putant mel, ne duo mundi omittantur signiferumque. Utinam suscipit suscipiantur no sed. Vis
-			meliore intellegat id, porro sonet graeco no sit. Assentior adolescens incorrupte mea et.</p>
-		<p>Sit no dolor tation fierent, accommodare necessitatibus concludaturque ut eam. Vide nonumes in duo, te dicta
-			eleifend mel, dicta fierent pri at. Id nisl iusto putant pro. Odio electram ut sea, cu eos denique nominavi,
-			novum graecis vim no. Ius hinc persequeris appellantur ea, ut vitae iriure aliquip vix. Quem tantas
-			constituam ut eum.
-		</p>
-		<p>Vis quem homero albucius ei. Minim oportere qui et, nonumes definitiones eos at. In vis erant scaevola, qui
-			in ornatus accusam. Dictas aeterno verterem sit ut. Sea eu error luptatum percipitur. Ei possim causae
-			mnesarchum vel, ex reque abhorreant reprehendunt cum.</p>
-		<p>Ne vim autem fierent, ne nullam pertinacia efficiantur mel, aeque vocent inciderint est cu. Dicit denique
-			vituperatoribus per ne. Magna civibus consetetur pro no, nam ea tamquam labitur. Mea atqui feugiat ponderum
-			ne. Erat audire labitur id vel.</p>
-		<p>Id nibh menandri assueverit mel, et sea bonorum cotidieque. Agam scripta appetere qui ne, alia nominati
-			comprehensam pri te. Invidunt menandri eum ut. Odio alia equidem id his, has eu exerci scriptorem. Vim
-			mucius percipit et, sit nibh contentiones ei.</p>
-		<p>Ne justo omittantur eos, altera consetetur eu ius, sanctus habemus propriae usu te. Eu vide facilisi eam. Sit
-			discere iudicabit vituperatoribus ea. Sed eu dicta voluptaria, eam fierent argumentum signiferumque ei, mea
-			fastidii gubergren dissentias ut.</p>
+		<p>HTML template sidebar menu with burger buttons using vanilla javascript with classList add/remove function without jQuery.</p>
+		
+		<script src="https://gist.github.com/fauzanmy/85306479efe96d0c0960622f01a14a6c.js"></script>
+
+		<p>Css style HTML template sidebar menu with burger buttons using vanilla javascript with classList.</p>
+
+		<script src="https://gist.github.com/fauzanmy/6c09432f75a9dd5bfa925d86874f8954.js"></script>
+
+		<p>Image source by <a href="https://freebiespic.com/photos/wireless-keyboard-image/">Freebiespic.com</a></p>
 
 	</main>
 
-	<footer class="px2 py4 bg-black white center">
-		<p class="muted">Copyright ©2020 → <a class="text-decoration-none white"
+	<footer class="px2 py3 bg-silver navy center">
+		<p class="muted">Copyright ©2020 → <a class="text-decoration-none navy"
 				href="https://insertapps.com/">InsertApps.com</a>. All rights reserved. <a
-				class="text-decoration-none white" href="https://insertapps.com/privacy/">Privacy</a></p>
+				class="text-decoration-none navy" href="https://insertapps.com/privacy/">Privacy</a></p>
 	</footer>
 
 	<script>
+		let burger = document.querySelector('.burger');
+		let close = document.querySelector('.close');
+		let sidenav = document.querySelector('#sidenav');
 
-		var burger = document.querySelector('.burger');
-		var sidenav = document.querySelector('#sidenav');
-		var overlay = document.querySelector('#overlay');
-		var close = document.querySelector('.close');
 		// Burger click function
 		burger.addEventListener('click', function () {
 			sidenav.classList.add('active');
-			overlay.classList.add('active');
 		});
-		// Overlay click function
-		overlay.addEventListener('click', function () {
-			sidenav.classList.remove('active');
-			overlay.classList.remove('active');
-		});
-		// Open sidebar close click function
+		// Close click function
 		close.addEventListener('click', function () {
 			sidenav.classList.remove('active');
-			overlay.classList.remove('active');
 		});
-
 	</script>
 </body>
-
 </html>

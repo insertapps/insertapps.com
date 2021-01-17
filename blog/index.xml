@@ -8,6 +8,21 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://insertapps.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Tutorial membuat sidebar menu yang responsive</title>
+      <link>https://insertapps.com/blog/simple-sidebar-menu/</link>
+      <pubDate>Sun, 17 Jan 2021 18:24:35 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/simple-sidebar-menu/</guid>
+      <description>Tutorial simple membuat sidebar menu yang responsive dengan vanilla JavaScript memanfaatkan fungsi classList add/remove tampa menggunakan library jQuery.
+Alat dan Bahan
+Untuk alat coding silahkan menggunakan editor favorit kalian, boleh Visual Code, Brackets atau Sublime text editor.
+Bahan untuk membuat side menu navigation
+Terlebih dahulu persiapkan template HTML dasar yang sudah berisi sidebar menu.
+Dalam tutorial ini, kami menggunakan CSS framework Basscss yang full packet https://unpkg.com/ace-css/css/ace.min.css.
+Berikut isi file template HTML dasar untuk membuat sidebar nav menu yang sederhana saja.</description>
+    </item>
+    
+    <item>
       <title>App VS Code error: The window has crashed (reason: &#39;clean exit&#39;)</title>
       <link>https://insertapps.com/blog/visual-studio-code-the-window-has-crashed/</link>
       <pubDate>Wed, 06 Jan 2021 16:48:32 +0700</pubDate>
