@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcode on InsertApps</title>
+    <link>https://insertapps.com/tags/shortcode/</link>
+    <description>Recent content in shortcode on InsertApps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Jan 2021 16:27:25 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/shortcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Hugo meng-embed shortcode codepen</title>
+      <link>https://insertapps.com/blog/hugo-embed-shortcode-codepen/</link>
+      <pubDate>Tue, 19 Jan 2021 16:27:25 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/hugo-embed-shortcode-codepen/</guid>
+      <description>Blogging dengan topik coding tidak terlepas dari yang namanya source code. Biasanya kalau posting artikel di WordPress yang berisi potongan kode program, bisa copy paste langsung ke dalam body text.
+Untuk web static berbasis Hugo tidak bisa demikian ferguso. Data konten yang disimpan dalam file Markdwond tidak mengizinkan copy-paste kode program langsung dalam body text file Markdown. 😓
+&amp;ldquo;Markdown adalah bahasa markah ringan dengan sintaksis pemformatan teks polos&amp;rdquo;, begitu kata Wikipedia.</description>
+    </item>
+    
+  </channel>
+</rss>

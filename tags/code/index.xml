@@ -6,7 +6,18 @@
     <description>Recent content in code on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2020 14:39:28 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Jan 2021 16:27:25 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Hugo meng-embed shortcode codepen</title>
+      <link>https://insertapps.com/blog/hugo-embed-shortcode-codepen/</link>
+      <pubDate>Tue, 19 Jan 2021 16:27:25 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/hugo-embed-shortcode-codepen/</guid>
+      <description>Blogging dengan topik coding tidak terlepas dari yang namanya source code. Biasanya kalau posting artikel di WordPress yang berisi potongan kode program, bisa copy paste langsung ke dalam body text.
+Untuk web static berbasis Hugo tidak bisa demikian ferguso. Data konten yang disimpan dalam file Markdwond tidak mengizinkan copy-paste kode program langsung dalam body text file Markdown. 😓
+&amp;ldquo;Markdown adalah bahasa markah ringan dengan sintaksis pemformatan teks polos&amp;rdquo;, begitu kata Wikipedia.</description>
+    </item>
+    
     <item>
       <title>Membuat header HTML keren responsive horizontal navbar auto scroll</title>
       <link>https://insertapps.com/blog/html-header-keren-menu-scroll/</link>
