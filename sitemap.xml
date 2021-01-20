@@ -1,6 +1,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
+    <loc>https://insertapps.com/blog/html-horizontal-scroll-mouse-wheel/</loc>
+    
+    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
+  </url>
+
+  <url>
     <loc>https://insertapps.com/blog/hugo-embed-shortcode-codepen/</loc>
     
     <lastmod>2021-01-19T00:00:00+00:00</lastmod>

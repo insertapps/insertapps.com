@@ -6,7 +6,18 @@
     <description>Recent content in html on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Jan 2021 18:24:35 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jan 2021 16:06:33 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML horizontal scroll mouse wheel</title>
+      <link>https://insertapps.com/blog/html-horizontal-scroll-mouse-wheel/</link>
+      <pubDate>Wed, 20 Jan 2021 16:06:33 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/html-horizontal-scroll-mouse-wheel/</guid>
+      <description>Laman web hasil render browser kombinasi dari markup HTML, CSS dan JavaScript, by default berbentuk rancang bangun secara vertikal. Membaca artikel, mencari inspirasi dari galeri Pinterest dan scrolling status Facebook yang tidak ada habisnya bergulir secara vertikal; dari atas ke bawah.
+Namun seiring datangnya gelombang user yang akses web melalui perangkat mobile pintar, perlahan desain GUI secara horizontal mulai diterapkan.
+Alih-alih untuk mengurangi panjang halaman web dan memberikan jeda scroll ke bawah yang tak ada habisnya, beberapa item komponen web tata letak diberi akses secara horizontal.</description>
+    </item>
+    
     <item>
       <title>Tutorial membuat sidebar menu yang responsive</title>
       <link>https://insertapps.com/blog/simple-sidebar-menu/</link>
