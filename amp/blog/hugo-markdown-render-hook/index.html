@@ -1808,11 +1808,11 @@ blockquote p {
 				<p>Rilis Hugo versi 0.62.0 menambah satu fitur lagi, yaitu <em>Markdown render hooks</em> yang berfungsi untuk memancing kode HTML mentah ke dalam body text Markdown.</p>
 <p>Karena Hugo telah mengganti mesin render Markdown ke Goldmark, diperlukan bagian template baru untuk mengikat HTML mentah tersebut.</p>
 <p>Sebelumnya mesin yang bertugas untuk mem-parser file Markdown berubah menjadi text dalam format HTML memakai engine Blackfriday.</p>
-<p>Hugo beralih ke Goldmark sebagai default Markdown processor, selain lebih cepat, Goldmark sudah menerapkan standar baru <a href="https://spec.commonmark.org/0.29/">CommonMark</a>, sebuah organisasi yang menstandarkan format Markdown.</p>
+<p>Hugo beralih ke Goldmark sebagai default Markdown processor, selain lebih cepat, Goldmark sudah menerapkan standar baru <a href="https://spec.commonmark.org/0.29/">CommonMark</a>, sebuah organisasi yang menstandarkan format Markdown. 👍</p>
 <p>By default mesin Goldmark tidak mau merender HTML mentah dan tautan link external yang berpotensi membahayakan ke dalam isi body text Markdown.</p>
 <p>Kalau pun memaksa meng-insert potongan kode HTML, script JS dan link dengan perilaku <code>rel=&quot;nofollow&quot;</code> ke dalam body text Markdown, hasil render document HTML di bagian tersebut tidak berjalan alias kosong melompong.</p>
-<p>Coba deh kalau tidak percaya, pasti script kalian diabaikan oleh mesin Goldmark. seolah tidak terjadi apa-apa.</p>
-<p>Sebelumnya, sudah pernah <a href="https://insertapps.com/blog/hugo-embed-shortcode-codepen/">mencoba meng-embed langsung script Codepen ke dalam posting</a>, hasil render laman web seolah tidak terjadi apa-apa.</p>
+<p>Coba deh kalau tidak percaya, pasti script kalian diabaikan oleh mesin Goldmark. seolah tidak terjadi apa-apa. 😇</p>
+<p>Sebelumnya, sudah pernah <a href="https://insertapps.com/blog/hugo-embed-shortcode-codepen/">mencoba meng-embed langsung script Codepen ke dalam posting</a>, hasil render laman web seolah tidak terjadi apa-apa. 😱</p>
 <p>Karena beda cara kerja antara mesin Goldmark dengan mesin Blackfriday dalam memformat plain text menjadi document HTML, diperlukan template <em>Markdown Render Hooks,</em> untuk menjembatani kode HTML mentah ke dalam file Markdown.</p>
 <p>Markdown versi CommonMark, untuk menambahkan tautan, bentuk penulisan shortcode seperti ini: <code>[]()</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[<span style="color:#f92672">Insertapps.com</span>](<span style="color:#a6e22e">https://insertapps.com/ &#34;Insert Apps&#34;</span>)`
@@ -1876,8 +1876,8 @@ blockquote p {
 </code></pre></div><p>Mudahkan?</p>
 <p>Untuk custom heading dan untuk membuat daftar isi yang body Markdown, caranya sama juga.</p>
 <p>Lebih jelasnya, silahkan baca documentasinya di <a href="https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks">configurasi markup</a>. Soalnya kami belum mempraktekkannya, nanti paham betuk, artikelnya di update lagi.</p>
-<p>Intinya dengan template Markdown render hook ini akan memudahkan dalam mengelola custom output khusus image, link dan heading.</p>
-<p>Oya, bila Hugo Markdown render hook image untuk file template AMP <code>render-image.amp.html</code> gagal di eksekusi, silahkan baca solusinya di halaman &lsquo;<a href="https://insertapps.com/#">Self problem hugo render hook amp-img template not working</a>&rsquo;.</p>
+<p>Intinya dengan template Markdown render hook ini akan memudahkan dalam mengelola custom output khusus image, link dan heading. 😏</p>
+<p>Oya, bila Hugo Markdown render hook image untuk file template AMP <code>render-image.amp.html</code> gagal di eksekusi, silahkan baca solusinya di halaman &lsquo;<a href="https://insertapps.com/blog/hugo-markdown-render-hook-amp-img/">Self problem hugo render hook amp-img template not working</a>&rsquo;.  😓</p>
 
 			</div>
 			
