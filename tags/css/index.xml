@@ -101,9 +101,10 @@ Ketik sintak HTML dasar seperti berikut ini, sekalian dengan nama identifier cla
       
       <guid>https://insertapps.com/blog/css-dropcap/</guid>
       <description>Drop cap dekorasi karakter pertama di awal paragraf pertama dibuat lebih menonjol dengan memperbesar ukuran huruf.
- Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.
+Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.
 Beberapa theme blog WordPress sudah menyediakan fitur tambahan untuk membuat &amp;lsquo;Drop Cap&amp;rsquo;.
-Bila thema WordPress atau Blogspot kamu tidak ada fitur tersebut, jangan berkecil hati.</description>
+Bila thema WordPress atau Blogspot kamu tidak ada fitur tersebut, jangan berkecil hati.
+Kamu bisa menambahkan sendiri fitur drop cap.</description>
     </item>
     
     <item>
@@ -175,7 +176,7 @@ Berikut tabel ukuran konversi pixel ke ukuran rem.
       <description>Sebelum jatuh hati dan mantap menggunakan framework Basscss, InsertApps sudah mencoba framework CSS Bootstrap sejak versi 2.3.
 Setelah sekian lama ngulik Bootstrap, kami baru berhasil menyelesai sebuah WordPress theme siap pakai saat rilis Bootstrap 4 beta 2.
 Begitu Bootstrap 4.0 versi stabil release ke publik, kami sudah migrasi ke Basscss karya Brent Jackson dari Brooklyn, New York.
- Hasil rapid test kecepatan loading web InsertApps, peringatan &amp;#39;optimasi CSS&amp;#39; sudah clear.  Alasan beralih ke framework Basscss karena Bootstrap susah lolos Google PageSpeed Insights ke predikat hijau—performa dengan nilai skor 50–89 Google PageSpeed test.</description>
+ Alasan beralih ke framework Basscss karena Bootstrap susah lolos Google PageSpeed Insights ke predikat hijau—performa dengan nilai skor 50–89 Google PageSpeed test.</description>
     </item>
     
   </channel>

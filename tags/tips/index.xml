@@ -6,7 +6,30 @@
     <description>Recent content in tips on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Jan 2021 16:27:25 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Jan 2021 10:40:32 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solusi hugo gagal eksekusi markdown render hook template amp-img</title>
+      <link>https://insertapps.com/blog/hugo-markdown-render-hook-amp-img/</link>
+      <pubDate>Sat, 23 Jan 2021 10:40:32 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/hugo-markdown-render-hook-amp-img/</guid>
+      <description>Fitur Markdown render hook pertama muncul pada versi Hugo 0.62.0 (rilis 23 December 2019) ternyata menimbulkan bug yang tak berkesudahan hingga Hugo versi 0.80.0 (rilis 31 December 2020).
+Apa sih istimewa fitur Markdown render hook? Baca saja artikel semi tutorial yang sudah terbit sebelumnya tentang mamfaat &amp;lsquo;Markdown render hook solusi untuk custom output image, link dan heading&amp;rsquo;.
+Terus bug yang sudah berjalan selama 1 tahun penuh belum juga teratasi bisa menimbulkan efek samping apa saja?</description>
+    </item>
+    
+    <item>
+      <title>Hugo Markdown render hook solusi untuk custom output image, link dan heading</title>
+      <link>https://insertapps.com/blog/hugo-markdown-render-hook/</link>
+      <pubDate>Fri, 22 Jan 2021 16:40:18 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/hugo-markdown-render-hook/</guid>
+      <description>Rilis Hugo versi 0.62.0 menambah satu fitur lagi, yaitu Markdown render hooks yang berfungsi untuk memancing kode HTML mentah ke dalam body text Markdown.
+Karena Hugo telah mengganti mesin render Markdown ke Goldmark, diperlukan bagian template baru untuk mengikat HTML mentah tersebut.
+Sebelumnya mesin yang bertugas untuk mem-parser file Markdown berubah menjadi text dalam format HTML memakai engine Blackfriday.
+Hugo beralih ke Goldmark sebagai default Markdown processor, selain lebih cepat, Goldmark sudah menerapkan standar baru CommonMark, sebuah organisasi yang menstandarkan format Markdown.</description>
+    </item>
+    
     <item>
       <title>Cara Hugo meng-embed shortcode codepen</title>
       <link>https://insertapps.com/blog/hugo-embed-shortcode-codepen/</link>
@@ -39,9 +62,10 @@ Ketik sintak HTML dasar seperti berikut ini, sekalian dengan nama identifier cla
       
       <guid>https://insertapps.com/blog/css-dropcap/</guid>
       <description>Drop cap dekorasi karakter pertama di awal paragraf pertama dibuat lebih menonjol dengan memperbesar ukuran huruf.
- Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.
+Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.
 Beberapa theme blog WordPress sudah menyediakan fitur tambahan untuk membuat &amp;lsquo;Drop Cap&amp;rsquo;.
-Bila thema WordPress atau Blogspot kamu tidak ada fitur tersebut, jangan berkecil hati.</description>
+Bila thema WordPress atau Blogspot kamu tidak ada fitur tersebut, jangan berkecil hati.
+Kamu bisa menambahkan sendiri fitur drop cap.</description>
     </item>
     
     <item>

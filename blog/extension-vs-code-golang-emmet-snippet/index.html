@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Extensions VS Code untuk support code Golang dengan Emmet snippet ← InsertApps</title>
     <link rel="canonical" href="https://insertapps.com/blog/extension-vs-code-golang-emmet-snippet/">
-    <link rel="manifest" href="https://insertapps.com//manifest.json">
+    <link rel="manifest" href="https://insertapps.com/manifest.json">
 
     <link rel="amphtml" type="text/html" href="https://insertapps.com/amp/blog/extension-vs-code-golang-emmet-snippet/">
 
@@ -388,18 +388,16 @@ if (!doNotTrack) {
 <p>Nama extensions-nya: &ldquo;<strong>gotemplate-syntax</strong> Language support for go text/template&rdquo; karya Casualjim.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">https://marketplace.visualstudio.com/items?itemName=casualjim.gotemplate
 </code></pre></div><p>Setelah mengaktifkan ektensi tersebut, file <code>.html</code> template Hugo yang setubuh dengan sintak <code>go</code> di VS Code auto mendeteksi <code>Language Mode</code> ke pilihan bahasa <code>Golang HTML Template</code>.</p>
-<p><strong>Baca Juga:</strong> <a href="https://insertapps.com/blog/visual-studio-code-the-window-has-crashed/" target="_blank" rel="noopener">Solusi untuk VS Code yang mengalami Crash saat pertama di buka.</a></p>
+<p><strong>Baca Juga:</strong> <a href="https://insertapps.com/blog/visual-studio-code-the-window-has-crashed/">Solusi untuk VS Code yang mengalami Crash saat pertama di buka.</a></p>
 <p>Coding dalam mode bahasa <code>Golang HTML Template</code>, emmet snippet tidak berfungsi.</p>
 <p>Solusinya adalah, dengan menambah <code>emmet.includeLanguages</code> di dalam setting app Visual Code.</p>
 <p>Buka <strong>Preferences</strong> lalu pilih <strong>Setting</strong> atau tekan <code>Ctrl+Comma</code>. Di macOS tekan tombol <code>Command+Comma</code>.</p>
 <p>Di bagian dashboard <strong>Setting</strong> VS Code, cukup ketik <code>emmet include</code> di kolom search.</p>
 <p>Klik tombol <strong>Add Item</strong>. Di kolom key <strong>Item</strong>: insert <code>gohtml</code>, di kolom <strong>Value</strong> insert: <code>html</code>. Ok.</p>
-<p>
   <figure class="mb3 m0 center mxn2">
-    <img class="fit m0" src="/images/blog/2020/08_vs-code-emmet-include-languages.jpg" alt="Setting Emmet: Include Languages">
+    <img class="fit m0" src="https://insertapps.com/images/blog/2020/08_vs-code-emmet-include-languages.jpg" alt="Setting Emmet: Include Language">
     <figcaption class="muted italic h5">Setting Emmet: Include Language</figcaption>
   </figure>
-</p>
 <p>Atau bisa juga melalui edit <code>settings.json</code> VS Code.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#e6db74">&#34;emmet.includeLanguages&#34;</span><span style="color:#f92672">:</span> <span style="color:#f92672">{</span>
 	<span style="color:#e6db74">&#34;gohtml&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;html&#34;</span>

@@ -35,7 +35,7 @@
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/insertapps.com\/images\/blog\/Webdesain_cover-image.jpg", 
+      "url": "https:\/\/insertapps.com\/images\/blog\/2021\/Horizontal-scroll-mouse-wheel.gif", 
       "height":  1024 ,
       "width":  512 
 	  
@@ -1800,7 +1800,7 @@ blockquote p {
 
 			<div class="clearfix mxn2">
 			 
-				<amp-img class="mb2" src="/images/blog/Webdesain_cover-image.jpg" alt="Ilustrasi"  height="512" width="1024"
+				<amp-img class="mb2" src="/images/blog/2021/Horizontal-scroll-mouse-wheel.gif" alt="Ilustrasi horizontal scroll mouse wheel."  height="512" width="1024"
 					layout="responsive"></amp-img>
 			</div>
 
@@ -1823,7 +1823,7 @@ blockquote p {
 <p>Dan pengembang aplikasi oke-oke saja untuk mendevelop satu aplikasi dengan beragam versi, baik versi desktop; web base, plus dua apps lagi masing-masing khusus untuk Android dan IOS. 😭</p>
 <p>Bagaimana dengan saya, hanya ingin satu aplikasi saja web saja, namun berfungsi dan responsive seutuhnya di semua jenis perangkat yang beragam ukuran layar? 😚</p>
 <p>Satu lagi, bagaimana dengan website yang menerapkan Progressive Web Apps? 😱</p>
-<p>Pieter Biesemans dalam artikel yang dipublish oleh <a href="https://css-tricks.com/pure-css-horizontal-scrolling/" target="_blank" rel="noopener">CSS-Trick</a> punya cara yang sangat cerdik, unik, simple dan super <em>creative think different</em> dalam memanipulasi scroll direction bawaan HTML dan CSS menjadi scrolling secara horizontal pada suatu element <code>&lt;div&gt;</code>.</p>
+<p>Pieter Biesemans dalam artikel yang dipublish oleh <a href="https://css-tricks.com/pure-css-horizontal-scrolling/">CSS-Trick</a> punya cara yang sangat cerdik, unik, simple dan super <em>creative think different</em> dalam memanipulasi scroll direction bawaan HTML dan CSS menjadi scrolling secara horizontal pada suatu element <code>&lt;div&gt;</code>.</p>
 <p>Cara jitu Biesemans berjalan dengan sangat perfect sekali. 👍</p>
 <p>Trik yang dia lakukan, tampa melibatkan jQuery apalagi JavaScript, ini pure CSS dengan manipulasi ala trik magic sulap.</p>
 <p>Bagaimana Pieter melakukannya❓</p>
@@ -1847,7 +1847,7 @@ blockquote p {
 <h3 id="begini-cara-implementasi-fungsi-horizontal-scroll-mouse-wheel">Begini cara implementasi fungsi horizontal scroll mouse wheel</h3>
 <p><strong>PERTAMA</strong> siapkan satu blok element HTML sebagai berikut:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
-  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;scoll&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box-scroll&#34;</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box-scroll&#34;</span>&gt;
     &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card ml&#34;</span>&gt;
       &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://freebiespic.com/images/2018/0821_sneakers-shoes-men-on-the-shelf-thumb.jpg&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Text image&#34;</span>&gt;
       &lt;<span style="color:#f92672">p</span>&gt;Sneakers shoes for men&lt;/<span style="color:#f92672">p</span>&gt;
@@ -1919,7 +1919,7 @@ blockquote p {
 </code></pre></div><p><strong>KETIGA</strong></p>
 <p>Terakhir tambahkan sedikit script javascript untuk menjalan fungsi scroll direction horizontal ke dalam element HTML.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Declaring variable to target a div element
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mouseWheel</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;scoll&#39;</span>);
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mouseWheel</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#39;.box-scroll&#39;</span>);
 
 <span style="color:#75715e">// Add wheel function
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">mouseWheel</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;wheel&#39;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">e</span>) {

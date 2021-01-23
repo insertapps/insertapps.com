@@ -1,6 +1,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
+    <loc>https://insertapps.com/blog/hugo-markdown-render-hook-amp-img/</loc>
+    
+    <lastmod>2021-01-23T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://insertapps.com/blog/hugo-markdown-render-hook/</loc>
+    
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
+  </url>
+
+  <url>
     <loc>https://insertapps.com/blog/html-horizontal-scroll-mouse-wheel/</loc>
     
     <lastmod>2021-01-20T00:00:00+00:00</lastmod>
@@ -99,7 +115,7 @@
   <url>
     <loc>https://insertapps.com/blog/mikrotik-system-error-critical/</loc>
     
-    <lastmod>2020-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-23T00:00:00+00:00</lastmod>
 	
 	<changefreq>monthly</changefreq>
   </url>

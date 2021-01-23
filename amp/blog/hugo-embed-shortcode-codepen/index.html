@@ -35,7 +35,7 @@
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/insertapps.com\/images\/blog\/Webdesain_cover-image.jpg", 
+      "url": "https:\/\/insertapps.com\/images\/blog\/Hugo_cover-image.jpg", 
       "height":  1024 ,
       "width":  512 
 	  
@@ -1800,7 +1800,7 @@ blockquote p {
 
 			<div class="clearfix mxn2">
 			 
-				<amp-img class="mb2" src="/images/blog/Webdesain_cover-image.jpg" alt="Ilustrasi"  height="512" width="1024"
+				<amp-img class="mb2" src="/images/blog/Hugo_cover-image.jpg" alt="Ilustrasi"  height="512" width="1024"
 					layout="responsive"></amp-img>
 			</div>
 
@@ -1809,18 +1809,19 @@ blockquote p {
 <p>Untuk web static berbasis Hugo tidak bisa demikian ferguso. Data konten yang disimpan dalam file Markdwond tidak mengizinkan copy-paste kode program langsung dalam body text file Markdown. 😓</p>
 <p>&ldquo;Markdown adalah bahasa markah ringan dengan sintaksis pemformatan teks polos&rdquo;, begitu kata Wikipedia. Jadi, kalau mau meng-insert script ke dalam file yang berektensi .md itu, bukan Markdown namanya, tapi Markcode. 😆</p>
 <p>Ada syarat dan ketentuan yang berlaku menulis artikel yang berisi posting IG, embed tweet, embed vidoe YouTube, bahkan meng-insert kode program ke dalam format Markdwond.</p>
-<p>Hugo telah menyertakan syarat dan ketentuan yang berlaku untuk insert sintag program ke dalam body text Markdown di Document -&gt; Manajemen konten -&gt; <a href="https://Hugo.io/content-management/shortcodes/" target="_blank" rel="noopener">Shortcode</a>.</p>
+<p>Hugo telah menyertakan syarat dan ketentuan yang berlaku untuk insert sintag program ke dalam body text Markdown di Document -&gt; Manajemen konten -&gt; <a href="https://Hugo.io/content-management/shortcodes/">Shortcode</a>.</p>
 <h3 id="hugo-shortcode-codepen">Hugo shortcode codepen</h3>
 <p>Sayangnya, untuk sharing dan running program dari Codepen ke dalam posting SSG Hugo, tidak disediakan khusus seperti shortcode untuk embed script dari GitHub gists.</p>
 <p>Shortcode untuk embed Codepen harus di custom sendiri templatenya oleh developer themes Hugo. Berikut caranya:</p>
 <p><strong>Part 1: Copy code</strong></p>
 <p>Copy code embed Codepen untuk mengambil script berbagi hasil coding. 😎</p>
-<p>
-  <figure class="mb3 m0 center mxn2">
-    <img class="fit m0" src="/images/blog/2021/01_how-hugo-embed-codepen.jpg" alt="Setting Emmet: Include Languages">
-    <figcaption class="muted italic h5">Copy script embed link Codepen</figcaption>
-  </figure>
-</p>
+
+
+<amp-img src="https://insertapps.com//images/blog/2021/01_how-hugo-embed-codepen.jpg" alt="Copy script embed link Codepen"
+class="mb3 m0 center mxn2 fit"
+width="1024"
+height="801"
+layout="responsive"></amp-img>
 <p>Script embed code seperti ini:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;codepen&#34;</span> <span style="color:#a6e22e">data-height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;265&#34;</span> <span style="color:#a6e22e">data-theme-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;light&#34;</span> <span style="color:#a6e22e">data-default-tab</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;html,result&#34;</span> <span style="color:#a6e22e">data-user</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fauzanmy&#34;</span> <span style="color:#a6e22e">data-slug-hash</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;qBavEmb&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&#34;</span> <span style="color:#a6e22e">data-pen-title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Simple collapse sidebar menu with body overlay without jQuery&#34;</span>&gt;
   &lt;<span style="color:#f92672">span</span>&gt;See the Pen &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://codepen.io/fauzanmy/pen/qBavEmb&#34;</span>&gt;
@@ -1842,12 +1843,13 @@ blockquote p {
 <span style="color:#75715e">// To access a parameter by position number
 </span><span style="color:#75715e"></span>   {{ .<span style="color:#a6e22e">Get</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> }}
 </code></pre></div><p>Kemudian insert <em>shortcode parameters access</em> dengan cara mereplace ke dalam script ambed posting Codepen seperti berikut petunjuk gambar berikut ini:</p>
-<p>
-  <figure class="mb3 m0 center mxn2">
-    <img class="fit m0" src="/images/blog/2021/01_hugo-shortcode-template.jpg" alt="Hugo shortcode template">
-    <figcaption class="muted italic h5">Hugo shortcode template</figcaption>
-  </figure>
-</p>
+
+
+<amp-img src="https://insertapps.com/images/blog/2021/01_hugo-shortcode-template.jpg" alt="Hugo shortcode template"
+class="mb3 m0 center mxn2 fit"
+width="947"
+height="524"
+layout="responsive"></amp-img>
 <p>Hasil akhir file template <code>codepen.html</code> adalah sebagai berikut:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;codepen&#34;</span> <span style="color:#a6e22e">data-height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;265&#34;</span> <span style="color:#a6e22e">data-theme-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;light&#34;</span> <span style="color:#a6e22e">data-default-tab</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;html,result&#34;</span> <span style="color:#a6e22e">data-user</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get 0 }}&#34;</span> <span style="color:#a6e22e">data-slug-hash</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get 1 }}&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&#34;</span> <span style="color:#a6e22e">data-pen-title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get 2 }}&#34;</span>&gt;
   	&lt;<span style="color:#f92672">span</span>&gt;See the Pen &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://codepen.io/{{ .Get 0 }}/pen/{{ .Get 1 }}&#34;</span>&gt;

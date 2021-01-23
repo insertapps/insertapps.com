@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Setting tanggal &#39;last updated&#39; atau &#39;last modified date&#39; posting di system Hugo ← InsertApps</title>
     <link rel="canonical" href="https://insertapps.com/blog/hugo-last-modified-date-setting/">
-    <link rel="manifest" href="https://insertapps.com//manifest.json">
+    <link rel="manifest" href="https://insertapps.com/manifest.json">
 
     <meta name="description" content="Cara setting tanggal &#39;last updated&#39; atau &#39;last modified date&#39; posting blog di system Hugo" />
     
@@ -388,7 +388,7 @@ lastmod: 2020-07-17
 <p>Kalau gak mau ribet, jangan hijrah ke Hugo. 😅</p>
 <p>Konsisten saja di WordPress, Blogspot atau develop saja sendiri CMS blog lain.</p>
 <p><strong>Berikut cara menampilkan tanggal update terakhir atau &lsquo;last updated&rsquo; atau &lsquo;last modified date&rsquo; pada postingan blog statik berbasis Hugo.</strong></p>
-<p>Referensi lengkat fungsi tanggal Hugo, baca dokumentasi <a href="https://Hugo.io/functions/format/" target="_blank" rel="noopener">Hugo.io/functions/</a></p>
+<p>Referensi lengkat fungsi tanggal Hugo, baca dokumentasi <a href="https://Hugo.io/functions/format/">Hugo.io/functions/</a></p>
 <p><strong>Fungsi tanggal Hugo</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span>&gt;
 	Last updated {{ .Date }}
@@ -415,7 +415,7 @@ lastmod: 2020-07-17
 </span></code></pre></div><p>Hasilya <code>7 July 20</code>.</p>
 <p>Format untuk mencetak tanggalnya <code>j F y</code>. 😰 Sungguh Code-nya tidak human readable banget kan?</p>
 <p>Terus kenapa diambil tanggal <code>&quot;2 January 2006&quot;</code>? Kalau itu tanyakan saja kepada kepada Google sebagai pemilik bahasa pemrograman Go.</p>
-<p>Atau bisa baca petunjuk teknisnya langsung di <a href="https://golang.org/pkg/time/#example_Time_Format" target="_blank" rel="noopener">Golang.org/pkg/time/</a></p>
+<p>Atau bisa baca petunjuk teknisnya langsung di <a href="https://golang.org/pkg/time/#example_Time_Format">Golang.org/pkg/time/</a></p>
 <p>Ok penjelasannya sudah jelas. 👍</p>
 <p>Pertanyaan terakhir?</p>
 <p><strong>Bisa tidak menampilkan tanggal &lsquo;last update&rsquo; atau &lsquo;last modified&rsquo; posting Hugo dipaksa secara auto system?</strong></p>
@@ -428,9 +428,7 @@ lastmod: 2020-07-17
 <p>Dengan cara membaca perubahan log file <code>.md</code> di dalam sistem komputer kamu. Maka parameter <code>:fileModTime&quot;, &quot;:default&quot;</code> akan mengacu ke tanggal perubahan file dalam komputer.</p>
 <p>Jadi, fungsi <code>{{ .Lastmod }}</code> tidak lagi mengacu ke <code>lastmod: 2020-07-17</code> yang ada di dalam front matter konten pos.</p>
 <p>Tapi mengambil data dari &lsquo;Date Modified&rsquo; meta file info dalam sistem komputer.</p>
-<p>
-  <img src="/images/blog/2020/07_macOS-get-info-dialog-box.jpg" alt="macOS get info dialog box">
-</p>
+<p><img src="/images/blog/2020/07_macOS-get-info-dialog-box.jpg" alt="macOS get info dialog box"></p>
 <p>Sistem komputer kamu, selalu melakukan rakam jejak &lsquo;log&rsquo; pada setiap perubahan file yang kamu CRUD: create, read, update (edit) dan delete.</p>
 <p>Semoga bermanfaat. Tunggu apa lagi, yuk hijrah ke Hugo. 😏</p>
 

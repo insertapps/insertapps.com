@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Editor Brackets Error: PHP7 runtime not found ← InsertApps</title>
     <link rel="canonical" href="https://insertapps.com/blog/brackets-error-php7-runtime/">
-    <link rel="manifest" href="https://insertapps.com//manifest.json">
+    <link rel="manifest" href="https://insertapps.com/manifest.json">
 
     <link rel="amphtml" type="text/html" href="https://insertapps.com/amp/blog/brackets-error-php7-runtime/">
 
@@ -376,9 +376,10 @@ if (!doNotTrack) {
 			<p>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &lsquo;Live Preview&rsquo;.</p>
 <p>Nah&hellip; Saat ngoding PHP tiba-tiba muncul pesan error:</p>
 <p><em>PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.</em></p>
-<p>
-  <img src="/images/blog/2020/06_Brakets-PHP-runtime-error-or-not-found.jpg" alt="Brackets error: PHP runtime not found.">
-</p>
+  <figure class="mb3 m0 center mxn2">
+    <img class="fit m0" src="https://insertapps.com/images/blog/2020/06_Brakets-PHP-runtime-error-or-not-found.jpg" alt="Brackets error: PHP runtime not found.">
+    <figcaption class="muted italic h5">Brackets error: PHP runtime not found.</figcaption>
+  </figure>
 <p>Untuk bracket versi yang lebih lama, pesan erronya begini:</p>
 <p><em>PHP runtime not found. Install the PHP7 runtime and update “executablePath” in PHP Preferences appropriately. This enables PHP-related tooling such as Code Hints, Parameter Hints, Jump To Definition and more.</em></p>
 <p>Artinya, Brackets editor meminta lokasi path instalasi file bin .php yang terinstall di komputer/laptop kamu.</p>
@@ -387,9 +388,7 @@ if (!doNotTrack) {
 <p>Untuk pengguna XAMPP di Windows, biasanya, lokasi path PHP environment ada di <code>c:\xampp\bin\php\php7.4.2\php.exe</code>.</p>
 <p>Pada bagian <code>/php7.4.2/</code> tergantung PHP versi berapa yang kamu install. Kebetulan saat tulisan ini saya tulis, versi PHP yang saya install v7.4.2.</p>
 <p>Kemudian akses Brackets &gt; Preferences atau pencet tombol <code>Comment</code> + <code>,</code>. Kalau komputer Windows <code>Debug &gt; Open Preferences File</code>.</p>
-<p>
-  <img src="/images/blog/2020/06_Brackets-php-tooling-config.jpg" alt="Brackets Preferences.">
-</p>
+<p><img src="/images/blog/2020/06_Brackets-php-tooling-config.jpg" alt="Brackets Preferences."></p>
 <p>Di dalam file konfigurasi <code>brackets.json</code> di bagian sebelah kanan, paste kode berikut ini:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#e6db74">&#34;php&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
         <span style="color:#f92672">&#34;executablePath&#34;</span>: <span style="color:#e6db74">&#34;/Applications/MAMP/bin/php/php7.4.2/bin/php&#34;</span>
