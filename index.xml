@@ -214,8 +214,7 @@ Implementasi yang sering digunakan pada halaman login sebuah website, seperti ha
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
- Untuk bracket versi yang lebih lama, pesan erronya begini:
-PHP runtime not found.</description>
+Brackets error: PHP runtime not found.  Untuk bracket versi yang lebih lama, pesan erronya begini:</description>
     </item>
     
     <item>
@@ -308,7 +307,7 @@ Tadaa. Sudah normal kembali.</description>
       <description>Sebelum jatuh hati dan mantap menggunakan framework Basscss, InsertApps sudah mencoba framework CSS Bootstrap sejak versi 2.3.
 Setelah sekian lama ngulik Bootstrap, kami baru berhasil menyelesai sebuah WordPress theme siap pakai saat rilis Bootstrap 4 beta 2.
 Begitu Bootstrap 4.0 versi stabil release ke publik, kami sudah migrasi ke Basscss karya Brent Jackson dari Brooklyn, New York.
- Alasan beralih ke framework Basscss karena Bootstrap susah lolos Google PageSpeed Insights ke predikat hijau—performa dengan nilai skor 50–89 Google PageSpeed test.</description>
+Hasil rapid test kecepatan loading web InsertApps, peringatan &amp;#39;optimasi CSS&amp;#39; sudah clear.  Alasan beralih ke framework Basscss karena Bootstrap susah lolos Google PageSpeed Insights ke predikat hijau—performa dengan nilai skor 50–89 Google PageSpeed test.</description>
     </item>
     
     <item>
@@ -339,7 +338,10 @@ Harap Anda membaca Terms of Use ini dengan sebaik-baiknya. Dengan mengakses dan 
       <pubDate>Wed, 01 Jan 2020 15:06:06 +0000</pubDate>
       
       <guid>https://insertapps.com/about/</guid>
-      <description>InsertApps adalah situs portofolio produk digital yang telah dibuat oleh team InsertApps serta berisi tutorial, potongan kode, tips dan trik dunia pemograman sebagai rekam jejak informasi untuk kepentingan insertApp maupun pengunjung setia InsertApps.</description>
+      <description>&amp;ldquo;Menulis kode sama dengan menulis dokumentasi&amp;rdquo;
+Di dalam website ini, InsertApps mengumpulkan berbagai portofolio produk digital yang telah berhasil dikembangkan. Selain untuk dokumentasi tim InsertApps, diharapkan bermanfaat juga untuk pengunjung setia maupun yang telah &amp;lsquo;nyasar&amp;rsquo; ke InsertApps.com.
+Brief History &amp;ldquo;CLick. Read. Install&amp;rdquo; ← (2010 - 2019)
+Awalnya InsertApp.com adalah sebuah blog yang berisi konten review berbagai aplikasi mobile dan dektop yang dikembangkan oleh Fauzan My, seorang blogger yang berasal dari Aceh.</description>
     </item>
     
     <item>
@@ -359,10 +361,9 @@ InsertApps berhak memuat, atau tidak memuat, melakukan penyuntingan atau menghap
       <pubDate>Mon, 06 Jun 2016 15:06:36 +0000</pubDate>
       
       <guid>https://insertapps.com/license/</guid>
-      <description>You Can
-All images on freebiespic are released for any number of personal and commercial projects for yourself or on behalf of a client. Therefore, the images can be modified and may be used freely for any application. But for printed format we do appreciate if you want to give us photo credit.
-You Can’t
-Sell or distribute the photos on its own even for free. If you want to share the photo, make sure to link back to the our page.</description>
+      <description>InsertApps source code and docs
+Setiap code, script, template yang di produksi oleh InsertApps menggunakan MIT License.
+Lisensi MIT adalah lisensi perangkat lunak bebas permisif yang berasal dari Massachusetts Institute of Technology (MIT). Sebagai lisensi permisif, Lisensi MIT memberikan batasan yang sangat longgar tentang penggunaan kembali kode sumber, terkait kode sumber dan memiliki kompatibilitas lisensi yang sangat baik. Lisensi MIT mengizinkan penggunaan kembali perangkat lunak, dengan lisensi MIT menjadi perangkat lunak berpemilik asalkan menyediakan salinan semua persyaratan dan pemberitahuan hak cipta dari Lisensi MIT.</description>
     </item>
     
     <item>
