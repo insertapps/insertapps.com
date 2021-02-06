@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /categories/
+Allow: /blog/
+Sitemap: https://insertapps.com/sitemap.xml
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
