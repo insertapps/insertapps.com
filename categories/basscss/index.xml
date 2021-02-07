@@ -32,16 +32,6 @@ Dalam satu balok header diisi tiga item, icon burger, logo dan jejeran nav menu.
     </item>
     
     <item>
-      <title>Cara simpel css layout vertical center</title>
-      <link>https://insertapps.com/blog/cara-simpel-css-layout-vertical-center/</link>
-      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
-      
-      <guid>https://insertapps.com/blog/cara-simpel-css-layout-vertical-center/</guid>
-      <description>Cara simpel css layout vertical center.
-&amp;lt;div class=&amp;#34;flex items-center flex-wrap border bg-teal&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;md-col-6 border&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{{ .Site.BaseURL }}assets/bg-design.png&amp;#34; alt=&amp;#34;Top view illustration of coding and design&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;md-col-6 px2 border&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;content-center&amp;#34;&amp;gt; Your text here.. &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;</description>
-    </item>
-    
-    <item>
       <title>Basscss the best Bootstrap alternatives</title>
       <link>https://insertapps.com/blog/css-framework-basscss/</link>
       <pubDate>Wed, 22 Jan 2020 18:15:25 +0700</pubDate>

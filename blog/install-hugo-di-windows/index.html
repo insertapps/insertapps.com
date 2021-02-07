@@ -385,24 +385,25 @@ if (!doNotTrack) {
 <p>Karena sudah terbiasa dengan cara starter mesin WordPress auto engine dalam paket hosting, untuk menghidupkan server Hugo memang sedikit membingungkan, terutama buat user sekedar mencoba rasa SSG Hugo.</p>
 <p>Di laman dokumentasi Hugo, sudah ada juknis (petunjuk teknis) cara install Hugo di berbagai operating system.</p>
 <p>Harus di akui memang, <em>technical users guide installing</em> Hugo di laman dokumentasi <code>Gohugo.io</code> kurang ramah untuk pemula, apalagi yang baru hijrah ke SSG Hugo.</p>
-<p>Untuk menjawab pertanyaan kawan-kawan yang selalu bertanya, bagaimana cara menginstall Hugo di Windows?</p>
-<p>InsertApps mencoba memberi petunjuk teknis alternatif step by step install Hugo terbaru di Windows. Lengkap dengan gambar.</p>
+<p>Untuk menjawab pertanyaan kawan-kawan yang selalu bertanya, bagaimana cara menginstall Hugo di Windows.</p>
+<p>InsertApps mencoba memberi petunjuk teknis alternatif step by step install Hugo terbaru di Windows 7, lengkap dengan screenshoot.</p>
+<p>Untuk install Hugo di Windows 10 pada dasarnya sama saja, tidak ada yang berbeda.</p>
 <h3 id="step-1-download-binary-hugo">Step 1. Download binary Hugo</h3>
 <p>Perlu diketahui, mesin SSG Hugo sudah di compile menjadi sebuah aplikasi dalam format <code>hugo.exe</code> untuk lingkungan Windows. Unix binaries untuk keluarga besar Linux berserta tujuh turunannya bahkan sepupunya, si macOS.</p>
 <p>Walaupun sudah menjadi program <code>.exe</code> dan siap menggenerate konten website, source code Hugo yang ditulis dengan bahasa Go juga tersedia secara open source.</p>
-<p>Kalian tertarik untuk berpartisipasi mengembangkan Hugo, pastikan diri kalian jago bahasa Go.</p>
+<p>Kalian tertarik untuk berpartisipasi mengembangkan Hugo, pastikan diri kalian jago bahasa Go. 😎</p>
 <p>Untuk mendownload Hugo versi terbaru, silahkan buka tautan berikut ini:</p>
 <p><a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></p>
   <figure class="mb3 m0 center mxn2">
     <img class="fit m0" src="https://insertapps.com/images/blog/2021/02_01_install-hugo__download-hugo-for-windows.jpg" alt="Pilihan download Hugo untuk Windows 64 bit">
     <figcaption class="muted italic h5">Pilihan download Hugo untuk Windows 64 bit</figcaption>
   </figure>
-<p>Silahkan pilih format Hugo sesuai dengan operating system kalian. Sesuai dengan tutorial ini, InsertApps pilih mesin Hugo versi Windows 64 bit.</p>
+<p>Silahkan pilih file installasi Hugo sesuai dengan operating system kalian. Seperti dalam topik tutorial ini, InsertApps pilih mesin Hugo versi Windows 64 bit.</p>
 <h3 id="step-2-extract-file-hugo">Step 2. Extract file Hugo</h3>
 <p>Sesuai instruksi dari dokumentasi Hugo, file executable Hugo ditempatkan ke sebuah folder khusus, di drive <code>C:\Hugo</code>.</p>
 <p>Oya, penempatan app <code>hugo.exe</code> tidak musti dan wajib dalam drive <code>C:\</code>, ya! Kalian boleh meletakkan dimana saja sesuka hati, misal di drive <code>D:\Hugo</code>.</p>
-<p>Atau kalau mau terlihat lebih rebel dan tergokil, bisa tempatkan file binary <code>Hugo.exe</code> ke dalam flashdisk. Kapan perlu live server, tinggal colok flashdisk.  👽</p>
-<p>Untuk tutorial Install Hugo kali ini, sesuai juknis dokumentasi <code>Gohugo.io</code> saja. Extrak file hasil download ke dalam direktori baru <code>Hugo\bin</code> di drive <code>C:\Hugo\bin</code>.</p>
+<p>Atau kalau mau terlihat rebel dan tergokil, bisa tempatkan file binary <code>Hugo.exe</code> ke dalam flashdisk. Kapan perlu live server untuk update post, tinggal colok flashdisk.  👽</p>
+<p>Untuk tutorial Install Hugo kali ini, sesuai juknis dokumentasi <code>Gohugo.io</code> saja. Extrak file hasil download ke dalam direktori baru <code>Hugo\bin</code> local disk <code>C:\Hugo\bin</code>.</p>
   <figure class="mb3 m0 center mxn2">
     <img class="fit m0" src="https://insertapps.com/images/blog/2021/02_04-install-hugo__extract-hugo-file.jpg" alt="Paket install Hugo di dalam file .zip.">
     <figcaption class="muted italic h5">Paket install Hugo di dalam file .zip.</figcaption>
@@ -424,8 +425,8 @@ if (!doNotTrack) {
     <figcaption class="muted italic h5">Proses install Hugo sudah siap.</figcaption>
   </figure>
 <h3 id="step-3-hugo-siap-dijalankan">Step 3. Hugo siap dijalankan</h3>
-<p>Hingga bagian ke 2 penempatan file binari Hugo ke dalam folder yang kalian suka, Hugo sudah siap pakai.</p>
-<p>Untuk melakukan testing berhasil tidaknya proses instalasi Hugo, lakukan pengetesan sebagai berikut:</p>
+<p>Hingga step ke 2 penempatan file binari Hugo ke dalam folder yang kalian suka, Hugo sudah siap pakai.</p>
+<p>Untuk melakukan testing berhasil tidaknya proses instalasi Hugo, lakukan pengetesan Hugo seperti cara berikut:</p>
 <p><strong>Pertama:</strong> buka jendela <code>Command Prompt</code> Windows, atau jendela Terminal di lingkungan Unix Cs, (Linux dan macOS).</p>
 <p><strong>Kedua:</strong> melalui command prompt, masuk ke dalam direktori <code>C:\Hugo\bin</code>.</p>
 <p><strong>Ketiga:</strong> setelah command prompt berada dalam direktori binary Hugo, ketik perintah <code>hugo version</code>.</p>
@@ -464,13 +465,15 @@ if (!doNotTrack) {
   </figure>
 <h3 id="step-5-instalasi-hugo-sudah-paripurna">Step 5. Instalasi Hugo sudah paripurna</h3>
 <p>Dengan mendaftarkan path directory instalasi Hugo ke Windows path environment variable, maka user bebas menyimpan data website Hugo di drive mana saja, bahkan di dalam flashdisk sekalipun bisa update new post.</p>
-<p>Hal ini tidak seperti server PHP, wajib menempatkan data website di folder htdoc, diluar folder tersebut ngak running. 😜</p>
+<p>Hal ini tidak berlaku untuk server PHP, source code data web wajib berada dalam directory <code>htdoc</code>, diluar folder tersebut script tidak running. 😜</p>
 <h3 id="step-6-cara-update-hugo">Step 6. Cara Update Hugo</h3>
 <p>Cukup mudah bukan proses instalasi Hugo di OS Windows? 😊</p>
 <p>Bagaimana kalau ada update terbaru Hugo? Sebelumnya sudah ada posting tentang <a href="https://insertapps.com/blog/cara-upgrade-hugo/">Cara upgrade system hugo</a>.</p>
 <p>Cara update Hugo versi terbaru sama saja prosesnya seperti petunjuk step 1-2. Malah lebih simpel lagi, cuku download Hugo versi terbaru, extract dengan cara mereplace file binary Hugo versi lama dengan <code>hugo.exe</code> versi baru.</p>
 <p>Kemudian jalankan perintah checking <code>hugo version</code>.</p>
 <p>Selesai&hellip; 🔥</p>
+<hr>
+<p>Ada pertanyaan seputar Hugo, yuk bahas lebih lanjut di grup Telegram: https://t.me/InsertApps</p>
 
 		</div>
 		

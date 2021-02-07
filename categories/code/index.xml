@@ -72,5 +72,17 @@ PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling suc
 PHP runtime not found.</description>
     </item>
     
+    <item>
+      <title>Cara simpel CSS layout vertical center</title>
+      <link>https://insertapps.com/blog/cara-simpel-css-layout-vertical-center/</link>
+      <pubDate>Thu, 27 Feb 2020 22:19:15 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/cara-simpel-css-layout-vertical-center/</guid>
+      <description>Dengan hadirnya fitur CSS Flexbox sangat dimudahkan untuk layout suatu blok elemen HTML tepat berada ditengah-tengah secara vertical maupun horizontal.
+Berikut cara simple CSS centering layout.
+&amp;lt;div class=&amp;#34;container&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt; Hello world &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; CSS flexbox:
+html, body { height: 100%; margin: 0; } .container { height: 100%; display: flex; justify-content: center; align-items: center; } .box { display: flex; justify-content: center; align-items: center; width: 20%; height: 20%; border: 1px solid silver; border-radius: 5px; } Silahkan disederhanakan lagi bentuk penulisan sintak CSSnys.</description>
+    </item>
+    
   </channel>
 </rss>
