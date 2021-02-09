@@ -392,11 +392,15 @@ if (!doNotTrack) {
 			<p>Rilis Hugo versi 0.62.0 menambah satu fitur lagi, yaitu <em>Markdown render hooks</em> yang berfungsi untuk memancing kode HTML mentah ke dalam body text Markdown.</p>
 <p>Karena Hugo telah mengganti mesin render Markdown ke Goldmark, diperlukan bagian template baru untuk mengikat HTML mentah tersebut.</p>
 <p>Sebelumnya mesin yang bertugas untuk mem-parser file Markdown berubah menjadi text dalam format HTML memakai engine Blackfriday.</p>
-<p>Hugo beralih ke Goldmark sebagai default Markdown processor, selain lebih cepat, Goldmark sudah menerapkan standar baru <a href="https://spec.commonmark.org/0.29/">CommonMark</a>, sebuah organisasi yang menstandarkan format Markdown. 👍</p>
+<p>Hugo beralih ke Goldmark sebagai default Markdown processor, selain lebih cepat, Goldmark sudah menerapkan standar baru <a href="https://spec.commonmark.org/0.29/" class="blue a-hover text-decoration-none" title="CommonMark" target="_blank" rel="nofollow noopener noreferrer">CommonMark</a>, sebuah organisasi yang menstandarkan format Markdown. 👍</p>
 <p>By default mesin Goldmark tidak mau merender HTML mentah dan tautan link external yang berpotensi membahayakan ke dalam isi body text Markdown.</p>
 <p>Kalau pun memaksa meng-insert potongan kode HTML, script JS dan link dengan perilaku <code>rel=&quot;nofollow&quot;</code> ke dalam body text Markdown, hasil render document HTML di bagian tersebut tidak berjalan alias kosong melompong.</p>
 <p>Coba deh kalau tidak percaya, pasti script kalian diabaikan oleh mesin Goldmark. seolah tidak terjadi apa-apa. 😇</p>
-<p>Sebelumnya, sudah pernah <a href="https://insertapps.com/blog/hugo-embed-shortcode-codepen/">mencoba meng-embed langsung script Codepen ke dalam posting</a>, hasil render laman web seolah tidak terjadi apa-apa. 😱</p>
+<p>Sebelumnya, kami pernah <a href="https://insertapps.com/blog/hugo-embed-shortcode-codepen/" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>mencoba meng-embed langsung script Codepen ke dalam posting</a>, hasil render laman web seolah tidak terjadi apa-apa. 😱</p>
 <p>Karena beda cara kerja antara mesin Goldmark dengan mesin Blackfriday dalam memformat plain text menjadi document HTML, diperlukan template <em>Markdown Render Hooks,</em> untuk menjembatani kode HTML mentah ke dalam file Markdown.</p>
 <p>Markdown versi CommonMark, untuk menambahkan tautan, bentuk penulisan shortcode seperti ini: <code>[]()</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[<span style="color:#f92672">Insertapps.com</span>](<span style="color:#a6e22e">https://insertapps.com/ &#34;Insert Apps&#34;</span>)`
@@ -459,9 +463,13 @@ if (!doNotTrack) {
 &lt;/<span style="color:#f92672">amp-img</span>&gt;
 </code></pre></div><p>Mudahkan?</p>
 <p>Untuk custom heading dan untuk membuat daftar isi yang body Markdown, caranya sama juga.</p>
-<p>Lebih jelasnya, silahkan baca documentasinya di <a href="https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks">configurasi markup</a>. Soalnya kami belum mempraktekkannya, nanti kalau sudah pernah mencobnya, artikel ini kami update lagi.</p>
+<p>Lebih jelasnya, silahkan baca documentasinya di <a href="https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks" class="blue a-hover text-decoration-none" title="configurasi markup" target="_blank" rel="nofollow noopener noreferrer">configurasi markup</a>. Soalnya kami belum mempraktekkannya, nanti kalau sudah pernah mencobnya, artikel ini kami update lagi.</p>
 <p>Intinya dengan template Markdown render hook ini akan memudahkan dalam mengelola custom output khusus image, link dan heading. 😏</p>
-<p>Oya, bila Hugo Markdown render hook image untuk file template AMP <code>render-image.amp.html</code> gagal di eksekusi, silahkan baca solusinya di halaman &lsquo;<a href="https://insertapps.com/blog/hugo-markdown-render-hook-amp-img/">Self problem hugo render hook amp-img template not working</a>&rsquo;.  😓</p>
+<p>Oya, bila Hugo Markdown render hook image untuk file template AMP <code>render-image.amp.html</code> gagal di eksekusi, silahkan baca solusinya di halaman &lsquo;<a href="https://insertapps.com/blog/hugo-markdown-render-hook-amp-img/" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>Self problem hugo render hook amp-img template not working</a>&rsquo;.  😓</p>
 
 		</div>
 		
@@ -570,7 +578,7 @@ if (!doNotTrack) {
                 <section class="col sm-col-4 lg-col-4 p2">
                     <h3 class="caps h4">Code = Docs</h3>
                     <div class="flex flex-column h5">
-                        <p>Berisi portofolio produk digital yang telah berhasil dikembangkan, seperti html template, landing page, dan berbagai web komponen untuk dokumentasi internal, juga bermanfaat untuk pengunjung setia InsertApps.com.</p>
+                        <p>Kumpulan portofolio produk digital yang telah berhasil dikembangkan, seperti html template, landing page, dan berbagai web komponen untuk dokumentasi internal, juga bermanfaat untuk pengunjung InsertApps.com.</p>
 
                         <h3 class="caps h4">Connect via:</h3>
 
@@ -581,7 +589,7 @@ if (!doNotTrack) {
                                 </a>
                             </li>
                             <li class="inline-block mr1">
-                                <a href="https://www.instagram.com/#" target="_blank" class="gray instagram">
+                                <a href="https://www.instagram.com/#" target="_blank" rel="nofollow" class="gray instagram">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
                                 </a>
                             </li>
@@ -600,23 +608,27 @@ if (!doNotTrack) {
                 </section>
 
                 <section class="col sm-col-4 lg-col-4 p2">
-                    <h3 class="caps h4">Service</h3>
+                    <h3 class="caps h4">InsertApps & Friends</h3>
                     <div class="flex">
                         <div class="mr4">
                             <ul class="list-reset h5">
-                                <li><a href="https://ats.insertapps.com/" target="_blank" class="gray a-hover text-decoration-none">Aceh Top Site</a></li>
-                                <li><a href="https://insertapps.com/spell-checker" target="_blank" class="gray a-hover text-decoration-none">Spell Checker</a></li>
-                                <li><a href="https://breepix.com/" target="_blank" class="gray a-hover text-decoration-none">Breepix</a></li>
-                                <li><a href="https://freebiespic.com/" target="_blank" class="gray a-hover text-decoration-none">Freebiespic</a></li>
-                                <li><a href="https://www.graphicdiffer.com/" target="_blank" class="gray a-hover text-decoration-none">Print Themplates</a></li>
-                                <li><a href="https://insertapps.com/#" target="_blank" class="gray a-hover text-decoration-none">Themplates</a></li>
+                                <li><a href="https://insertapps.com/about" target="_blank" class="gray a-hover text-decoration-none">About</a></li>							
+                                <li><a href="https://insertapps.com/disclaimer" target="_blank" class="gray a-hover text-decoration-none">Disclaimer</a></li>
+                                <li><a href="https://insertapps.com/faq" target="_blank" class="gray a-hover text-decoration-none">FAQ</a></li>
+                                <li><a href="https://insertapps.com/privacy" target="_blank" class="gray a-hover text-decoration-none">Privacy</a></li>
+                                <li><a href="https://insertapps.com/terms" target="_blank" class="gray a-hover text-decoration-none">Terms</a></li>
+                                <li><a href="https://t.me/InsertApps" target="_blank" rel="nofollow" class="gray a-hover text-decoration-none">Diskusi</a></li>
                             </ul>
                         </div>
                         <div class="flex-auto">
                             <ul class="list-reset h5">
-                                <li><a href="https://insertapps.com/categories/hugo/" class="gray a-hover text-decoration-none">Tutorial Hugo</a></li>
-                                <li><a href="https://insertapps.com/categories/bootstrap/" class="gray a-hover text-decoration-none">Tutorial Bootstrap</a></li>
-                                <li><a href="https://insertapps.com/categories/basscss/" class="gray a-hover text-decoration-none">Tutorial Basscss</a></li>
+                                <li><a href="https://ats.insertapps.com/" target="_blank" class="gray a-hover text-decoration-none">Aceh Top Site</a></li>
+                                <li><a href="https://insertapps.com/spell-checker" target="_blank" class="gray a-hover text-decoration-none">Spell Checker</a></li>
+                                <li><a href="https://breedie.com/" target="_blank" class="gray a-hover text-decoration-none">Breedie.com</a></li>
+                                <li><a href="https://breepix.com/" target="_blank" rel="nofollow" class="gray a-hover text-decoration-none">Breepix.com</a></li>
+                                <li><a href="https://freebiespic.com/" target="_blank" class="gray a-hover text-decoration-none">Freebiespic.com</a></li>
+                                <li><a href="https://www.graphicdiffer.com/" target="_blank" class="gray a-hover text-decoration-none">Graphicdiffer.com</a></li>
+
                             </ul>
                         </div>
                     </div>

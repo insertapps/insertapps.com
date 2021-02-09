@@ -60,6 +60,11 @@ a:active {
   /* Change the second color of your website */
 }
 
+a.a-hover:hover {
+	color: #1d262d;
+	text-decoration: underline;
+}
+
 header a:hover,
 header a:active {
   color: #fff;

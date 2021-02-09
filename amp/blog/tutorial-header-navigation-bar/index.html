@@ -1806,16 +1806,28 @@ blockquote p {
 			</div>
 
 			<div id="content" class="mb2">
-				<p>Tutorial desain <strong>header navigation bar</strong> ini adalah part ke dua dari seri tutorial <a href="https://insertapps.com/blog/tutorial-membuat-website-dengan-basscss/">membuat website bagian pertama</a>. Sesi ini mulai coding secara &lsquo;drag and drop&rsquo; kepingan ‘puzzle’ class-class Basscss, lalu insert ke dalam file HTML.</p>
+				<p>Tutorial desain <strong>header navigation bar</strong> ini adalah part ke dua dari seri tutorial <a href="https://insertapps.com/blog/tutorial-membuat-website-dengan-basscss/" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>membuat website bagian pertama</a>. Sesi ini mulai coding secara &lsquo;drag and drop&rsquo; kepingan ‘puzzle’ class-class Basscss, lalu insert ke dalam file HTML.</p>
 <p>Sebelum &lsquo;lets go to coding&rsquo;, seperti biasa izinkan InsertApps menjelaskan beberapa rule dan konsep koding nya seperti apa? Yang sudah paham dasar web design, silahkan scroll down ke <strong>cara membuat header navigation bar yang responsive.</strong></p>
 <p>Untuk lebih mudah memahami konsep <em>web design programming.</em> tutorial ini, InsertApps mencoba pendekatan konsep desain grafis. Desainer biasanya menggunakan beberapa alat bantu untuk memvisualisasi bentuk desain.</p>
 <p>Layaknya tukang bangunan, konstruksi bangunan tidak terlepas dari namanya alat bantu perancah (scaffolding). Tampa menggunakan perancah, sulit sekali membangun dan membentuk sebuah bangunan.</p>
 <p>Graphic Designer pun tidak terlepas dari alat bantu saat layout majalah, desain logo dan lainnya. Alat bantu yang sering sekali dipakai desainer grafis adalah grid (garis bantu), colorful (warna-warni), rectangle dan circle tool untuk membuat objek kotak maupun bulat.</p>
 <p>Alat bantu coding dalam tutorial ini juga sama, yaitu memanfaatkan utilitas dari class-class framework Basscss itu sendiri, sebagai garis bantu juga sekaligus komponen objek desainnya.</p>
-<p>Untuk perancah garis bantu tutorial ini akan kita pakai class <code>border</code>. Utilitas dan variasi model border lainnya lihat di <a href="https://basscss.com/#basscss-border">basscss-border</a>.</p>
+<p>Untuk perancah garis bantu tutorial ini akan kita pakai class <code>border</code>. Utilitas dan variasi model border lainnya lihat di <a href="https://basscss.com/#basscss-border" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>basscss-border</a>.</p>
 <p>Cat warna-warni, nama class sesuai dengan identitas warna asli, seperti; <code>black</code>, <code>gray</code>, <code>siver</code>, <code>purple</code> dll untuk warna text. Class <code>bg-blue</code> untuk mewarnai isi (fill) kotak container dan class <code>border-teal</code> untuk mewarnai garis kotak container.</p>
 <p>Utilitas dan variasi warna yang sudah include dalam <code>Basscss Ace</code> ini jumlahnya terbatas, modul warna hasil import dari <em>color palette</em> pihak ketiga clrs.cc. Lihat juga dokumentasi masing-masing perilaku dari class Basscss beserta class Add on di <a href="https://github.com/basscss/addons">https://github.com/basscss/addons</a>.</p>
-<p>Sedangkan &lsquo;grid&rsquo; dalam framework css adalah real grid untuk layout kolom dalam berbagai variasi (responsive) web desain. Oya, tidak ada nama class <code>grid</code>, <a href="https://basscss.com/#basscss-grid">grid</a> hanya istilah saja.</p>
+<p>Sedangkan &lsquo;grid&rsquo; dalam framework css adalah real grid untuk layout kolom dalam berbagai variasi (responsive) web desain. Oya, tidak ada nama class <code>grid</code>, <a href="https://basscss.com/#basscss-grid" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>grid</a> hanya istilah saja.</p>
 <h3 id="coding-cara-membuat-header-navigator-bar-yang-responsive">Coding cara membuat header navigator bar yang responsive</h3>
 <p>Buka kembali file template dasar <code>index.html</code> lalu fokus codingnya di bagian tag <code>&lt;header&gt; &lt;p&gt;InsertApps&lt;/p&gt; &lt;/header&gt;</code> dan abaikan dulu tag yang lain.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
@@ -1847,7 +1859,11 @@ blockquote p {
     &lt;/<span style="color:#f92672">footer</span>&gt;
 &lt;/<span style="color:#f92672">body</span>&gt;
 &lt;/<span style="color:#f92672">html</span>&gt;
-</code></pre></div><p>🔥 <em><strong>QUICK TIPS:</strong> Penjelasan lengkap kode di atas baca tutorial Part #1: <a href="https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/">Menyiapkan template dasar Dokument HTML</a>.</em></p>
+</code></pre></div><p>🔥 <em><strong>QUICK TIPS:</strong> Penjelasan lengkap kode di atas baca tutorial Part #1: <a href="https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>Menyiapkan template dasar Dokument HTML</a>.</em></p>
 <p>Langkah pertama, kita akan memvisualisasi bentuk desain dulu dengan menampilkan garis bantu, yaitu add class <code>border</code> ke dalam tiga wadah semantic html tag; <code>&lt;header class=&quot;border&quot;&gt;</code>, <code>&lt;main class=&quot;border&quot;&gt;</code> dan<code> &lt;footer class=&quot;border&quot;&gt;</code>.</p>
 <p>Hasilnya render browser akan menampilkan tiga balok kontainer yang isinya sesuai dengan yang kalian input.</p>
 <blockquote>
@@ -1907,8 +1923,16 @@ blockquote p {
 <ul>
 <li>Class name <code>border bg-blue px2</code> adalah utility style Basscss, perilaku dari class tersebut sudah dijelaskan di bagian atas.</li>
 <li>Code <code>flex</code> class name Basscss. Flex itu sendiri salah satu atribut baru di CSS3 yang berfungsi untuk pengaturan display layout yang lebih fleksibel. Nama kelas  <code>flex</code> dalam utility Basscss, struktur penulisan style CSS-nya seperti ini: <code>.flex { display: flex; }</code>.</li>
-<li>Sedangkan untuk <code>items-center</code> class name Basscss, untuk memaksa isi (item-item) dalam  kontainer pembungkus <a href="https://insertapps.com/blog/cara-simpel-css-layout-vertical-center/">header berjejer secara vertikal</a>. Struktur penulisan style CSS-nya seperti ini: <code>.items-center { align-items: center; }</code>. Properti CSS <code>align-items</code> dengan value input <code>center;</code> tidak bisa berdiri sendiri, ia sangat bergantung ke property <code>flex</code>.</li>
-<li>Pada baris kode yang menampung tombol burger, ada tambahan kode <code>mr1</code> adalah utility class name dari Basscss. Tugas <code>mr1</code> memberi jarak <code>margin-right: 1rem;</code> white space sebelah tombol sejauh <code>1rem</code>. Bingung dengan pengukuran <code>rem</code>? Lihat posting <a href="https://insertapps.com/blog/convert-pixel-to-rem/">Konversi ukuran Pixel ke ukuran REM dalam CSS.</a></li>
+<li>Sedangkan untuk <code>items-center</code> class name Basscss, untuk memaksa isi (item-item) dalam  kontainer pembungkus <a href="https://insertapps.com/blog/cara-simpel-css-layout-vertical-center/" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>header berjejer secara vertikal</a>. Struktur penulisan style CSS-nya seperti ini: <code>.items-center { align-items: center; }</code>. Properti CSS <code>align-items</code> dengan value input <code>center;</code> tidak bisa berdiri sendiri, ia sangat bergantung ke property <code>flex</code>.</li>
+<li>Pada baris kode yang menampung tombol burger, ada tambahan kode <code>mr1</code> adalah utility class name dari Basscss. Tugas <code>mr1</code> memberi jarak <code>margin-right: 1rem;</code> white space sebelah tombol sejauh <code>1rem</code>. Bingung dengan pengukuran <code>rem</code>? Lihat posting <a href="https://insertapps.com/blog/convert-pixel-to-rem/" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>Konversi ukuran Pixel ke ukuran REM dalam CSS.</a></li>
 <li>Baris code <code>&lt;p&gt;InsertApps&lt;/p&gt;</code>, biarin dulu, karena belum di apa-apain. Lanjut ke;</li>
 <li>Baris <code>&lt;nav class=&quot;ml-auto&quot;&gt;</code> ada penambahan kode <code>ml-auto</code>, masih kode class name Basscss. Berfungsi untuk meratakan suatu objek berada pada pojok kanan layar. Struktur asli penulisan style CSS-nya seperti ini: <code>.ml-auto { margin-left: auto; }</code>.</li>
 </ul>
@@ -1968,7 +1992,11 @@ blockquote p {
 	
 &lt;/<span style="color:#f92672">header</span>&gt;
 <span style="color:#75715e">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
-</code></pre></div><p>Hasil akhir rendering di peramban setelah perbaikan kode di atas, lihat <a href="https://insertapps.com/demo/tutorial-basscss/2-desain-header#">Demo.</a></p>
+</code></pre></div><p>Hasil akhir rendering di peramban setelah perbaikan kode di atas, lihat <a href="https://insertapps.com/demo/tutorial-basscss/2-desain-header#" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>Demo.</a></p>
 <p>Penjelasan code hasil akhir sementara.</p>
 <ul>
 <li>Setiap baris yang ada penambahan code <code>btn</code>, berarti element yang dibungkus akan berubah sifatnya menjadi sebuah tombol. Pointer mouse secara otomatis berubah menjadi fungsi click.</li>
@@ -2022,11 +2050,23 @@ blockquote p {
 </ul>
 <p><strong>CODE CHALLENGE</strong></p>
 <ul>
-<li>Tombol burger pada tutorial di atas, masih belum perfect. Tugas kalian untuk membuat tombol burger yang lebih keren lagi. Caranya sudah ada tutorial <a href="https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/"><strong>cara simple membuat icon burger</strong></a></li>
+<li>Tombol burger pada tutorial di atas, masih belum perfect. Tugas kalian untuk membuat tombol burger yang lebih keren lagi. Caranya sudah ada tutorial <a href="https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	><strong>cara simple membuat icon burger</strong></a></li>
 <li>Pada menu <strong>LOGO</strong>, setelah click mouse, muncul frame kotak tebal. Tugas kalian untuk menghilangkan border box bekas click mouse itu.</li>
 </ul>
-<p>⬅ <a href="https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/">Tutorial sebelumnya</a></p>
-<p>➡ <a href="https://insertapps.com/blog/html-design-main-content/">Tutorial Selanjutnya </a></p>
+<p>⬅ <a href="https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>Tutorial sebelumnya</a></p>
+<p>➡ <a href="https://insertapps.com/blog/html-design-main-content/" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>Tutorial Selanjutnya </a></p>
 
 			</div>
 			<div class="mb2">
