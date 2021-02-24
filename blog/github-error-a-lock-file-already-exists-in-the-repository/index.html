@@ -380,13 +380,13 @@ if (!doNotTrack) {
 	>Hugo</a> via Github hosting mengalami error message: &ldquo;A lock file already exists in the repository, which blocks this operation&rdquo;.</p>
 <p>Pesan error ini disebabkan saat app <strong>Github Desktop</strong> menjalankan perintah <code>commit</code> atau <code>git push</code> ke repo Github, komputer mati mendadak akibat padam listrik.</p>
   <figure class="mb3 m0 center mxn2">
-    <img class="fit m0" src="https://insertapps.com//images/blog/2021/0224_Github-error-message-A-lock-file-already-exists-in-the-repository.jpg" alt="Pesan error A lock file already exists in the repository...">
+    <img class="fit m0" src="https://insertapps.com/images/blog/2021/0224_Github-error-message-A-lock-file-already-exists-in-the-repository.jpg" alt="Pesan error A lock file already exists in the repository...">
     <figcaption class="muted italic h5">Pesan error A lock file already exists in the repository...</figcaption>
   </figure>
 <p>Solusi untuk mengatasi pesan error <em>&ldquo;A lock file already exists in the repository, which blocks this operation from completing&rdquo;</em> ternyata gampang sekali.</p>
 <p>Cukup menghapus file <code>index.lock</code> di dalam subfolder <code>.git</code> yang berada dalam folder repository Hugo Github.</p>
   <figure class="mb3 m0 center mxn2">
-    <img class="fit m0" src="https://insertapps.com//images/blog/2021/0224_Ropository-github-file-index.lock.jpg" alt="Hapus file index.lock di dalam repository">
+    <img class="fit m0" src="https://insertapps.com/images/blog/2021/0224_Ropository-github-file-index.lock.jpg" alt="Hapus file index.lock di dalam repository">
     <figcaption class="muted italic h5">Hapus file index.lock di dalam repository</figcaption>
   </figure>
 <p>Melalui jendela terminal type: <code>$ rm -rf ./.git/index.lock</code></p>
@@ -399,7 +399,7 @@ if (!doNotTrack) {
 <p>Type: <code>$ defaults write com.apple.Finder AppleShowAllFiles true</code>.</p>
 <p>Setelah itu type lagi: <code>$ killall Finder</code>.</p>
   <figure class="mb3 m0 center mxn2">
-    <img class="fit m0" src="https://insertapps.com//images/blog/2021/0224_Terminal-macOS-show-hidden-file-folder.jpg" alt="macOS show hidden file and folder">
+    <img class="fit m0" src="https://insertapps.com/images/blog/2021/0224_Terminal-macOS-show-hidden-file-folder.jpg" alt="macOS show hidden file and folder">
     <figcaption class="muted italic h5">macOS show hidden file and folder</figcaption>
   </figure>
 <p>Setelah itu, buka lagi folder repository Hugo dan folder <code>.Git</code> sudah tampil.</p>
