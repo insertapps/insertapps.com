@@ -6,7 +6,18 @@
     <description>Recent content in error on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 16:48:32 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/error/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Feb 2021 14:13:12 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/error/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github error: A lock file already exists in the repository...</title>
+      <link>https://insertapps.com/blog/github-error-a-lock-file-already-exists-in-the-repository/</link>
+      <pubDate>Wed, 24 Feb 2021 14:13:12 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/github-error-a-lock-file-already-exists-in-the-repository/</guid>
+      <description>Posting artikel baru ke blog berbasis Hugo via Github hosting mengalami error message: &amp;ldquo;A lock file already exists in the repository, which blocks this operation&amp;rdquo;.
+Pesan error ini disebabkan saat app Github Desktop menjalankan perintah commit atau git push ke repo Github, komputer mati mendadak akibat padam listrik.
+Pesan error A lock file already exists in the repository...  Solusi untuk mengatasi pesan error &amp;ldquo;A lock file already exists in the repository, which blocks this operation from completing&amp;rdquo; ternyata gampang sekali.</description>
+    </item>
+    
     <item>
       <title>App VS Code error: The window has crashed (reason: &#39;clean exit&#39;)</title>
       <link>https://insertapps.com/blog/visual-studio-code-the-window-has-crashed/</link>

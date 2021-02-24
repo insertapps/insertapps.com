@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
-	<title>Hugo Markdown render hook solusi untuk custom output image, link dan heading - InsertApps</title>
+	<title>Github error: A lock file already exists in the repository... - InsertApps</title>
 	
-    <link rel="canonical" type="text/html" href="https://insertapps.com/blog/hugo-markdown-render-hook/">
+    <link rel="canonical" type="text/html" href="https://insertapps.com/blog/github-error-a-lock-file-already-exists-in-the-repository/">
 
 	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<link rel="shortcut icon" href="https://insertapps.com/assets/favicon/32.png">
@@ -14,11 +14,11 @@
   {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
-    "mainEntityOfPage": "https:\/\/insertapps.com\/amp\/blog\/hugo-markdown-render-hook\/",
-    "headline": "Hugo Markdown render hook solusi untuk custom output image, link dan heading",
-    "datePublished": "Friday, January 22, 2021",
-    "dateModified": "Friday, January 22, 2021",
-    "description": "Hadirnya fitur markdown render hook sangat memudahkan untuk membuat custom link, image serta dekorasi heading untuk daftar isi.",
+    "mainEntityOfPage": "https:\/\/insertapps.com\/amp\/blog\/github-error-a-lock-file-already-exists-in-the-repository\/",
+    "headline": "Github error: A lock file already exists in the repository...",
+    "datePublished": "Wednesday, February 24, 2021",
+    "dateModified": "Wednesday, February 24, 2021",
+    "description": "Solution Github error message: A lock file already exists in the repository, which blocks this operation from completing.",
     "author": {
       "@type": "Person",
       "name": "Fauzan My"
@@ -35,7 +35,7 @@
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/insertapps.com\/images\/blog\/Hugo_cover-image.jpg", 
+      "url": "https:\/\/insertapps.com\/images\/blog\/Github-error_cover-image.jpg", 
       "height":  1024 ,
       "width":  512 
 	  
@@ -59,8 +59,8 @@
 	},{
 		"@type": "ListItem",
 		"position": 3,
-		"name": "Hugo Markdown render hook solusi untuk custom output image, link dan heading",
-		"item": "https:\/\/insertapps.com\/blog\/hugo-markdown-render-hook\/"
+		"name": "Github error: A lock file already exists in the repository...",
+		"item": "https:\/\/insertapps.com\/blog\/github-error-a-lock-file-already-exists-in-the-repository\/"
 	}]
 }
 </script>
@@ -1787,106 +1787,67 @@ blockquote p {
 					
 					
 					
-						<span class="block muted caps mb2 h5">Hugo</span>
+						<span class="block muted caps mb2 h5">Github</span>
 					
 			
-				<h1 class="h2 mb1">Hugo Markdown render hook solusi untuk custom output image, link dan heading</h1>
+				<h1 class="h2 mb1">Github error: A lock file already exists in the repository...</h1>
 
 				<div class="clearfix">
 					<time class="h6 muted" datetime="2020-08-08">
-						Friday, January 22, 2021
+						Wednesday, February 24, 2021
 					</time>
 				</div>
 			</header>
 
 			<div class="clearfix mxn2">
 			 
-				<amp-img class="mb2" src="/images/blog/Hugo_cover-image.jpg" alt="Ilustrasi"  height="512" width="1024"
+				<amp-img class="mb2" src="/images/blog/Github-error_cover-image.jpg" alt="Ilustrasi"  height="512" width="1024"
 					layout="responsive"></amp-img>
 			</div>
 
 			<div id="content" class="mb2">
-				<p>Rilis Hugo versi 0.62.0 menambah satu fitur lagi, yaitu <em>Markdown render hooks</em> yang berfungsi untuk memancing kode HTML mentah ke dalam body text Markdown.</p>
-<p>Karena Hugo telah mengganti mesin render Markdown ke Goldmark, diperlukan bagian template baru untuk mengikat HTML mentah tersebut.</p>
-<p>Sebelumnya mesin yang bertugas untuk mem-parser file Markdown berubah menjadi text dalam format HTML memakai engine Blackfriday.</p>
-<p>Hugo beralih ke Goldmark sebagai default Markdown processor, selain lebih cepat, Goldmark sudah menerapkan standar baru <a href="https://spec.commonmark.org/0.29/" class="blue a-hover text-decoration-none" title="CommonMark" target="_blank" rel="nofollow noopener noreferrer">CommonMark</a>, sebuah organisasi yang menstandarkan format Markdown. 👍</p>
-<p>By default mesin Goldmark tidak mau merender HTML mentah dan tautan link external yang berpotensi membahayakan ke dalam isi body text Markdown.</p>
-<p>Kalau pun memaksa meng-insert potongan kode HTML, script JS dan link dengan perilaku <code>rel=&quot;nofollow&quot;</code> ke dalam body text Markdown, hasil render document HTML di bagian tersebut tidak berjalan alias kosong melompong.</p>
-<p>Coba deh kalau tidak percaya, pasti script kalian diabaikan oleh mesin Goldmark. seolah tidak terjadi apa-apa. 😇</p>
-<p>Sebelumnya, kami pernah <a href="https://insertapps.com/blog/hugo-embed-shortcode-codepen/" class="blue text-decoration-none"
+				<p>Posting artikel baru ke blog berbasis <a href="https://insertapps.com/categories/hugo/" class="blue text-decoration-none"
 	
 	
 		target="_blank"
-	>mencoba meng-embed langsung script Codepen ke dalam posting</a>, hasil render laman web seolah tidak terjadi apa-apa. 😱</p>
-<p>Karena beda cara kerja antara mesin Goldmark dengan mesin Blackfriday dalam memformat plain text menjadi document HTML, diperlukan template <em>Markdown Render Hooks,</em> untuk menjembatani kode HTML mentah ke dalam file Markdown.</p>
-<p>Markdown versi CommonMark, untuk menambahkan tautan, bentuk penulisan shortcode seperti ini: <code>[]()</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[<span style="color:#f92672">Insertapps.com</span>](<span style="color:#a6e22e">https://insertapps.com/ &#34;Insert Apps&#34;</span>)`
-</code></pre></div><p>Hasil render mesin Goldmark menjadi document HTML, default-nya seperti ini:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://insertapps.com/&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Insert Apps&#34;</span>&gt;Insertapps.com&lt;/<span style="color:#f92672">a</span>&gt;
-</code></pre></div><p>Kalau linknya harus ada output seperti <code>target=&quot;_blank&quot;</code> atau sebuah tautan mendapatkan prilaku tambahan dofollow <code>rel=&quot;nofollow&quot;</code> atau <code>rel=&quot;noopener&quot;</code> cara menanganinya melalui sebuah template render hook.</p>
-<p>Buat file baru dengan nama <code>render-link.html</code> lalu tempatkan dalam folder:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">layouts
-└── _default
-    └── _markup
-        ├── render-image.html
-        ├── render-image.rss.xml
-        └── render-link.html
-</code></pre></div><p>Di dalam file template render hook, insert code spesial seperti berikut:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">&lt;<span style="color:#a6e22e">a</span> <span style="color:#a6e22e">href</span>=<span style="color:#e6db74">&#34;{{ .Destination | safeURL }}&#34;</span>
-	{{ <span style="color:#a6e22e">with</span> .<span style="color:#a6e22e">Title</span>}} <span style="color:#75715e">// Loop untuk mengecek apakah ada title link
-</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">title</span>=<span style="color:#e6db74">&#34;{{ . }}&#34;</span>
-	{{ <span style="color:#a6e22e">end</span> }}
-	{{ <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">HasPrefix</span> .<span style="color:#a6e22e">Destination</span> <span style="color:#e6db74">&#34;http&#34;</span> }} <span style="color:#75715e">// Kondisi bila link tidak secure
-</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">target</span>=<span style="color:#e6db74">&#34;_blank&#34;</span> <span style="color:#a6e22e">rel</span>=<span style="color:#e6db74">&#34;noopener&#34;</span>
-	{{ <span style="color:#a6e22e">end</span> }}&gt;
-	{{ .<span style="color:#a6e22e">Text</span> | <span style="color:#a6e22e">safeHTML</span> }} <span style="color:#75715e">// Anchor text
-</span><span style="color:#75715e"></span>&lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">a</span>&gt;
-</code></pre></div><p>Maka hasil render di laman HTML menjadi:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://insertapps.com/&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Insert Apps&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;noopener&#34;</span>&gt;
-	Insertapps.com
-&lt;/<span style="color:#f92672">a</span>&gt;
-</code></pre></div><p>Begitu juga untuk memformat gambar. Shortcode versi CommonMark untuk insert picture ke dalam  plain text Markdown seperti ini: <code>![]()</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![<span style="color:#f92672">Yout text for alt image</span>](<span style="color:#a6e22e">https://insertapps.com/assets/hero.jpg &#34;Text for your image title or caption&#34;</span>)
-</code></pre></div><p>Default output yang dihasilkan oleh mesin Goldmark di laman HTML seperti ini:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">&lt;<span style="color:#a6e22e">p</span>&gt;
-	&lt;<span style="color:#a6e22e">img</span> <span style="color:#a6e22e">src</span>=<span style="color:#e6db74">&#34;https://insertapps.com/assets/hero.jpg&#34;</span>
-		 <span style="color:#a6e22e">alt</span>=<span style="color:#e6db74">&#34;Yout text for alt image&#34;</span>
-		 <span style="color:#a6e22e">title</span>=<span style="color:#e6db74">&#34;Text for your image title or use caption&#34;</span>&gt;
-&lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">p</span>&gt;
-</code></pre></div><p>Bagaimana kalau tata letak gambar wajib di-render dalam tag <code>&lt;figure&gt;</code> misalnya, sekaligus menghias dengan tambahan style css card?</p>
-<p>Prosesnya sama juga. Create file baru dengan nama <code>render-image.html</code>. Kemudian insert code tambahan tersebut, misalnya seperti ini:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">&lt;<span style="color:#a6e22e">figure</span> <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;card&#34;</span> <span style="color:#a6e22e">style</span>=<span style="color:#e6db74">&#34;width: 18rem;&#34;</span>&gt;
-	&lt;<span style="color:#a6e22e">img</span> <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;card-img-top&#34;</span> <span style="color:#75715e">// Add image class
-</span><span style="color:#75715e"></span>		 <span style="color:#a6e22e">src</span>=<span style="color:#e6db74">&#34;{{ .Destination | safeURL }}&#34;</span> <span style="color:#75715e">// Print url image here
-</span><span style="color:#75715e"></span>		 <span style="color:#a6e22e">alt</span>=<span style="color:#e6db74">&#34;{{ .Text }}&#34;</span> <span style="color:#75715e">// Print alt image here
-</span><span style="color:#75715e"></span>	{{ <span style="color:#a6e22e">with</span> .<span style="color:#a6e22e">Title</span>}} <span style="color:#75715e">// Checking image title
-</span><span style="color:#75715e"></span>		 <span style="color:#a6e22e">title</span>=<span style="color:#e6db74">&#34;{{ . }}&#34;</span>
-	{{ <span style="color:#a6e22e">end</span> }} <span style="color:#f92672">/</span>&gt;
-	<span style="color:#75715e">//
-</span><span style="color:#75715e"></span>	&lt;<span style="color:#a6e22e">figcaption</span> <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;card-body&#34;</span>&gt;
-		 &lt;<span style="color:#a6e22e">h5</span> <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;card-title&#34;</span>&gt;{{ .<span style="color:#a6e22e">Title</span> }}&lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">h5</span>&gt; <span style="color:#75715e">// Print title
-</span><span style="color:#75715e"></span>	&lt;<span style="color:#a6e22e">figcaption</span>&gt;
-&lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">figure</span>&gt;
-</code></pre></div><p>Tak hanya itu, dengan template Markdown render hooks ini, bisa custom output ke format file AMP dengan tag <code>&lt;amp-img&gt;</code>.</p>
-<p>Cukup buat document HTML baru atau duplicate saja file <code>render-image.html</code>,dan rename nama file menjadi <code>render-image.amp.html</code>.</p>
-<p>Lalu tinggal modifikasi saja dengan standar format file template AMP.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">amp-img</span>
-  <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Text }}&#34;</span>
-  <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Destination | safeURL }}&#34;</span>
-  <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;900&#34;</span>
-  <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;675&#34;</span>
-  <span style="color:#a6e22e">layout</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;responsive&#34;</span>
-&gt;
-&lt;/<span style="color:#f92672">amp-img</span>&gt;
-</code></pre></div><p>Mudahkan?</p>
-<p>Untuk custom heading dan untuk membuat daftar isi yang body Markdown, caranya sama juga.</p>
-<p>Lebih jelasnya, silahkan baca documentasinya di <a href="https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks" class="blue a-hover text-decoration-none" title="configurasi markup" target="_blank" rel="nofollow noopener noreferrer">configurasi markup</a>. Soalnya kami belum mempraktekkannya, nanti kalau sudah pernah mencobnya, artikel ini kami update lagi.</p>
-<p>Intinya dengan template Markdown render hook ini akan memudahkan dalam mengelola custom output khusus image, link dan heading. 😏</p>
-<p>Oya, bila Hugo Markdown render hook image untuk file template AMP <code>render-image.amp.html</code> gagal di eksekusi, silahkan baca solusinya di halaman &lsquo;<a href="https://insertapps.com/blog/hugo-markdown-render-hook-amp-img/" class="blue text-decoration-none"
-	
-	
-		target="_blank"
-	>Self problem hugo render hook amp-img template not working</a>&rsquo;.  😓</p>
+	>Hugo</a> via Github hosting mengalami error message: &ldquo;A lock file already exists in the repository, which blocks this operation&rdquo;.</p>
+<p>Pesan error ini disebabkan saat app <strong>Github Desktop</strong> menjalankan perintah <code>commit</code> atau <code>git push</code> ke repo Github, komputer mati mendadak akibat padam listrik.</p>
+
+
+<amp-img src="https://insertapps.com//images/blog/2021/0224_Github-error-message-A-lock-file-already-exists-in-the-repository.jpg" alt="Pesan error A lock file already exists in the repository..."
+class="mb3 m0 center mxn2 fit"
+width="1024"
+height="668"
+layout="responsive"></amp-img>
+<p>Solusi untuk mengatasi pesan error <em>&ldquo;A lock file already exists in the repository, which blocks this operation from completing&rdquo;</em> ternyata gampang sekali.</p>
+<p>Cukup menghapus file <code>index.lock</code> di dalam subfolder <code>.git</code> yang berada dalam folder repository Hugo Github.</p>
+
+
+<amp-img src="https://insertapps.com//images/blog/2021/0224_Ropository-github-file-index.lock.jpg" alt="Hapus file index.lock di dalam repository"
+class="mb3 m0 center mxn2 fit"
+width="1073"
+height="508"
+layout="responsive"></amp-img>
+<p>Melalui jendela terminal type: <code>$ rm -rf ./.git/index.lock</code></p>
+<p>Setelah itu, jalankan lagi perintah <code>commit to master</code> dan <code>push origin</code>. Simsalabim pesan error  <em>&ldquo;A lock file already exists in the repository, which blocks this operation from completing&rdquo;</em> hilang seketika.</p>
+<h3 id="menampilkan-folder-git-yang-tersembunyi-di-macos">Menampilkan folder .Git yang tersembunyi di macOS</h3>
+<p>By default folder <code>.git</code> terhidden yang berada di lokal repository.</p>
+<p>Untuk menampilkan file dan folder yang tersembunyi di macOS tidak semudah di system Windows:</p>
+<p>Melalui Windows Explorer -&gt; pilih menu <strong>View</strong> -&gt; <strong>Option</strong> -&gt; <strong>Change folder and search options</strong>. Lalu klik tab <strong>View</strong> di bagian <strong>Change folder and search options</strong>. Kemudian centang <strong>Show hidden files, folders, and drives</strong> terakhir <strong>OK</strong>.</p>
+<p>Salah satu cara mudah sistem macOS &lsquo;view hidden files&rsquo; melalui jendela terminal:</p>
+<p>Type: <code>$ defaults write com.apple.Finder AppleShowAllFiles true</code>.</p>
+<p>Setelah itu type lagi: <code>$ killall Finder</code>.</p>
+
+
+<amp-img src="https://insertapps.com//images/blog/2021/0224_Terminal-macOS-show-hidden-file-folder.jpg" alt="macOS show hidden file and folder"
+class="mb3 m0 center mxn2 fit"
+width="816"
+height="366"
+layout="responsive"></amp-img>
+<p>Setelah itu, buka lagi folder repository Hugo dan folder <code>.Git</code> sudah tampil.</p>
+<p>Oya, untuk menyembunyikan lagi file dan folder di sistem macOS, cukup ganti perintah <code>$ defaults write com.apple.Finder AppleShowAllFiles false</code>.</p>
+<p>Perintah <code>$ defaults write com.apple.Finder AppleShowAllFiles</code> memiliki dua opsi: <code>true</code> or <code>false</code>.</p>
+<p>Jangan lupa untuk <code>$ killall Finder</code> lagi.</p>
 
 			</div>
 			<div class="mb2">
@@ -1901,9 +1862,9 @@ blockquote p {
 			</div>
 			
 			<h3 class="h6 caps muted mb2">Sharing</h3>
-  			<amp-social-share type="facebook" width="50" height="36" data-param-text="Hugo Markdown render hook solusi untuk custom output image, link dan heading" data-param-href="https://insertapps.com/amp/blog/hugo-markdown-render-hook/?ref=URL" data-param-app_id="145634995501895" aria-label="Share this on Facebook"></amp-social-share>
-			<amp-social-share type="twitter" width="50" height="36" data-param-text="Hugo Markdown render hook solusi untuk custom output image, link dan heading" data-param-url="https://insertapps.com/amp/blog/hugo-markdown-render-hook/" aria-label="Share this on Twitter"></amp-social-share>
-			<amp-social-share type="whatsapp" width="50" height="36" data-param-text="Check out this article: Hugo Markdown render hook solusi untuk custom output image, link dan heading - https://insertapps.com/amp/blog/hugo-markdown-render-hook/"></amp-social-share>
+  			<amp-social-share type="facebook" width="50" height="36" data-param-text="Github error: A lock file already exists in the repository..." data-param-href="https://insertapps.com/amp/blog/github-error-a-lock-file-already-exists-in-the-repository/?ref=URL" data-param-app_id="145634995501895" aria-label="Share this on Facebook"></amp-social-share>
+			<amp-social-share type="twitter" width="50" height="36" data-param-text="Github error: A lock file already exists in the repository..." data-param-url="https://insertapps.com/amp/blog/github-error-a-lock-file-already-exists-in-the-repository/" aria-label="Share this on Twitter"></amp-social-share>
+			<amp-social-share type="whatsapp" width="50" height="36" data-param-text="Check out this article: Github error: A lock file already exists in the repository... - https://insertapps.com/amp/blog/github-error-a-lock-file-already-exists-in-the-repository/"></amp-social-share>
 			
 		</article>
 		<aside class="clearfix mnx2">
@@ -1912,34 +1873,34 @@ blockquote p {
 			
 			
 			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
-				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/hugo-embed-shortcode-codepen/">
+				<a class="text-decoration-none" href="https://insertapps.com/blog/error-response-is-not-a-valid-json-response/">
+					<figure class="m0 block border rounded border-silver">
+						<amp-img src="/images/blog/WordPress-cover-thumbnail.jpg" width="500" height="333" layout="responsive"
+							alt="WP Error: Response is not a valid json response" class="block m0"></amp-img>
+						<figcaption class="p2 m0">
+							<h1 class="xs-h3 h5">WP Error: Response is not a valid json response</h1>
+						</figcaption>
+					</figure>
+				</a></div>
+			
+			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
+				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/install-hugo-di-windows/">
 					<figure class="m0 block border rounded border-silver">
 						<amp-img src="/images/blog/Hugo_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
-							alt="Cara Hugo meng-embed shortcode codepen" class="block m0"></amp-img>
+							alt="Cara install hugo di Windows (2021)" class="block m0"></amp-img>
 						<figcaption class="p2 m0">
-							<h1 class="xs-h3 h5">Cara Hugo meng-embed shortcode codepen</h1>
+							<h1 class="xs-h3 h5">Cara install hugo di Windows (2021)</h1>
 						</figcaption>
 					</figure>
 				</a></div>
 			
 			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
-				<a class="text-decoration-none" href="https://insertapps.com/blog/html-header-keren-menu-scroll/">
+				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/hugo-markdown-render-hook-amp-img/">
 					<figure class="m0 block border rounded border-silver">
-						<amp-img src="/images/blog/HTML_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
-							alt="Membuat header HTML keren responsive horizontal navbar auto scroll" class="block m0"></amp-img>
+						<amp-img src="/images/blog/Hugo_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
+							alt="Solusi hugo gagal eksekusi markdown render hook template amp-img" class="block m0"></amp-img>
 						<figcaption class="p2 m0">
-							<h1 class="xs-h3 h5">Membuat header HTML keren responsive horizontal navbar auto scroll</h1>
-						</figcaption>
-					</figure>
-				</a></div>
-			
-			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
-				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/close-button-icon-css/">
-					<figure class="m0 block border rounded border-silver">
-						<amp-img src="/images/blog/2020/07_close-cover-thumbnail.jpg" width="500" height="333" layout="responsive"
-							alt="Cara membuat &#39;close button icon&#39; dengan HTML dan CSS" class="block m0"></amp-img>
-						<figcaption class="p2 m0">
-							<h1 class="xs-h3 h5">Cara membuat &#39;close button icon&#39; dengan HTML dan CSS</h1>
+							<h1 class="xs-h3 h5">Solusi hugo gagal eksekusi markdown render hook template amp-img</h1>
 						</figcaption>
 					</figure>
 				</a></div>
