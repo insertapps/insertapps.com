@@ -58,7 +58,7 @@ if (!doNotTrack) {
 			"headline": "Super simpel css center container secara vertical dan horizontal",
 			"image": "https://insertapps.com/images/blog/CSS_cover-image.jpg",
 			"datePublished": "Sunday, July 5, 2020",
-			"dateModified": "Sunday, July 5, 2020"
+			"dateModified": "Monday, April 26, 2021"
 		}
 	</script>
 
@@ -348,7 +348,7 @@ if (!doNotTrack) {
 				<li class="inline-block mr1 gray h6">
 					5 Jul 2020<time title="Originally published Sunday, July 5, 2020"
 						datetime="2020-07-05 19:52:51 &#43;0700 WIB">
-						
+						- Last updated 26 Apr 2021
 						</time>
 				</li>
 				
@@ -374,11 +374,13 @@ if (!doNotTrack) {
 <p>Implementasi yang sering digunakan pada halaman login sebuah website, seperti halaman login wp-admin WordPress, box form login pas berada di tengah-tengah.</p>
 <p>Saya sendiri menggunakan kode simple ini untuk membuat form login Hotspot WiFI server Mikrotik.</p>
 <p><img src="/images/blog/2020/07_Simple-center-login-form-css.jpg" alt="CSS layout center thing"></p>
-<p>Inilah dia style CSS yang super simple untuk layout secara vertical dan horizontal.</p>
+<p>Berikut ini style CSS yang super simple untuk layout secara vertical dan horizontal.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">	<span style="color:#f92672">&lt;</span><span style="color:#f92672">style</span><span style="color:#f92672">&gt;</span>
+	<span style="color:#75715e">/* Input parent value */</span>
 		<span style="color:#f92672">html</span><span style="color:#f92672">,</span><span style="color:#f92672">body</span> {
 			<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>
 		}
+	<span style="color:#75715e">/* Input child value */</span>
 		.<span style="color:#a6e22e">container</span> {
 			<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
 			<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
@@ -396,9 +398,11 @@ if (!doNotTrack) {
     &lt;<span style="color:#f92672">style</span>&gt;
       <span style="color:#f92672">html</span><span style="color:#f92672">,</span>
       <span style="color:#f92672">body</span> {
+		<span style="color:#75715e">/* Set parent value */</span>
         <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
       }
       .<span style="color:#a6e22e">container</span> {
+		<span style="color:#75715e">/* Set child value */</span>
         <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
         <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
         <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
@@ -425,7 +429,29 @@ if (!doNotTrack) {
 	
 		target="_blank"
 	>Live Demo</a></p>
-<p>Masih ada code lain yang lebih super simple sakti.</p>
+<h3 id="tampa-property-height">Tampa property Height</h3>
+<p>Kode di atas bergantung pada ukuran tinggi body lebih dulu set ke 100%. Kemudian ukuran <code>container</code> juga harus di setting ke <code>height:100%</code> juga.</p>
+<p>Pertanyaanya: Hi CSS, Why doesn’t percentage height work?</p>
+<p>Jawabannya silahkan baca sendiri di <a href="https://stackoverflow.com/questions/1622027/percentage-height-html-5-css">https://stackoverflow.com/questions/1622027/percentage-height-html-5-css</a>.</p>
+<p>CSS height baru berfungsi kalau <code>div</code> parent (induk) memiliki nilai property <code>height</code> yang eksplisit, artinya : jelas, tegas, gamblang, tidak tersembunyi, tidak bertele-tele.</p>
+<p>Maka nilai <code>height: 100%</code> akan berfungsi pada <code>div</code> turunannya.</p>
+<p>Untuk menghilangkan ketergantungan pada <code>div</code> indux, cukup ganti property <code>height: 100%</code> dengan property <code>position: absolute;</code>.</p>
+<p>Kemudian set lebar dan tingginya dengan nilai <code>top</code>, <code>right</code>, <code>bottom</code> dan <code>left</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">container</span> {
+	<span style="color:#75715e">/*Set height*/</span>
+	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">0</span>;
+	<span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span>;
+	<span style="color:#75715e">/*Layout */</span>
+	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+    <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
+    <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+}
+
+</code></pre></div><h3 id="menggunakan-css-grid">Menggunakan CSS Grid</h3>
+<p>Masih ada code lain yang lebih super simple sakti, menggunakan CSS grid.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">parent</span> {
     <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">grid</span>;
     place-items: <span style="color:#66d9ef">center</span>;

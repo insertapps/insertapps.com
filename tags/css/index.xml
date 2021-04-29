@@ -6,7 +6,21 @@
     <description>Recent content in css on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Jan 2021 16:06:33 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Apr 2021 05:07:27 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara membuat theme wordpress (2021)</title>
+      <link>https://insertapps.com/blog/membuat-theme-wordpress/</link>
+      <pubDate>Thu, 29 Apr 2021 05:07:27 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/membuat-theme-wordpress/</guid>
+      <description>Akhirnya seri tutorial cara membuat theme wordpress sendiri dengan mudah hingga siap pakai dari InsertApps sudah mulai terlaksana.
+Mudah-mudahan serial membuat tema WordPress sendiri dari 0, bisa terus berlajut hingga selesai.
+Bahkan theme hasil coding sedikit demi sedikit bisa kalian jual di marketpalce themeforest. 😎 Semoga saja.
+Prerequisite tutorial coding theme Wordpress Ada prasyarat untuk mengikuti seri turorial cara membuat template wordpress ini!
+Skil dasar yang harus dipenuhi adalah:
+ Menguasai HTML dan CSS 😆 Mengerti pemograman PHP 😨 Paham bahasa JavaScript 😖  ☝️ QUICK FAQ: Pertanyaannya: Saya belum menguasai betul bahasa pemograman web?</description>
+    </item>
+    
     <item>
       <title>HTML horizontal scroll mouse wheel</title>
       <link>https://insertapps.com/blog/html-horizontal-scroll-mouse-wheel/</link>
@@ -27,9 +41,10 @@ Alih-alih untuk mengurangi panjang halaman web dan memberikan jeda scroll ke baw
       <description>Tutorial simple membuat sidebar menu yang responsive dengan vanilla JavaScript memanfaatkan fungsi classList add/remove tampa menggunakan library jQuery.
 Alat dan Bahan
 Untuk alat coding silahkan menggunakan editor favorit kalian, boleh Visual Code, Brackets atau Sublime text editor.
-HTML Sidenav menu  Bahan untuk membuat side menu navigation
+ Bahan untuk membuat side menu navigation
 Terlebih dahulu persiapkan template HTML dasar yang sudah berisi sidebar menu.
-Dalam tutorial ini, kami menggunakan CSS framework Basscss yang full packet https://unpkg.com/ace-css/css/ace.min.css.</description>
+Dalam tutorial ini, kami menggunakan CSS framework Basscss yang full packet https://unpkg.com/ace-css/css/ace.min.css.
+Berikut isi file template HTML dasar untuk membuat sidebar nav menu yang sederhana saja.</description>
     </item>
     
     <item>
@@ -177,7 +192,7 @@ html, body { height: 100%; margin: 0; } .container { height: 100%; display: flex
       <description>Sebelum jatuh hati dan mantap menggunakan framework Basscss, InsertApps sudah mencoba framework CSS Bootstrap sejak versi 2.3.
 Setelah sekian lama ngulik Bootstrap, kami baru berhasil menyelesai sebuah WordPress theme siap pakai saat rilis Bootstrap 4 beta 2.
 Begitu Bootstrap 4.0 versi stabil release ke publik, kami sudah migrasi ke Basscss karya Brent Jackson dari Brooklyn, New York.
-Hasil rapid test kecepatan loading web InsertApps, peringatan &amp;#39;optimasi CSS&amp;#39; sudah clear.  Alasan beralih ke framework Basscss karena Bootstrap susah lolos Google PageSpeed Insights ke predikat hijau—performa dengan nilai skor 50–89 Google PageSpeed test.</description>
+ Alasan beralih ke framework Basscss karena Bootstrap susah lolos Google PageSpeed Insights ke predikat hijau—performa dengan nilai skor 50–89 Google PageSpeed test.</description>
     </item>
     
   </channel>

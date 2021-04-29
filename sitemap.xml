@@ -1,6 +1,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
+    <loc>https://insertapps.com/blog/membuat-theme-wordpress/</loc>
+    
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
+  </url>
+
+  <url>
     <loc>https://insertapps.com/blog/github-error-a-lock-file-already-exists-in-the-repository/</loc>
     
     <lastmod>2021-02-24T00:00:00+00:00</lastmod>
@@ -131,7 +139,7 @@
   <url>
     <loc>https://insertapps.com/blog/mikrotik-system-error-critical/</loc>
     
-    <lastmod>2021-01-23T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-26T00:00:00+00:00</lastmod>
 	
 	<changefreq>monthly</changefreq>
   </url>
@@ -139,7 +147,7 @@
   <url>
     <loc>https://insertapps.com/blog/super-simpel-css-center-container/</loc>
     
-    <lastmod>2020-07-05T19:52:51+07:00</lastmod>
+    <lastmod>2021-04-26T00:00:00+00:00</lastmod>
 	
 	<changefreq>monthly</changefreq>
   </url>

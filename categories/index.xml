@@ -6,7 +6,16 @@
     <description>Recent content in Categories on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Feb 2021 14:13:12 +0700</lastBuildDate><atom:link href="https://insertapps.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Apr 2021 05:07:27 +0700</lastBuildDate><atom:link href="https://insertapps.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WordPress</title>
+      <link>https://insertapps.com/categories/wordpress/</link>
+      <pubDate>Thu, 29 Apr 2021 05:07:27 +0700</pubDate>
+      
+      <guid>https://insertapps.com/categories/wordpress/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Github</title>
       <link>https://insertapps.com/categories/github/</link>
@@ -67,15 +76,6 @@
       <pubDate>Tue, 10 Mar 2020 18:48:21 +0700</pubDate>
       
       <guid>https://insertapps.com/categories/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WordPress</title>
-      <link>https://insertapps.com/categories/wordpress/</link>
-      <pubDate>Tue, 18 Feb 2020 11:13:43 +0700</pubDate>
-      
-      <guid>https://insertapps.com/categories/wordpress/</guid>
       <description></description>
     </item>
     
