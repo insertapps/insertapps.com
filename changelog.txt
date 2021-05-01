@@ -1,0 +1,20 @@
+Changelog
+v1.7.0 - 2021-05-01
+- Add lazy load feature.
+- Appply .webp image
+- Remove unused and reorganized javascript
+
+v1.6.5 - 2021-02-08
+- Add shortcode
+
+v1.6.5 - 2021-02-24
+- Fix amp page
+
+v1.4.5 - 2021-01-26
+- Create amp page
+
+v1.3.9 - 2020-08-10
+- Add social share
+
+v1.2.3 - 2020-07-18
+- Fix layout
