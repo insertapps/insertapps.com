@@ -6,7 +6,17 @@
     <description>Recent content in tips on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Feb 2021 14:13:12 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 May 2021 13:03:44 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara mudah membuat search box icon</title>
+      <link>https://insertapps.com/blog/search-box-icon-pure-css/</link>
+      <pubDate>Wed, 05 May 2021 13:03:44 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/search-box-icon-pure-css/</guid>
+      <description>Apalah arti laman web tampa search box seperti blog Insertapps. Google terkenal karena mesin pencarian, walau bentuk search box iconnya static dan tidak pernah berubah. Pertanyaannya, bagaimana cara membuat search box icon dengan html dan css tampa image, icon PNG atau SVG❓ Terus, ukuran desainnya harus fleksibel serta ada animasinya❓
+Saya telah mencoba berbagai bentuk search box icon, mulai dari yang paling kere macam insert icon format .png, hingga yang paling keren, memanggil icon search format .</description>
+    </item>
+    
     <item>
       <title>Github error: A lock file already exists in the repository...</title>
       <link>https://insertapps.com/blog/github-error-a-lock-file-already-exists-in-the-repository/</link>
@@ -15,7 +25,7 @@
       <guid>https://insertapps.com/blog/github-error-a-lock-file-already-exists-in-the-repository/</guid>
       <description>Posting artikel baru ke blog berbasis Hugo via Github hosting mengalami error message: &amp;ldquo;A lock file already exists in the repository, which blocks this operation&amp;rdquo;.
 Pesan error ini disebabkan saat app Github Desktop menjalankan perintah commit atau git push ke repo Github, komputer mati mendadak akibat padam listrik.
-Pesan error A lock file already exists in the repository...  Solusi untuk mengatasi pesan error &amp;ldquo;A lock file already exists in the repository, which blocks this operation from completing&amp;rdquo; ternyata gampang sekali.</description>
+ Solusi untuk mengatasi pesan error &amp;ldquo;A lock file already exists in the repository, which blocks this operation from completing&amp;rdquo; ternyata gampang sekali.</description>
     </item>
     
     <item>
@@ -72,9 +82,8 @@ Untuk web static berbasis Hugo tidak bisa demikian ferguso. Data konten yang dis
       <description>Ada icon hamburger menu, ada juga tombol &amp;lsquo;icon close&amp;rsquo; untuk menutup kembali listing menu.
 Sebelumnya sudah ada tutorial singkat cara simpel membuat icon menu hamburger website.
 Cara membuat icon close button tidak jauh berbeda dengan tutorial sebelumnya. Yaitu dengan cara memanipulasi element HTML itu sendiri dengan style CSS.
-Cara Pertama
-Selalu mengawali dengan cara newbie dulu.
-Ketik sintak HTML dasar seperti berikut ini, sekalian dengan nama identifier class CSS nya.</description>
+Tuturial lain yang tak kalah seru, membuat search box icon murni hasil rekonstruksi element HTML dan CSS, lengkap dengan click animasi.
+Cara Pertama</description>
     </item>
     
     <item>
@@ -111,7 +120,8 @@ Setelah saya setting dan siap pakai, maka si Mikrotik HAP AC Lite warna hitam it
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
-Brackets error: PHP runtime not found.  Untuk bracket versi yang lebih lama, pesan erronya begini:</description>
+ Untuk bracket versi yang lebih lama, pesan erronya begini:
+PHP runtime not found.</description>
     </item>
     
     <item>

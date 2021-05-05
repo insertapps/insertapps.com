@@ -264,6 +264,8 @@ hr {
 	}
 }
 
+/* Lozad a lazy loading */
+
 .fade-lozad {
 	animation-name: fade;
 	animation-duration: 2s;
@@ -348,19 +350,6 @@ svg {
 .st2,
 .st3 {
 	stroke-linecap: round;
-}
-
-/* -> Lazyload */
-
-img:not([src]) {
-	visibility: hidden;
-}
-
-/* Fixes Firefox anomaly during image load */
-@-moz-document url-prefix() {
-	img:-moz-loading {
-		visibility: hidden;
-	}
 }
 
 /* #CONTENT */

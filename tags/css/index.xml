@@ -6,7 +6,17 @@
     <description>Recent content in css on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Apr 2021 05:07:27 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 May 2021 13:03:44 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara mudah membuat search box icon</title>
+      <link>https://insertapps.com/blog/search-box-icon-pure-css/</link>
+      <pubDate>Wed, 05 May 2021 13:03:44 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/search-box-icon-pure-css/</guid>
+      <description>Apalah arti laman web tampa search box seperti blog Insertapps. Google terkenal karena mesin pencarian, walau bentuk search box iconnya static dan tidak pernah berubah. Pertanyaannya, bagaimana cara membuat search box icon dengan html dan css tampa image, icon PNG atau SVG❓ Terus, ukuran desainnya harus fleksibel serta ada animasinya❓
+Saya telah mencoba berbagai bentuk search box icon, mulai dari yang paling kere macam insert icon format .png, hingga yang paling keren, memanggil icon search format .</description>
+    </item>
+    
     <item>
       <title>Cara membuat theme wordpress (2021)</title>
       <link>https://insertapps.com/blog/membuat-theme-wordpress/</link>
@@ -41,9 +51,10 @@ Alih-alih untuk mengurangi panjang halaman web dan memberikan jeda scroll ke baw
       <description>Tutorial simple membuat sidebar menu yang responsive dengan vanilla JavaScript memanfaatkan fungsi classList add/remove tampa menggunakan library jQuery.
 Alat dan Bahan
 Untuk alat coding silahkan menggunakan editor favorit kalian, boleh Visual Code, Brackets atau Sublime text editor.
-HTML Sidenav menu  Bahan untuk membuat side menu navigation
+ Bahan untuk membuat side menu navigation
 Terlebih dahulu persiapkan template HTML dasar yang sudah berisi sidebar menu.
-Dalam tutorial ini, kami menggunakan CSS framework Basscss yang full packet https://unpkg.com/ace-css/css/ace.min.css.</description>
+Dalam tutorial ini, kami menggunakan CSS framework Basscss yang full packet https://unpkg.com/ace-css/css/ace.min.css.
+Berikut isi file template HTML dasar untuk membuat sidebar nav menu yang sederhana saja.</description>
     </item>
     
     <item>
@@ -102,9 +113,8 @@ Setelah ada Hugo SSG, menulis blog sama dengan ngoding.</description>
       <description>Ada icon hamburger menu, ada juga tombol &amp;lsquo;icon close&amp;rsquo; untuk menutup kembali listing menu.
 Sebelumnya sudah ada tutorial singkat cara simpel membuat icon menu hamburger website.
 Cara membuat icon close button tidak jauh berbeda dengan tutorial sebelumnya. Yaitu dengan cara memanipulasi element HTML itu sendiri dengan style CSS.
-Cara Pertama
-Selalu mengawali dengan cara newbie dulu.
-Ketik sintak HTML dasar seperti berikut ini, sekalian dengan nama identifier class CSS nya.</description>
+Tuturial lain yang tak kalah seru, membuat search box icon murni hasil rekonstruksi element HTML dan CSS, lengkap dengan click animasi.
+Cara Pertama</description>
     </item>
     
     <item>
@@ -191,7 +201,7 @@ html, body { height: 100%; margin: 0; } .container { height: 100%; display: flex
       <description>Sebelum jatuh hati dan mantap menggunakan framework Basscss, InsertApps sudah mencoba framework CSS Bootstrap sejak versi 2.3.
 Setelah sekian lama ngulik Bootstrap, kami baru berhasil menyelesai sebuah WordPress theme siap pakai saat rilis Bootstrap 4 beta 2.
 Begitu Bootstrap 4.0 versi stabil release ke publik, kami sudah migrasi ke Basscss karya Brent Jackson dari Brooklyn, New York.
-Hasil rapid test kecepatan loading web InsertApps, peringatan &amp;#39;optimasi CSS&amp;#39; sudah clear.  Alasan beralih ke framework Basscss karena Bootstrap susah lolos Google PageSpeed Insights ke predikat hijau—performa dengan nilai skor 50–89 Google PageSpeed test.</description>
+ Alasan beralih ke framework Basscss karena Bootstrap susah lolos Google PageSpeed Insights ke predikat hijau—performa dengan nilai skor 50–89 Google PageSpeed test.</description>
     </item>
     
   </channel>
