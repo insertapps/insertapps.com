@@ -6,7 +6,18 @@
     <description>Recent content in tips on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 May 2021 13:03:44 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 May 2021 21:27:49 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upload gambar WebP WordPress tampa plugin</title>
+      <link>https://insertapps.com/blog/upload-webp-to-wordpress/</link>
+      <pubDate>Sat, 08 May 2021 21:27:49 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/upload-webp-to-wordpress/</guid>
+      <description>By default WordPress belum mendukung upload file gambar format WebP (baca webppy) ke dalam library gallery WordPress. Padahal semua browser modern saat ini telah mendukung format WebP.
+WordPress sangat membatasi file berextensi apa saja yang boleh di upload ke sistem WP, demi menjaga keamana sitem WP itu sendiri. Secara default, WP cuma mengizinkan extensi file populer seperti;
+ Image files: .jpg, .jpeg, .png, .gif, .ico Document files: .pdf, .doc, .xls, .</description>
+    </item>
+    
     <item>
       <title>Cara mudah membuat search box icon</title>
       <link>https://insertapps.com/blog/search-box-icon-pure-css/</link>
@@ -25,7 +36,7 @@ Saya telah mencoba berbagai bentuk search box icon, mulai dari yang paling kere 
       <guid>https://insertapps.com/blog/github-error-a-lock-file-already-exists-in-the-repository/</guid>
       <description>Posting artikel baru ke blog berbasis Hugo via Github hosting mengalami error message: &amp;ldquo;A lock file already exists in the repository, which blocks this operation&amp;rdquo;.
 Pesan error ini disebabkan saat app Github Desktop menjalankan perintah commit atau git push ke repo Github, komputer mati mendadak akibat padam listrik.
- Solusi untuk mengatasi pesan error &amp;ldquo;A lock file already exists in the repository, which blocks this operation from completing&amp;rdquo; ternyata gampang sekali.</description>
+Pesan error A lock file already exists in the repository...  Solusi untuk mengatasi pesan error &amp;ldquo;A lock file already exists in the repository, which blocks this operation from completing&amp;rdquo; ternyata gampang sekali.</description>
     </item>
     
     <item>
@@ -120,8 +131,7 @@ Setelah saya setting dan siap pakai, maka si Mikrotik HAP AC Lite warna hitam it
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
- Untuk bracket versi yang lebih lama, pesan erronya begini:
-PHP runtime not found.</description>
+Brackets error: PHP runtime not found.  Untuk bracket versi yang lebih lama, pesan erronya begini:</description>
     </item>
     
     <item>

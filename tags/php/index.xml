@@ -6,7 +6,18 @@
     <description>Recent content in php on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Apr 2021 05:07:27 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 May 2021 21:27:49 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upload gambar WebP WordPress tampa plugin</title>
+      <link>https://insertapps.com/blog/upload-webp-to-wordpress/</link>
+      <pubDate>Sat, 08 May 2021 21:27:49 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/upload-webp-to-wordpress/</guid>
+      <description>By default WordPress belum mendukung upload file gambar format WebP (baca webppy) ke dalam library gallery WordPress. Padahal semua browser modern saat ini telah mendukung format WebP.
+WordPress sangat membatasi file berextensi apa saja yang boleh di upload ke sistem WP, demi menjaga keamana sitem WP itu sendiri. Secara default, WP cuma mengizinkan extensi file populer seperti;
+ Image files: .jpg, .jpeg, .png, .gif, .ico Document files: .pdf, .doc, .xls, .</description>
+    </item>
+    
     <item>
       <title>Cara membuat theme wordpress (2021)</title>
       <link>https://insertapps.com/blog/membuat-theme-wordpress/</link>
@@ -30,8 +41,7 @@ Skil dasar yang harus dipenuhi adalah:
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
- Untuk bracket versi yang lebih lama, pesan erronya begini:
-PHP runtime not found.</description>
+Brackets error: PHP runtime not found.  Untuk bracket versi yang lebih lama, pesan erronya begini:</description>
     </item>
     
     <item>
