@@ -17,24 +17,24 @@ License: MIT License
 	/* Font */
 	--bold-font-weight: bold;
 	/* Colors */
-	--aqua		: #7FDBFF;
-	--blue 		: #0074D9;
-	--navy		: #001F3F;
-	--teal 		: #39CCCC;
-	--green 	: #2ECC40;
-	--olive 	: #3D9970;
-	--lime 		: #01FF70;
-	--yellow	: #FFDC00;
-	--orange	: #FF851B;
-	--red 		: #FF4136;
-	--fuchsia	: #F012BE;
-	--purple	: #B10DC9;
-	--maroon	: #85144B;
-	--white 	: #FFFFFF;
-	--silver	: #DDDDDD;
-	--gray 		: #AAAAAA;
-	--charcoal	: #4A4A4A;
-	--black 	: #111111;
+	--aqua: #7FDBFF;
+	--blue: #0074D9;
+	--navy: #001F3F;
+	--teal: #39CCCC;
+	--green: #2ECC40;
+	--olive: #3D9970;
+	--lime: #01FF70;
+	--yellow: #FFDC00;
+	--orange: #FF851B;
+	--red: #FF4136;
+	--fuchsia: #F012BE;
+	--purple: #B10DC9;
+	--maroon: #85144B;
+	--white: #FFFFFF;
+	--silver: #DDDDDD;
+	--gray: #AAAAAA;
+	--charcoal: #4A4A4A;
+	--black: #111111;
 
 	/* Btn */
 	--border-width: 1px;
@@ -129,7 +129,8 @@ svg {
 }
 
 a {
-	color: var(--blue) /* change your color link  */
+	color: var(--blue)
+		/* change your color link  */
 }
 
 h1,
@@ -231,8 +232,10 @@ hr {
 }
 
 #burger.box span {
-	width: 1.25rem; /* 18px */
-	height: .125rem; /* 4px */
+	width: 1.25rem;
+	/* 18px */
+	height: .125rem;
+	/* 4px */
 	border-radius: .1875rem
 }
 
@@ -245,9 +248,9 @@ hr {
 }
 
 .box-shadow {
-	box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.3)
+	box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.1)
 }
 
 .mouse-wheel {
@@ -269,8 +272,10 @@ hr {
 /* -> Search */
 
 .box.dot span {
-	width: .25rem; /* 18px */
-	height: .25rem; /* 4px */
+	width: .25rem;
+	/* 18px */
+	height: .25rem;
+	/* 4px */
 	border-radius: .1875rem
 }
 
@@ -415,6 +420,7 @@ hr {
 		opacity: 1;
 	}
 }
+
 /* -> Content */
 
 /* -> Sidebar */
@@ -3322,7 +3328,7 @@ https://github.com/basscss/addons
 }
 
 .bg-white {
-	background-color:var(--white)
+	background-color: var(--white)
 }
 
 .bg-aqua {

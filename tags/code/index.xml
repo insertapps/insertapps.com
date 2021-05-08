@@ -6,18 +6,7 @@
     <description>Recent content in code on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 May 2021 21:27:49 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Upload gambar WebP WordPress tampa plugin</title>
-      <link>https://insertapps.com/blog/upload-webp-to-wordpress/</link>
-      <pubDate>Sat, 08 May 2021 21:27:49 +0700</pubDate>
-      
-      <guid>https://insertapps.com/blog/upload-webp-to-wordpress/</guid>
-      <description>By default WordPress belum mendukung upload file gambar format WebP (baca webppy) ke dalam library gallery WordPress. Padahal semua browser modern saat ini telah mendukung format WebP.
-WordPress sangat membatasi file berextensi apa saja yang boleh di upload ke sistem WP, demi menjaga keamana sitem WP itu sendiri. Secara default, WP cuma mengizinkan extensi file populer seperti;
- Image files: .jpg, .jpeg, .png, .gif, .ico Document files: .pdf, .doc, .xls, .</description>
-    </item>
-    
+    <lastBuildDate>Sat, 23 Jan 2021 10:40:32 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solusi hugo gagal eksekusi markdown render hook template amp-img</title>
       <link>https://insertapps.com/blog/hugo-markdown-render-hook-amp-img/</link>

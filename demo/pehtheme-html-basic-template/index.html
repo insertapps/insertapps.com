@@ -7,8 +7,9 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header id="headerian" class="top-0 right-0 left-0 border py2">
-		<div class="max-width-4 mx-auto px2 flex items-center">
+	<header id="headerian" class="fixed bg-white top-0 right-0 left-0 py2">
+	  <div class="max-width-4 mx-auto flex flex-column justify-center">
+		<div class="px2 flex items-center">
 			<div id="burger" class="box mr2 flex flex-column justify-around">
 				<span class="block bg-charcoal rounded"></span>
 				<span class="block bg-charcoal rounded"></span>
@@ -19,26 +20,47 @@
 					<h1 class="m0 h2 mr2">Pehtheme</h1>
 				</a>
 			</div>
-			<div id="searching" class="box block relative">
+			<div id="searching" class="box block relative pointer">
 				<span class="searcher"></span>
 			</div>
-			<div id="option" class="box dot border flex flex-column justify-around items-center ml2">
+			<div id="option" class="box dot flex flex-column justify-around items-center ml2 pointer">
 				<span class="block bg-charcoal rounded"></span>
 				<span class="block bg-charcoal rounded"></span>
 				<span class="block bg-charcoal rounded"></span>
 			</div>
 		</div>
+		<nav id="navbar" class="nowrap mouse-wheel mt1 hide">
+			<ul class="list-reset m0">
+				<li class="inline-block">
+					<a class="text-decoration-none ml2" href="">Home</a>
+				</li>
+				<li class="inline-block">
+					<a class="text-decoration-none mr2" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illo perspiciatis eos, odit saepe aut animi quod modi minus ab sint possimus dolore quas iusto tempore porro sit id! Cupiditate</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="search" class="px2 mt1 hide">
+			<form class="flex" action="" method="">
+				<input class="input col-10 sm-col-11 muted m0 p1 rounded" type="text" value="" name="search" placeholder="Search..." autofocus>
+					<button class="col-2 sm-col-1 btn btn-primary bg-olive p1 rounded-right" type="submit" value=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="" viewBox="0 0 16 16">
+							<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+						</svg></button>
+			</form>
+		</div>
+	  </div>
 	</header>
-	<main>
-		<article>
-			
+	<main class="max-width-4 mx-auto mxn2 my4 bg-silver" style="height:1000px">
+	<div class="clearfix">
+		<article class="sm-col sm-col-8 border px2 justify" style="height: 500px">
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam esse odio aut ut eligendi. Ipsa earum laboriosam magni eius voluptatum corrupti tempore consectetur molestias, laborum reprehenderit odit voluptas mollitia autem.</p>
 		</article>
 
-		<aside>
-			
+		<aside class="sm-col sm-col-4 border px2 justify" style="height: 300px">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iusto tenetur incidunt aperiam soluta at nostrum rem. Eveniet, minus omnis sed ut nam, fugiat et maiores, facilis aliquid beatae laudantium?</p>
 		</aside>
+	</div>
 	</main>
-	<footer>
+	<footer class="bg-black py3">
 		
 	</footer>
 	<script src="script.js"></script>
