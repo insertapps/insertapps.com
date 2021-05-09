@@ -244,6 +244,12 @@ hr {
 	cursor: pointer
 }
 
+@media (hover: none) {
+	.pointer:hover {
+		color: red;
+	}
+}
+
 .transition {
 	transition: 0.4s
 }
