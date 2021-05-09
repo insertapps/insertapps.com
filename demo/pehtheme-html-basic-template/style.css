@@ -439,14 +439,25 @@ hr {
 
 /* -> Miscellaneous */
 
+.social {
+	width: 36px;
+	height: 36px;
+	border-radius: 30%;
+	filter: grayscale(100%)
+}
+
+.social:hover {
+	filter: none;
+}
+
 .overflow-x {
 	overflow-x: auto;
-	overflow-y: hidden;
+	overflow-y: hidden
 }
 
 .overflow-y {
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: auto
 }
 
 

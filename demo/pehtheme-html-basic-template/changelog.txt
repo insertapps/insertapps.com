@@ -1,3 +1,6 @@
+Version 1.0.1
+Mei, 09 2021
+- Memindahkan properti hover opacity dalam class .box ke class .pointer
 
 
 Version 1.0.0
