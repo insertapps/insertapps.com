@@ -42,12 +42,12 @@ burger.addEventListener('click', function(e) {
 });
 
 // Close button & overlay click function to hide sidebar navigation 
-// let classCloseClick = [overlay, close];
-// classCloseClick.forEach(function(el) {
-// 	el.addEventListener('click', function(els) {
-// 		classOpen.forEach(els => els.classList.remove('active'));
-// 	});
-// });
+let classCloseClick = [overlay, close];
+classCloseClick.forEach(function(el) {
+	el.addEventListener('click', function(els) {
+		classOpen.forEach(els => els.classList.remove('active'));
+	});
+});
 
 // Enable mouse wheel to horizontal scroll
 mouseWheel.addEventListener('wheel', function(s) {

@@ -10,7 +10,7 @@
 	<header id="headerian" class="fixed bg-white top-0 right-0 left-0 py2">
 	  <div class="max-width-4 mx-auto flex flex-column justify-center">
 		<div class="px2 flex items-center">
-			<div id="burger" class="box mr2 flex flex-column justify-around">
+			<div id="burger" class="box mr2 flex flex-column justify-around pointer">
 				<span class="block bg-charcoal rounded"></span>
 				<span class="block bg-charcoal rounded"></span>
 				<span class="block bg-charcoal rounded"></span>
@@ -49,6 +49,47 @@
 		</div>
 	  </div>
 	</header>
+	<section id="sidenav" class="fixed col-10 sm-col-6 md-col-5 lg-col-4 top-0 bottom-0 left-0 z4 bg-white">
+		<div class="drawer bg-silver mb2">
+			<div id="close" class="box flex items-center justify-center relative pointer right m2">
+				<span class="absolute cross left bg-charcoal"></span>
+				<span class="absolute cross right bg-charcoal"></span>
+			</div>
+		</div>
+		<div class="flex flex-column px2">
+			<div class="icon flex items-center justify-center circle bg-charcoal mb1 border border-white border-box white" style="width: 80px; height: 80px; margin-top: -40px; border-width: 5px;">
+				<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"></path>
+					<path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"></path>
+					<path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"></path>
+				</svg>
+			</div>
+			<div class="h3 bold charcoal mb2">Pehtheme</div>
+
+			<ul class="list-reset">
+				<li class="pointer mb2">
+					<a class="text-decoration-none black" href="#">
+						<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  							<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+						</svg>
+						<span class="align-middle">About Us</span>
+					</a>
+				</li>
+				<li class="pointer mb2">
+					<a class="text-decoration-none black" href="#">
+						<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  							<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+						</svg>
+						<span class="align-middle">About Us</span>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+	</section>
 	<main class="max-width-4 mx-auto mxn2 my4 bg-silver" style="height:1000px">
 	<div class="clearfix">
 		<article class="sm-col sm-col-8 border px2 justify" style="height: 500px">
@@ -63,6 +104,7 @@
 	<footer class="bg-black py3">
 		
 	</footer>
+	<div id="overlay" class="fixed z3 top-0 left-0 bg-darken-4"></div>
 	<script src="script.js"></script>
 </body>
 </html>
