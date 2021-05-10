@@ -1,7 +1,12 @@
-Version 1.0.1
-Mei, 09 2021
-- Memindahkan properti hover opacity dalam class .box ke class .pointer
-
-
 Version 1.0.0
+Mei, 10 2021
+- Release live demo
+
+Version 0.1.7
+Mei, 09 2021
+- Move hover opacity in the .box class .box to .pointer class
+- Add dummy content
+- Add sidebar dummy
+
+Version 0.1.0
 April, 30 2021
