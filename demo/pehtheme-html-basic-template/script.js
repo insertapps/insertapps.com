@@ -9,7 +9,6 @@ let overlay = document.getElementById('overlay');
 let sidenav = document.getElementById('sidenav');
 let headerian = document.getElementById('headerian');
 let searching = document.getElementById('searching');
-let mouseWheel = document.querySelector('.mouse-wheel');
 let searcher = document.querySelector('.searcher');
 
 // Add header shadow effect
@@ -50,12 +49,32 @@ classCloseClick.forEach(function(el) {
 });
 
 // Enable mouse wheel to horizontal scroll
-mouseWheel.addEventListener('wheel', function(s) {
-	const race = 15; // How many pixels to scroll
+// mouseWheel.addEventListener('wheel', function(s) {
+// 	const race = 15; // How many pixels to scroll
 
-	if (s.deltaY > 0) // Scroll right
-		mouseWheel.scrollLeft += race;
+// 	if (s.deltaY > 0) // Scroll right
+// 		mouseWheel.scrollLeft += race;
+// 	else // Scroll left
+// 		mouseWheel.scrollLeft -= race;
+// 	s.preventDefault();
+// });
+
+document.querySelectorAll('.mouse-wheel').forEach( item => {
+	item.addEventListener('wheel', event => {
+		const race = 15; // How many pixels to scroll
+
+	if (event.deltaY > 0) // Scroll right
+		item.scrollLeft += race;
 	else // Scroll left
-		mouseWheel.scrollLeft -= race;
-	s.preventDefault();
+		item.scrollLeft -= race;
+	event.preventDefault();
+	})
 });
+
+
+
+
+
+
+
+
