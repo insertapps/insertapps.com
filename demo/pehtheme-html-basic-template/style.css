@@ -465,6 +465,10 @@ hr {
     overflow-y: auto
 }
 
+.flex-nowrap {
+    flex-wrap: nowrap
+}
+
 
 /* 
 BASSCSS ADD ON
