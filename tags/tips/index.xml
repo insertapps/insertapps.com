@@ -15,7 +15,7 @@
       <guid>https://insertapps.com/blog/github-error-a-lock-file-already-exists-in-the-repository/</guid>
       <description>Posting artikel baru ke blog berbasis Hugo via Github hosting mengalami error message: &amp;ldquo;A lock file already exists in the repository, which blocks this operation&amp;rdquo;.
 Pesan error ini disebabkan saat app Github Desktop menjalankan perintah commit atau git push ke repo Github, komputer mati mendadak akibat padam listrik.
- Solusi untuk mengatasi pesan error &amp;ldquo;A lock file already exists in the repository, which blocks this operation from completing&amp;rdquo; ternyata gampang sekali.</description>
+Pesan error A lock file already exists in the repository...  Solusi untuk mengatasi pesan error &amp;ldquo;A lock file already exists in the repository, which blocks this operation from completing&amp;rdquo; ternyata gampang sekali.</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@ Cara Pertama</description>
       
       <guid>https://insertapps.com/blog/css-dropcap/</guid>
       <description>Drop cap dekorasi karakter pertama di awal paragraf pertama dibuat lebih menonjol dengan memperbesar ukuran huruf.
- Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.
+Drop Cap  Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.
 Beberapa theme blog WordPress sudah menyediakan fitur tambahan untuk membuat &amp;lsquo;Drop Cap&amp;rsquo;.
 Bila thema WordPress atau Blogspot kamu tidak ada fitur tersebut, jangan berkecil hati.</description>
     </item>
@@ -75,8 +75,7 @@ Setelah saya setting dan siap pakai, maka si Mikrotik HAP AC Lite warna hitam it
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
- Untuk bracket versi yang lebih lama, pesan erronya begini:
-PHP runtime not found.</description>
+Brackets error: PHP runtime not found.  Untuk bracket versi yang lebih lama, pesan erronya begini:</description>
     </item>
     
     <item>
