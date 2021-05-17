@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
-	<title>Upload gambar WebP WordPress tampa plugin - InsertApps</title>
+	<title>CSS flexbox: Cara mengatur lebar tetap atau fixed width - InsertApps</title>
 	
-    <link rel="canonical" type="text/html" href="https://insertapps.com/blog/upload-webp-to-wordpress/">
+    <link rel="canonical" type="text/html" href="https://insertapps.com/blog/css-flexbox-fixed-width/">
 
 	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<link rel="shortcut icon" href="https://insertapps.com/assets/favicon/32.png">
@@ -14,11 +14,11 @@
   {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
-    "mainEntityOfPage": "https:\/\/insertapps.com\/amp\/blog\/upload-webp-to-wordpress\/",
-    "headline": "Upload gambar WebP WordPress tampa plugin",
-    "datePublished": "Saturday, May 8, 2021",
-    "dateModified": "Saturday, May 8, 2021",
-    "description": "WordPress belum support format .webp. Berikut cara simple upload gambar webp ke sistem WP tampa plugin.",
+    "mainEntityOfPage": "https:\/\/insertapps.com\/amp\/blog\/css-flexbox-fixed-width\/",
+    "headline": "CSS flexbox: Cara mengatur lebar tetap atau fixed width",
+    "datePublished": "Monday, May 17, 2021",
+    "dateModified": "Monday, May 17, 2021",
+    "description": "Cara mengatur lebar tetap atau fixed width container dengan CSS flexbox.",
     "author": {
       "@type": "Person",
       "name": "Fauzan My"
@@ -35,7 +35,7 @@
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/insertapps.com\/images\/blog\/2021\/0508_Allow-webp-wp-without-plugin.webp", 
+      "url": "https:\/\/insertapps.com\/images\/blog\/Webdesain_cover-image.webp", 
       "height":  1024 ,
       "width":  512 
 	  
@@ -59,8 +59,8 @@
 	},{
 		"@type": "ListItem",
 		"position": 3,
-		"name": "Upload gambar WebP WordPress tampa plugin",
-		"item": "https:\/\/insertapps.com\/blog\/upload-webp-to-wordpress\/"
+		"name": "CSS flexbox: Cara mengatur lebar tetap atau fixed width",
+		"item": "https:\/\/insertapps.com\/blog\/css-flexbox-fixed-width\/"
 	}]
 }
 </script>
@@ -1787,88 +1787,55 @@ blockquote p {
 					
 					
 					
-						<span class="block muted caps mb2 h5">WordPress</span>
+						<span class="block muted caps mb2 h5">CSS</span>
 					
 			
-				<h1 class="h2 mb1">Upload gambar WebP WordPress tampa plugin</h1>
+				<h1 class="h2 mb1">CSS flexbox: Cara mengatur lebar tetap atau fixed width</h1>
 
 				<div class="clearfix">
 					<time class="h6 muted" datetime="2020-08-08">
-						Saturday, May 8, 2021
+						Monday, May 17, 2021
 					</time>
 				</div>
 			</header>
 
 			<div class="clearfix mxn2">
 			 
-				<amp-img class="mb2" src="/images/blog/2021/0508_Allow-webp-wp-without-plugin.webp" alt="Ilustrasi"  height="512" width="1024"
+				<amp-img class="mb2" src="/images/blog/Webdesain_cover-image.webp" alt="Ilustrasi"  height="512" width="1024"
 					layout="responsive"></amp-img>
 			</div>
 
 			<div id="content" class="mb2">
-				<p>By default WordPress belum mendukung upload file gambar format WebP (baca webppy) ke dalam library gallery WordPress. Padahal semua browser modern saat ini telah mendukung format WebP.</p>
-<p>WordPress sangat membatasi file berextensi apa saja yang boleh di upload ke sistem WP, demi menjaga keamana sitem WP itu sendiri. Secara default, WP cuma mengizinkan extensi file populer seperti;</p>
-<ul>
-<li>Image files: <code>.jpg</code>, <code>.jpeg</code>, <code>.png</code>, <code>.gif</code>, <code>.ico</code></li>
-<li>Document files: <code>.pdf</code>, <code>.doc</code>, <code>.xls</code>, <code>.ppt</code>, <code>.odt</code>, <code>.psd</code>, <code>.zip</code></li>
-<li>Audio files: <code>.mp3</code>, <code>.m4a</code>, <code>.ogg</code>, <code>.wav</code></li>
-<li>Vidoe files: <code>.mp4</code>, <code>.mov</code>, <code>.avi</code>, <code>.mpg</code>, <code>.ogv</code>, <code>.3gp</code>, <code>.3g2</code></li>
-</ul>
-<p>Selain extensi file tersebut, kita harus meng unlock sendiri sistem WP untuk menambah daftar perizinan upload file.</p>
-<p>Ada banyak cara untuk memaksa sistem WordPress supaya bisa menerima file berextention .webp. Salah satunya, ya&hellip; install plugin pihak ketiga.</p>
-<p>Nah&hellip; Kalau urasan plugin, silahkan cari sendiri di laman galery plugin WordPress, yang develop plugin support webp banyak sekali.</p>
-<p>InsertApps sendiri termasuk webdev yang tidak suka pasang plugin kalau membuat web/blog dengan CMS WordPress, kecuali tidak ada cara lain, baru pilah pilih install plugin.</p>
-<p>Cara yang paling kami sukai dengan membuka permisi upload file WebP Ke sistem WP, cukup dengan trick simple saja, insert script ke dalam file <code>functions.php</code>.</p>
-<p>Berikut code php untuk &lsquo;unlock&rsquo; allow upload file .webp CMS WordPress tampa plugin:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// Allow upload .webp file format.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">allow_upload_webp_file</span>($existing_mimes) {
-    $existing_mimes[<span style="color:#e6db74">&#39;webp&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;image/webp&#39;</span>;
-    <span style="color:#66d9ef">return</span> $existing_mimes;
+				<p>Desain web semakin mudah berkat adanya fitur CSS flexbox. Flexbox lebih dikenal dengan layout kotak-kotak yang sangat fleksibel. Tata letak laman web dengan memanfaatkan css display flex, memungkinkan elemen yang responsif secara otomatis tergantung pada ukuran layar.</p>
+<p>Yang paling magic dari properti CSS display flex ini adalah kemampuannya untuk menyesuaikan bentuk, perataan atau alignment element HTML berdasarkan sumbu sehingga menjadi lebih sentris dan dinamis.</p>
+<p>Intinya, dengan CSS flexbox, desain dan tata letak element web jadi lebih mudah, terutama struktur tag HTML dan style CSS jadi lebih pendek. Code yang pendek tentu lebih bersih.</p>
+<p>Contohnya sederhana seperti <a href="/blog/super-simpel-css-center-container/" class="blue text-decoration-none"
+	
+	>memposisikan element HTML tepat berada di tengah-tengah.</a> Dengan CSS flexbox proses centering objek menjadi lebih sederhana dan kode yang lebih ringkas.</p>
+<p>Namun, adakalanya saat proses desain komponen element web sering kali stuck, padahal kemampuan CSS sudah semakin sakti. Misal, saat bermain-main dengan CSS flexbox, lebar container yang diinginkan tidak sesuai harapan pada mode layar responsive yang mengecil. Lebar <code>width</code> suatu kota juga ikut mengecil.</p>
+<p>Sangat menjengkelkan sekali bukan?</p>
+<p>Kalau iya, bukan hanya saya dan kamu saja, bahkan ratusan web designer luar sana juga mengalami hal yang sama. Seperti salah satu questions <strong>Stackoverflow</strong> berikut: <a href="https://stackoverflow.com/questions/29885284/how-to-set-a-fixed-width-column-with-css-flexbox/29885495" class="blue a-hover text-decoration-none" title="How to set a fixed width column with CSS flexbox" target="_blank" rel="nofollow noopener noreferrer">How to set a fixed width column with CSS flexbox</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;flex&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box-1 border&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:200px;&#34;</span>&gt;
+        Lorem ipsum dolor sit amet
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box-2 border&#34;</span>&gt;
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s.
+    &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p>Hasil render browser, <code>box-1</code> yang sudah ditetapkan lebar <code>200px</code> akan fix lebar 200 pixel di layar lebar, namun akan ikut mengecil juga di layar smartphone.</p>
+<p>Untuk mengatur lebar tetap atau fixed width dengan CSS flexbox, wajib menentukan CSS property <code>flex basis</code>, <code>flex grow</code> dan <code>flex shrink</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">box-1</span> {
+	<span style="color:#66d9ef">flex-grow</span>: <span style="color:#ae81ff">0</span>;		<span style="color:#75715e">/* do not grow		- initial value: 0 */</span>
+	<span style="color:#66d9ef">flex-shrink</span>: <span style="color:#ae81ff">0</span>;		<span style="color:#75715e">/* do not shrink	- initial value: 1 */</span>
+	<span style="color:#66d9ef">flex-basis</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;	<span style="color:#75715e">/* width/height		- initial value: auto */</span>
 }
-<span style="color:#a6e22e">add_filter</span>(<span style="color:#e6db74">&#39;mime_types&#39;</span>, <span style="color:#e6db74">&#39;allow_upload_webp_file&#39;</span>);
-
-<span style="color:#75715e">// Allow view thumbnail for webp format files.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">allow_webp_file_view</span>($result, $path) {
-    <span style="color:#66d9ef">if</span> ($result <span style="color:#f92672">===</span> <span style="color:#66d9ef">false</span>) {
-        $displayable_image_types <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>( <span style="color:#a6e22e">IMAGETYPE_WEBP</span> );
-        $info <span style="color:#f92672">=</span> <span style="color:#f92672">@</span><span style="color:#a6e22e">getimagesize</span>( $path );
-
-        <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">empty</span>($info)) {
-            $result <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
-        } <span style="color:#66d9ef">elseif</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">in_array</span>($info[<span style="color:#ae81ff">2</span>], $displayable_image_types)) {
-            $result <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
-        } <span style="color:#66d9ef">else</span> {
-            $result <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
-        }
-    }
-
-    <span style="color:#66d9ef">return</span> $result;
+</code></pre></div><p>Maka, hasil render elemen <code>box-1</code> ukurannya akan tetap atau fixed 200px di ukuran layar manapun. Sedangkan elemen <code>box-2</code> masih fleksibel dan dinamis sebagaimana fungsinya CSS flexbox.</p>
+<p>Bentuk penulisan flex basis dapat disingkat menjadi:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">box-1</span> {
+  <span style="color:#66d9ef">flex</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
 }
-<span style="color:#a6e22e">add_filter</span>(<span style="color:#e6db74">&#39;file_is_displayable_image&#39;</span>, <span style="color:#e6db74">&#39;allow_webp_file_view&#39;</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>);
-</code></pre></div><p>Penjelasan code:</p>
-<ul>
-<li>Blok code pertama, <code>function allow_upload_webp_file() {  }</code> adalah sebuah fungsi—method—untuk menambah daftar extensi file <code>.webp</code> yang boleh di upload ke dalam sistem WordPress.</li>
-<li>Block code kedua, <code>function allow_webp_file_view() { }</code> adalah fungsi untuk menambah kemampuan preview gambar dalam media gallery WP. Kalau function ini tidak ada, maka file WebP yang di upload tidak tampil thumbnail preview.</li>
-<li>Baris code <code>add_filter()</code> adalah key functions bawaan dari WordPress yang memungkin untuk melakukan berbagai setting dan tweaking ke dalam sistem WordPress.</li>
-</ul>
-<p>Cukup segitu saja codenya, sudah kelar urusan upload file <code>.webp</code> ke sitem WordPress tampa plugin—jasa makelar pihak ketiga.</p>
-<p>Bagaimana mudah bukan?</p>
-<p>Tambahan. Untuk nama function bebas saja, boleh mengganti dengan nama sesuka hati, asal jangan sama dengan nama functions yang sudah ada, juga tidak boleh ada spasi, ataupun dimulai dengan angka.</p>
-<p>Misal;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// Fungsi allow upload file WebP WP tampa plugin
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">mantan_sayang_izinkan_upload_file_webp_ke_dalam_wordpress</span>() {
-	<span style="color:#75715e">// do something
-</span><span style="color:#75715e"></span>}
-
-<span style="color:#75715e">// Menambah fungsi mantan ke sistem wp dengan mendaftar ke bagian wp add_filter
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">add_filter</span>(<span style="color:#e6db74">&#39;mime_types&#39;</span>, <span style="color:#e6db74">&#39;mantan_sayang_izinkan_upload_file_webp_ke_dalam_wordpress&#39;</span>);
-
-</code></pre></div><p>Baca aturan pakai <code>add_filter</code> selengkapnya di laman resmi dokumentasi WordPress: <a href="https://developer.wordpress.org/reference/functions/add_filter/" class="blue a-hover text-decoration-none" title="add filter function code reference." target="_blank" rel="nofollow noopener noreferrer">add filter function code reference.</a></p>
-<p><strong>Kesimpulan:</strong></p>
-<p>Hanya dengan beberapa baris script, portal news, blog, website pemda memakai CMS WordPress sudah bisa support upload file gambar .webp. Cara ini lebih super simple, mudah, dan sangat elegant ketimbang harus menginstall plugin khusus .webp. 🙏</p>
-<p><strong>FAQ:</strong></p>
-<p>Bagaimana cara ubah gambar JPG/PNG ke WebP atau convert image JPG to WebP❓</p>
-<p><em>Tutorial cara mengubah gambar JPG ke WebP sudah ada penjelasan di laman blog Breedie dengan klik tautan berikut ini: <a href="https://breedie.com/" class="blue a-hover text-decoration-none" title="Convert image JPG to WEBP." target="_blank" rel="noreferrer noopener">Convert image JPG to WEBP.</a></em></p>
+</code></pre></div><p>Demikian.</p>
 
 			</div>
 			<div class="mb2">
@@ -1883,9 +1850,9 @@ blockquote p {
 			</div>
 			
 			<h3 class="h6 caps muted mb2">Sharing</h3>
-  			<amp-social-share type="facebook" width="50" height="36" data-param-text="Upload gambar WebP WordPress tampa plugin" data-param-href="https://insertapps.com/amp/blog/upload-webp-to-wordpress/?ref=URL" data-param-app_id="145634995501895" aria-label="Share this on Facebook"></amp-social-share>
-			<amp-social-share type="twitter" width="50" height="36" data-param-text="Upload gambar WebP WordPress tampa plugin" data-param-url="https://insertapps.com/amp/blog/upload-webp-to-wordpress/" aria-label="Share this on Twitter"></amp-social-share>
-			<amp-social-share type="whatsapp" width="50" height="36" data-param-text="Check out this article: Upload gambar WebP WordPress tampa plugin - https://insertapps.com/amp/blog/upload-webp-to-wordpress/"></amp-social-share>
+  			<amp-social-share type="facebook" width="50" height="36" data-param-text="CSS flexbox: Cara mengatur lebar tetap atau fixed width" data-param-href="https://insertapps.com/amp/blog/css-flexbox-fixed-width/?ref=URL" data-param-app_id="145634995501895" aria-label="Share this on Facebook"></amp-social-share>
+			<amp-social-share type="twitter" width="50" height="36" data-param-text="CSS flexbox: Cara mengatur lebar tetap atau fixed width" data-param-url="https://insertapps.com/amp/blog/css-flexbox-fixed-width/" aria-label="Share this on Twitter"></amp-social-share>
+			<amp-social-share type="whatsapp" width="50" height="36" data-param-text="Check out this article: CSS flexbox: Cara mengatur lebar tetap atau fixed width - https://insertapps.com/amp/blog/css-flexbox-fixed-width/"></amp-social-share>
 			
 		</article>
 		<aside class="clearfix mnx2">
@@ -1894,34 +1861,34 @@ blockquote p {
 			
 			
 			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
-				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/membuat-theme-wordpress/">
+				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/close-button-icon-css/">
 					<figure class="m0 block border rounded border-silver">
-						<amp-img src="/images/blog/Cara-membuat-theme-wordpress-thumbnail.webp" width="500" height="333" layout="responsive"
-							alt="Cara membuat theme wordpress (2021)" class="block m0"></amp-img>
+						<amp-img src="/images/blog/2020/07_close-cover-thumbnail.jpg" width="500" height="333" layout="responsive"
+							alt="Cara membuat &#39;close button icon&#39; dengan HTML dan CSS" class="block m0"></amp-img>
 						<figcaption class="p2 m0">
-							<h1 class="xs-h3 h5">Cara membuat theme wordpress (2021)</h1>
+							<h1 class="xs-h3 h5">Cara membuat &#39;close button icon&#39; dengan HTML dan CSS</h1>
 						</figcaption>
 					</figure>
 				</a></div>
 			
 			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
-				<a class="text-decoration-none" href="https://insertapps.com/blog/error-response-is-not-a-valid-json-response/">
+				<a class="text-decoration-none" href="https://insertapps.com/blog/html-header-keren-menu-scroll/">
 					<figure class="m0 block border rounded border-silver">
-						<amp-img src="/images/blog/WordPress-cover-thumbnail.jpg" width="500" height="333" layout="responsive"
-							alt="WP Error: Response is not a valid json response" class="block m0"></amp-img>
+						<amp-img src="/images/blog/HTML_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
+							alt="Membuat header HTML keren responsive horizontal navbar auto scroll" class="block m0"></amp-img>
 						<figcaption class="p2 m0">
-							<h1 class="xs-h3 h5">WP Error: Response is not a valid json response</h1>
+							<h1 class="xs-h3 h5">Membuat header HTML keren responsive horizontal navbar auto scroll</h1>
 						</figcaption>
 					</figure>
 				</a></div>
 			
 			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
-				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/brackets-error-php7-runtime/">
+				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/cara-simpel-css-layout-vertical-center/">
 					<figure class="m0 block border rounded border-silver">
-						<amp-img src="/images/blog/Brackets_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
-							alt="Editor Brackets Error: PHP7 runtime not found" class="block m0"></amp-img>
+						<amp-img src="/images/blog/CSS_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
+							alt="Cara simpel CSS layout vertical center" class="block m0"></amp-img>
 						<figcaption class="p2 m0">
-							<h1 class="xs-h3 h5">Editor Brackets Error: PHP7 runtime not found</h1>
+							<h1 class="xs-h3 h5">Cara simpel CSS layout vertical center</h1>
 						</figcaption>
 					</figure>
 				</a></div>

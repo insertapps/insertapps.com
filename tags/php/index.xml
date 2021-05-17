@@ -53,7 +53,8 @@ Brackets error: PHP runtime not found.  Untuk bracket versi yang lebih lama, pes
       <description>Wordpress error updating failed error message the response is not a valid json response
 Pertama jangan terlalu panik. Pada kasus yang saya alami, sudah melakukan berbagai cara untuk menangani error wordpres tersebut. Mulai dari update sistem wordpress secara manual, menon-aktifkan plugin satu persatu juga tidak menyelesaikan masalah.
 Belum lagi percobaan dari berbagai saran dan tips hasil browsing bahkan dalam forum dev Wp.
-Terakhir, dari dapat saran dari https://passionwp.com/response-is-not-a-valid-json-response-error/ untuk kembali menggunakan classic editor.</description>
+Terakhir, dari dapat saran dari https://passionwp.com/response-is-not-a-valid-json-response-error/
+untuk kembali menggunakan classic editor.</description>
     </item>
     
   </channel>

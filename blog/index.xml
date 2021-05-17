@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://insertapps.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>CSS flexbox: Cara mengatur lebar tetap atau fixed width</title>
+      <link>https://insertapps.com/blog/css-flexbox-fixed-width/</link>
+      <pubDate>Mon, 17 May 2021 18:18:11 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/css-flexbox-fixed-width/</guid>
+      <description>Desain web semakin mudah berkat adanya fitur CSS flexbox. Flexbox lebih dikenal dengan layout kotak-kotak yang sangat fleksibel. Tata letak laman web dengan memanfaatkan css display flex, memungkinkan elemen yang responsif secara otomatis tergantung pada ukuran layar.
+Yang paling magic dari properti CSS display flex ini adalah kemampuannya untuk menyesuaikan bentuk, perataan atau alignment element HTML berdasarkan sumbu sehingga menjadi lebih sentris dan dinamis.
+Intinya, dengan CSS flexbox, desain dan tata letak element web jadi lebih mudah, terutama struktur tag HTML dan style CSS jadi lebih pendek.</description>
+    </item>
+    
+    <item>
       <title>Upload gambar WebP WordPress tampa plugin</title>
       <link>https://insertapps.com/blog/upload-webp-to-wordpress/</link>
       <pubDate>Sat, 08 May 2021 21:27:49 +0700</pubDate>
@@ -340,7 +351,8 @@ Homebrew butuh macOS terbaru, minimal OS Catalina, baru bisa melakukan auto upgr
       <description>Wordpress error updating failed error message the response is not a valid json response
 Pertama jangan terlalu panik. Pada kasus yang saya alami, sudah melakukan berbagai cara untuk menangani error wordpres tersebut. Mulai dari update sistem wordpress secara manual, menon-aktifkan plugin satu persatu juga tidak menyelesaikan masalah.
 Belum lagi percobaan dari berbagai saran dan tips hasil browsing bahkan dalam forum dev Wp.
-Terakhir, dari dapat saran dari https://passionwp.com/response-is-not-a-valid-json-response-error/ untuk kembali menggunakan classic editor.</description>
+Terakhir, dari dapat saran dari https://passionwp.com/response-is-not-a-valid-json-response-error/
+untuk kembali menggunakan classic editor.</description>
     </item>
     
     <item>

@@ -6,7 +6,18 @@
     <description>Recent content in html on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 May 2021 13:03:44 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 May 2021 18:18:11 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS flexbox: Cara mengatur lebar tetap atau fixed width</title>
+      <link>https://insertapps.com/blog/css-flexbox-fixed-width/</link>
+      <pubDate>Mon, 17 May 2021 18:18:11 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/css-flexbox-fixed-width/</guid>
+      <description>Desain web semakin mudah berkat adanya fitur CSS flexbox. Flexbox lebih dikenal dengan layout kotak-kotak yang sangat fleksibel. Tata letak laman web dengan memanfaatkan css display flex, memungkinkan elemen yang responsif secara otomatis tergantung pada ukuran layar.
+Yang paling magic dari properti CSS display flex ini adalah kemampuannya untuk menyesuaikan bentuk, perataan atau alignment element HTML berdasarkan sumbu sehingga menjadi lebih sentris dan dinamis.
+Intinya, dengan CSS flexbox, desain dan tata letak element web jadi lebih mudah, terutama struktur tag HTML dan style CSS jadi lebih pendek.</description>
+    </item>
+    
     <item>
       <title>Cara mudah membuat search box icon</title>
       <link>https://insertapps.com/blog/search-box-icon-pure-css/</link>
