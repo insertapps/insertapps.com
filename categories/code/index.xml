@@ -40,7 +40,7 @@ Nama extensions-nya: &amp;ldquo;gotemplate-syntax Language support for go text/t
       
       <guid>https://insertapps.com/blog/css-dropcap/</guid>
       <description>Drop cap dekorasi karakter pertama di awal paragraf pertama dibuat lebih menonjol dengan memperbesar ukuran huruf.
-Drop Cap  Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.
+ Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.
 Beberapa theme blog WordPress sudah menyediakan fitur tambahan untuk membuat &amp;lsquo;Drop Cap&amp;rsquo;.
 Bila thema WordPress atau Blogspot kamu tidak ada fitur tersebut, jangan berkecil hati.</description>
     </item>
@@ -67,7 +67,8 @@ Implementasi yang sering digunakan pada halaman login sebuah website, seperti ha
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
-Brackets error: PHP runtime not found.  Untuk bracket versi yang lebih lama, pesan erronya begini:</description>
+ Untuk bracket versi yang lebih lama, pesan erronya begini:
+PHP runtime not found.</description>
     </item>
     
     <item>

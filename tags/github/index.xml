@@ -15,7 +15,7 @@
       <guid>https://insertapps.com/blog/github-error-a-lock-file-already-exists-in-the-repository/</guid>
       <description>Posting artikel baru ke blog berbasis Hugo via Github hosting mengalami error message: &amp;ldquo;A lock file already exists in the repository, which blocks this operation&amp;rdquo;.
 Pesan error ini disebabkan saat app Github Desktop menjalankan perintah commit atau git push ke repo Github, komputer mati mendadak akibat padam listrik.
-Pesan error A lock file already exists in the repository...  Solusi untuk mengatasi pesan error &amp;ldquo;A lock file already exists in the repository, which blocks this operation from completing&amp;rdquo; ternyata gampang sekali.</description>
+ Solusi untuk mengatasi pesan error &amp;ldquo;A lock file already exists in the repository, which blocks this operation from completing&amp;rdquo; ternyata gampang sekali.</description>
     </item>
     
   </channel>

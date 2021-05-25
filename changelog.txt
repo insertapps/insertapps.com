@@ -1,4 +1,7 @@
 Changelog
+v1.7.1 - 2021-05-25
+- Add pehtheme page
+
 v1.7.0 - 2021-05-01
 - Add lazy load feature.
 - Appply .webp image
