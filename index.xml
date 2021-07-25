@@ -6,7 +6,27 @@
     <description>Recent content on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 May 2021 18:18:11 +0700</lastBuildDate><atom:link href="https://insertapps.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 20:52:52 +0700</lastBuildDate><atom:link href="https://insertapps.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mengganti icon &#39;Z&#39; start menu Zorin OS</title>
+      <link>https://insertapps.com/blog/mengganti-icon-start-menu-zorin-os/</link>
+      <pubDate>Sun, 25 Jul 2021 20:52:52 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/mengganti-icon-start-menu-zorin-os/</guid>
+      <description>Microsoft baru saja merelease Windows 11 dengan perubahan tampilan ke semula yang lebih sederhana. Buat pengguna Linux jangan berkecil hati, atas saran Bang Razi pengguna GNU/Linux sejati, untuk mencoba distro Zorin OS dengan aroma UI/UX layaknya Windows 11 maupun macOS.
+Tak hanya antar muka grafis yang mewah, ternyata Zorin OS super duper ringan dan sangat smooth sekali. Bagi pemula pingin hijrah ke sistem GNU/Linux, Zorin OS adalah pilihan yang tepat.</description>
+    </item>
+    
+    <item>
+      <title>Pehtheme</title>
+      <link>https://insertapps.com/pehtheme/</link>
+      <pubDate>Tue, 25 May 2021 11:11:11 +0000</pubDate>
+      
+      <guid>https://insertapps.com/pehtheme/</guid>
+      <description>Pehtheme mobile-first HTML template for blog, news build with Basscss lightning fast modular CSS with no side effects.
+Features </description>
+    </item>
+    
     <item>
       <title>Pehtheme</title>
       <link>https://insertapps.com/pehtheme/</link>
@@ -20,7 +40,7 @@ Features  Lighter and faster Web/author stories (under development) Nav menu hor
     </item>
     
     <item>
-      <title>CSS flexbox: Cara mengatur lebar tetap atau fixed width</title>
+      <title>CSS flexbox: Trik mengatur lebar tetap atau fixed width</title>
       <link>https://insertapps.com/blog/css-flexbox-fixed-width/</link>
       <pubDate>Mon, 17 May 2021 18:18:11 +0700</pubDate>
       

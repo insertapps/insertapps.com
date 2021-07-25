@@ -8,7 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://insertapps.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CSS flexbox: Cara mengatur lebar tetap atau fixed width</title>
+      <title>Mengganti icon &#39;Z&#39; start menu Zorin OS</title>
+      <link>https://insertapps.com/blog/mengganti-icon-start-menu-zorin-os/</link>
+      <pubDate>Sun, 25 Jul 2021 20:52:52 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/mengganti-icon-start-menu-zorin-os/</guid>
+      <description>Microsoft baru saja merelease Windows 11 dengan perubahan tampilan ke semula yang lebih sederhana. Buat pengguna Linux jangan berkecil hati, atas saran Bang Razi pengguna GNU/Linux sejati, untuk mencoba distro Zorin OS dengan aroma UI/UX layaknya Windows 11 maupun macOS.
+Tak hanya antar muka grafis yang mewah, ternyata Zorin OS super duper ringan dan sangat smooth sekali. Bagi pemula pingin hijrah ke sistem GNU/Linux, Zorin OS adalah pilihan yang tepat.</description>
+    </item>
+    
+    <item>
+      <title>CSS flexbox: Trik mengatur lebar tetap atau fixed width</title>
       <link>https://insertapps.com/blog/css-flexbox-fixed-width/</link>
       <pubDate>Mon, 17 May 2021 18:18:11 +0700</pubDate>
       
