@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wordpress navigation menu ← InsertApps</title>
+    <link rel="canonical" href="https://insertapps.com/blog/wordpress-navigation-menu/">
+    <link rel="manifest" href="https://insertapps.com/manifest.json">
+
+    <link rel="amphtml" type="text/html" href="https://insertapps.com/amp/blog/wordpress-navigation-menu/">
+
+    <meta name="description" content="Cara membuat WordPress navigation menu dengan dua sintag wp_nav_menu() dan wp_get_nav_menu_items()." />
+    
+    <link rel="stylesheet" href="https://insertapps.com/css/style.css">
+    <link rel="stylesheet" href="https://insertapps.com/css/basscss.css">
+        
+    <link rel="icon" href="https://insertapps.com/assets/favicon/32.png" sizes="32x32">
+    <link rel="icon" href="https://insertapps.com/assets/favicon/128.png" sizes="128x128">
+    <link rel="icon" href="https://insertapps.com/assets/favicon/152.png" sizes="152x152">
+    <link rel="icon" href="https://insertapps.com/assets/favicon/167.png" sizes="167x167">
+    <link rel="icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180">
+    <link rel="icon" href="https://insertapps.com/assets/favicon/192.png" sizes="192x192">
+    <link rel="icon" href="https://insertapps.com/assets/favicon/196.png" sizes="196x196">
+    
+    <link rel="shortcut icon" href="https://insertapps.com/assest/favicon/196.png" sizes="196x196">
+    
+    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/128.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.80.0">
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@https://www.twitter.com/insertapps" />
+    <meta property="og:url" content="https://insertapps.com/blog/wordpress-navigation-menu/" />
+    <meta property="og:title" content="Wordpress navigation menu" />
+    <meta property="og:description" content="Cara membuat WordPress navigation menu dengan dua sintag wp_nav_menu() dan wp_get_nav_menu_items()." />
+    <meta property="og:image" content="https://insertapps.com/images/blog/Cara-membuat-theme-wordpress.gif" />
+    <meta property="og:type" content="article">
+    
+    <meta property="fb:app_id" content="2000697846886370">
+    <script async src="https://cdn.splitbee.io/sb.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-35787794-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+	 
+<script data-ad-client="ca-pub-5397255807284351" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "NewsArticle",
+			"headline": "Wordpress navigation menu",
+			"image": "https://insertapps.com/images/blog/Cara-membuat-theme-wordpress.gif",
+			"datePublished": "Tuesday, October 5, 2021",
+			"dateModified": "Tuesday, October 5, 2021"
+		}
+	</script>
+
+
+
+
+
+	<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Site",
+			"item": "https:\/\/insertapps.com\/"
+		},{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Blog",
+			"item": "https:\/\/insertapps.com\/blog\/"
+		},{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "Wordpress navigation menu",
+			"item": "https:\/\/insertapps.com\/blog\/wordpress-navigation-menu\/"
+		}]
+	}
+	</script>
+
+
+</head><body class="m0 p0"><div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v8.0&appId=2000697846886370&autoLogAppEvents=1" nonce="g8BpxhuG"></script><header id="headerian" class="top-0 left-0 right-0 px2 py2 bg-blue fixed z2">
+    <div class="flex items-center">
+        <div id="burger" class="pr2 md-hide lg-hide" onclick="myFunction()">
+            <div class="burger-line bg-white"></div>
+            <div class="burger-line bg-white"></div>
+            <div class="burger-line bg-white"></div>
+        </div>
+        <div class="logo pr2"><a href="https://insertapps.com/" class="white text-decoration-none">
+			<h2 class="logo m0">
+                <svg aria-hidden="true" class="insertapps-logo block" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 600 100" width="150">
+                    <g fill="currentColor">
+                        <path d="M140,75.9c-2.3,0-4.2,0-5.7,0s-3.4,0-5.7,0V24.1H140V75.9z" />
+                        <path
+                            d="M163.4,75.9c-2.2,0-4,0-5.5,0s-3.3,0-5.5,0V24.1h9.4l23.3,32.1h0.6V24.1h10.9V76h-9.3L164,43.7h-0.6V75.9z" />
+                        <path
+                            d="M206.9,61.5c2.2,0,4.1,0,5.5,0c1.5,0,3.3,0,5.5,0c0.2,2.1,1.3,3.7,3.2,5c1.9,1.2,4.3,1.9,7.3,1.9c2.7,0,5-0.6,6.7-1.9c1.7-1.2,2.6-2.8,2.6-4.7c0-1.7-0.7-3-2-4c-1.4-1-3.6-1.8-6.7-2.5l-6.8-1.4c-4.7-1-8.3-2.7-10.6-5.2s-3.5-5.7-3.5-9.6c0-4.9,1.8-8.8,5.5-11.8s8.5-4.4,14.6-4.4c5.8,0,10.6,1.4,14.3,4.3s5.6,6.7,5.8,11.3h-10.7c-0.2-2-1.2-3.7-2.9-4.9s-3.8-1.9-6.4-1.9c-2.6,0-4.7,0.6-6.3,1.7c-1.6,1.2-2.4,2.7-2.4,4.7c0,1.6,0.7,2.9,2,3.8c1.3,1,3.4,1.8,6.4,2.4l6.4,1.3c5.2,1.1,9,2.8,11.4,5.1s3.6,5.5,3.6,9.6c0,5.2-1.9,9.4-5.7,12.4s-9,4.5-15.6,4.5c-6.3,0-11.3-1.4-15.1-4.3C209.1,70.2,207.1,66.3,206.9,61.5z" />
+                        <path
+                            d="M294,66.6c0,1.9,0,3.5,0,4.7s0,2.8,0,4.7h-34.6V24.1H294v9.4h-23.2v12h21.9v8.7h-21.9v12.5L294,66.6L294,66.6z" />
+                        <path
+                            d="M316.8,57.2c0,3.8,0,6.9,0,9.4s0,5.6,0,9.4h-11.4V24.1h22c5.8,0,10.3,1.5,13.7,4.5s5,7,5,12.2c0,3.3-0.8,6.3-2.4,8.9c-1.6,2.7-3.9,4.6-6.8,5.8L347.7,76h-12.9l-9.5-18.8H316.8z M316.8,32.9c0,2.1,0,4,0,5.6s0,3.1,0,4.7s0,3.4,0,5.6h9.1c2.7,0,4.7-0.7,6.2-2.1s2.2-3.3,2.2-5.8c0-2.4-0.8-4.4-2.3-5.8c-1.5-1.4-3.6-2.1-6.3-2.1h-8.9L316.8,32.9L316.8,32.9z" />
+                        <path
+                            d="M380.8,75.9c-2.3,0-4.2,0-5.7,0s-3.4,0-5.7,0V33.4H354V24h42.3v9.4h-15.4L380.8,75.9L380.8,75.9z" />
+                        <path
+                            d="M439,75.9c-0.7-2.5-1.4-4.5-1.9-6.1s-1.1-3.7-1.9-6.2h-17.9l-3.8,12.3H402L419.9,24h13.6l17.9,51.9H439z M426,34.9c-0.9,2.7-1.6,5.1-2.2,7.1s-1.2,4-1.9,6c-0.6,2-1.4,4.4-2.2,7.1h13.2l-6.2-20.3H426V34.9z" />
+                        <path
+                            d="M460.2,24.1c4.4,0,8.1,0,10.9,0s6.5,0,10.9,0c5.4,0,9.8,1.6,13.1,4.9c3.3,3.3,5,7.6,5,13c0,5.3-1.7,9.7-5.2,12.9c-3.5,3.3-8,4.9-13.5,4.9h-9.8v16h-11.4V24.1z M471.6,33.1c0,2.4,0,4.5,0,6.3s0,3.5,0,5.3s0,3.9,0,6.3h7.4c3,0,5.4-0.8,7.1-2.3s2.5-3.7,2.5-6.6c0-2.9-0.8-5.2-2.5-6.7s-4-2.3-7.1-2.3H471.6z" />
+                        <path
+                            d="M510.1,24.1c4.4,0,8.1,0,10.9,0s6.5,0,10.9,0c5.4,0,9.8,1.6,13.1,4.9s5,7.6,5,13c0,5.3-1.7,9.7-5.2,12.9c-3.5,3.3-8,4.9-13.5,4.9h-9.8v16h-11.4V24.1z M521.6,33.1c0,2.4,0,4.5,0,6.3s0,3.5,0,5.3s0,3.9,0,6.3h7.4c3,0,5.4-0.8,7.1-2.3s2.5-3.7,2.5-6.6c0-2.9-0.8-5.2-2.5-6.7s-4-2.3-7.1-2.3H521.6z" />
+                        <path
+                            d="M557.8,61.5c2.2,0,4.1,0,5.5,0s3.3,0,5.5,0c0.2,2.1,1.3,3.7,3.2,5c1.9,1.2,4.3,1.9,7.3,1.9c2.7,0,5-0.6,6.7-1.9c1.7-1.2,2.6-2.8,2.6-4.7c0-1.7-0.7-3-2-4c-1.4-1-3.6-1.8-6.7-2.5l-6.8-1.4c-4.7-1-8.3-2.7-10.6-5.2S559,43,559,39.1c0-4.9,1.8-8.8,5.5-11.8s8.5-4.4,14.6-4.4c5.8,0,10.6,1.4,14.3,4.3s5.6,6.7,5.8,11.3h-10.7c-0.2-2-1.2-3.7-2.9-4.9s-3.8-1.9-6.4-1.9c-2.6,0-4.7,0.6-6.3,1.7c-1.6,1.2-2.4,2.7-2.4,4.7c0,1.6,0.7,2.9,2,3.8c1.3,1,3.4,1.8,6.4,2.4l6.4,1.3c5.2,1.1,9,2.8,11.4,5.1s3.6,5.5,3.6,9.6c0,5.2-1.9,9.4-5.7,12.4s-9,4.5-15.6,4.5c-6.3,0-11.3-1.4-15.1-4.3C559.9,70.2,558,66.3,557.8,61.5z" />
+                        <path
+                            d="M76.6,3L64.5-0.4c-0.5-0.1-1,0.1-1.2,0.6l-3.5,12.1c-0.1,0.5,0.1,1,0.6,1.2L72.6,17c0.5,0.1,1-0.1,1.2-0.6l3.5-12.1C77.4,3.7,77.1,3.2,76.6,3z" />
+                        <path
+                            d="M70.7,23.7l-12.1-3.5c-0.5-0.1-1,0.1-1.2,0.6l-21.5,75c-0.1,0.5,0.1,1,0.6,1.2l12.1,3.5c0.5,0.1,1-0.1,1.2-0.6L71.3,25C71.5,24.4,71.2,23.9,70.7,23.7z" />
+                        <path
+                            d="M24.9,55.7L21,51.8l-1.3-1.3l1.3-1.3l3.2-3.2l12.2-12.2c0.7-0.7,0.7-1.9,0-2.7l-7.6-7.6c-0.7-0.7-1.9-0.7-2.7,0L0.5,49.2c-0.7,0.7-0.7,1.9,0,2.7l25.7,25.7c0.7,0.7,1.9,0.7,2.7,0l7.6-7.6c0.7-0.7,0.7-1.9,0-2.7L24.9,55.7z" />
+                        <path
+                            d="M88.3,45.3l3.9,3.9l1.3,1.3l-1.3,1.3L88.9,55L76.7,67.2c-0.7,0.7-0.7,1.9,0,2.7l7.6,7.6c0.7,0.7,1.9,0.7,2.7,0l25.7-25.7c0.7-0.7,0.7-1.9,0-2.7L87,23.5c-0.7-0.7-1.9-0.7-2.7,0l-7.6,7.6c-0.7,0.7-0.7,1.9,0,2.7L88.3,45.3z" />
+                    </g>
+                </svg>
+        	</h2></a>	
+        </div>
+        <div class="scrolling">
+           <ul class="list-reset caps m0 h6 flex">
+				<li class="inline-block mr2"><a class="white text-decoration-none"
+					href="https://insertapps.com/about">About</a>
+				</li>
+				<li class="inline-block mr2"><a class="white text-decoration-none"
+					href="https://insertapps.com/blog">Blog</a>
+				</li>
+				<li class="inline-block mr2"><a class="white text-decoration-none"
+					href="https://insertapps.com/categories/tutorial">Tutorial</a>
+				</li>
+				<li class="inline-block"><a class="white text-decoration-none"
+					href="https://insertapps.com/pehtheme">Free Template</a>
+				</li>
+           </ul>
+        </div>
+    </div>
+</header>
+<nav id="sidenav" class="fixed z4 top-0 left-0 bg-white p2">
+		<div class="close flex items-center justify-center relative pointer mb2 right">
+			<div class="absolute cross bg-gray left"></div>
+			<div class="absolute cross bg-gray right"></div>
+		</div>
+
+		<div class="bg-blue circle mb2 flex items-center justify-center white" style="width: 68px;height: 68px">
+			<svg aria-hidden="true" class="block" width="36" role="img" xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 22 20">
+				<g fill="currentColor">
+					<path d="M15,0.7L12.6,0c-0.1,0-0.2,0-0.2,0.1l-0.7,2.4c0,0.1,0,0.2,0.1,0.2l2.4,0.7c0.1,0,0.2,0,0.2-0.1l0.7-2.4
+                    C15.1,0.8,15.1,0.7,15,0.7z"></path>
+					<path d="M13.8,4.8l-2.4-0.7c-0.1,0-0.2,0-0.2,0.1L6.9,19.1c0,0.1,0,0.2,0.1,0.2L9.4,20c0.1,0,0.2,0,0.2-0.1L13.9,5
+                    C14,4.9,13.9,4.8,13.8,4.8z"></path>
+					<path d="M4.9,11.1l-0.8-0.8l-0.3-0.3l0.3-0.3l0.6-0.6l2.4-2.4c0.1-0.1,0.1-0.4,0-0.5L5.7,4.7c-0.1-0.1-0.4-0.1-0.5,0L0.1,9.8
+                    C0,10,0,10.2,0.1,10.4l5.1,5.1c0.1,0.1,0.4,0.1,0.5,0L7.2,14c0.1-0.1,0.1-0.4,0-0.5L4.9,11.1z"></path>
+					<path d="M17.1,9.1l0.8,0.8l0.3,0.3l-0.3,0.3L17.2,11l-2.4,2.4c-0.1,0.1-0.1,0.4,0,0.5l1.5,1.5c0.1,0.1,0.4,0.1,0.5,0l5.1-5.1
+                    c0.1-0.1,0.1-0.4,0-0.5l-5.1-5.1c-0.1-0.1-0.4-0.1-0.5,0l-1.5,1.5c-0.1,0.1-0.1,0.4,0,0.5L17.1,9.1z">
+					</path>
+				</g>
+			</svg>
+		</div>
+
+		<p class="m0 muted bold">InsertApps</p>
+
+		<hr>
+
+		<ul class="list-reset muted m0">
+			<li class="h6 caps mb2">about</li>
+			<li class="pointer mb2"><a class="text-decoration-none black" href="https://insertapps.com/about/">
+				<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16"
+					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd"
+						d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+					<path fill-rule="evenodd"
+						d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+				</svg>
+				<span class="align-middle">About</span></a>
+			</li>
+
+			<li class="pointer mb2"><a class="text-decoration-none black" href="https://insertapps.com/blog/">
+				<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16"
+					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+  <path fill-rule="evenodd" d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z"/>
+				</svg>
+				<span class="align-middle">Blog</span></a>
+			</li>
+
+			<li class="pointer mb2"><a class="text-decoration-none black" href="https://ats.insertapps.com/">
+				<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16"
+					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
+  <path fill-rule="evenodd" d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+				</svg>
+				<span class="align-middle">ATS</span></a>
+			</li>
+			<li class="pointer mb2"><a class="text-decoration-none black" href="https://insertapps.com/spell-checker">
+				<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16"
+					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+  <path fill-rule="evenodd" d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+				</svg>
+				<span class="align-middle">Spell Checker</span></a>
+			</li>
+		</ul>
+
+		<hr>
+
+		<ul class="list-reset muted m0">
+			<li class="h6 caps mb2">Categories</li>
+			<li class="pointer mb2"><a class="text-decoration-none black" href="https://insertapps.com/categories/basscss/">
+				<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16"
+					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z" />
+					<path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+					<path fill-rule="evenodd"
+						d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+
+				</svg>
+				<span class="align-middle">Basscss</span></a>
+			</li>
+			<li class="pointer mb2"><a class="text-decoration-none black" href="https://insertapps.com/categories/Hugo/">
+				<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16"
+					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z" />
+					<path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+					<path fill-rule="evenodd"
+						d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+
+				</svg>
+				<span class="align-middle">hugo</span></a>
+			</li>			
+			<li class="pointer mb2"><a class="text-decoration-none black" href="https://insertapps.com/categories/networking/">
+				<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16"
+					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z" />
+					<path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+					<path fill-rule="evenodd"
+						d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+
+				</svg>
+				<span class="align-middle">Networking</span></a>
+			</li>			
+			<li class="pointer mb2"><a class="text-decoration-none black" href="https://insertapps.com/categories/tutorial/">
+				<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16"
+					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z" />
+					<path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+					<path fill-rule="evenodd"
+						d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+
+				</svg>
+				<span class="align-middle">Tutorial</span></a>
+			</li>
+			<li class="pointer mb2"><a class="text-decoration-none black" href="https://insertapps.com/categories/wordpress/">
+				<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16"
+					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z" />
+					<path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+					<path fill-rule="evenodd"
+						d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+
+				</svg>
+				<span class="align-middle">Wordpress</span></a>
+			</li>
+			
+		</ul>
+
+		<hr>
+
+		<ul class="list-reset mb2">
+			<li class="muted mb1 pointer"><a class="text-decoration-none black" href="https://insertapps.com/disclaimer/">
+				<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16"
+					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+				</svg>
+				<span class="align-middle">Disclaimer</span></a>
+			</li>
+			<li class="muted pointer"><a class="text-decoration-none black" href="https://insertapps.com/faq/">
+				<svg class="inline-block align-middle mr2" width="22" height="22" viewBox="0 0 16 16"
+					fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd"
+						d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+					<path
+						d="M5.25 6.033h1.32c0-.781.458-1.384 1.36-1.384.685 0 1.313.343 1.313 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.007.463h1.307v-.355c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.326 0-2.786.647-2.754 2.533zm1.562 5.516c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+				</svg>
+				<span class="align-middle">FAQ</span></a>
+			</li>
+		</ul>
+</nav><main class="clearfix">
+<article style="padding-top:3.4rem;"><div class="max-width-3 mx-auto breadcrumb px2 py1 h6 gray xs-hide">
+    <ol class="list-reset breadcrumb">
+        
+    
+    
+    
+    
+    
+    <li class="inline-block active mr1">
+        <a class="text-decoration-none gray" href="https://insertapps.com/">InsertApps</a>
+    </li>
+    
+    
+    <li class="inline-block active mr1">
+        <a class="text-decoration-none gray" href="https://insertapps.com/blog/">Blog</a>
+    </li>
+    
+    
+    <li class="inline-block active mr1">
+        <a class="text-decoration-none gray" href="https://insertapps.com/blog/wordpress-navigation-menu/">Wordpress navigation menu</a>
+    </li>
+    
+    </ol>
+    
+</div><figure class="max-width-4 mx-auto m0">
+		<img class="block mb1 lozad" data-src="/images/blog/Cara-membuat-theme-wordpress.gif" width="1024" height="512" alt="Wordpress navigation menu">
+		
+		<figcaption class="max-width-3 mx-auto h6 muted italic px2 mb2">Animasi sidebar menu. (Ilustrasi dari Freepik)</figcaption>
+		
+	</figure>
+	<div class="max-width-3 mx-auto px2">
+		<header class="">
+			<h1 class="h1">Wordpress navigation menu</h1>
+		</header>
+		<div class="meta-post">
+			
+			
+			<ul class="list-reset h5">
+				<li class="fb-like inline-block mr1" data-href="https://insertapps.com/blog/wordpress-navigation-menu/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="false"></li>
+				<li class="inline-block mr1 gray h6">
+					5 Oct 2021<time title="Originally published Tuesday, October 5, 2021"
+						datetime="2021-10-05 14:32:36 &#43;0700 WIB">
+						
+						</time>
+				</li>
+				
+				
+				
+				<li class="inline-block mr1">
+					<a class="text-decoration-none bold" href="https://insertapps.com/tags/php/">#php</a>
+				</li>
+				
+				
+				
+				
+				
+				<li class="inline-block mr1">
+					<a class="text-decoration-none bold" href="https://insertapps.com/tags/code/">#code</a>
+				</li>
+				
+				
+				
+				
+				
+				<li class="inline-block mr1">
+					<a class="text-decoration-none bold" href="https://insertapps.com/tags/theme/">#theme</a>
+				</li>
+				
+				
+				
+			</ul>
+		</div>
+		<div class="article mb3">
+			<p>Pada bagian ini, melanjutkan coding <a href="https://insertapps.com/blog/membuat-theme-wordpress/" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>cara membuat theme wordpress</a> sub bagian WordPress Navigation Menu. Sebelum lanjut ke tahap coding, pastikan daftar menu sudah dibuat terlebih dahulu melalui wp-admin <strong>Dashboard</strong>.</p>
+<p>Untuk nama menu bebas sesuai keinginan, atau boleh juga menamai menu mengikuti tutorial ini: &lsquo;main-menu&rsquo;.</p>
+<p>Core system WP menyediakan banyak sekali sintak untuk menampilkan menu navigasi di beranda utama CMS WordPress.</p>
+<p>Mulai dari nempel sintag yang sederhana hingga custom function <code>walker_nav_menu()</code> yang lumayan ribet dengan mengetik puluhan baris code.</p>
+<p>Disini, kita coba explorasi dua buah sintak saja dari sekian banyak tag-tag untuk menampilkan menu WordPress, yaitu tag standar dan tag custom.</p>
+<ul>
+<li><strong><code>wp_nav_menu()</code></strong> -&gt; Tag standar <a href="https://developer.wordpress.org/reference/functions/wp_nav_menu/" class="blue a-hover text-decoration-none" title="(lihat doc)" target="_blank" rel="nofollow noopener noreferrer">(lihat doc)</a></li>
+<li><strong><code>wp_get_nav_menu_items()</code></strong> -&gt; Tag custom <a href="https://developer.wordpress.org/reference/functions/wp_get_nav_menu_items/" class="blue a-hover text-decoration-none" title="(lihat doc)" target="_blank" rel="nofollow noopener noreferrer">(lihat doc)</a></li>
+</ul>
+<p>Dua function tersebut, menghasilkan output yang berbeda-beda,alangkah baiknya untuk melihat dulu apa saja data input-output yang dikandung dari masing-masing sintak.</p>
+<p>Mari kita &lsquo;bedah sesar&rsquo; satu persatu kandungan datanya.</p>
+<h2 id="fungsi-wp_nav_menu">Fungsi wp_nav_menu()</h2>
+<p>Cukup panggil saja code tersebut, tampa perlu di echo, hasil print out code tersebut menghasilkan list menu lengkap dengan atribut HTML.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// Call function
+</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">wp_nav_menu</span>(); <span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Hasil render HTML:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-main-menu-container&#34;</span>&gt;
+    &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-main-menu&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu&#34;</span>&gt;
+        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-1&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1&#34;</span>&gt;
+            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/&#34;</span> <span style="color:#a6e22e">aria-current</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+        &lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-2&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2&#34;</span>&gt;
+            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/category/books/&#34;</span>&gt;Books&lt;/<span style="color:#f92672">a</span>&gt;
+        &lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-3&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3&#34;</span>&gt;
+            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/category/business/&#34;</span>&gt;Business&lt;/<span style="color:#f92672">a</span>&gt;
+        &lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-4&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4&#34;</span>&gt;
+            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/category/cars/&#34;</span>&gt;Cars&lt;/<span style="color:#f92672">a</span>&gt;
+        &lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-5&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5&#34;</span>&gt;
+            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/category/diy/&#34;</span>&gt;DIY&lt;/<span style="color:#f92672">a</span>&gt;
+        &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><h2 id="fungsi-wp_get_nav_menu_items">Fungsi wp_get_nav_menu_items()</h2>
+<p><a href="https://developer.wordpress.org/reference/functions/wp_get_nav_menu_items/" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>https://developer.wordpress.org/reference/functions/wp_get_nav_menu_items/</a></p>
+<p>Untuk mengeluarkan jeroan data <code>wp_get_nav_menu_items()</code> wajib insert satu parameter <code>$menu</code> berdasarkan nama menu yang sudah dibuat sebelumnya di dalam <strong>Dashboard</strong> → <strong>Theme</strong> → <strong>Menu</strong>.</p>
+<p>Input parameter boleh nama menu, slug menu atau id menu.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+	<span style="color:#75715e">// Melihat isi print out wp_get_nav_menu_items() dengan parameter &#39;main-menu&#39;
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">var_dump</span>(<span style="color:#a6e22e">wp_get_nav_menu_items</span>(<span style="color:#e6db74">&#39;main-menu&#39;</span>));
+<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Hasil print out mengeluarkan data mentah dalam bentuk array seperti berikut:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">array</span> (<span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+  <span style="color:#ae81ff">0</span> <span style="color:#f92672">=&gt;</span> 
+    <span style="color:#a6e22e">object</span>(<span style="color:#a6e22e">WP_Post</span>)[<span style="color:#ae81ff">886</span>]
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;ID&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">7</span>
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_author&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;1&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_date&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;2021-09-26 09:25:13&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">19</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_date_gmt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;2021-09-26 09:25:13&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">19</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_content&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;Home&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_status&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;publish&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">7</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;comment_status&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;closed&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">6</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;ping_status&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;closed&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">6</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_password&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_name&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;home&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;to_ping&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;pinged&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_modified&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;2021-09-26 09:25:13&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">19</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_modified_gmt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;2021-09-26 09:25:13&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">19</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_content_filtered&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_parent&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">0</span>
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;guid&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;http://localhost/pehtheme-wp/?p=7&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">33</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;menu_order&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">1</span>
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_type&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;nav_menu_item&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">13</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_mime_type&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;comment_count&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;0&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;filter&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;raw&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;db_id&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">7</span>
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;menu_item_parent&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;0&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;object_id&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;7&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;object&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;custom&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">6</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;type&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;custom&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">6</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;type_label&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;Custom Link&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">11</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;Home&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;url&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;http://localhost/pehtheme-wp/&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">29</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;target&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;attr_title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;description&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;classes&#39;</span> <span style="color:#f92672">=&gt;</span> 
+        <span style="color:#66d9ef">array</span> (<span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+          <span style="color:#ae81ff">0</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;xfn&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+  <span style="color:#ae81ff">1</span> <span style="color:#f92672">=&gt;</span> 
+    <span style="color:#a6e22e">object</span>(<span style="color:#a6e22e">WP_Post</span>)[<span style="color:#ae81ff">889</span>]
+      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;ID&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">8</span>
+      <span style="color:#f92672">...</span>
+      <span style="color:#f92672">...</span>
+</code></pre></div><p>Setelah mengetahui isi data yang dikandung masing-masing sintak, langkah selanjutnya tinggal gunakan sesuai keinginan.</p>
+<p>Mari kita coba satu-satu.</p>
+<h2 id="display-menu-dengan-sintag-wp_nav_menu">Display menu dengan sintag wp_nav_menu()</h2>
+<p>Dari hasil output yang dikeluarkan fungsi <code>wp_na_menu()</code> sudah dalam bentuk struktur komponen HTML yang utuh, maka developer fokus nulis style CSS-nya saja, done.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-main-menu-container&#34;</span>&gt;
+    &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-main-menu&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu&#34;</span>&gt;
+        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-1&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1&#34;</span>&gt;
+            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/&#34;</span> <span style="color:#a6e22e">aria-current</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+        &lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-2&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2&#34;</span>&gt;
+            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/category/books/&#34;</span>&gt;Books&lt;/<span style="color:#f92672">a</span>&gt;
+        &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p>Kurang puas dengan dengan attribut class HTML yang disertakan dalam wp_nav_menu(), tinggal custom output dengan cara menambah parameter berikut:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<span style="color:#a6e22e">wp_nav_menu</span> ( <span style="color:#66d9ef">array</span> (
+    <span style="color:#e6db74">&#39;menu&#39;</span>              <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (int|string|WP_Term)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;menu_class&#39;</span>        <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;menu_id&#39;</span>           <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;container&#39;</span>         <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;container_class&#39;</span>   <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;container_id&#39;</span>      <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;fallback_cb&#39;</span>       <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (callable|bool)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;before&#39;</span>            <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;after&#39;</span>             <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;link_before&#39;</span>       <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;link_after&#39;</span>        <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;echo&#39;</span>              <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (bool)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;depth&#39;</span>             <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (int)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;walker&#39;</span>            <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (object)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;theme_location&#39;</span>    <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;items_wrap&#39;</span>        <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;item_spacing&#39;</span>      <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>  <span style="color:#75715e">// (string)
+</span><span style="color:#75715e"></span>) );
+<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Contohnya, kalau ingin mengganti class bawaan WordPress dengan class CSS milik sendiri atau class-class dari framework CSS, insert custom code berikut:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<span style="color:#a6e22e">wp_nav_menu</span>(<span style="color:#66d9ef">array</span>(
+    <span style="color:#e6db74">&#39;menu&#39;</span>              <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;main-menu&#39;</span>,
+    <span style="color:#75715e">// Manage div class 
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;container_id&#39;</span>      <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-container-div-id&#39;</span>,
+    <span style="color:#e6db74">&#39;container_class&#39;</span>   <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-container-div-class&#39;</span>,
+    <span style="color:#75715e">// Manage ul class
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;menu_id&#39;</span>           <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-ul-id&#39;</span>,
+    <span style="color:#e6db74">&#39;menu_class&#39;</span>        <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-ul-class&#39;</span>
+));
+<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Maka hasil render HTML sebagai berikut:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;insert-own-container-div-id&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;insert-own-container-div-class&#34;</span>&gt;
+    &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;insert-own-ul-id&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;insert-own-ul-class&#34;</span>&gt;
+        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-7&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-7&#34;</span>&gt;
+            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehtheme-wp/&#34;</span> <span style="color:#a6e22e">aria-current</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
+        &lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-8&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8&#34;</span>&gt;
+            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehtheme-wp/index.php/category/books/&#34;</span>&gt;Books&lt;/<span style="color:#f92672">a</span>&gt;
+        &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p>Dari parameter <code>'container_id' =&gt; 'your-css-id', container_class' =&gt; 'your-css-clsss'</code> untuk mengontrol elemen <code>&lt;div&gt;</code> sebagai pembungkus parent container. Sedangkan parameter <code>'menu_id' =&gt; 'own-css-id', 'menu_class =&gt; 'insert-your-class'</code> value untuk mengatur element <code>&lt;ul&gt;</code>.</p>
+<p>Pertanyaannya, bagaimana cara insert class lain ke dalam elemen <code>&lt;li&gt;</code> hasil render <code>wp_nav_menu()</code>?</p>
+<p>Ternyata untuk menambah class lain ke dalam tag <code>&lt;li&gt;</code>, tidak semudah menambah parameter container sebelumnya, tapi butuh perlakuan khusus dengan cara injek ke dalam sistem. Caranya agak tricky memang, tapi begini cara proses kerjanya.</p>
+<p>Pertama, WordPress membolehkan developer untuk melakukan tweaking terhadap data default CMS WordPress melalui jalur API atau WP Hook tampa harus merubah coding asli.</p>
+<p>Kemudian untuk merubah data dari core system, developer cukup menambah script yang telah disediakan ke dalam file function theme. Insert code berikut ke dalam file <code>function.php</code> WordPress theme;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">insert_class_to_li_wp_nav_menu</span>( $classes, $item, $args, $depth) {
+    <span style="color:#66d9ef">if</span> ( <span style="color:#a6e22e">isset</span>($args<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">insert_li_class</span>) ) {
+        $classes[] <span style="color:#f92672">=</span> $args<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">insert_li_class</span> ;
+    }
+    <span style="color:#66d9ef">return</span> $classes;
+}
+
+<span style="color:#a6e22e">add_filter</span>( <span style="color:#e6db74">&#39;nav_menu_css_class&#39;</span>, <span style="color:#e6db74">&#39;insert_class_to_li_wp_nav_menu&#39;</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">4</span>);
+</code></pre></div><p>Setelah proses <code>add_filter()</code>, baru panggil argumen yang terdaftar ke dalam parameter sintak <code>wp_nav_menu()</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<span style="color:#a6e22e">wp_nav_menu</span>( <span style="color:#66d9ef">array</span> (
+	<span style="color:#e6db74">&#39;menu&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;main-menu&#39;</span>,
+	<span style="color:#e6db74">&#39;container_id&#39;</span>      <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-container-div-id&#39;</span>,
+	<span style="color:#e6db74">&#39;container_class&#39;</span>   <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-container-div-class&#39;</span>,
+	<span style="color:#e6db74">&#39;menu_id&#39;</span>           <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-ul-id&#39;</span>,
+	<span style="color:#e6db74">&#39;menu_class&#39;</span>        <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-ul-class&#39;</span>,
+	<span style="color:#75715e">// Add class to li wp_nav_menu()
+</span><span style="color:#75715e"></span>	<span style="color:#e6db74">&#39;insert_li_class&#39;</span>   <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-li-class&#39;</span>
+));
+<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Maka hasil render file HTML, di dalam tag <code>&lt;li&gt;</code> sudah disertakan class <code>insert-own-li-class</code>.</p>
+<h2 id="display-menu-dengan-sintag-wp_get_nav_menu_items">Display menu dengan sintag wp_get_nav_menu_items()</h2>
+<p>Selanjutnya, sintag yang kedua <code>wp_get_nav_menu_items()</code> menghasilkan data mentah gabungan antara data menu dengan data posting yang disimpan dalam sebuah array.</p>
+<p>Data array dalam sintag <code>wp_get_nav_menu_items()</code> tidak bisa langsung di <code>echo</code>, tapi harus di-extrak satu-persatu menjadi potongan data kecil-kecil, setelah itu tinggal tempel sesuka hati di dalam file template tema WordPress.</p>
+<p>Langkah pertama, buat sebuah variabel baru untuk menampung data mentah.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+	<span style="color:#75715e">// Variable baru sebagai keranjang penampung
+</span><span style="color:#75715e"></span>	$menu_items <span style="color:#f92672">=</span> <span style="color:#a6e22e">wp_get_nav_menu_items</span>(<span style="color:#e6db74">&#39;main-menu&#39;</span>);
+<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Setelah itu, variabel yang sudah berisi list data menu, tinggal di-extrak dengan proses looping.</p>
+<p>Karena nilai data dalam <code>wp_get_nav_menu_items()</code> banyak, maka cukup comot key <code>title</code> dan <code>url</code> sesuai kebutuhan untuk desain menu navigasi yang diperlukan hanya &lsquo;nama menu&rsquo; dan &lsquo;link&rsquo;, yang lain abaikan saja.</p>
+<p>Berikut contoh code-nya:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+	<span style="color:#75715e">// Looping
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">foreach</span> ( $menu_items <span style="color:#66d9ef">as</span> $key <span style="color:#f92672">=&gt;</span> $menu_item ) {
+		
+		<span style="color:#75715e">// Tampung data output ke variabel baru supaya lebih ringkas
+</span><span style="color:#75715e"></span>		<span style="color:#75715e">// Bagian ini opsional  
+</span><span style="color:#75715e"></span>		$title <span style="color:#f92672">=</span> $menu_item<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">title</span>;
+		$url <span style="color:#f92672">=</span> $menu_item<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">url</span>;
+
+		<span style="color:#75715e">// Print out ke layar
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">echo</span> $title <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&lt;br&gt;&#39;</span>;
+		<span style="color:#66d9ef">echo</span> $url <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&lt;br&gt;&#39;</span>;
+	}
+<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Hasil output seperti berikut:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Home
+http://localhost/pehthemepress/
+
+Books
+http://localhost/pehthemepress/categories/books
+
+</code></pre></div><p>Nah, terakhir tinggal implementasi langsung ke dalam tema WordPress.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;horizontal-navbar&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;flex nowrap overflow-x&#34;</span>&gt;
+    &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;list-reset&#34;</span>&gt;
+        <span style="color:#75715e">&lt;?php foreach ( $menu_items as $key =&gt; $menu_item ) : ?&gt;</span>
+            &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block&#34;</span>&gt;
+                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;?php echo $menu_item-&gt;url; ?&gt;&#34;</span>&gt;
+                    <span style="color:#75715e">&lt;?php echo $menu_item-&gt;title; ?&gt;</span>
+                &lt;/<span style="color:#f92672">a</span>&gt;
+            &lt;/<span style="color:#f92672">li</span>&gt;
+        <span style="color:#75715e">&lt;?php endforeach; ?&gt;</span>
+    &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><p>Ternyata cara kedua cukup simpel sekali.</p>
+<h2 id="kesimpulan">Kesimpulan</h2>
+<p>Dari dua fungsi tersebut, mana yang lebih bagus untuk implementasi ke dalam desain Wordpress navigation menu?</p>
+<p>Dua-duanya bagus, karena sama-sama sintak dari CMS WordPress.</p>
+<p>Kalau mengikuti aturan standar code WordPress, maka cukup tempel fungsi <code>&lt;?php wp_nav_menu(); ?&gt;</code> selanjutnya oprek style CSS untuk poles desainnya.</p>
+<p>Kalau saya pribadi lebih menyukai cara kedua, memakai fungsi <code>wp_get_nav_menu_items()</code> karena hasil kerjanya lebih simple dan bersih. Dan tidak perlu lagi mikirin custom output dengan menambah fungsi <code>add_filter</code> di file function.</p>
+<p><em>Buat yang telah menemukan dan membaca tutorial ini, harap memberi komentar atau pendapatnya terhadap isi tulisan ini. Atensi apapun dari pembaca atau pencari solusi sangat dibutuhkan untuk tambah berkembangnya posting tutorial berikutnya. Terima kasih.</em></p>
+
+		</div>
+		
+		<section class="social mb3">
+			<h4 class="muted">Sharing</h4><ul class="list-reset">
+	<li class="inline-block mr1">
+		<a class="text-decoration-none" href="http://www.facebook.com/sharer.php?display=page&u=https%3a%2f%2finsertapps.com%2fblog%2fwordpress-navigation-menu%2f"
+			target="_blank">
+			<div class="box-btn circle bg-fb white flex items-center justify-center">
+				<svg width="2rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M10.8,8.7l0.4-2.1H9V5.2C9,4.6,9.3,4,10.2,4h0.9V2.2c0,0-0.8-0.2-1.7-0.2C7.8,2,6.7,3,6.7,4.9v1.7H4.8v2.1h1.9v5.2C7.2,14,7.5,14,7.9,14s0.7,0,1.1-0.1V8.7H10.8z" />
+				</svg>
+			</div>
+		</a>
+	</li>
+	<li class="inline-block mr1">
+		<a class="text-decoration-none" href="https://twitter.com/intent/tweet?text=Wordpress%20navigation%20menu https%3a%2f%2finsertapps.com%2fblog%2fwordpress-navigation-menu%2f"
+			data-size="large" target="_blank">
+			<div class="box-btn circle bg-tt white flex items-center justify-center">
+				<svg width="2rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M5.7,12.8c4.4,0,7-3.7,7-7c0-0.1,0-0.3,0-0.3c0.5-0.4,0.9-0.8,1.3-1.3c-0.4,0.3-0.9,0.4-1.4,0.4c0.5-0.3,0.9-0.8,1-1.4c-0.5,0.3-1,0.5-1.5,0.6c-0.5-0.4-1.1-0.7-1.8-0.7c-1.4,0-2.4,1-2.4,2.4c0,0.3,0,0.4,0.1,0.5c-2-0.1-3.7-1-5-2.5 C2.7,4,2.5,4.3,2.5,4.8c0,0.9,0.4,1.6,1.1,2c-0.5,0-0.9-0.1-1.1-0.3l0,0c0,1.1,0.8,2.1,1.9,2.4C4.2,9,4,9,3.8,9C3.7,9,3.5,9,3.3,9c0.3,1,1.3,1.6,2.3,1.6c-0.9,0.6-1.9,1-3,1c-0.3,0-0.4,0-0.6,0C3,12.4,4.3,12.8,5.7,12.8" />
+				</svg>
+			</div>
+		</a>
+	</li>
+</ul>
+<div class="inline-block">
+	<div class="fb-like" data-href="https://www.facebook.com/insertapps/" data-width="" data-layout="standard"
+		data-action="like" data-size="small" data-share="true"></div>
+</div></section>
+		
+		<section class="comment bg-silver p2 mb3 rounded">
+			<h3 class="h4 m0">Comment</h3>
+			<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "insertapps" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</section>
+	</div>
+	<aside class="max-width-4 mx-auto p2">
+		
+		
+		<h3 class="muted caps center h5 mb2">Artikel Terkait</h3>
+		<div class="clearfix mxn2">
+			
+			<div class="col sm-col-4 lg-col-4 p2">
+				<div class="rounded border border-silver bg-white">
+					<a href="https://insertapps.com/blog/upload-webp-to-wordpress/"><img class="fit block m0 lozad" data-src="/images/blog/2021/0508_Allow-webp-wp-without-plugin_thumb.webp"
+							alt="Upload gambar WebP WordPress tampa plugin" width="500" height="333"></a>
+					<div class="p2">
+						<h4 class="h5 m0"><a class="text-decoration-none" href="https://insertapps.com/blog/upload-webp-to-wordpress/">Upload gambar WebP WordPress tampa plugin</a></h4>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col sm-col-4 lg-col-4 p2">
+				<div class="rounded border border-silver bg-white">
+					<a href="https://insertapps.com/blog/membuat-theme-wordpress/"><img class="fit block m0 lozad" data-src="/images/blog/Cara-membuat-theme-wordpress-thumbnail.webp"
+							alt="Cara membuat theme wordpress (2021)" width="500" height="333"></a>
+					<div class="p2">
+						<h4 class="h5 m0"><a class="text-decoration-none" href="https://insertapps.com/blog/membuat-theme-wordpress/">Cara membuat theme wordpress (2021)</a></h4>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col sm-col-4 lg-col-4 p2">
+				<div class="rounded border border-silver bg-white">
+					<a href="https://insertapps.com/blog/hugo-markdown-render-hook-amp-img/"><img class="fit block m0 lozad" data-src="/images/blog/Hugo_cover-thumbnail.jpg"
+							alt="Solusi hugo gagal eksekusi markdown render hook template amp-img" width="500" height="333"></a>
+					<div class="p2">
+						<h4 class="h5 m0"><a class="text-decoration-none" href="https://insertapps.com/blog/hugo-markdown-render-hook-amp-img/">Solusi hugo gagal eksekusi markdown render hook template amp-img</a></h4>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</aside>
+</article>
+
+    </main><footer id="footer" class="bg-dark">
+    <div class="gray bg-dark py3 sm-py1">
+        <div class="max-width-4 mx-auto p2">
+            <div class="clearfix mxn2 light">
+                <section class="col sm-col-4 lg-col-4 p2">
+                    <h3 class="caps h4">Code = Docs</h3>
+                    <div class="flex flex-column h5">
+                        <p>Kumpulan portofolio produk digital yang telah berhasil dikembangkan, seperti html template, landing page, dan berbagai web komponen untuk dokumentasi internal, juga bermanfaat untuk pengunjung InsertApps.com.</p>
+
+                        <h3 class="caps h4">Connect via:</h3>
+
+                        <ul class="list-reset m0 h5">
+                            <li class="inline-block mr1">
+                                <a href="https://www.facebook.com/insertapps" target="_blank" rel="noreferrer noopener nofollow" class="gray facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28"><path fill="currentColor" d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"/></svg>
+                                </a>
+                            </li>
+                            <li class="inline-block mr1">
+                                <a href="https://www.instagram.com/insertapps" target="_blank" rel="noreferrer noopener nofollow" class="gray instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                                </a>
+                            </li>
+                            <li class="inline-block mr1">
+                                <a href="https://www.twitter.com/insertapps" target="_blank" rel="noreferrer noopener nofollow" class="gray twitter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28"><path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg>
+                                </a>
+                            </li>
+                            <li class="inline-block mr1">
+                                <a href="https://www.pinterest.com/#" target="_blank" rel="noreferrer noopener nofollow" class="gray pinterest">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28"><path fill="currentColor" d="M448 80v352c0 26.5-21.5 48-48 48H154.4c9.8-16.4 22.4-40 27.4-59.3 3-11.5 15.3-58.4 15.3-58.4 8 15.3 31.4 28.2 56.3 28.2 74.1 0 127.4-68.1 127.4-152.7 0-81.1-66.2-141.8-151.4-141.8-106 0-162.2 71.1-162.2 148.6 0 36 19.2 80.8 49.8 95.1 4.7 2.2 7.1 1.2 8.2-3.3.8-3.4 5-20.1 6.8-27.8.6-2.5.3-4.6-1.7-7-10.1-12.3-18.3-34.9-18.3-56 0-54.2 41-106.6 110.9-106.6 60.3 0 102.6 41.1 102.6 99.9 0 66.4-33.5 112.4-77.2 112.4-24.1 0-42.1-19.9-36.4-44.4 6.9-29.2 20.3-60.7 20.3-81.8 0-53-75.5-45.7-75.5 25 0 21.7 7.3 36.5 7.3 36.5-31.4 132.8-36.1 134.5-29.6 192.6l2.2.8H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"/></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="col sm-col-4 lg-col-4 p2">
+                    <h3 class="caps h4">InsertApps & Friends</h3>
+                    <div class="flex">
+                        <div class="mr4">
+                            <ul class="list-reset h5">
+                                <li><a href="https://insertapps.com/about" target="_blank" class="gray a-hover text-decoration-none">About</a></li>							
+                                <li><a href="https://insertapps.com/disclaimer" target="_blank" class="gray a-hover text-decoration-none">Disclaimer</a></li>
+                                <li><a href="https://insertapps.com/faq" target="_blank" class="gray a-hover text-decoration-none">FAQ</a></li>
+                                <li><a href="https://insertapps.com/privacy" target="_blank" class="gray a-hover text-decoration-none">Privacy</a></li>
+                                <li><a href="https://insertapps.com/terms" target="_blank" class="gray a-hover text-decoration-none">Terms</a></li>
+                                <li><a href="https://t.me/InsertApps" target="_blank" rel="noreferrer noopener nofollow" class="gray a-hover text-decoration-none">Diskusi</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-auto">
+                            <ul class="list-reset h5">
+                                <li><a href="https://ats.insertapps.com/" target="_blank" rel="noreferrer noopener" class="gray a-hover text-decoration-none">Aceh Top Site</a></li>
+                                <li><a href="https://insertapps.com/spell-checker" target="_blank" rel="noreferrer noopener" class="gray a-hover text-decoration-none">Spell Checker</a></li>
+                                <li><a href="https://breedie.com/" target="_blank" rel="noreferrer noopener" class="gray a-hover text-decoration-none">Breedie.com</a></li>
+                                <li><a href="https://breepix.com/" target="_blank" rel="noreferrer noopener" rel="nofollow" class="gray a-hover text-decoration-none">Breepix.com</a></li>
+                                <li><a href="https://freebiespic.com/" target="_blank" rel="noreferrer noopener" class="gray a-hover text-decoration-none">Freebiespic.com</a></li>
+                                <li><a href="https://www.graphicdiffer.com/" target="_blank" rel="noreferrer noopener" class="gray a-hover text-decoration-none">Graphicdiffer.com</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col sm-col-4 lg-col-4 p2">
+
+                    <h3 class="caps h4">Newsletter</h3>
+
+                    <div class="flex flex-column h5">
+                        <p class="muted h5">Insert email anda untuk mendapatkan update terbaru langsung ke inbox.</p>
+                        <form action="https://freebiespic.us12.list-manage.com/subscribe/post?u=d70642373e7dda1be3212115f&amp;id=6de4ced637" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="flex bg-white border border-gray rounded">
+                            <input type="email" class="input col-10 m0 p1 border-none rounded" value="" name="EMAIL" id="mce-EMAIL" placeholder="Enter Your Email">
+                            
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d70642373e7dda1be3212115f_6de4ced637" tabindex="-1" value="" class="hide"></div>
+                            <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="col-2 btn btn-primary bg-blue p1 not-rounded"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-icon" width="18"><path fill="currentColor" d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg></button>    
+                        </form>
+                        <p class="h6 muted italic">* Jangan khawatir, kami tidak akan kirim spam.</p>
+                    </div>
+					
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <div id="sub-footer" class="clearfix bg-dark-light gray py1 px2">
+        <div class="left">
+            <p class="h5 m0">&copy; 2021 InsertApps</p>
+        </div>
+        <div class="right">
+            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.80.0</p>
+        </div>
+    </div>
+<div id="overlay" class="fixed z3 top-0 left-0 bg-darken-4"></div>
+</footer><script src="https://insertapps.com/js/lozad.min.js"></script>
+<script src="https://insertapps.com/js/index.js"></script></body>
+</html>

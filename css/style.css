@@ -364,6 +364,10 @@ svg {
 	font-weight: bolder;
 }
 
+.article p {
+    font-size: 18px;
+}
+
 /* -> blockquote */
 blockquote {
 	background: #f9f9f9;

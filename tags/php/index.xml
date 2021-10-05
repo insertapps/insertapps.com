@@ -6,7 +6,19 @@
     <description>Recent content in php on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 May 2021 21:27:49 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Oct 2021 14:32:36 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wordpress navigation menu</title>
+      <link>https://insertapps.com/blog/wordpress-navigation-menu/</link>
+      <pubDate>Tue, 05 Oct 2021 14:32:36 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/wordpress-navigation-menu/</guid>
+      <description>Pada bagian ini, melanjutkan coding cara membuat theme wordpress sub bagian WordPress Navigation Menu. Sebelum lanjut ke tahap coding, pastikan daftar menu sudah dibuat terlebih dahulu melalui wp-admin Dashboard.
+Untuk nama menu bebas sesuai keinginan, atau boleh juga menamai menu mengikuti tutorial ini: &amp;lsquo;main-menu&amp;rsquo;.
+Core system WP menyediakan banyak sekali sintak untuk menampilkan menu navigasi di beranda utama CMS WordPress.
+Mulai dari nempel sintag yang sederhana hingga custom function walker_nav_menu() yang lumayan ribet dengan mengetik puluhan baris code.</description>
+    </item>
+    
     <item>
       <title>Upload gambar WebP WordPress tampa plugin</title>
       <link>https://insertapps.com/blog/upload-webp-to-wordpress/</link>
@@ -41,8 +53,7 @@ Skil dasar yang harus dipenuhi adalah:
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
- Untuk bracket versi yang lebih lama, pesan erronya begini:
-PHP runtime not found.</description>
+Brackets error: PHP runtime not found.  Untuk bracket versi yang lebih lama, pesan erronya begini:</description>
     </item>
     
     <item>
