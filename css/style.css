@@ -364,7 +364,7 @@ svg {
 	font-weight: bolder;
 }
 
-.article p {
+.article p ol ul li{
     font-size: 18px;
 }
 

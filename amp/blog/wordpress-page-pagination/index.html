@@ -1,0 +1,2148 @@
+<!doctype html>
+<html amp>
+<head>
+	<meta charset="utf-8">
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<title>WordPress page pagination - InsertApps</title>
+	
+    <link rel="canonical" type="text/html" href="https://insertapps.com/blog/wordpress-page-pagination/">
+
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<link rel="shortcut icon" href="https://insertapps.com/assets/favicon/32.png">
+	
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": "https:\/\/insertapps.com\/amp\/blog\/wordpress-page-pagination\/",
+    "headline": "WordPress page pagination",
+    "datePublished": "Wednesday, November 3, 2021",
+    "dateModified": "Wednesday, November 3, 2021",
+    "description": "Cara mudah custom pagination WordPress dengan desain yang cantik menggunakan komponen Bootstrap pagination",
+    "author": {
+      "@type": "Person",
+      "name": "Fauzan My"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "InsertApps",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https:\/\/insertapps.com\/assets/insertapps-amp-logo.png",
+        "width":  600 ,
+        "height":  60 
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https:\/\/insertapps.com\/images\/blog\/Cara-membuat-theme-wordpress.gif", 
+      "height":  1024 ,
+      "width":  512 
+	  
+    }
+  }
+</script>
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [{
+		"@type": "ListItem",
+		"position": 1,
+		"name": "Site",
+		"item": "https:\/\/insertapps.com\/"
+	},{
+		"@type": "ListItem",
+		"position": 2,
+		"name": "Blog",
+		"item": "https:\/\/insertapps.com\/blog\/"
+	},{
+		"@type": "ListItem",
+		"position": 3,
+		"name": "WordPress page pagination",
+		"item": "https:\/\/insertapps.com\/blog\/wordpress-page-pagination\/"
+	}]
+}
+</script>
+	<style amp-boilerplate="">
+		body {
+			-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			animation: -amp-start 8s steps(1, end) 0s 1 normal both
+		}
+
+		@-webkit-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-moz-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-ms-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-o-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+	</style><noscript>
+		<style amp-boilerplate="">
+			body {
+				-webkit-animation: none;
+				-moz-animation: none;
+				-ms-animation: none;
+				animation: none
+			}
+		</style>
+	</noscript>
+	<script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
+	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+	<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+	<style amp-custom>
+		 
+		.h1 {
+			font-size: 2rem
+		}
+
+		.h2 {
+			font-size: 1.5rem
+		}
+
+		.h3 {
+			font-size: 1.25rem
+		}
+
+		.h4 {
+			font-size: 1rem
+		}
+
+		.h5 {
+			font-size: .875rem
+		}
+
+		.h6 {
+			font-size: .75rem
+		}
+
+		.font-family-inherit {
+			font-family: inherit
+		}
+
+		.font-size-inherit {
+			font-size: inherit
+		}
+
+		.text-decoration-none {
+			text-decoration: none
+		}
+
+		.bold {
+			font-weight: 700
+		}
+
+		.regular {
+			font-weight: 400
+		}
+
+		.italic {
+			font-style: italic
+		}
+
+		.caps {
+			text-transform: uppercase;
+			letter-spacing: .2em
+		}
+
+		.left-align {
+			text-align: left
+		}
+
+		.center {
+			text-align: center
+		}
+
+		.right-align {
+			text-align: right
+		}
+
+		.justify {
+			text-align: justify
+		}
+
+		.nowrap {
+			white-space: nowrap
+		}
+
+		.break-word {
+			word-wrap: break-word
+		}
+
+		.line-height-1 {
+			line-height: 1
+		}
+
+		.line-height-2 {
+			line-height: 1.125
+		}
+
+		.line-height-3 {
+			line-height: 1.25
+		}
+
+		.line-height-4 {
+			line-height: 1.5
+		}
+
+		.list-style-none {
+			list-style: none
+		}
+
+		.underline {
+			text-decoration: underline
+		}
+
+		.truncate {
+			max-width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap
+		}
+
+		.list-reset {
+			list-style: none;
+			padding-left: 0
+		}
+
+		.inline {
+			display: inline
+		}
+
+		.block {
+			display: block
+		}
+
+		.inline-block {
+			display: inline-block
+		}
+
+		.table {
+			display: table
+		}
+
+		.table-cell {
+			display: table-cell
+		}
+
+		.overflow-hidden {
+			overflow: hidden
+		}
+
+		.overflow-scroll {
+			overflow: scroll
+		}
+
+		.overflow-auto {
+			overflow: auto
+		}
+
+		.clearfix:after,
+		.clearfix:before {
+			content: " ";
+			display: table
+		}
+
+		.clearfix:after {
+			clear: both
+		}
+
+		.left {
+			float: left
+		}
+
+		.right {
+			float: right
+		}
+
+		.fit {
+			max-width: 100%
+		}
+
+		.max-width-1 {
+			max-width: 24rem
+		}
+
+		.max-width-2 {
+			max-width: 32rem
+		}
+
+		.max-width-3 {
+			max-width: 48rem
+		}
+
+		.max-width-4 {
+			max-width: 64rem
+		}
+
+		.border-box {
+			box-sizing: border-box
+		}
+
+		.align-baseline {
+			vertical-align: baseline
+		}
+
+		.align-top {
+			vertical-align: top
+		}
+
+		.align-middle {
+			vertical-align: middle
+		}
+
+		.align-bottom {
+			vertical-align: bottom
+		}
+
+		.m0 {
+			margin: 0
+		}
+
+		.mt0 {
+			margin-top: 0
+		}
+
+		.mr0 {
+			margin-right: 0
+		}
+
+		.mb0 {
+			margin-bottom: 0
+		}
+
+		.ml0,
+		.mx0 {
+			margin-left: 0
+		}
+
+		.mx0 {
+			margin-right: 0
+		}
+
+		.my0 {
+			margin-top: 0;
+			margin-bottom: 0
+		}
+
+		.m1 {
+			margin: .5rem
+		}
+
+		.mt1 {
+			margin-top: .5rem
+		}
+
+		.mr1 {
+			margin-right: .5rem
+		}
+
+		.mb1 {
+			margin-bottom: .5rem
+		}
+
+		.ml1,
+		.mx1 {
+			margin-left: .5rem
+		}
+
+		.mx1 {
+			margin-right: .5rem
+		}
+
+		.my1 {
+			margin-top: .5rem;
+			margin-bottom: .5rem
+		}
+
+		.m2 {
+			margin: 1rem
+		}
+
+		.mt2 {
+			margin-top: 1rem
+		}
+
+		.mr2 {
+			margin-right: 1rem
+		}
+
+		.mb2 {
+			margin-bottom: 1rem
+		}
+
+		.ml2,
+		.mx2 {
+			margin-left: 1rem
+		}
+
+		.mx2 {
+			margin-right: 1rem
+		}
+
+		.my2 {
+			margin-top: 1rem;
+			margin-bottom: 1rem
+		}
+
+		.m3 {
+			margin: 2rem
+		}
+
+		.mt3 {
+			margin-top: 2rem
+		}
+
+		.mr3 {
+			margin-right: 2rem
+		}
+
+		.mb3 {
+			margin-bottom: 2rem
+		}
+
+		.ml3,
+		.mx3 {
+			margin-left: 2rem
+		}
+
+		.mx3 {
+			margin-right: 2rem
+		}
+
+		.my3 {
+			margin-top: 2rem;
+			margin-bottom: 2rem
+		}
+
+		.m4 {
+			margin: 4rem
+		}
+
+		.mt4 {
+			margin-top: 4rem
+		}
+
+		.mr4 {
+			margin-right: 4rem
+		}
+
+		.mb4 {
+			margin-bottom: 4rem
+		}
+
+		.ml4,
+		.mx4 {
+			margin-left: 4rem
+		}
+
+		.mx4 {
+			margin-right: 4rem
+		}
+
+		.my4 {
+			margin-top: 4rem;
+			margin-bottom: 4rem
+		}
+
+		.mxn1 {
+			margin-left: -.5rem;
+			margin-right: -.5rem
+		}
+
+		.mxn2 {
+			margin-left: -1rem;
+			margin-right: -1rem
+		}
+
+		.mxn3 {
+			margin-left: -2rem;
+			margin-right: -2rem
+		}
+
+		.mxn4 {
+			margin-left: -4rem;
+			margin-right: -4rem
+		}
+
+		.ml-auto {
+			margin-left: auto
+		}
+
+		.mr-auto,
+		.mx-auto {
+			margin-right: auto
+		}
+
+		.mx-auto {
+			margin-left: auto
+		}
+
+		.p0 {
+			padding: 0
+		}
+
+		.pt0 {
+			padding-top: 0
+		}
+
+		.pr0 {
+			padding-right: 0
+		}
+
+		.pb0 {
+			padding-bottom: 0
+		}
+
+		.pl0,
+		.px0 {
+			padding-left: 0
+		}
+
+		.px0 {
+			padding-right: 0
+		}
+
+		.py0 {
+			padding-top: 0;
+			padding-bottom: 0
+		}
+
+		.p1 {
+			padding: .5rem
+		}
+
+		.pt1 {
+			padding-top: .5rem
+		}
+
+		.pr1 {
+			padding-right: .5rem
+		}
+
+		.pb1 {
+			padding-bottom: .5rem
+		}
+
+		.pl1 {
+			padding-left: .5rem
+		}
+
+		.py1 {
+			padding-top: .5rem;
+			padding-bottom: .5rem
+		}
+
+		.px1 {
+			padding-left: .5rem;
+			padding-right: .5rem
+		}
+
+		.p2 {
+			padding: 1rem
+		}
+
+		.pt2 {
+			padding-top: 1rem
+		}
+
+		.pr2 {
+			padding-right: 1rem
+		}
+
+		.pb2 {
+			padding-bottom: 1rem
+		}
+
+		.pl2 {
+			padding-left: 1rem
+		}
+
+		.py2 {
+			padding-top: 1rem;
+			padding-bottom: 1rem
+		}
+
+		.px2 {
+			padding-left: 1rem;
+			padding-right: 1rem
+		}
+
+		.p3 {
+			padding: 2rem
+		}
+
+		.pt3 {
+			padding-top: 2rem
+		}
+
+		.pr3 {
+			padding-right: 2rem
+		}
+
+		.pb3 {
+			padding-bottom: 2rem
+		}
+
+		.pl3 {
+			padding-left: 2rem
+		}
+
+		.py3 {
+			padding-top: 2rem;
+			padding-bottom: 2rem
+		}
+
+		.px3 {
+			padding-left: 2rem;
+			padding-right: 2rem
+		}
+
+		.p4 {
+			padding: 4rem
+		}
+
+		.pt4 {
+			padding-top: 4rem
+		}
+
+		.pr4 {
+			padding-right: 4rem
+		}
+
+		.pb4 {
+			padding-bottom: 4rem
+		}
+
+		.pl4 {
+			padding-left: 4rem
+		}
+
+		.py4 {
+			padding-top: 4rem;
+			padding-bottom: 4rem
+		}
+
+		.px4 {
+			padding-left: 4rem;
+			padding-right: 4rem
+		}
+
+		.col {
+			float: left
+		}
+
+		.col,
+		.col-right {
+			box-sizing: border-box
+		}
+
+		.col-right {
+			float: right
+		}
+
+		.col-1 {
+			width: 8.33333%
+		}
+
+		.col-2 {
+			width: 16.66667%
+		}
+
+		.col-3 {
+			width: 25%
+		}
+
+		.col-4 {
+			width: 33.33333%
+		}
+
+		.col-5 {
+			width: 41.66667%
+		}
+
+		.col-6 {
+			width: 50%
+		}
+
+		.col-7 {
+			width: 58.33333%
+		}
+
+		.col-8 {
+			width: 66.66667%
+		}
+
+		.col-9 {
+			width: 75%
+		}
+
+		.col-10 {
+			width: 83.33333%
+		}
+
+		.col-11 {
+			width: 91.66667%
+		}
+
+		.col-12 {
+			width: 100%
+		}
+
+		@media (min-width:40em) {
+			.sm-col {
+				float: left;
+				box-sizing: border-box
+			}
+
+			.sm-col-right {
+				float: right;
+				box-sizing: border-box
+			}
+
+			.sm-col-1 {
+				width: 8.33333%
+			}
+
+			.sm-col-2 {
+				width: 16.66667%
+			}
+
+			.sm-col-3 {
+				width: 25%
+			}
+
+			.sm-col-4 {
+				width: 33.33333%
+			}
+
+			.sm-col-5 {
+				width: 41.66667%
+			}
+
+			.sm-col-6 {
+				width: 50%
+			}
+
+			.sm-col-7 {
+				width: 58.33333%
+			}
+
+			.sm-col-8 {
+				width: 66.66667%
+			}
+
+			.sm-col-9 {
+				width: 75%
+			}
+
+			.sm-col-10 {
+				width: 83.33333%
+			}
+
+			.sm-col-11 {
+				width: 91.66667%
+			}
+
+			.sm-col-12 {
+				width: 100%
+			}
+		}
+
+		@media (min-width:52em) {
+			.md-col {
+				float: left;
+				box-sizing: border-box
+			}
+
+			.md-col-right {
+				float: right;
+				box-sizing: border-box
+			}
+
+			.md-col-1 {
+				width: 8.33333%
+			}
+
+			.md-col-2 {
+				width: 16.66667%
+			}
+
+			.md-col-3 {
+				width: 25%
+			}
+
+			.md-col-4 {
+				width: 33.33333%
+			}
+
+			.md-col-5 {
+				width: 41.66667%
+			}
+
+			.md-col-6 {
+				width: 50%
+			}
+
+			.md-col-7 {
+				width: 58.33333%
+			}
+
+			.md-col-8 {
+				width: 66.66667%
+			}
+
+			.md-col-9 {
+				width: 75%
+			}
+
+			.md-col-10 {
+				width: 83.33333%
+			}
+
+			.md-col-11 {
+				width: 91.66667%
+			}
+
+			.md-col-12 {
+				width: 100%
+			}
+		}
+
+		@media (min-width:64em) {
+			.lg-col {
+				float: left;
+				box-sizing: border-box
+			}
+
+			.lg-col-right {
+				float: right;
+				box-sizing: border-box
+			}
+
+			.lg-col-1 {
+				width: 8.33333%
+			}
+
+			.lg-col-2 {
+				width: 16.66667%
+			}
+
+			.lg-col-3 {
+				width: 25%
+			}
+
+			.lg-col-4 {
+				width: 33.33333%
+			}
+
+			.lg-col-5 {
+				width: 41.66667%
+			}
+
+			.lg-col-6 {
+				width: 50%
+			}
+
+			.lg-col-7 {
+				width: 58.33333%
+			}
+
+			.lg-col-8 {
+				width: 66.66667%
+			}
+
+			.lg-col-9 {
+				width: 75%
+			}
+
+			.lg-col-10 {
+				width: 83.33333%
+			}
+
+			.lg-col-11 {
+				width: 91.66667%
+			}
+
+			.lg-col-12 {
+				width: 100%
+			}
+		}
+
+		.flex {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex
+		}
+
+		@media (min-width:40em) {
+			.sm-flex {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex
+			}
+		}
+
+		@media (min-width:52em) {
+			.md-flex {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex
+			}
+		}
+
+		@media (min-width:64em) {
+			.lg-flex {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex
+			}
+		}
+
+		.flex-column {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column
+		}
+
+		.flex-wrap {
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap
+		}
+
+		.items-start {
+			-webkit-box-align: start;
+			-webkit-align-items: flex-start;
+			-ms-flex-align: start;
+			-ms-grid-row-align: flex-start;
+			align-items: flex-start
+		}
+
+		.items-end {
+			-webkit-box-align: end;
+			-webkit-align-items: flex-end;
+			-ms-flex-align: end;
+			-ms-grid-row-align: flex-end;
+			align-items: flex-end
+		}
+
+		.items-center {
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			-ms-flex-align: center;
+			-ms-grid-row-align: center;
+			align-items: center
+		}
+
+		.items-baseline {
+			-webkit-box-align: baseline;
+			-webkit-align-items: baseline;
+			-ms-flex-align: baseline;
+			-ms-grid-row-align: baseline;
+			align-items: baseline
+		}
+
+		.items-stretch {
+			-webkit-box-align: stretch;
+			-webkit-align-items: stretch;
+			-ms-flex-align: stretch;
+			-ms-grid-row-align: stretch;
+			align-items: stretch
+		}
+
+		.self-start {
+			-webkit-align-self: flex-start;
+			-ms-flex-item-align: start;
+			align-self: flex-start
+		}
+
+		.self-end {
+			-webkit-align-self: flex-end;
+			-ms-flex-item-align: end;
+			align-self: flex-end
+		}
+
+		.self-center {
+			-webkit-align-self: center;
+			-ms-flex-item-align: center;
+			align-self: center
+		}
+
+		.self-baseline {
+			-webkit-align-self: baseline;
+			-ms-flex-item-align: baseline;
+			align-self: baseline
+		}
+
+		.self-stretch {
+			-webkit-align-self: stretch;
+			-ms-flex-item-align: stretch;
+			align-self: stretch
+		}
+
+		.justify-start {
+			-webkit-box-pack: start;
+			-webkit-justify-content: flex-start;
+			-ms-flex-pack: start;
+			justify-content: flex-start
+		}
+
+		.justify-end {
+			-webkit-box-pack: end;
+			-webkit-justify-content: flex-end;
+			-ms-flex-pack: end;
+			justify-content: flex-end
+		}
+
+		.justify-center {
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			-ms-flex-pack: center;
+			justify-content: center
+		}
+
+		.justify-between {
+			-webkit-box-pack: justify;
+			-webkit-justify-content: space-between;
+			-ms-flex-pack: justify;
+			justify-content: space-between
+		}
+
+		.justify-around {
+			-webkit-justify-content: space-around;
+			-ms-flex-pack: distribute;
+			justify-content: space-around
+		}
+
+		.content-start {
+			-webkit-align-content: flex-start;
+			-ms-flex-line-pack: start;
+			align-content: flex-start
+		}
+
+		.content-end {
+			-webkit-align-content: flex-end;
+			-ms-flex-line-pack: end;
+			align-content: flex-end
+		}
+
+		.content-center {
+			-webkit-align-content: center;
+			-ms-flex-line-pack: center;
+			align-content: center
+		}
+
+		.content-between {
+			-webkit-align-content: space-between;
+			-ms-flex-line-pack: justify;
+			align-content: space-between
+		}
+
+		.content-around {
+			-webkit-align-content: space-around;
+			-ms-flex-line-pack: distribute;
+			align-content: space-around
+		}
+
+		.content-stretch {
+			-webkit-align-content: stretch;
+			-ms-flex-line-pack: stretch;
+			align-content: stretch
+		}
+
+		.flex-auto {
+			-webkit-box-flex: 1;
+			-webkit-flex: 1 1 auto;
+			-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
+			min-width: 0;
+			min-height: 0
+		}
+
+		.flex-none {
+			-webkit-box-flex: 0;
+			-webkit-flex: none;
+			-ms-flex: none;
+			flex: none
+		}
+
+		.order-0 {
+			-webkit-box-ordinal-group: 1;
+			-webkit-order: 0;
+			-ms-flex-order: 0;
+			order: 0
+		}
+
+		.order-1 {
+			-webkit-box-ordinal-group: 2;
+			-webkit-order: 1;
+			-ms-flex-order: 1;
+			order: 1
+		}
+
+		.order-2 {
+			-webkit-box-ordinal-group: 3;
+			-webkit-order: 2;
+			-ms-flex-order: 2;
+			order: 2
+		}
+
+		.order-3 {
+			-webkit-box-ordinal-group: 4;
+			-webkit-order: 3;
+			-ms-flex-order: 3;
+			order: 3
+		}
+
+		.order-last {
+			-webkit-box-ordinal-group: 100000;
+			-webkit-order: 99999;
+			-ms-flex-order: 99999;
+			order: 99999
+		}
+
+		.relative {
+			position: relative
+		}
+
+		.absolute {
+			position: absolute
+		}
+
+		.fixed {
+			position: fixed
+		}
+
+		.top-0 {
+			top: 0
+		}
+
+		.right-0 {
+			right: 0
+		}
+
+		.bottom-0 {
+			bottom: 0
+		}
+
+		.left-0 {
+			left: 0
+		}
+
+		.z1 {
+			z-index: 1
+		}
+
+		.z2 {
+			z-index: 2
+		}
+
+		.z3 {
+			z-index: 3
+		}
+
+		.z4 {
+			z-index: 4
+		}
+
+		.border {
+			border-style: solid;
+			border-width: 1px
+		}
+
+		.border-top {
+			border-top-style: solid;
+			border-top-width: 1px
+		}
+
+		.border-right {
+			border-right-style: solid;
+			border-right-width: 1px
+		}
+
+		.border-bottom {
+			border-bottom-style: solid;
+			border-bottom-width: 1px
+		}
+
+		.border-left {
+			border-left-style: solid;
+			border-left-width: 1px
+		}
+
+		.border-none {
+			border: 0
+		}
+
+		.rounded {
+			border-radius: 3px
+		}
+
+		.circle {
+			border-radius: 50%
+		}
+
+		.rounded-top {
+			border-radius: 3px 3px 0 0
+		}
+
+		.rounded-right {
+			border-radius: 0 3px 3px 0
+		}
+
+		.rounded-bottom {
+			border-radius: 0 0 3px 3px
+		}
+
+		.rounded-left {
+			border-radius: 3px 0 0 3px
+		}
+
+		.not-rounded {
+			border-radius: 0
+		}
+
+		.resp-img {
+			max-width: 700px;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
+			min-width: 315px;
+			overflow-x: hidden;
+			font-smooth: always;
+			-webkit-font-smoothing: antialiased;
+			line-height:1.5rem;
+			letter-spacing:normal;
+		}
+
+		a,
+		a:active,
+		a:visited {
+			color: inherit
+		}
+
+		h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+		 
+		article p:first-child:first-letter {
+			float: left;
+			color: gray;
+			font-size: 4em;
+			line-height: 0.85em;
+			padding-right: 0.1em;
+			font-weight: bolder;
+		}
+
+		 
+		.h1,
+		h1 {
+			font-size: 3rem;
+		}
+
+		.h2,
+		h2 {
+			font-size: 2rem;
+		}
+
+		.h3,
+		h3 {
+			font-size: 1.5rem;
+		}
+
+		.h4,
+		h4 {
+			font-size: 1.125rem;
+		}
+
+		.h5,
+		h5 {
+			font-size: .875rem;
+		}
+
+		.h6,
+		h6 {
+			font-size: .75rem;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+			padding: 0;
+			font-weight: 400;
+			letter-spacing: .06rem
+		}
+
+		 
+
+		@media (min-width: 20em) {
+
+			.xm-h1 {
+				font-size: 1.25rem;
+			}
+
+			.xm-h2 {
+				font-size: 1rem;
+			}
+
+			.xm-h3 {
+				font-size: 0.875rem;
+			}
+
+			.xm-h4 {
+				font-size: 0.8125rem;
+			}
+
+			.xm-h5 {
+				font-size: 0.75rem;
+			}
+
+			.xm-h6 {
+				font-size: 0.625rem;
+			}
+		}
+
+		@media (min-width: 40em) {
+			.sm-h00 {
+				font-size: 2.5rem;
+			}
+
+			.sm-h0 {
+				font-size: 2.5rem;
+			}
+
+			.sm-h1 {
+				font-size: 2rem;
+			}
+
+			.sm-h2 {
+				font-size: 1.75rem;
+			}
+
+			.sm-h3 {
+				font-size: 1.5rem;
+			}
+
+			.sm-h4 {
+				font-size: 1rem;
+			}
+
+			.sm-h5 {
+				font-size: 0.875rem;
+			}
+
+			.sm-h6 {
+				font-size: 0.75rem;
+			}
+		}
+
+		@media (min-width: 52em) {
+			.md-h00 {
+				font-size: 3rem;
+			}
+
+			.md-h0 {
+				font-size: 2.5rem;
+			}
+
+			.md-h1 {
+				font-size: 2rem;
+			}
+
+			.md-h2 {
+				font-size: 1.5rem;
+			}
+
+			.md-h3 {
+				font-size: 1.25rem;
+			}
+
+			.md-h4 {
+				font-size: 1rem;
+			}
+
+			.md-h5 {
+				font-size: 0.875rem;
+			}
+
+			.md-h6 {
+				font-size: 0.75rem;
+			}
+		}
+
+blockquote,
+dl,
+ol,
+p,
+pre,
+ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+blockquote {
+  font-size: 1.25em;
+  font-style: italic;
+  margin-left: 0;
+}
+
+code,
+pre,
+samp {
+  font-family: Roboto Mono, Source Code Pro, Menlo, Consolas, Liberation Mono,
+    monospace;
+}
+
+code,
+samp {
+  padding: 0.125em;
+  color: #d82672;
+}
+
+code,
+pre,
+samp {
+  font-size: 87.5%;
+}
+
+pre {
+  margin: 0;
+  padding: 1em;
+  border-radius: 3px;
+  overflow: auto;
+  background-color: #282a36;
+}
+
+hr {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+}
+
+		 
+blockquote {
+  background: #f9f9f9;
+  border-left: 8px solid #ccc;
+  padding: 1.5rem;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: gray;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+		 
+		.white {
+			color: #FFFFFF
+		}
+
+		.silver {
+			color: #DDDDDD
+		}
+
+		.gray {
+			color: #4A4A4A
+		}
+
+		.black {
+			color: #111111
+		}
+
+		.blue {
+			color: #0074D9
+		}
+
+		.dark {
+			color: #1d262d
+		}
+
+		.dark-light {
+			color: #293741;
+		}
+
+		.color-inherit {
+			color: inherit
+		}
+
+		.muted {
+			opacity: .5
+		}
+
+		 
+		.bg-white {
+			background-color: #FFFFFF
+		}
+
+		.bg-silver {
+			background-color: #DDDDDD
+		}
+
+		.bg-gray {
+			background-color: #4A4A4A
+		}
+
+		.bg-black {
+			background-color: #111111
+		}
+
+		.bg-blue {
+			background-color: #0074D9
+		}
+
+		.bg-dark {
+			background-color: #1d262d
+		}
+
+		.bg-dark-light {
+			background-color: #293741;
+		}
+
+		 
+		.border-black {
+			border-color: #111111
+		}
+
+		.border-gray {
+			border-color: #4A4A4A
+		}
+
+		.border-silver {
+			border-color: #DDDDDD
+		}
+
+		 
+		.box-shadow {
+			box-shadow: 0 0 5px 2px rgba(0, 0, 0, .1)
+		}
+
+		 
+		.bg-fb {
+			background-color: #4267B2
+		}
+
+		.bg-tt {
+			background-color: #00acee
+		}
+
+		 
+		.sidebar {
+			min-width: 300px;
+			width: 300px
+		}
+
+		.pointer {
+			cursor: pointer;
+			text-decoration: none;
+			outline: none;
+		}
+
+		.burger-line {
+			width: 1.125rem;
+			height: .1255rem;
+			margin: .25rem 0;
+		}
+
+		.close {
+			width: 30px;
+			height: 30px;
+		}
+
+		.close-line {
+			height: 28px;
+			width: 2px;
+		}
+
+		.rotate-right {
+			transform: rotate(45deg);
+		}
+
+		.rotate-left {
+			transform: rotate(-45deg);
+		}
+
+		.box {
+			width: 36px;
+			height: 36px
+		}
+	</style>
+</head><body class="m0 p0 bg-white gray">
+	
+	<header class="bg-blue white px2 py1 fixed flex top-0 left-0 right-0 justify-start items-center box-shadow z4">
+		<div class="pointer pr2 m0" on="tap:header-sidebar.toggle" role="button" aria-label="open sidebar" tabindex="0">
+			<div class="burger-line bg-white"></div>
+			<div class="burger-line bg-white"></div>
+			<div class="burger-line bg-white"></div>
+		</div>
+		<div class="mx-auto"><a href="https://insertapps.com/blog" aria-label="Link to Insertapps Blog">
+				<svg aria-hidden="true" class="my0 block" role="img" xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 600 100" width="130">
+					<g fill="currentColor">
+						<path d="M140,75.9c-2.3,0-4.2,0-5.7,0s-3.4,0-5.7,0V24.1H140V75.9z" />
+						<path
+							d="M163.4,75.9c-2.2,0-4,0-5.5,0s-3.3,0-5.5,0V24.1h9.4l23.3,32.1h0.6V24.1h10.9V76h-9.3L164,43.7h-0.6V75.9z" />
+						<path
+							d="M206.9,61.5c2.2,0,4.1,0,5.5,0c1.5,0,3.3,0,5.5,0c0.2,2.1,1.3,3.7,3.2,5c1.9,1.2,4.3,1.9,7.3,1.9c2.7,0,5-0.6,6.7-1.9c1.7-1.2,2.6-2.8,2.6-4.7c0-1.7-0.7-3-2-4c-1.4-1-3.6-1.8-6.7-2.5l-6.8-1.4c-4.7-1-8.3-2.7-10.6-5.2s-3.5-5.7-3.5-9.6c0-4.9,1.8-8.8,5.5-11.8s8.5-4.4,14.6-4.4c5.8,0,10.6,1.4,14.3,4.3s5.6,6.7,5.8,11.3h-10.7c-0.2-2-1.2-3.7-2.9-4.9s-3.8-1.9-6.4-1.9c-2.6,0-4.7,0.6-6.3,1.7c-1.6,1.2-2.4,2.7-2.4,4.7c0,1.6,0.7,2.9,2,3.8c1.3,1,3.4,1.8,6.4,2.4l6.4,1.3c5.2,1.1,9,2.8,11.4,5.1s3.6,5.5,3.6,9.6c0,5.2-1.9,9.4-5.7,12.4s-9,4.5-15.6,4.5c-6.3,0-11.3-1.4-15.1-4.3C209.1,70.2,207.1,66.3,206.9,61.5z" />
+						<path
+							d="M294,66.6c0,1.9,0,3.5,0,4.7s0,2.8,0,4.7h-34.6V24.1H294v9.4h-23.2v12h21.9v8.7h-21.9v12.5L294,66.6L294,66.6z" />
+						<path
+							d="M316.8,57.2c0,3.8,0,6.9,0,9.4s0,5.6,0,9.4h-11.4V24.1h22c5.8,0,10.3,1.5,13.7,4.5s5,7,5,12.2c0,3.3-0.8,6.3-2.4,8.9c-1.6,2.7-3.9,4.6-6.8,5.8L347.7,76h-12.9l-9.5-18.8H316.8z M316.8,32.9c0,2.1,0,4,0,5.6s0,3.1,0,4.7s0,3.4,0,5.6h9.1c2.7,0,4.7-0.7,6.2-2.1s2.2-3.3,2.2-5.8c0-2.4-0.8-4.4-2.3-5.8c-1.5-1.4-3.6-2.1-6.3-2.1h-8.9L316.8,32.9L316.8,32.9z" />
+						<path
+							d="M380.8,75.9c-2.3,0-4.2,0-5.7,0s-3.4,0-5.7,0V33.4H354V24h42.3v9.4h-15.4L380.8,75.9L380.8,75.9z" />
+						<path
+							d="M439,75.9c-0.7-2.5-1.4-4.5-1.9-6.1s-1.1-3.7-1.9-6.2h-17.9l-3.8,12.3H402L419.9,24h13.6l17.9,51.9H439z M426,34.9c-0.9,2.7-1.6,5.1-2.2,7.1s-1.2,4-1.9,6c-0.6,2-1.4,4.4-2.2,7.1h13.2l-6.2-20.3H426V34.9z" />
+						<path
+							d="M460.2,24.1c4.4,0,8.1,0,10.9,0s6.5,0,10.9,0c5.4,0,9.8,1.6,13.1,4.9c3.3,3.3,5,7.6,5,13c0,5.3-1.7,9.7-5.2,12.9c-3.5,3.3-8,4.9-13.5,4.9h-9.8v16h-11.4V24.1z M471.6,33.1c0,2.4,0,4.5,0,6.3s0,3.5,0,5.3s0,3.9,0,6.3h7.4c3,0,5.4-0.8,7.1-2.3s2.5-3.7,2.5-6.6c0-2.9-0.8-5.2-2.5-6.7s-4-2.3-7.1-2.3H471.6z" />
+						<path
+							d="M510.1,24.1c4.4,0,8.1,0,10.9,0s6.5,0,10.9,0c5.4,0,9.8,1.6,13.1,4.9s5,7.6,5,13c0,5.3-1.7,9.7-5.2,12.9c-3.5,3.3-8,4.9-13.5,4.9h-9.8v16h-11.4V24.1z M521.6,33.1c0,2.4,0,4.5,0,6.3s0,3.5,0,5.3s0,3.9,0,6.3h7.4c3,0,5.4-0.8,7.1-2.3s2.5-3.7,2.5-6.6c0-2.9-0.8-5.2-2.5-6.7s-4-2.3-7.1-2.3H521.6z" />
+						<path
+							d="M557.8,61.5c2.2,0,4.1,0,5.5,0s3.3,0,5.5,0c0.2,2.1,1.3,3.7,3.2,5c1.9,1.2,4.3,1.9,7.3,1.9c2.7,0,5-0.6,6.7-1.9c1.7-1.2,2.6-2.8,2.6-4.7c0-1.7-0.7-3-2-4c-1.4-1-3.6-1.8-6.7-2.5l-6.8-1.4c-4.7-1-8.3-2.7-10.6-5.2S559,43,559,39.1c0-4.9,1.8-8.8,5.5-11.8s8.5-4.4,14.6-4.4c5.8,0,10.6,1.4,14.3,4.3s5.6,6.7,5.8,11.3h-10.7c-0.2-2-1.2-3.7-2.9-4.9s-3.8-1.9-6.4-1.9c-2.6,0-4.7,0.6-6.3,1.7c-1.6,1.2-2.4,2.7-2.4,4.7c0,1.6,0.7,2.9,2,3.8c1.3,1,3.4,1.8,6.4,2.4l6.4,1.3c5.2,1.1,9,2.8,11.4,5.1s3.6,5.5,3.6,9.6c0,5.2-1.9,9.4-5.7,12.4s-9,4.5-15.6,4.5c-6.3,0-11.3-1.4-15.1-4.3C559.9,70.2,558,66.3,557.8,61.5z" />
+						<path
+							d="M76.6,3L64.5-0.4c-0.5-0.1-1,0.1-1.2,0.6l-3.5,12.1c-0.1,0.5,0.1,1,0.6,1.2L72.6,17c0.5,0.1,1-0.1,1.2-0.6l3.5-12.1C77.4,3.7,77.1,3.2,76.6,3z" />
+						<path
+							d="M70.7,23.7l-12.1-3.5c-0.5-0.1-1,0.1-1.2,0.6l-21.5,75c-0.1,0.5,0.1,1,0.6,1.2l12.1,3.5c0.5,0.1,1-0.1,1.2-0.6L71.3,25C71.5,24.4,71.2,23.9,70.7,23.7z" />
+						<path
+							d="M24.9,55.7L21,51.8l-1.3-1.3l1.3-1.3l3.2-3.2l12.2-12.2c0.7-0.7,0.7-1.9,0-2.7l-7.6-7.6c-0.7-0.7-1.9-0.7-2.7,0L0.5,49.2c-0.7,0.7-0.7,1.9,0,2.7l25.7,25.7c0.7,0.7,1.9,0.7,2.7,0l7.6-7.6c0.7-0.7,0.7-1.9,0-2.7L24.9,55.7z" />
+						<path
+							d="M88.3,45.3l3.9,3.9l1.3,1.3l-1.3,1.3L88.9,55L76.7,67.2c-0.7,0.7-0.7,1.9,0,2.7l7.6,7.6c0.7,0.7,1.9,0.7,2.7,0l25.7-25.7c0.7-0.7,0.7-1.9,0-2.7L87,23.5c-0.7-0.7-1.9-0.7-2.7,0l-7.6,7.6c-0.7,0.7-0.7,1.9,0,2.7L88.3,45.3z" />
+					</g>
+				</svg>
+			</a></div>
+	</header>
+	<amp-sidebar id="header-sidebar" class="sidebar m0 p3" layout="nodisplay">
+		<div class="flex right items-center justify-center pointer close relative" role="button" aria-label="close"
+			on="tap:header-sidebar.toggle" tabindex="0">
+			<div class="close-line bg-gray absolute rotate-left"></div>
+			<div class="close-line bg-gray absolute rotate-right"></div>
+		</div>
+		
+		<div class="bg-blue circle mb2 flex items-center justify-center white mb3" style="width: 68px;height: 68px">
+			<a href="https://insertapps.com/" aria-label="Link to AMP HTML Insertapps">
+				<svg aria-hidden="true" class="block" width="36" role="img" xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 22 20">
+					<g fill="currentColor">
+						<path d="M15,0.7L12.6,0c-0.1,0-0.2,0-0.2,0.1l-0.7,2.4c0,0.1,0,0.2,0.1,0.2l2.4,0.7c0.1,0,0.2,0,0.2-0.1l0.7-2.4
+                    C15.1,0.8,15.1,0.7,15,0.7z"></path>
+						<path d="M13.8,4.8l-2.4-0.7c-0.1,0-0.2,0-0.2,0.1L6.9,19.1c0,0.1,0,0.2,0.1,0.2L9.4,20c0.1,0,0.2,0,0.2-0.1L13.9,5
+                    C14,4.9,13.9,4.8,13.8,4.8z"></path>
+						<path d="M4.9,11.1l-0.8-0.8l-0.3-0.3l0.3-0.3l0.6-0.6l2.4-2.4c0.1-0.1,0.1-0.4,0-0.5L5.7,4.7c-0.1-0.1-0.4-0.1-0.5,0L0.1,9.8
+                    C0,10,0,10.2,0.1,10.4l5.1,5.1c0.1,0.1,0.4,0.1,0.5,0L7.2,14c0.1-0.1,0.1-0.4,0-0.5L4.9,11.1z"></path>
+						<path d="M17.1,9.1l0.8,0.8l0.3,0.3l-0.3,0.3L17.2,11l-2.4,2.4c-0.1,0.1-0.1,0.4,0,0.5l1.5,1.5c0.1,0.1,0.4,0.1,0.5,0l5.1-5.1
+                    c0.1-0.1,0.1-0.4,0-0.5l-5.1-5.1c-0.1-0.1-0.4-0.1-0.5,0l-1.5,1.5c-0.1,0.1-0.1,0.4,0,0.5L17.1,9.1z">
+						</path>
+					</g>
+				</svg>
+			</a>
+		</div>
+		
+		
+		<h3 class="h6 caps muted">menu category</h3>
+		<ul class="list-reset ml2 mb3 caps h5">
+			<li class="mb2"><a class="text-decoration-none" href="https://insertapps.com/categories/tutorial/">Tutorial</a>
+			</li>
+			<li class="mb2"><a class="text-decoration-none" href="https://insertapps.com/categories/basscss/">Basscss</a>
+			</li>
+			<li class="mb2"><a class="text-decoration-none" href="https://insertapps.com/categories/hugo/">Hugo</a>
+			</li>
+			<li class="mb2"><a class="text-decoration-none" href="https://insertapps.com/categories/code/">Code</a></li>
+		</ul>
+		
+		
+		<h3 class="h6 caps muted mb2">social media</h3>
+		<div class="mb3 ml2 flex white">
+
+			<a class="text-decoration-none" href="https://facebook.com/insertapps"
+				aria-label="Link to AMP HTML Facebook" target="_blank">
+				<div class="bg-gray circle mr2 flex items-center justify-center box">
+					<svg width="2rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M10.8,8.7l0.4-2.1H9V5.2C9,4.6,9.3,4,10.2,4h0.9V2.2c0,0-0.8-0.2-1.7-0.2C7.8,2,6.7,3,6.7,4.9v1.7H4.8v2.1h1.9v5.2C7.2,14,7.5,14,7.9,14s0.7,0,1.1-0.1V8.7H10.8z" />
+					</svg>
+				</div>
+			</a>
+			<a class="text-decoration-none" href="https://twitter.com/insertapps" aria-label="Link to AMP HTML Twitter"
+				target="_blank">
+				<div class="bg-gray circle mr2 flex items-center justify-center box">
+					<svg width="1.6rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M5.7,12.8c4.4,0,7-3.7,7-7c0-0.1,0-0.3,0-0.3c0.5-0.4,0.9-0.8,1.3-1.3c-0.4,0.3-0.9,0.4-1.4,0.4c0.5-0.3,0.9-0.8,1-1.4c-0.5,0.3-1,0.5-1.5,0.6c-0.5-0.4-1.1-0.7-1.8-0.7c-1.4,0-2.4,1-2.4,2.4c0,0.3,0,0.4,0.1,0.5c-2-0.1-3.7-1-5-2.5 C2.7,4,2.5,4.3,2.5,4.8c0,0.9,0.4,1.6,1.1,2c-0.5,0-0.9-0.1-1.1-0.3l0,0c0,1.1,0.8,2.1,1.9,2.4C4.2,9,4,9,3.8,9C3.7,9,3.5,9,3.3,9c0.3,1,1.3,1.6,2.3,1.6c-0.9,0.6-1.9,1-3,1c-0.3,0-0.4,0-0.6,0C3,12.4,4.3,12.8,5.7,12.8" />
+					</svg>
+				</div>
+			</a>
+			<a class="text-decoration-none" href="https://instagram.com/#" aria-label="Link to AMP HTML Instagram"
+				target="_blank">
+				<div class="bg-gray circle mr2 flex items-center justify-center box">
+					<svg width="1.9rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<g>
+							<path
+								d="M8,3.1c1.6,0,1.8,0,2.4,0c0.6,0,0.9,0.1,1.1,0.2c0.3,0.1,0.5,0.2,0.7,0.4c0.2,0.2,0.3,0.4,0.4,0.7c0.1,0.2,0.2,0.5,0.2,1.1c0,0.6,0,0.8,0,2.4s0,1.8,0,2.4c0,0.6-0.1,0.9-0.2,1.1c-0.1,0.3-0.2,0.5-0.4,0.7c-0.2,0.2-0.4,0.3-0.7,0.4c-0.2,0.1-0.5,0.2-1.1,0.2c-0.6,0-0.8,0-2.4,0s-1.8,0-2.4,0c-0.6,0-0.9-0.1-1.1-0.2c-0.3-0.1-0.5-0.2-0.7-0.4c-0.2-0.2-0.3-0.4-0.4-0.7c-0.1-0.2-0.2-0.5-0.2-1.1c0-0.6,0-0.8,0-2.4s0-1.8,0-2.4c0-0.6,0.1-0.9,0.2-1.1C3.4,4.2,3.6,4,3.8,3.8C4,3.6,4.2,3.4,4.5,3.3C4.7,3.2,5,3.1,5.6,3.1C6.2,3.1,6.4,3.1,8,3.1 M8,2C6.4,2,6.2,2,5.5,2c-0.6,0-1.1,0.1-1.5,0.3C3.7,2.5,3.3,2.7,3,3C2.7,3.3,2.5,3.7,2.3,4.1C2.2,4.5,2.1,4.9,2,5.5C2,6.2,2,6.4,2,8c0,1.6,0,1.8,0,2.5c0,0.6,0.1,1.1,0.3,1.5C2.5,12.3,2.7,12.7,3,13c0.3,0.3,0.7,0.5,1.1,0.7c0.4,0.1,0.8,0.2,1.5,0.3c0.6,0,0.8,0,2.5,0s1.8,0,2.5,0c0.6,0,1.1-0.1,1.5-0.3c0.4-0.2,0.7-0.4,1.1-0.7c0.3-0.3,0.5-0.7,0.7-1.1c0.1-0.4,0.2-0.8,0.3-1.5c0-0.6,0-0.8,0-2.5s0-1.8,0-2.5c0-0.6-0.1-1.1-0.3-1.5C13.5,3.7,13.3,3.3,13,3c-0.3-0.3-0.7-0.5-1.1-0.7c-0.4-0.1-0.8-0.2-1.5-0.3C9.8,2,9.6,2,8,2L8,2z" />
+							<path
+								d="M8,4.9C6.3,4.9,4.9,6.3,4.9,8s1.4,3.1,3.1,3.1s3.1-1.4,3.1-3.1S9.7,4.9,8,4.9z M8,10c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2c1.1,0,2,0.9,2,2C10,9.1,9.1,10,8,10z" />
+							<circle cx="11.2" cy="4.8" r="0.7" />
+						</g>
+					</svg>
+				</div>
+			</a>
+		</div>
+		
+		
+		<h3 class="h6 caps muted">Mikro Apps</h3>
+		<ul class="list-reset ml2 mb3 caps h5">
+			<li class="mb2"><a class="text-decoration-none" href="https://ats.insertapps.com/"
+					aria-label="Link to Aceh Top Site app">A Top Site</a></li>
+			<li class="mb2"><a class="text-decoration-none" href="https://insertapps.com/spell-checker"
+					aria-label="Link to Spell Checker app">Spell Checker</a></li>
+		</ul>
+		
+		
+		<h3 class="h6 caps muted">About site</h3>
+		<ul class="list-reset ml2 caps h5 mb4">
+			<li class="mb2"><a class="text-decoration-none" href="https://insertapps.com/about/">About</a></li>
+			<li class="mb2"><a class="text-decoration-none" href="https://insertapps.com/disclaimer/">Disclimer</a></li>
+			<li class="mb2"><a class="text-decoration-none" href="https://insertapps.com/privacy/">Privacy</a></li>
+		</ul>
+		
+	</amp-sidebar>
+	
+	<main class="max-width-4 mx-auto mt4 mb3">
+		<article class="px2 mb3">
+			<header class="mb2">
+
+			
+				<ul class="list-reset"> 
+					
+					
+					
+						<span class="block muted caps mb2 h5">WordPress</span>
+					
+			
+				<h1 class="h2 mb1">WordPress page pagination</h1>
+
+				<div class="clearfix">
+					<time class="h6 muted" datetime="2020-08-08">
+						Wednesday, November 3, 2021
+					</time>
+				</div>
+			</header>
+
+			<div class="clearfix mxn2">
+			 
+				<amp-img class="mb2" src="/images/blog/Cara-membuat-theme-wordpress.gif" alt="Animasi sidebar menu. (Ilustrasi dari Freepik)"  height="512" width="1024"
+					layout="responsive"></amp-img>
+			</div>
+
+			<div id="content" class="mb2">
+				<p>Desain website yang baik harus didukung dengan struktur navigasi yang yang baik pula. Sehingga pengunjung yang datang tidak tersesat saat mengakses ribuan konten yang &lsquo;terkubur&rsquo; dalam database.</p>
+<p>Salah satunya adalah fitur page pagination atau juga dikenal dikenal sebagai paging. Pagination adalah proses membagi data posting menjadi halaman diskrit—grouping sejumlah halaman yang berbeda menjadi satu halaman yang rapi dan runut.</p>
+<p>Selain memudahkan pengunjung mengakses blog atau website, berikut segudang manfaat dari sebuah fitur pagination:</p>
+<ol>
+<li>Akses konten blog jadi lebih cepat karena list posting yang ditampilkan terbatas dalam jumlah tertentu, misalnya satu paging berisi 10 judul.</li>
+<li>Kinerja server jadi lebih ringan karena data yang diproses secara step by step dengan skala yang kecil.</li>
+<li>Pengalaman pengguna akan meningkat karena struktur navigasi yang mudah dan simpel lebih disukai selain akses yang cepat.</li>
+<li>Meningkatkan SEO karena search engine memberikan skor yang tinggi untuk website yang loadnya cepat serta pengalaman pengguna yang baik.</li>
+<li>Terakhir, page view juga ikut meningkat, sehingga potensi tampilan iklan lebih banyak dengan tingkat peluang klik iklan juga tinggi.</li>
+</ol>
+<h2 id="memasang-page-pagination-cms-wordpress">Memasang Page Pagination CMS WordPress</h2>
+<p>Malas coding?</p>
+<p>Tinggal pasang WP Plugin bukan?</p>
+<p>Meng-install plugin cara paling murah meriah untuk menambah fitur pagination dalam sistem WordPress.</p>
+<p>Salah satunya plugin WordPress yang cukup terkenal untuk masalah paged adalah WP-PageNavi. Plugin karya Lester Chan ini mendapat sudah terinstall 700.000 + di web blog dengan rating 4.5.</p>
+<p>Tertarik dengan plugin ini, install saja via dashboard <code>/wp-admin</code>.</p>
+<h2 id="membuat-wordpress-pagination-tampa-plugin">Membuat Wordpress pagination tampa plugin</h2>
+<p>Apapun tambahan fitur ke dalam sistem WordPress, plugin adalah solusinya. Masalahnya menginstall plugin ada efek sampingnya, baca (<strong>Plus-minus install WordPress Plugin</strong>).</p>
+<p>Solusi terbaik dengan mengcustom sendiri fitur WordPress pagination tampa menggunakan plugin</p>
+<p>Tentu untuk oprek WordPress custom pagination butuh skill coding, tapi tidak harus jago lo.</p>
+<p>Dengan modal paham dasar HTML, CSS dan cara kerja bahasa pemograman PHP sudah cukup untuk melakukan custom &lsquo;WP Page Navi&rsquo; sendiri.</p>
+<p>Ternyata, cara kerjanya cukup mudah berikut penjelasan step by stepnya:</p>
+<h3 id="steps-1---pahami-dulu-sintaknya">Steps 1 —  Pahami dulu sintaknya</h3>
+<p>WordPress sudah menyediakan beberapa fungsi bawaan khusus untuk menampilkan pagination, diantaranya:</p>
+<ul>
+<li><code>paginate_links()</code></li>
+<li><code>get_previous_posts_link()</code></li>
+<li><code>get_next_posts_link()</code></li>
+</ul>
+<p>Selain function, WordPress juga menyediakan hook untuk ketiga fungsi tersebut:</p>
+<ul>
+<li><code>apply_filters( 'next_posts_link_attributes', string $attributes )</code></li>
+<li><code>apply_filters( 'previous_posts_link_attributes', string $attributes )</code></li>
+<li><code>apply_filters( 'paginate_links', string $link )</code></li>
+</ul>
+<p>Untuk memanggil ketiga fungsi tersebut cukup mudah, tinggal echo saja:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">section</span>&gt;
+    
+    <span style="color:#75715e">&lt;?php echo paginate_links(); ?&gt;</span>
+    
+    &lt;<span style="color:#f92672">hr</span>&gt;
+    
+    <span style="color:#75715e">&lt;?php echo get_previous_posts_link(); ?&gt;</span>
+    
+    &lt;<span style="color:#f92672">hr</span>&gt;
+    
+    <span style="color:#75715e">&lt;?php echo get_next_posts_link(); ?&gt;</span>
+
+&lt;/<span style="color:#f92672">section</span>&gt;
+</code></pre></div><p>Hasil output data mentah codenya seperti berikut:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">section</span>&gt;
+    
+    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;prev page-numbers&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8888/pehthemepress/&#34;</span>&gt;« Previous&lt;/<span style="color:#f92672">a</span>&gt;
+    
+    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-numbers&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8888/pehthemepress/&#34;</span>&gt;1&lt;/<span style="color:#f92672">a</span>&gt;
+    
+    &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-current</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-numbers current&#34;</span>&gt;2&lt;/<span style="color:#f92672">span</span>&gt;
+    
+    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-numbers&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;3&lt;/<span style="color:#f92672">a</span>&gt;
+    
+    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;next page-numbers&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;Next »&lt;/<span style="color:#f92672">a</span>&gt;
+    
+    &lt;<span style="color:#f92672">hr</span>&gt;
+    
+    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;« Previous Page&lt;/<span style="color:#f92672">a</span>&gt;
+    
+    &lt;<span style="color:#f92672">hr</span>&gt;
+    
+    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;Next Page »&lt;/<span style="color:#f92672">a</span>&gt;
+
+&lt;/<span style="color:#f92672">section</span>&gt; 
+</code></pre></div><p>Hasil render HTML menghasil bentuk desain pagination seperti berikut:</p>
+<pre><code>« Previous 1 2 3 4 5 Next »
+
+--------------------------------------
+
+« Previous Page
+
+--------------------------------------
+
+Next Page »
+</code></pre><p>Sedangkan script Hooks, biasanya untuk memanipulasi hasil output melalui file <code>function.php</code></p>
+<h3 id="steps-2---cara-menggunakannya">Steps 2 —  Cara menggunakannya</h3>
+<p>Setelah mengetahui isi yang dikandung dari fungsi-fungsi tersebut untuk mencetak page pagination, selanjutnya insert code tersebut ke dalam theme setelah looping atau setelah code <code>&lt;?php endwhile; ?&gt;</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;?php if (have_posts()) : while (have_posts()) : the_post(); ?&gt;</span>
+
+    <span style="color:#75715e">&lt;!-- Load posts loop. --&gt;</span>
+    
+    <span style="color:#75715e">&lt;?php get_template_part(&#39;partials/content&#39;, &#39;home&#39;); ?&gt;</span>
+    <span style="color:#75715e">&lt;?php endwhile; ?&gt;</span>
+    
+    <span style="color:#75715e">&lt;!-- Previous/next page navigation. --&gt;</span>
+
+    &lt;<span style="color:#f92672">section</span>&gt;
+        <span style="color:#75715e">&lt;?php echo paginate_links(); ?&gt;</span>
+    &lt;/<span style="color:#f92672">section</span>&gt;
+
+    <span style="color:#75715e">&lt;?php else : ?&gt;</span>
+    
+    <span style="color:#75715e">&lt;!-- If no content, include the &#34;No posts found&#34; template. --&gt;</span>
+    
+    <span style="color:#75715e">&lt;?php get_template_part(&#39;partials/content&#39;, &#39;none&#39;); ?&gt;</span>
+<span style="color:#75715e">&lt;?php endif; ?&gt;</span>
+</code></pre></div><h3 id="steps-3---kreasi-style-css">Steps 3 —  Kreasi style CSS</h3>
+<p>Terakhir, tinggal poles desainnya dengan memainkan style CSS berdasarkan nama-nama class bawaan output data mentahnya.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">prev</span> {
+    <span style="color:#75715e">/* do something */</span>
+}
+
+.<span style="color:#a6e22e">page-numbers</span> {
+    <span style="color:#75715e">/* do something */</span>
+}
+
+.<span style="color:#a6e22e">page-numbers</span> <span style="color:#f92672">span</span> {
+    <span style="color:#75715e">/* do something */</span>
+}
+
+.<span style="color:#a6e22e">current</span> {
+    <span style="color:#75715e">/* do something */</span>
+}
+
+.<span style="color:#a6e22e">next</span> {
+    <span style="color:#75715e">/* do something */</span>
+}
+</code></pre></div><h2 id="custom-wordpress-paginate-dengan-css-framework">Custom WordPress Paginate dengan CSS Framework</h2>
+<p>Bagaimana kalau custom WordPress page pagination dengan meng-insert class class bawaan CSS framework? Mengawinkan komponen pagination Bootstrap ke dalam WP Paginate misalnya.</p>
+<p>Berikut caranya:</p>
+<h3 id="steps-1--ambil-komponen-pagination-bootstrap">Steps 1 — Ambil komponen pagination Bootstrap</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Page navigation&#34;</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pagination&#34;</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Previous&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;1&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;2&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;3&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Next&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><h3 id="steps-2--panggil-fungsi-paginate-wordpress">Steps 2 — Panggil fungsi Paginate WordPress</h3>
+<p>Sebelumnya, rubah dulu <code>type</code> return value <code>paginate_links()</code> menjadi data type array dan nonaktifkan tombol prev_next.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+	<span style="color:#75715e">// Insert data paginate kedalam sebuah variabel $paged dengan
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// return value type menjadi array
+</span><span style="color:#75715e"></span>	$paged <span style="color:#f92672">=</span> <span style="color:#a6e22e">paginate_links</span>( <span style="color:#66d9ef">array</span>(
+	    <span style="color:#e6db74">&#39;type&#39;</span>       <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;array&#39;</span>,
+			<span style="color:#e6db74">&#39;prev_next&#39;</span>  <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">false</span>
+    ));
+<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Insert variable <code>$paged</code> ke dalam komponen paginate Bootstrap dengan struktur code sebagai berikut;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">nav</span> <span style="color:#a6e22e">aria</span><span style="color:#f92672">-</span><span style="color:#a6e22e">label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Page navigation&#34;</span><span style="color:#f92672">&gt;</span>
+
+	<span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+		
+		<span style="color:#66d9ef">if</span> ( $paged ) <span style="color:#f92672">:</span>
+
+			<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;ul class=&#34;pagination&#34;&gt;&#39;</span>;
+
+				<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&lt;a class=&#34;page-link&#34; href=&#34;#&#34;&gt;...&lt;/a&gt;&#39;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&lt;/li&gt;&#39;</span>
+
+			<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;/ul&gt;&#39;</span>;
+
+		<span style="color:#66d9ef">endif</span>;
+	<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">&lt;/nav&gt;
+</span></code></pre></div><p>Berikutnya, replace dulu class bawaan <code>page-numbers</code>  paginate_links() dengan class <code>page-link</code> Bootstrap, dengan bantuan <code>str_replace()</code> PHP built-in functions.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">nav</span> <span style="color:#a6e22e">aria</span><span style="color:#f92672">-</span><span style="color:#a6e22e">label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Page navigation&#34;</span><span style="color:#f92672">&gt;</span>
+
+	<span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+		
+		<span style="color:#66d9ef">if</span> ( $paged ) <span style="color:#f92672">:</span>
+			
+			<span style="color:#75715e">// Replace class &#39;page-numbers&#39; with &#39;page-link&#39;
+</span><span style="color:#75715e"></span>			$paged <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace</span>(<span style="color:#e6db74">&#39;page-numbers&#39;</span>, <span style="color:#e6db74">&#39;page-link&#39;</span>, $paged);
+
+				<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;ul class=&#34;pagination&#34;&gt;&#39;</span>;
+
+            <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>;
+
+            <span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">join</span>( <span style="color:#e6db74">&#39;&lt;/li&gt;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>, $paged );
+
+            <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;/li&gt;&#39;</span>;
+
+        <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;/ul&gt;&#39;</span>;
+
+		<span style="color:#66d9ef">endif</span>;
+	<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">&lt;/nav&gt;
+</span></code></pre></div><p>Hasil output HTML sementara:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pagination&#34;</span>&gt;
+
+	&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+		&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-current</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link current&#34;</span>&gt;1&lt;/<span style="color:#f92672">span</span>&gt;
+	&lt;/<span style="color:#f92672">li</span>&gt;
+
+	&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+		&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;2&lt;/<span style="color:#f92672">a</span>&gt;
+	&lt;/<span style="color:#f92672">li</span>&gt;
+
+	&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+		&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;3&lt;/<span style="color:#f92672">a</span>&gt;
+	&lt;/<span style="color:#f92672">li</span>&gt;
+
+&lt;/<span style="color:#f92672">ul</span>&gt;
+</code></pre></div><h3 id="steps-3--menambah-tombol-prev-dan-next">Steps 3 — Menambah Tombol Prev dan Next</h3>
+<p>Berikutnya, memformat tombol &lsquo;<strong>Previous</strong>&rsquo; dan tombol &lsquo;<strong>Next</strong>&rsquo; dengan memanfaatkan dua buah fungsi lain, yaitu, <code>get_previous_posts_link()</code> dan <code>get_next_posts_link()</code>.</p>
+<p>By default, kedua fungsi tersebut hasil print out hanya mengeluarkan data mentah link <code>&lt;a href=&quot;/page/2/&quot;&gt;Next Page »&lt;/a&gt;</code> dan tidak menyertakan class bawaan, sehingga lebih mudah saat di custom.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>	
+	<span style="color:#66d9ef">if</span> ( $paged ) <span style="color:#f92672">:</span>
+
+		$paged <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace</span>(<span style="color:#e6db74">&#39;page-numbers&#39;</span>, <span style="color:#e6db74">&#39;page-link&#39;</span>, $paged);
+
+			<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;ul class=&#34;pagination&#34;&gt;&#39;</span>;
+
+				$previous <span style="color:#f92672">=</span> <span style="color:#a6e22e">get_next_posts_link</span>();
+				$next <span style="color:#f92672">=</span> <span style="color:#a6e22e">get_next_posts_link</span>();
+			
+				<span style="color:#66d9ef">if</span> ( $previous ) {
+				<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span> <span style="color:#f92672">.</span> $previous <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&lt;/li&gt;&#39;</span>;
+				}
+				
+				<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>;
+				
+					<span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#39;&lt;/li&gt;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>, $paged);
+				
+				<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;/li&gt;&#39;</span>;
+				
+				<span style="color:#66d9ef">if</span> ( $next ) {
+				<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span> <span style="color:#f92672">.</span> $next <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&lt;/li&gt;&#39;</span>;
+				}
+				
+		<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;/ul&gt;&#39;</span>;
+
+	<span style="color:#66d9ef">endif</span>;
+<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Hasil output sementara dari code tersebut :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pagination&#34;</span>&gt;
+	&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+		&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;Next Page »&lt;/<span style="color:#f92672">a</span>&gt;
+	&lt;/<span style="color:#f92672">li</span>&gt;
+	&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+		&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-current</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link current&#34;</span>&gt;1&lt;/<span style="color:#f92672">span</span>&gt;
+	&lt;/<span style="color:#f92672">li</span>&gt;
+	&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+		&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;2&lt;/<span style="color:#f92672">a</span>&gt;
+	&lt;/<span style="color:#f92672">li</span>&gt;
+	&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+		&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;3&lt;/<span style="color:#f92672">a</span>&gt;
+	&lt;/<span style="color:#f92672">li</span>&gt;
+	&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+		&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;Next Page »&lt;/<span style="color:#f92672">a</span>&gt;
+	&lt;/<span style="color:#f92672">li</span>&gt;
+&lt;/<span style="color:#f92672">ul</span>&gt;
+</code></pre></div><p>Sekarang, saatnya meng-injek <code>class=&quot;page-link&quot;</code> ke dalam tag <code>&lt;a href=&quot;/page/2/&quot;&gt;Next Page »&lt;/a&gt;</code> melalui sistem hooks WordPress.</p>
+<p>Caranya, insert code berikut ke dalam file <code>function.php</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">insert_class_to_prev_next_posts_link_att</span>( $attributes ) {
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;class=&#34;page-link&#34;&#39;</span>;
+}
+
+<span style="color:#a6e22e">add_filter</span>(<span style="color:#e6db74">&#39;previous_posts_link_attributes&#39;</span>, <span style="color:#e6db74">&#39;insert_class_to_prev_next_posts_link_att&#39;</span>);
+<span style="color:#a6e22e">add_filter</span>(<span style="color:#e6db74">&#39;next_posts_link_attributes&#39;</span>, <span style="color:#e6db74">&#39;insert_class_to_prev_next_posts_link_att&#39;</span>);
+</code></pre></div><p>Jangan lupa save dan reload ulang browser, hasilnya Bootstrap pagination WordPress pun berhasil.</p>
+<p>Hasil akhir coding, struktur codenya sebagai berikut:</p>
+<script type="application/javascript" src="https://gist.github.com/fauzanmy/a7d3852d1c9907d3ae8957e21c672aa9.js"></script>
+
+<p>Demikian tutorial cara custom WordPress pagination baik dengan CSS sendiri maupun dengan komponen Bootstrap pagination.</p>
+<p>Kalau ada pertanyaan atau kendala saat mengikuti tutorial ini, silahkan ajukan komentar melalui kolo Disqus dibawah ini. Terima Kasih.</p>
+
+			</div>
+			<div class="mb2">
+<amp-ad width="100vw" height="320"
+	type="adsense"
+	data-ad-client="ca-pub-5397255807284351"
+	data-ad-slot="2027134928"
+	data-auto-format="rspv"
+	data-full-width="">
+	<div overflow=""></div>
+</amp-ad>
+			</div>
+			
+			<h3 class="h6 caps muted mb2">Sharing</h3>
+  			<amp-social-share type="facebook" width="50" height="36" data-param-text="WordPress page pagination" data-param-href="https://insertapps.com/amp/blog/wordpress-page-pagination/?ref=URL" data-param-app_id="145634995501895" aria-label="Share this on Facebook"></amp-social-share>
+			<amp-social-share type="twitter" width="50" height="36" data-param-text="WordPress page pagination" data-param-url="https://insertapps.com/amp/blog/wordpress-page-pagination/" aria-label="Share this on Twitter"></amp-social-share>
+			<amp-social-share type="whatsapp" width="50" height="36" data-param-text="Check out this article: WordPress page pagination - https://insertapps.com/amp/blog/wordpress-page-pagination/"></amp-social-share>
+			
+		</article>
+		<aside class="clearfix mnx2">
+			<h3 class="caps h4 mb2 px2">Related Post</h3>
+			
+			
+			
+			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
+				<a class="text-decoration-none" href="https://insertapps.com/blog/html-header-keren-menu-scroll/">
+					<figure class="m0 block border rounded border-silver">
+						<amp-img src="/images/blog/HTML_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
+							alt="Membuat header HTML keren responsive horizontal navbar auto scroll" class="block m0"></amp-img>
+						<figcaption class="p2 m0">
+							<h1 class="xs-h3 h5">Membuat header HTML keren responsive horizontal navbar auto scroll</h1>
+						</figcaption>
+					</figure>
+				</a></div>
+			
+			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
+				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/css-flexbox-fixed-width/">
+					<figure class="m0 block border rounded border-silver">
+						<amp-img src="/images/blog/CSS_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
+							alt="CSS flexbox: Trik mengatur lebar tetap atau fixed width" class="block m0"></amp-img>
+						<figcaption class="p2 m0">
+							<h1 class="xs-h3 h5">CSS flexbox: Trik mengatur lebar tetap atau fixed width</h1>
+						</figcaption>
+					</figure>
+				</a></div>
+			
+			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
+				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/membuat-theme-wordpress/">
+					<figure class="m0 block border rounded border-silver">
+						<amp-img src="/images/blog/Cara-membuat-theme-wordpress-thumbnail.webp" width="500" height="333" layout="responsive"
+							alt="Cara membuat theme wordpress (2021)" class="block m0"></amp-img>
+						<figcaption class="p2 m0">
+							<h1 class="xs-h3 h5">Cara membuat theme wordpress (2021)</h1>
+						</figcaption>
+					</figure>
+				</a></div>
+			
+		</aside>
+	</main>
+	<footer class="bg-dark white center py3 m0">
+		<ul class="list-reset h5">
+			<li class="inline-block caps px2">
+				<a class="text-decoration-none" href="https://insertapps.com/about">About</a>
+			</li>
+			<li class="inline-block caps px2">
+				<a class="text-decoration-none" href="https://insertapps.com/blog">Blog</a>
+			</li>
+			<li class="inline-block caps px2">
+				<a class="text-decoration-none" href="https://insertapps.com/terms">Terms</a>
+			</li>
+		</ul>
+		<small class="h6">© 2020 Copyright | InsertApps.com</small>
+	</footer>
+</body>
+</html>
