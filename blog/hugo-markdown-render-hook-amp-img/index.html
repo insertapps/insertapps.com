@@ -401,13 +401,13 @@ if (!doNotTrack) {
 	>Markdown render hook solusi untuk custom output image, link dan heading</a>&rsquo;.</p>
 <p>Terus bug yang sudah berjalan selama 1 tahun penuh belum juga teratasi bisa menimbulkan efek samping apa saja? 😭</p>
 <p>Hingga versi terbaru saat ini (versi 0.80.0), Hugo gagal mengeksekusi markdown render hook custom output <code>render-image.amp.html</code> khusus mencetak tag <code>&lt;amp-img&gt;</code> dalam partial template <code>single.amp.html</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">Fauzans</span><span style="color:#f92672">-</span><span style="color:#a6e22e">Mac</span><span style="color:#f92672">-</span><span style="color:#a6e22e">mini</span>:<span style="color:#a6e22e">insertapps</span> <span style="color:#a6e22e">fauzan</span><span style="color:#960050;background-color:#1e0010">$</span> <span style="color:#a6e22e">hugo</span> <span style="color:#a6e22e">env</span>
-<span style="color:#75715e">// Hasil print hugo env di terminal atau cmd
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">Hugo</span> <span style="color:#a6e22e">Static</span> <span style="color:#a6e22e">Site</span> <span style="color:#a6e22e">Generator</span> <span style="color:#a6e22e">v0</span><span style="color:#ae81ff">.80.0</span><span style="color:#f92672">-</span><span style="color:#ae81ff">792</span><span style="color:#a6e22e">EF0F4</span> <span style="color:#a6e22e">darwin</span><span style="color:#f92672">/</span><span style="color:#a6e22e">amd64</span> <span style="color:#a6e22e">BuildDate</span>: <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">12</span><span style="color:#f92672">-</span><span style="color:#ae81ff">31</span><span style="color:#a6e22e">T13</span>:<span style="color:#ae81ff">36</span>:<span style="color:#ae81ff">47</span><span style="color:#a6e22e">Z</span>
-<span style="color:#a6e22e">GOOS</span>=<span style="color:#e6db74">&#34;darwin&#34;</span>
-<span style="color:#a6e22e">GOARCH</span>=<span style="color:#e6db74">&#34;amd64&#34;</span>
-<span style="color:#a6e22e">GOVERSION</span>=<span style="color:#e6db74">&#34;go1.15.1&#34;</span>
-<span style="color:#a6e22e">Fauzans</span><span style="color:#f92672">-</span><span style="color:#a6e22e">Mac</span><span style="color:#f92672">-</span><span style="color:#a6e22e">mini</span>:<span style="color:#a6e22e">insertapps</span> <span style="color:#a6e22e">fauzan</span><span style="color:#960050;background-color:#1e0010">$</span> 
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">Fauzans-Mac-mini:insertapps fauzan<span style="color:#a61717;background-color:#e3d2d2">$</span> hugo env
+<span style="color:#228b22">// Hasil print hugo env di terminal atau cmd
+</span><span style="color:#228b22"></span>Hugo Static Site Generator v0<span style="color:#b452cd">.80.0</span>-<span style="color:#b452cd">792</span>EF0F4 darwin/amd64 BuildDate: <span style="color:#b452cd">2020</span>-<span style="color:#b452cd">12</span>-<span style="color:#b452cd">31</span>T13:<span style="color:#b452cd">36</span>:<span style="color:#b452cd">47</span>Z
+GOOS=<span style="color:#cd5555">&#34;darwin&#34;</span>
+GOARCH=<span style="color:#cd5555">&#34;amd64&#34;</span>
+GOVERSION=<span style="color:#cd5555">&#34;go1.15.1&#34;</span>
+Fauzans-Mac-mini:insertapps fauzan<span style="color:#a61717;background-color:#e3d2d2">$</span> 
 </code></pre></div><p>Akhlis, salah satu pengguna Hugo, termasuk orang yang pertama sekali melempar issue ini di forum <a href="https://discourse.gohugo.io/t/markdown-render-hook-image-for-amp-template-not-working/23525" class="blue text-decoration-none"
 	
 	
@@ -419,8 +419,8 @@ if (!doNotTrack) {
 		target="_blank"
 	>Github Hugo dengan nomor issue 7160</a>. 😱</p>
 <p>Sebenarnya, bug ini tidak terlalu berpengaruh kalau website tidak merender link khusus AMP.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">outputs</span>]
-  <span style="color:#a6e22e">page</span> = [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;AMP&#34;</span>]
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[outputs]
+  page = [<span style="color:#cd5555">&#34;HTML&#34;</span>, <span style="color:#cd5555">&#34;AMP&#34;</span>]
 </code></pre></div><p>Hal ini berbeda buat kami di Insertapps, setelah berhasil mendevelop dan merender page khusus AMP, sedikit kecewa dengan bug ini. 😫</p>
 <p>Untuk melihat demo page khusus AMP yang berhasil kami kembangkan klik <a href="https://insertapps.com/amp/blog/simple-sidebar-menu/">https://insertapps.com/amp/blog/simple-sidebar-menu/</a>.</p>
 <p>Pasalnya, setelah berhasil validasi page AMP, beberapa posting yang ada gambar tambahan dalam body posting, diberi pentungan warning  ❗ oleh sistem Google Search Console Tools. 😖</p>
@@ -439,36 +439,36 @@ if (!doNotTrack) {
     <img class="fit m0 lozad" data-src="/images/blog/2021/01_hugo-shortcode-template.jpg" alt="Hugo shortcode template">
     <figcaption class="muted italic h5">Hugo shortcode template</figcaption>
   </figure>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// Insert hugo shortcode custom output &lt;amp-img&gt;
-</span><span style="color:#75715e"></span>
-{{ &lt; <span style="color:#a6e22e">img</span> <span style="color:#e6db74">&#34;/images/blog/Hugo_cover-image.jpg&#34;</span> <span style="color:#e6db74">&#34;Title Text&#34;</span> &gt; }}
-<span style="color:#75715e">// Note: no space between brackets with less symbol
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#228b22">// Insert hugo shortcode custom output &lt;amp-img&gt;
+</span><span style="color:#228b22"></span>
+{{ &lt; img <span style="color:#cd5555">&#34;/images/blog/Hugo_cover-image.jpg&#34;</span> <span style="color:#cd5555">&#34;Title Text&#34;</span> &gt; }}
+<span style="color:#228b22">// Note: no space between brackets with less symbol
 </span></code></pre></div><p>Pertama buat dua file template baru, dengan nama file <code>img.html</code> dan satu lagi <code>img.amp.html</code></p>
 <p>Kedua file baru simpan dalam folder <code>themes/layout/shortcode/</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">themes/your-name-theme
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">themes/your-name-theme
 └── layouts
     └── shortcode
         ├── img.html
         ├── img.amp.xml
         └── codepen.html
 </code></pre></div><p>Untuk file <code>img.html</code> insert kode berikut:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">figure</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;center&#34;</span>&gt;
-	&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;img-fluid&#34;</span> 
-		 <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Site.BaseURL }}{{ .Get 0 }}&#34;</span>
-		 <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get 1 }}&#34;</span>&gt;
-	&lt;<span style="color:#f92672">figcaption</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;muted italic&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">figure</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;center&#34;</span>&gt;
+	&lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;img-fluid&#34;</span> 
+		 <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;{{ .Site.BaseURL }}{{ .Get 0 }}&#34;</span>
+		 <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;{{ .Get 1 }}&#34;</span>&gt;
+	&lt;<span style="color:#8b008b;font-weight:bold">figcaption</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;muted italic&#34;</span>&gt;
 		{{ .Get 1 }}
-	&lt;/<span style="color:#f92672">figcaption</span>&gt;
-&lt;/<span style="color:#f92672">figure</span>&gt;
+	&lt;/<span style="color:#8b008b;font-weight:bold">figcaption</span>&gt;
+&lt;/<span style="color:#8b008b;font-weight:bold">figure</span>&gt;
 </code></pre></div><p>Untuk file <code>img.amp.html</code>, insert kode berikut:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ $imageSrc := .Get 0 }}
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ $imageSrc := .Get 0 }}
 {{ $imgSize := imageConfig ( printf &#34;static//%s&#34; $imageSrc ) }}
-&lt;<span style="color:#f92672">amp-img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Site.BaseURL }}{{ .Get 0 }}&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get 1 }}&#34;</span>
-	<span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;center&#34;</span>
-	<span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $imgSize.Width }}&#34;</span>
-	<span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $imgSize.Height }}&#34;</span>
-	<span style="color:#a6e22e">layout</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;responsive&#34;</span>&gt;
-&lt;/<span style="color:#f92672">amp-img</span>&gt;
+&lt;<span style="color:#8b008b;font-weight:bold">amp-img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;{{ .Site.BaseURL }}{{ .Get 0 }}&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;{{ .Get 1 }}&#34;</span>
+	<span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;center&#34;</span>
+	<span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;{{ $imgSize.Width }}&#34;</span>
+	<span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;{{ $imgSize.Height }}&#34;</span>
+	<span style="color:#658b00">layout</span>=<span style="color:#cd5555">&#34;responsive&#34;</span>&gt;
+&lt;/<span style="color:#8b008b;font-weight:bold">amp-img</span>&gt;
 </code></pre></div><p><em>Penjelasan kode pada template <code>img.amp.html</code></em>  👍</p>
 <ul>
 <li>Baris kode <code>{{ $imageSrc := .Get 0 }}</code> adalah sebuah variable yang menampung data lokasi gambar, yang di ambil dari imputan shortcode image.</li>
@@ -476,10 +476,10 @@ if (!doNotTrack) {
 <li>Terakhir kode <code>$imgSize</code> adalah variable yang menampung data-data ukuran gambar, melalui print out <code>width=&quot;{{ $imgSize.Width }}&quot;</code> dan <code>height=&quot;{{ $imgSize.Height }}&quot;</code>.</li>
 </ul>
 <p>So, kalau memanggil gambar ke dalam body posting, sementara abaikan dulu shortcode <code>![]()</code> bawaan Goldmark standarisasi CommonMark. 😤</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![<span style="color:#f92672">Yout text for alt image</span>](<span style="color:#a6e22e">https://insertapps.com/assets/hero.jpg &#34;Hugo shortcode template&#34;</span>)
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![<span style="color:#8b008b;font-weight:bold">Yout text for alt image</span>](<span style="color:#658b00">https://insertapps.com/assets/hero.jpg &#34;Hugo shortcode template&#34;</span>)
 </code></pre></div><p>Replace dengan format berikut: 👊</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{ &lt; <span style="color:#a6e22e">img</span> <span style="color:#e6db74">&#34;images/blog/2021/01_hugo-shortcode-template.jpg&#34;</span> <span style="color:#e6db74">&#34;Hugo shortcode template&#34;</span> &gt; }}
-<span style="color:#75715e">// Note: no space between brackets with less symbol
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{ &lt; img <span style="color:#cd5555">&#34;images/blog/2021/01_hugo-shortcode-template.jpg&#34;</span> <span style="color:#cd5555">&#34;Hugo shortcode template&#34;</span> &gt; }}
+<span style="color:#228b22">// Note: no space between brackets with less symbol
 </span></code></pre></div><p>Begitulah solusi pengganti <em><strong>Markdown render hooks</strong></em> yang siap merender tag <code>&lt;amp-img&gt;</code> hingga terbebas dari warning validari page AMP.</p>
 <p>Cara simple ini dapat kalian gunakan, sambil menunggu pengembang Hugo menyelesaikan <code>Bug</code> mata kail gagal menangkap tag AMP-IMG. 👏</p>
 

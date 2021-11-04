@@ -267,11 +267,11 @@ hr {
 /* Lozad a lazy loading */
 
 .fade-lozad {
-	animation-name: fade;
+	animation-name: fadein;
 	animation-duration: 2s;
 }
 
-@keyframes fade {
+@keyframes fadein {
 	from {
 		opacity: 0;
 	}
@@ -362,10 +362,6 @@ svg {
 	line-height: 0.85em;
 	padding-right: 0.1em;
 	font-weight: bolder;
-}
-
-.article p ol ul li{
-    font-size: 18px;
 }
 
 /* -> blockquote */
@@ -2398,20 +2394,8 @@ Basscss core here
 	background-repeat: repeat-y;
 }
 
-/* Basscss All */
-
-.all-initial {
-	all: initial;
+/* util */
+.article > p ol ul{
+    font-size: 18px;
 }
 
-.all-unset {
-	all: unset;
-}
-
-.all-inherit {
-	all: inherit;
-}
-
-.all-revert {
-	all: revert;
-}

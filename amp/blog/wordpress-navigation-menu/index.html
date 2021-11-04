@@ -1823,212 +1823,212 @@ blockquote p {
 <p>Mari kita &lsquo;bedah sesar&rsquo; satu persatu kandungan datanya.</p>
 <h2 id="fungsi-wp_nav_menu">Fungsi wp_nav_menu()</h2>
 <p>Cukup panggil saja code tersebut, tampa perlu di echo, hasil print out code tersebut menghasilkan list menu lengkap dengan atribut HTML.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// Call function
-</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">wp_nav_menu</span>(); <span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#228b22">// Call function
+</span><span style="color:#228b22"></span>&lt;?php wp_nav_menu(); <span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
 </span></code></pre></div><p>Hasil render HTML:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-main-menu-container&#34;</span>&gt;
-    &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-main-menu&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu&#34;</span>&gt;
-        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-1&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1&#34;</span>&gt;
-            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/&#34;</span> <span style="color:#a6e22e">aria-current</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
-        &lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-2&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2&#34;</span>&gt;
-            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/category/books/&#34;</span>&gt;Books&lt;/<span style="color:#f92672">a</span>&gt;
-        &lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-3&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3&#34;</span>&gt;
-            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/category/business/&#34;</span>&gt;Business&lt;/<span style="color:#f92672">a</span>&gt;
-        &lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-4&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4&#34;</span>&gt;
-            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/category/cars/&#34;</span>&gt;Cars&lt;/<span style="color:#f92672">a</span>&gt;
-        &lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-5&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5&#34;</span>&gt;
-            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/category/diy/&#34;</span>&gt;DIY&lt;/<span style="color:#f92672">a</span>&gt;
-        &lt;/<span style="color:#f92672">li</span>&gt;
-    &lt;/<span style="color:#f92672">ul</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu-main-menu-container&#34;</span>&gt;
+    &lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;menu-main-menu&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu&#34;</span>&gt;
+        &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;menu-item-1&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1&#34;</span>&gt;
+            &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost/pehthemepress/&#34;</span> <span style="color:#658b00">aria-current</span>=<span style="color:#cd5555">&#34;page&#34;</span>&gt;Home&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+        &lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+        &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;menu-item-2&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2&#34;</span>&gt;
+            &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost/pehthemepress/category/books/&#34;</span>&gt;Books&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+        &lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+        &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;menu-item-3&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3&#34;</span>&gt;
+            &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost/pehthemepress/category/business/&#34;</span>&gt;Business&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+        &lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+        &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;menu-item-4&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4&#34;</span>&gt;
+            &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost/pehthemepress/category/cars/&#34;</span>&gt;Cars&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+        &lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+        &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;menu-item-5&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5&#34;</span>&gt;
+            &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost/pehthemepress/category/diy/&#34;</span>&gt;DIY&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+        &lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+    &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
 </code></pre></div><h2 id="fungsi-wp_get_nav_menu_items">Fungsi wp_get_nav_menu_items()</h2>
 <p>Untuk mengeluarkan jeroan data <code>wp_get_nav_menu_items()</code> wajib insert satu parameter <code>$menu</code> berdasarkan nama menu yang sudah dibuat sebelumnya di dalam <strong>Dashboard</strong> → <strong>Theme</strong> → <strong>Menu</strong>.</p>
 <p>Input parameter boleh nama menu, slug menu atau id menu.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-	<span style="color:#75715e">// Melihat isi print out wp_get_nav_menu_items() dengan parameter &#39;main-menu&#39;
-</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">var_dump</span>(<span style="color:#a6e22e">wp_get_nav_menu_items</span>(<span style="color:#e6db74">&#39;main-menu&#39;</span>));
-<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
+	<span style="color:#228b22">// Melihat isi print out wp_get_nav_menu_items() dengan parameter &#39;main-menu&#39;
+</span><span style="color:#228b22"></span>	var_dump(wp_get_nav_menu_items(<span style="color:#cd5555">&#39;main-menu&#39;</span>));
+<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
 </span></code></pre></div><p>Hasil print out mengeluarkan data mentah dalam bentuk array seperti berikut:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">array</span> (<span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
-  <span style="color:#ae81ff">0</span> <span style="color:#f92672">=&gt;</span> 
-    <span style="color:#a6e22e">object</span>(<span style="color:#a6e22e">WP_Post</span>)[<span style="color:#ae81ff">886</span>]
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;ID&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">7</span>
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_author&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;1&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_date&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;2021-09-26 09:25:13&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">19</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_date_gmt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;2021-09-26 09:25:13&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">19</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_content&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;Home&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_excerpt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_status&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;publish&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">7</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;comment_status&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;closed&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">6</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;ping_status&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;closed&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">6</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_password&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_name&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;home&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;to_ping&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;pinged&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_modified&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;2021-09-26 09:25:13&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">19</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_modified_gmt&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;2021-09-26 09:25:13&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">19</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_content_filtered&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_parent&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">0</span>
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;guid&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;http://localhost/pehtheme-wp/?p=7&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">33</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;menu_order&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">1</span>
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_type&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;nav_menu_item&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">13</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;post_mime_type&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;comment_count&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;0&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;filter&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;raw&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;db_id&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">7</span>
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;menu_item_parent&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;0&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;object_id&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;7&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;object&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;custom&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">6</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;type&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;custom&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">6</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;type_label&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;Custom Link&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">11</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;Home&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;url&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;http://localhost/pehtheme-wp/&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">29</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;target&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;attr_title&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;description&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;classes&#39;</span> <span style="color:#f92672">=&gt;</span> 
-        <span style="color:#66d9ef">array</span> (<span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
-          <span style="color:#ae81ff">0</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;xfn&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">string</span> <span style="color:#e6db74">&#39;&#39;</span> (<span style="color:#a6e22e">length</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
-  <span style="color:#ae81ff">1</span> <span style="color:#f92672">=&gt;</span> 
-    <span style="color:#a6e22e">object</span>(<span style="color:#a6e22e">WP_Post</span>)[<span style="color:#ae81ff">889</span>]
-      <span style="color:#66d9ef">public</span> <span style="color:#e6db74">&#39;ID&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">8</span>
-      <span style="color:#f92672">...</span>
-      <span style="color:#f92672">...</span>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#8b008b;font-weight:bold">array</span> (size=<span style="color:#b452cd">2</span>)
+  <span style="color:#b452cd">0</span> =&gt; 
+    object(WP_Post)[<span style="color:#b452cd">886</span>]
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;ID&#39;</span> =&gt; int <span style="color:#b452cd">7</span>
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_author&#39;</span> =&gt; string <span style="color:#cd5555">&#39;1&#39;</span> (length=<span style="color:#b452cd">1</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_date&#39;</span> =&gt; string <span style="color:#cd5555">&#39;2021-09-26 09:25:13&#39;</span> (length=<span style="color:#b452cd">19</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_date_gmt&#39;</span> =&gt; string <span style="color:#cd5555">&#39;2021-09-26 09:25:13&#39;</span> (length=<span style="color:#b452cd">19</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_content&#39;</span> =&gt; string <span style="color:#cd5555">&#39;&#39;</span> (length=<span style="color:#b452cd">0</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_title&#39;</span> =&gt; string <span style="color:#cd5555">&#39;Home&#39;</span> (length=<span style="color:#b452cd">4</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_excerpt&#39;</span> =&gt; string <span style="color:#cd5555">&#39;&#39;</span> (length=<span style="color:#b452cd">0</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_status&#39;</span> =&gt; string <span style="color:#cd5555">&#39;publish&#39;</span> (length=<span style="color:#b452cd">7</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;comment_status&#39;</span> =&gt; string <span style="color:#cd5555">&#39;closed&#39;</span> (length=<span style="color:#b452cd">6</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;ping_status&#39;</span> =&gt; string <span style="color:#cd5555">&#39;closed&#39;</span> (length=<span style="color:#b452cd">6</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_password&#39;</span> =&gt; string <span style="color:#cd5555">&#39;&#39;</span> (length=<span style="color:#b452cd">0</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_name&#39;</span> =&gt; string <span style="color:#cd5555">&#39;home&#39;</span> (length=<span style="color:#b452cd">4</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;to_ping&#39;</span> =&gt; string <span style="color:#cd5555">&#39;&#39;</span> (length=<span style="color:#b452cd">0</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;pinged&#39;</span> =&gt; string <span style="color:#cd5555">&#39;&#39;</span> (length=<span style="color:#b452cd">0</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_modified&#39;</span> =&gt; string <span style="color:#cd5555">&#39;2021-09-26 09:25:13&#39;</span> (length=<span style="color:#b452cd">19</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_modified_gmt&#39;</span> =&gt; string <span style="color:#cd5555">&#39;2021-09-26 09:25:13&#39;</span> (length=<span style="color:#b452cd">19</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_content_filtered&#39;</span> =&gt; string <span style="color:#cd5555">&#39;&#39;</span> (length=<span style="color:#b452cd">0</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_parent&#39;</span> =&gt; int <span style="color:#b452cd">0</span>
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;guid&#39;</span> =&gt; string <span style="color:#cd5555">&#39;http://localhost/pehtheme-wp/?p=7&#39;</span> (length=<span style="color:#b452cd">33</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;menu_order&#39;</span> =&gt; int <span style="color:#b452cd">1</span>
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_type&#39;</span> =&gt; string <span style="color:#cd5555">&#39;nav_menu_item&#39;</span> (length=<span style="color:#b452cd">13</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;post_mime_type&#39;</span> =&gt; string <span style="color:#cd5555">&#39;&#39;</span> (length=<span style="color:#b452cd">0</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;comment_count&#39;</span> =&gt; string <span style="color:#cd5555">&#39;0&#39;</span> (length=<span style="color:#b452cd">1</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;filter&#39;</span> =&gt; string <span style="color:#cd5555">&#39;raw&#39;</span> (length=<span style="color:#b452cd">3</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;db_id&#39;</span> =&gt; int <span style="color:#b452cd">7</span>
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;menu_item_parent&#39;</span> =&gt; string <span style="color:#cd5555">&#39;0&#39;</span> (length=<span style="color:#b452cd">1</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;object_id&#39;</span> =&gt; string <span style="color:#cd5555">&#39;7&#39;</span> (length=<span style="color:#b452cd">1</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;object&#39;</span> =&gt; string <span style="color:#cd5555">&#39;custom&#39;</span> (length=<span style="color:#b452cd">6</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;type&#39;</span> =&gt; string <span style="color:#cd5555">&#39;custom&#39;</span> (length=<span style="color:#b452cd">6</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;type_label&#39;</span> =&gt; string <span style="color:#cd5555">&#39;Custom Link&#39;</span> (length=<span style="color:#b452cd">11</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;title&#39;</span> =&gt; string <span style="color:#cd5555">&#39;Home&#39;</span> (length=<span style="color:#b452cd">4</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;url&#39;</span> =&gt; string <span style="color:#cd5555">&#39;http://localhost/pehtheme-wp/&#39;</span> (length=<span style="color:#b452cd">29</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;target&#39;</span> =&gt; string <span style="color:#cd5555">&#39;&#39;</span> (length=<span style="color:#b452cd">0</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;attr_title&#39;</span> =&gt; string <span style="color:#cd5555">&#39;&#39;</span> (length=<span style="color:#b452cd">0</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;description&#39;</span> =&gt; string <span style="color:#cd5555">&#39;&#39;</span> (length=<span style="color:#b452cd">0</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;classes&#39;</span> =&gt; 
+        <span style="color:#8b008b;font-weight:bold">array</span> (size=<span style="color:#b452cd">1</span>)
+          <span style="color:#b452cd">0</span> =&gt; string <span style="color:#cd5555">&#39;&#39;</span> (length=<span style="color:#b452cd">0</span>)
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;xfn&#39;</span> =&gt; string <span style="color:#cd5555">&#39;&#39;</span> (length=<span style="color:#b452cd">0</span>)
+  <span style="color:#b452cd">1</span> =&gt; 
+    object(WP_Post)[<span style="color:#b452cd">889</span>]
+      <span style="color:#8b008b;font-weight:bold">public</span> <span style="color:#cd5555">&#39;ID&#39;</span> =&gt; int <span style="color:#b452cd">8</span>
+      ...
+      ...
 </code></pre></div><p>Setelah mengetahui isi data yang dikandung masing-masing sintak, langkah selanjutnya tinggal gunakan sesuai keinginan.</p>
 <p>Mari kita coba satu-satu.</p>
 <h2 id="display-menu-dengan-sintag-wp_nav_menu">Display menu dengan sintag wp_nav_menu()</h2>
 <p>Dari hasil output yang dikeluarkan fungsi <code>wp_na_menu()</code> sudah dalam bentuk struktur komponen HTML yang utuh, maka developer fokus nulis style CSS-nya saja, done.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-main-menu-container&#34;</span>&gt;
-    &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-main-menu&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu&#34;</span>&gt;
-        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-1&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1&#34;</span>&gt;
-            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/&#34;</span> <span style="color:#a6e22e">aria-current</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
-        &lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-2&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2&#34;</span>&gt;
-            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehthemepress/category/books/&#34;</span>&gt;Books&lt;/<span style="color:#f92672">a</span>&gt;
-        &lt;/<span style="color:#f92672">li</span>&gt;
-    &lt;/<span style="color:#f92672">ul</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu-main-menu-container&#34;</span>&gt;
+    &lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;menu-main-menu&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu&#34;</span>&gt;
+        &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;menu-item-1&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1&#34;</span>&gt;
+            &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost/pehthemepress/&#34;</span> <span style="color:#658b00">aria-current</span>=<span style="color:#cd5555">&#34;page&#34;</span>&gt;Home&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+        &lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+        &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;menu-item-2&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2&#34;</span>&gt;
+            &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost/pehthemepress/category/books/&#34;</span>&gt;Books&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+        &lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+    &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
 </code></pre></div><p>Kurang puas dengan dengan attribut class HTML yang disertakan dalam wp_nav_menu(), tinggal custom output dengan cara menambah parameter berikut:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-<span style="color:#a6e22e">wp_nav_menu</span> ( <span style="color:#66d9ef">array</span> (
-    <span style="color:#e6db74">&#39;menu&#39;</span>              <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (int|string|WP_Term)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;menu_class&#39;</span>        <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;menu_id&#39;</span>           <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;container&#39;</span>         <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;container_class&#39;</span>   <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;container_id&#39;</span>      <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;fallback_cb&#39;</span>       <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (callable|bool)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;before&#39;</span>            <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;after&#39;</span>             <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;link_before&#39;</span>       <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;link_after&#39;</span>        <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;echo&#39;</span>              <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (bool)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;depth&#39;</span>             <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (int)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;walker&#39;</span>            <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (object)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;theme_location&#39;</span>    <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;items_wrap&#39;</span>        <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#75715e">// (string)
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;item_spacing&#39;</span>      <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>  <span style="color:#75715e">// (string)
-</span><span style="color:#75715e"></span>) );
-<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
+wp_nav_menu ( <span style="color:#8b008b;font-weight:bold">array</span> (
+    <span style="color:#cd5555">&#39;menu&#39;</span>              =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (int|string|WP_Term)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;menu_class&#39;</span>        =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (string)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;menu_id&#39;</span>           =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (string)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;container&#39;</span>         =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (string)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;container_class&#39;</span>   =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (string)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;container_id&#39;</span>      =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (string)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;fallback_cb&#39;</span>       =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (callable|bool)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;before&#39;</span>            =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (string)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;after&#39;</span>             =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (string)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;link_before&#39;</span>       =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (string)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;link_after&#39;</span>        =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (string)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;echo&#39;</span>              =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (bool)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;depth&#39;</span>             =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (int)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;walker&#39;</span>            =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (object)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;theme_location&#39;</span>    =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (string)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;items_wrap&#39;</span>        =&gt; <span style="color:#cd5555">&#39;&#39;</span>, <span style="color:#228b22">// (string)
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;item_spacing&#39;</span>      =&gt; <span style="color:#cd5555">&#39;&#39;</span>  <span style="color:#228b22">// (string)
+</span><span style="color:#228b22"></span>) );
+<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
 </span></code></pre></div><p>Contohnya, kalau ingin mengganti class bawaan WordPress dengan class CSS milik sendiri atau class-class dari framework CSS, insert custom code berikut:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-<span style="color:#a6e22e">wp_nav_menu</span>(<span style="color:#66d9ef">array</span>(
-    <span style="color:#e6db74">&#39;menu&#39;</span>              <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;main-menu&#39;</span>,
-    <span style="color:#75715e">// Manage div class 
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;container_id&#39;</span>      <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-container-div-id&#39;</span>,
-    <span style="color:#e6db74">&#39;container_class&#39;</span>   <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-container-div-class&#39;</span>,
-    <span style="color:#75715e">// Manage ul class
-</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;menu_id&#39;</span>           <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-ul-id&#39;</span>,
-    <span style="color:#e6db74">&#39;menu_class&#39;</span>        <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-ul-class&#39;</span>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
+wp_nav_menu(<span style="color:#8b008b;font-weight:bold">array</span>(
+    <span style="color:#cd5555">&#39;menu&#39;</span>              =&gt; <span style="color:#cd5555">&#39;main-menu&#39;</span>,
+    <span style="color:#228b22">// Manage div class 
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;container_id&#39;</span>      =&gt; <span style="color:#cd5555">&#39;insert-own-container-div-id&#39;</span>,
+    <span style="color:#cd5555">&#39;container_class&#39;</span>   =&gt; <span style="color:#cd5555">&#39;insert-own-container-div-class&#39;</span>,
+    <span style="color:#228b22">// Manage ul class
+</span><span style="color:#228b22"></span>    <span style="color:#cd5555">&#39;menu_id&#39;</span>           =&gt; <span style="color:#cd5555">&#39;insert-own-ul-id&#39;</span>,
+    <span style="color:#cd5555">&#39;menu_class&#39;</span>        =&gt; <span style="color:#cd5555">&#39;insert-own-ul-class&#39;</span>
 ));
-<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
 </span></code></pre></div><p>Maka hasil render HTML sebagai berikut:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;insert-own-container-div-id&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;insert-own-container-div-class&#34;</span>&gt;
-    &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;insert-own-ul-id&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;insert-own-ul-class&#34;</span>&gt;
-        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-7&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-7&#34;</span>&gt;
-            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehtheme-wp/&#34;</span> <span style="color:#a6e22e">aria-current</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
-        &lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item-8&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8&#34;</span>&gt;
-            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost/pehtheme-wp/index.php/category/books/&#34;</span>&gt;Books&lt;/<span style="color:#f92672">a</span>&gt;
-        &lt;/<span style="color:#f92672">li</span>&gt;
-    &lt;/<span style="color:#f92672">ul</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;insert-own-container-div-id&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;insert-own-container-div-class&#34;</span>&gt;
+    &lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;insert-own-ul-id&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;insert-own-ul-class&#34;</span>&gt;
+        &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;menu-item-7&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-7&#34;</span>&gt;
+            &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost/pehtheme-wp/&#34;</span> <span style="color:#658b00">aria-current</span>=<span style="color:#cd5555">&#34;page&#34;</span>&gt;Home&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+        &lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+        &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;menu-item-8&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8&#34;</span>&gt;
+            &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost/pehtheme-wp/index.php/category/books/&#34;</span>&gt;Books&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+        &lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+    &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
 </code></pre></div><p>Dari parameter <code>'container_id' =&gt; 'your-css-id', container_class' =&gt; 'your-css-clsss'</code> untuk mengontrol elemen <code>&lt;div&gt;</code> sebagai pembungkus parent container. Sedangkan parameter <code>'menu_id' =&gt; 'own-css-id', 'menu_class =&gt; 'insert-your-class'</code> value untuk mengatur element <code>&lt;ul&gt;</code>.</p>
 <p>Pertanyaannya, bagaimana cara insert class lain ke dalam elemen <code>&lt;li&gt;</code> hasil render <code>wp_nav_menu()</code>?</p>
 <p>Ternyata untuk menambah class lain ke dalam tag <code>&lt;li&gt;</code>, tidak semudah menambah parameter container sebelumnya, tapi butuh perlakuan khusus dengan cara injek ke dalam sistem. Caranya agak tricky memang, tapi begini cara proses kerjanya.</p>
 <p>Pertama, WordPress membolehkan developer untuk melakukan tweaking terhadap data default CMS WordPress melalui jalur API atau WP Hook tampa harus merubah coding asli.</p>
 <p>Kemudian untuk merubah data dari core system, developer cukup menambah script yang telah disediakan ke dalam file function theme. Insert code berikut ke dalam file <code>function.php</code> WordPress theme;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">insert_class_to_li_wp_nav_menu</span>( $classes, $item, $args, $depth) {
-    <span style="color:#66d9ef">if</span> ( <span style="color:#a6e22e">isset</span>($args<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">insert_li_class</span>) ) {
-        $classes[] <span style="color:#f92672">=</span> $args<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">insert_li_class</span> ;
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">insert_class_to_li_wp_nav_menu</span>( <span style="color:#00688b">$classes</span>, <span style="color:#00688b">$item</span>, <span style="color:#00688b">$args</span>, <span style="color:#00688b">$depth</span>) {
+    <span style="color:#8b008b;font-weight:bold">if</span> ( isset(<span style="color:#00688b">$args</span>-&gt;<span style="color:#658b00">insert_li_class</span>) ) {
+        <span style="color:#00688b">$classes</span>[] = <span style="color:#00688b">$args</span>-&gt;<span style="color:#658b00">insert_li_class</span> ;
     }
-    <span style="color:#66d9ef">return</span> $classes;
+    <span style="color:#8b008b;font-weight:bold">return</span> <span style="color:#00688b">$classes</span>;
 }
 
-<span style="color:#a6e22e">add_filter</span>( <span style="color:#e6db74">&#39;nav_menu_css_class&#39;</span>, <span style="color:#e6db74">&#39;insert_class_to_li_wp_nav_menu&#39;</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">4</span>);
+add_filter( <span style="color:#cd5555">&#39;nav_menu_css_class&#39;</span>, <span style="color:#cd5555">&#39;insert_class_to_li_wp_nav_menu&#39;</span>, <span style="color:#b452cd">10</span>, <span style="color:#b452cd">4</span>);
 </code></pre></div><p>Setelah proses <code>add_filter()</code>, baru panggil argumen yang terdaftar ke dalam parameter sintak <code>wp_nav_menu()</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-<span style="color:#a6e22e">wp_nav_menu</span>( <span style="color:#66d9ef">array</span> (
-	<span style="color:#e6db74">&#39;menu&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;main-menu&#39;</span>,
-	<span style="color:#e6db74">&#39;container_id&#39;</span>      <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-container-div-id&#39;</span>,
-	<span style="color:#e6db74">&#39;container_class&#39;</span>   <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-container-div-class&#39;</span>,
-	<span style="color:#e6db74">&#39;menu_id&#39;</span>           <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-ul-id&#39;</span>,
-	<span style="color:#e6db74">&#39;menu_class&#39;</span>        <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-ul-class&#39;</span>,
-	<span style="color:#75715e">// Add class to li wp_nav_menu()
-</span><span style="color:#75715e"></span>	<span style="color:#e6db74">&#39;insert_li_class&#39;</span>   <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;insert-own-li-class&#39;</span>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
+wp_nav_menu( <span style="color:#8b008b;font-weight:bold">array</span> (
+	<span style="color:#cd5555">&#39;menu&#39;</span> =&gt; <span style="color:#cd5555">&#39;main-menu&#39;</span>,
+	<span style="color:#cd5555">&#39;container_id&#39;</span>      =&gt; <span style="color:#cd5555">&#39;insert-own-container-div-id&#39;</span>,
+	<span style="color:#cd5555">&#39;container_class&#39;</span>   =&gt; <span style="color:#cd5555">&#39;insert-own-container-div-class&#39;</span>,
+	<span style="color:#cd5555">&#39;menu_id&#39;</span>           =&gt; <span style="color:#cd5555">&#39;insert-own-ul-id&#39;</span>,
+	<span style="color:#cd5555">&#39;menu_class&#39;</span>        =&gt; <span style="color:#cd5555">&#39;insert-own-ul-class&#39;</span>,
+	<span style="color:#228b22">// Add class to li wp_nav_menu()
+</span><span style="color:#228b22"></span>	<span style="color:#cd5555">&#39;insert_li_class&#39;</span>   =&gt; <span style="color:#cd5555">&#39;insert-own-li-class&#39;</span>
 ));
-<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
 </span></code></pre></div><p>Maka hasil render file HTML, di dalam tag <code>&lt;li&gt;</code> sudah disertakan class <code>insert-own-li-class</code>.</p>
 <h2 id="display-menu-dengan-sintag-wp_get_nav_menu_items">Display menu dengan sintag wp_get_nav_menu_items()</h2>
 <p>Selanjutnya, sintag yang kedua <code>wp_get_nav_menu_items()</code> menghasilkan data mentah gabungan antara data menu dengan data posting yang disimpan dalam sebuah array.</p>
 <p>Data array dalam sintag <code>wp_get_nav_menu_items()</code> tidak bisa langsung di <code>echo</code>, tapi harus di-extrak satu-persatu menjadi potongan data kecil-kecil, setelah itu tinggal tempel sesuka hati di dalam file template tema WordPress.</p>
 <p>Langkah pertama, buat sebuah variabel baru untuk menampung data mentah.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-	<span style="color:#75715e">// Variable baru sebagai keranjang penampung
-</span><span style="color:#75715e"></span>	$menu_items <span style="color:#f92672">=</span> <span style="color:#a6e22e">wp_get_nav_menu_items</span>(<span style="color:#e6db74">&#39;main-menu&#39;</span>);
-<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
+	<span style="color:#228b22">// Variable baru sebagai keranjang penampung
+</span><span style="color:#228b22"></span>	<span style="color:#00688b">$menu_items</span> = wp_get_nav_menu_items(<span style="color:#cd5555">&#39;main-menu&#39;</span>);
+<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
 </span></code></pre></div><p>Setelah itu, variabel yang sudah berisi list data menu, tinggal di-extrak dengan proses looping.</p>
 <p>Karena nilai data dalam <code>wp_get_nav_menu_items()</code> banyak, maka cukup comot key <code>title</code> dan <code>url</code> sesuai kebutuhan untuk desain menu navigasi yang diperlukan hanya &lsquo;nama menu&rsquo; dan &lsquo;link&rsquo;, yang lain abaikan saja.</p>
 <p>Berikut contoh code-nya:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-	<span style="color:#75715e">// Looping
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">foreach</span> ( $menu_items <span style="color:#66d9ef">as</span> $key <span style="color:#f92672">=&gt;</span> $menu_item ) {
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
+	<span style="color:#228b22">// Looping
+</span><span style="color:#228b22"></span>	<span style="color:#8b008b;font-weight:bold">foreach</span> ( <span style="color:#00688b">$menu_items</span> <span style="color:#8b008b;font-weight:bold">as</span> <span style="color:#00688b">$key</span> =&gt; <span style="color:#00688b">$menu_item</span> ) {
 		
-		<span style="color:#75715e">// Tampung data output ke variabel baru supaya lebih ringkas
-</span><span style="color:#75715e"></span>		<span style="color:#75715e">// Bagian ini opsional  
-</span><span style="color:#75715e"></span>		$title <span style="color:#f92672">=</span> $menu_item<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">title</span>;
-		$url <span style="color:#f92672">=</span> $menu_item<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">url</span>;
+		<span style="color:#228b22">// Tampung data output ke variabel baru supaya lebih ringkas
+</span><span style="color:#228b22"></span>		<span style="color:#228b22">// Bagian ini opsional  
+</span><span style="color:#228b22"></span>		<span style="color:#00688b">$title</span> = <span style="color:#00688b">$menu_item</span>-&gt;<span style="color:#658b00">title</span>;
+		<span style="color:#00688b">$url</span> = <span style="color:#00688b">$menu_item</span>-&gt;<span style="color:#658b00">url</span>;
 
-		<span style="color:#75715e">// Print out ke layar
-</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">echo</span> $title <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&lt;br&gt;&#39;</span>;
-		<span style="color:#66d9ef">echo</span> $url <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&lt;br&gt;&#39;</span>;
+		<span style="color:#228b22">// Print out ke layar
+</span><span style="color:#228b22"></span>		<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#00688b">$title</span> . <span style="color:#cd5555">&#39;&lt;br&gt;&#39;</span>;
+		<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#00688b">$url</span> . <span style="color:#cd5555">&#39;&lt;br&gt;&#39;</span>;
 	}
-<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
 </span></code></pre></div><p>Hasil output seperti berikut:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Home
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Home
 http://localhost/pehthemepress/
 
 Books
 http://localhost/pehthemepress/categories/books
 
 </code></pre></div><p>Nah, terakhir tinggal implementasi langsung ke dalam tema WordPress.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;horizontal-navbar&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;flex nowrap overflow-x&#34;</span>&gt;
-    &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;list-reset&#34;</span>&gt;
-        <span style="color:#75715e">&lt;?php foreach ( $menu_items as $key =&gt; $menu_item ) : ?&gt;</span>
-            &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inline-block&#34;</span>&gt;
-                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;?php echo $menu_item-&gt;url; ?&gt;&#34;</span>&gt;
-                    <span style="color:#75715e">&lt;?php echo $menu_item-&gt;title; ?&gt;</span>
-                &lt;/<span style="color:#f92672">a</span>&gt;
-            &lt;/<span style="color:#f92672">li</span>&gt;
-        <span style="color:#75715e">&lt;?php endforeach; ?&gt;</span>
-    &lt;/<span style="color:#f92672">ul</span>&gt;
-&lt;/<span style="color:#f92672">nav</span>&gt;
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;horizontal-navbar&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;flex nowrap overflow-x&#34;</span>&gt;
+    &lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset&#34;</span>&gt;
+        <span style="color:#1e889b">&lt;?php foreach ( $menu_items as $key =&gt; $menu_item ) : ?&gt;</span>
+            &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block&#34;</span>&gt;
+                &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;&lt;?php echo $menu_item-&gt;url; ?&gt;&#34;</span>&gt;
+                    <span style="color:#1e889b">&lt;?php echo $menu_item-&gt;title; ?&gt;</span>
+                &lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+            &lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+        <span style="color:#1e889b">&lt;?php endforeach; ?&gt;</span>
+    &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
 </code></pre></div><p>Ternyata cara kedua cukup simpel sekali.</p>
 <h2 id="kesimpulan">Kesimpulan</h2>
 <p>Dari dua fungsi tersebut, mana yang lebih bagus untuk implementasi ke dalam desain Wordpress navigation menu?</p>

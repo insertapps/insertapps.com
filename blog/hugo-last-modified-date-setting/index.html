@@ -385,7 +385,7 @@ if (!doNotTrack) {
 <p>Pada blog static, cara kerjanya juga static, artinya setiap perubahan yang bersifat &lsquo;sistematis&rsquo; dikerjakan juga secara manual.</p>
 <p>Seperti melakukan perubahan tanggal <code>Lastmod</code> yang seharusnya auto system yang mengerjakan, di Hugo perubahanya harus dilakukan secara manual. 😱</p>
 <p>Jadi, kalau kamu edit lagi artikel lama, edit juga info tanggal di front matter artikel.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">date: 2020-07-07T18:18:07+07:00
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">date: 2020-07-07T18:18:07+07:00
 publishdate: 2020-07-07
 lastmod: 2020-07-17
 </code></pre></div><p>Ribet banget ya??? 😜</p>
@@ -398,28 +398,28 @@ lastmod: 2020-07-17
 		target="_blank"
 	>Hugo.io/functions/</a></p>
 <p><strong>Fungsi tanggal Hugo</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span>&gt;
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;
 	Last updated {{ .Date }}
-&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
 </code></pre></div><p>Hasilnya Hugo akan mencetak tanggal dengan format <code>2020-07-07 18:18:07 +0700 WIB</code>.</p>
 <p><strong>Fungsi tanggal last modified Hugo</strong></p>
 <p>Untuk kode &lsquo;last modified&rsquo;, parameternya <code>{{ .Lastmod }}</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span>&gt;
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;
 	Last updated {{ .Lastmod }}
-&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
 </code></pre></div><p>Hasilnya, Hugo akan mencetak tanggal perubahan dengan format <code>2020-07-07</code> yang diambil dari data front metter saat membuat file artikel terbaru.</p>
 <p>Tambahkan kode <code>.Format &quot;2 January 2006&quot;</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span>&gt;
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;
 	Last updated {{ .Lastmod.Format &#34;2 January 2006&#34; }}
-&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
 </code></pre></div><p>Hasilnya Hugo akan mencetak tanggal dengan format <code>07 July 2020</code>.</p>
 <p>Terus parameter <code>&quot;2 January 2006&quot;</code> di Hugo itu apa?</p>
 <p>Itu adalah bentuk format tanggal pada bahasa Go yang lebih human readable.</p>
 <p>Coba bandingkan format tanggal dalam bahasa PHP:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-	$date <span style="color:#f92672">=</span> <span style="color:#a6e22e">date_create</span>(<span style="color:#e6db74">&#34;2020-07-07&#34;</span>);
-	<span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">date_format</span>($date,<span style="color:#e6db74">&#34;j F y&#34;</span>);
-<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
+	<span style="color:#00688b">$date</span> = date_create(<span style="color:#cd5555">&#34;2020-07-07&#34;</span>);
+	<span style="color:#8b008b;font-weight:bold">echo</span> date_format(<span style="color:#00688b">$date</span>,<span style="color:#cd5555">&#34;j F y&#34;</span>);
+<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
 </span></code></pre></div><p>Hasilya <code>7 July 20</code>.</p>
 <p>Format untuk mencetak tanggalnya <code>j F y</code>. 😰 Sungguh Code-nya tidak human readable banget kan?</p>
 <p>Terus kenapa diambil tanggal <code>&quot;2 January 2006&quot;</code>? Kalau itu tanyakan saja kepada kepada Google sebagai pemilik bahasa pemrograman Go.</p>
@@ -434,8 +434,8 @@ lastmod: 2020-07-17
 <p>Soalnya, sudah kebiasaan hal-hal remeh seperti itu, biar auto system saja yang melakukannya.</p>
 <p>Jawabannya bisa banget. 😃</p>
 <p>Dalam konfigurasi website berbasis Hugo, di file <code>config.toml</code> tambahkan code setting auto lastmod berikut ini:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">frontmatter</span>]
-	<span style="color:#a6e22e">lastmod</span> = [<span style="color:#e6db74">&#34;lastmod&#34;</span>, <span style="color:#e6db74">&#34;:fileModTime&#34;</span>, <span style="color:#e6db74">&#34;:default&#34;</span>]
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[frontmatter]
+	lastmod = [<span style="color:#cd5555">&#34;lastmod&#34;</span>, <span style="color:#cd5555">&#34;:fileModTime&#34;</span>, <span style="color:#cd5555">&#34;:default&#34;</span>]
 </code></pre></div><p>Pada dasarnya, cara kerja statik konten tidak auto system. Tapi, para developer Hugo terus mencari cara untuk menemukan solusinya.</p>
 <p>Dengan cara membaca perubahan log file <code>.md</code> di dalam sistem komputer kamu. Maka parameter <code>:fileModTime&quot;, &quot;:default&quot;</code> akan mengacu ke tanggal perubahan file dalam komputer.</p>
 <p>Jadi, fungsi <code>{{ .Lastmod }}</code> tidak lagi mengacu ke <code>lastmod: 2020-07-17</code> yang ada di dalam front matter konten pos.</p>

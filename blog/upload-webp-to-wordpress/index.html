@@ -391,31 +391,31 @@ if (!doNotTrack) {
 <p>InsertApps sendiri termasuk webdev yang tidak suka pasang plugin kalau membuat web/blog dengan CMS WordPress, kecuali tidak ada cara lain, baru pilah pilih install plugin.</p>
 <p>Cara yang paling kami sukai dengan membuka permisi upload file WebP Ke sistem WP, cukup dengan trick simple saja, insert script ke dalam file <code>functions.php</code>.</p>
 <p>Berikut code php untuk &lsquo;unlock&rsquo; allow upload file .webp CMS WordPress tampa plugin:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// Allow upload .webp file format.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">allow_upload_webp_file</span>($existing_mimes) {
-    $existing_mimes[<span style="color:#e6db74">&#39;webp&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;image/webp&#39;</span>;
-    <span style="color:#66d9ef">return</span> $existing_mimes;
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#228b22">// Allow upload .webp file format.
+</span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">allow_upload_webp_file</span>(<span style="color:#00688b">$existing_mimes</span>) {
+    <span style="color:#00688b">$existing_mimes</span>[<span style="color:#cd5555">&#39;webp&#39;</span>] = <span style="color:#cd5555">&#39;image/webp&#39;</span>;
+    <span style="color:#8b008b;font-weight:bold">return</span> <span style="color:#00688b">$existing_mimes</span>;
 }
-<span style="color:#a6e22e">add_filter</span>(<span style="color:#e6db74">&#39;mime_types&#39;</span>, <span style="color:#e6db74">&#39;allow_upload_webp_file&#39;</span>);
+add_filter(<span style="color:#cd5555">&#39;mime_types&#39;</span>, <span style="color:#cd5555">&#39;allow_upload_webp_file&#39;</span>);
 
-<span style="color:#75715e">// Allow view thumbnail for webp format files.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">allow_webp_file_view</span>($result, $path) {
-    <span style="color:#66d9ef">if</span> ($result <span style="color:#f92672">===</span> <span style="color:#66d9ef">false</span>) {
-        $displayable_image_types <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>( <span style="color:#a6e22e">IMAGETYPE_WEBP</span> );
-        $info <span style="color:#f92672">=</span> <span style="color:#f92672">@</span><span style="color:#a6e22e">getimagesize</span>( $path );
+<span style="color:#228b22">// Allow view thumbnail for webp format files.
+</span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">allow_webp_file_view</span>(<span style="color:#00688b">$result</span>, <span style="color:#00688b">$path</span>) {
+    <span style="color:#8b008b;font-weight:bold">if</span> (<span style="color:#00688b">$result</span> === <span style="color:#8b008b;font-weight:bold">false</span>) {
+        <span style="color:#00688b">$displayable_image_types</span> = <span style="color:#8b008b;font-weight:bold">array</span>( IMAGETYPE_WEBP );
+        <span style="color:#00688b">$info</span> = @getimagesize( <span style="color:#00688b">$path</span> );
 
-        <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">empty</span>($info)) {
-            $result <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
-        } <span style="color:#66d9ef">elseif</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">in_array</span>($info[<span style="color:#ae81ff">2</span>], $displayable_image_types)) {
-            $result <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
-        } <span style="color:#66d9ef">else</span> {
-            $result <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+        <span style="color:#8b008b;font-weight:bold">if</span> (<span style="color:#8b008b;font-weight:bold">empty</span>(<span style="color:#00688b">$info</span>)) {
+            <span style="color:#00688b">$result</span> = <span style="color:#8b008b;font-weight:bold">false</span>;
+        } <span style="color:#8b008b;font-weight:bold">elseif</span> (!in_array(<span style="color:#00688b">$info</span>[<span style="color:#b452cd">2</span>], <span style="color:#00688b">$displayable_image_types</span>)) {
+            <span style="color:#00688b">$result</span> = <span style="color:#8b008b;font-weight:bold">false</span>;
+        } <span style="color:#8b008b;font-weight:bold">else</span> {
+            <span style="color:#00688b">$result</span> = <span style="color:#8b008b;font-weight:bold">true</span>;
         }
     }
 
-    <span style="color:#66d9ef">return</span> $result;
+    <span style="color:#8b008b;font-weight:bold">return</span> <span style="color:#00688b">$result</span>;
 }
-<span style="color:#a6e22e">add_filter</span>(<span style="color:#e6db74">&#39;file_is_displayable_image&#39;</span>, <span style="color:#e6db74">&#39;allow_webp_file_view&#39;</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>);
+add_filter(<span style="color:#cd5555">&#39;file_is_displayable_image&#39;</span>, <span style="color:#cd5555">&#39;allow_webp_file_view&#39;</span>, <span style="color:#b452cd">10</span>, <span style="color:#b452cd">2</span>);
 </code></pre></div><p>Penjelasan code:</p>
 <ul>
 <li>Blok code pertama, <code>function allow_upload_webp_file() {  }</code> adalah sebuah fungsi—method—untuk menambah daftar extensi file <code>.webp</code> yang boleh di upload ke dalam sistem WordPress.</li>
@@ -426,13 +426,13 @@ if (!doNotTrack) {
 <p>Bagaimana mudah bukan?</p>
 <p>Tambahan. Untuk nama function bebas saja, boleh mengganti dengan nama sesuka hati, asal jangan sama dengan nama functions yang sudah ada, juga tidak boleh ada spasi, ataupun dimulai dengan angka.</p>
 <p>Misal;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// Fungsi allow upload file WebP WP tampa plugin
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">mantan_sayang_izinkan_upload_file_webp_ke_dalam_wordpress</span>() {
-	<span style="color:#75715e">// do something
-</span><span style="color:#75715e"></span>}
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#228b22">// Fungsi allow upload file WebP WP tampa plugin
+</span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">mantan_sayang_izinkan_upload_file_webp_ke_dalam_wordpress</span>() {
+	<span style="color:#228b22">// do something
+</span><span style="color:#228b22"></span>}
 
-<span style="color:#75715e">// Menambah fungsi mantan ke sistem wp dengan mendaftar ke bagian wp add_filter
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">add_filter</span>(<span style="color:#e6db74">&#39;mime_types&#39;</span>, <span style="color:#e6db74">&#39;mantan_sayang_izinkan_upload_file_webp_ke_dalam_wordpress&#39;</span>);
+<span style="color:#228b22">// Menambah fungsi mantan ke sistem wp dengan mendaftar ke bagian wp add_filter
+</span><span style="color:#228b22"></span>add_filter(<span style="color:#cd5555">&#39;mime_types&#39;</span>, <span style="color:#cd5555">&#39;mantan_sayang_izinkan_upload_file_webp_ke_dalam_wordpress&#39;</span>);
 
 </code></pre></div><p>Baca aturan pakai <code>add_filter</code> selengkapnya di laman resmi dokumentasi WordPress: <a href="https://developer.wordpress.org/reference/functions/add_filter/" class="blue a-hover text-decoration-none" title="add filter function code reference." target="_blank" rel="nofollow noopener noreferrer">add filter function code reference.</a></p>
 <p><strong>Kesimpulan:</strong></p>

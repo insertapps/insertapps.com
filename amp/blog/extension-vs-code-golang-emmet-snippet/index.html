@@ -1811,7 +1811,7 @@ blockquote p {
 <p>Untuk mencampuraduk sintak <code>html</code> dengan sintak <code>template engine</code> Hugo, perlu install sebuah ektensi khusus agar &lsquo;perkawinan&rsquo; antara <code>Go</code> dengan <code>HTML</code> akur, sintagnya tidak berantakan.</p>
 <p>Sebenarnya biar lebih enak dilihat saja.</p>
 <p>Nama extensions-nya: &ldquo;<strong>gotemplate-syntax</strong> Language support for go text/template&rdquo; karya Casualjim.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">https://marketplace.visualstudio.com/items?itemName=casualjim.gotemplate
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">https://marketplace.visualstudio.com/items?itemName=casualjim.gotemplate
 </code></pre></div><p>Setelah mengaktifkan ektensi tersebut, file <code>.html</code> template Hugo yang setubuh dengan sintak <code>go</code> di VS Code auto mendeteksi <code>Language Mode</code> ke pilihan bahasa <code>Golang HTML Template</code>.</p>
 <p><strong>Baca Juga:</strong> <a href="https://insertapps.com/blog/visual-studio-code-the-window-has-crashed/" class="blue text-decoration-none"
 	
@@ -1831,21 +1831,21 @@ width="967"
 height="654"
 layout="responsive"></amp-img>
 <p>Atau bisa juga melalui edit <code>settings.json</code> VS Code.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#e6db74">&#34;emmet.includeLanguages&#34;</span><span style="color:#f92672">:</span> <span style="color:#f92672">{</span>
-	<span style="color:#e6db74">&#34;gohtml&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;html&#34;</span>
-<span style="color:#f92672">}</span>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#cd5555">&#34;emmet.includeLanguages&#34;</span>: {
+	<span style="color:#cd5555">&#34;gohtml&#34;</span>: <span style="color:#cd5555">&#34;html&#34;</span>
+}
 </code></pre></div><p>Untuk hasil paripurna, pastikan di dalam file <code>settings.json</code>, code lengkapnya seperti berikut ini.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">/*	Code &#34;files.associations&#34; biasanya aktif 
-</span><span style="color:#75715e">	setelah menginstall extensi &#39;gotemplate-syntax&#39;.
-</span><span style="color:#75715e">*/</span> 
-<span style="color:#e6db74">&#34;files.associations&#34;</span><span style="color:#f92672">:</span> <span style="color:#f92672">{</span>
-	<span style="color:#e6db74">&#34;*.html&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;gohtml&#34;</span>
-<span style="color:#f92672">},</span>
-<span style="color:#75715e">// ⤷ Copas saja code ini, bila tidak auto aktif.
-</span><span style="color:#75715e"></span>
-<span style="color:#e6db74">&#34;emmet.includeLanguages&#34;</span><span style="color:#f92672">:</span> <span style="color:#f92672">{</span>
-	<span style="color:#e6db74">&#34;gohtml&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;html&#34;</span>
-<span style="color:#f92672">}</span>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#228b22">/*	Code &#34;files.associations&#34; biasanya aktif 
+</span><span style="color:#228b22">	setelah menginstall extensi &#39;gotemplate-syntax&#39;.
+</span><span style="color:#228b22">*/</span> 
+<span style="color:#cd5555">&#34;files.associations&#34;</span>: {
+	<span style="color:#cd5555">&#34;*.html&#34;</span>: <span style="color:#cd5555">&#34;gohtml&#34;</span>
+},
+<span style="color:#228b22">// ⤷ Copas saja code ini, bila tidak auto aktif.
+</span><span style="color:#228b22"></span>
+<span style="color:#cd5555">&#34;emmet.includeLanguages&#34;</span>: {
+	<span style="color:#cd5555">&#34;gohtml&#34;</span>: <span style="color:#cd5555">&#34;html&#34;</span>
+}
 </code></pre></div><p>Utak atik template Hugo jadi lebih asyik, bukan?</p>
 
 			</div>

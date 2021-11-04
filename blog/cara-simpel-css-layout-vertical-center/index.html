@@ -387,37 +387,37 @@ if (!doNotTrack) {
 		<div class="article mb3">
 			<p>Dengan hadirnya fitur CSS Flexbox sangat dimudahkan untuk layout suatu blok elemen HTML tepat berada ditengah-tengah secara vertical maupun horizontal.</p>
 <p>Berikut cara simple CSS centering layout.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;container&#34;</span>&gt;
 
-	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box&#34;</span>&gt;
+	&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;box&#34;</span>&gt;
 
 		Hello world 
 
-	&lt;/<span style="color:#f92672">div</span>&gt;
+	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
 
-&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
 </code></pre></div><p>CSS flexbox:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">html</span><span style="color:#f92672">,</span>
-<span style="color:#f92672">body</span> {
-  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
-  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#8b008b;font-weight:bold">html</span>,
+<span style="color:#8b008b;font-weight:bold">body</span> {
+  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
+  <span style="color:#8b008b;font-weight:bold">margin</span>: <span style="color:#b452cd">0</span>;
 }
 
-.<span style="color:#a6e22e">container</span> {
-  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
-  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
-  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
-  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+.<span style="color:#008b45;font-weight:bold">container</span> {
+  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
+  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
+  <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+  <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
 }
 
-.<span style="color:#a6e22e">box</span> {
-  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
-  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
-  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
-  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>;
-  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">%</span>;
-  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">silver</span>;
-  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;
+.<span style="color:#008b45;font-weight:bold">box</span> {
+  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
+  <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+  <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+  <span style="color:#8b008b;font-weight:bold">width</span>: <span style="color:#b452cd">20</span><span style="color:#00688b;font-weight:bold">%</span>;
+  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">20</span><span style="color:#00688b;font-weight:bold">%</span>;
+  <span style="color:#8b008b;font-weight:bold">border</span>: <span style="color:#b452cd">1</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#8b008b;font-weight:bold">solid</span> <span style="color:#8b008b;font-weight:bold">silver</span>;
+  <span style="color:#8b008b;font-weight:bold">border-radius</span>: <span style="color:#b452cd">5</span><span style="color:#00688b;font-weight:bold">px</span>;
 }
 </code></pre></div><p>Silahkan disederhanakan lagi bentuk penulisan sintak CSSnys.</p>
 <p><a href="https://codepen.io/fauzanmy/pen/MWbyPaL" class="blue text-decoration-none"
