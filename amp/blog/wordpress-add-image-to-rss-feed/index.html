@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
-	<title>WordPress page pagination - InsertApps</title>
+	<title>Menambah Gambar ke dalam RSS Feed WordPress - InsertApps</title>
 	
-    <link rel="canonical" type="text/html" href="https://insertapps.com/blog/wordpress-page-pagination/">
+    <link rel="canonical" type="text/html" href="https://insertapps.com/blog/wordpress-add-image-to-rss-feed/">
 
 	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<link rel="shortcut icon" href="https://insertapps.com/assets/favicon/32.png">
@@ -14,11 +14,11 @@
   {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
-    "mainEntityOfPage": "https:\/\/insertapps.com\/amp\/blog\/wordpress-page-pagination\/",
-    "headline": "WordPress page pagination",
-    "datePublished": "Wednesday, November 3, 2021",
-    "dateModified": "Wednesday, November 3, 2021",
-    "description": "Cara mudah custom pagination WordPress dengan desain yang cantik menggunakan komponen Bootstrap pagination",
+    "mainEntityOfPage": "https:\/\/insertapps.com\/amp\/blog\/wordpress-add-image-to-rss-feed\/",
+    "headline": "Menambah Gambar ke dalam RSS Feed WordPress",
+    "datePublished": "Wednesday, November 10, 2021",
+    "dateModified": "Wednesday, November 10, 2021",
+    "description": "Cara mudah menambahkan gambar feature ke dalam RSS Feed WordPress tanpa menggunakan plugin.",
     "author": {
       "@type": "Person",
       "name": "Fauzan My"
@@ -35,7 +35,7 @@
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/insertapps.com\/images\/blog\/2021\/tutorial-wp-theme\/05_wp-pagination.webp", 
+      "url": "https:\/\/insertapps.com\/images\/blog\/2021\/tutorial-wp-theme\/06_wp-rss-image.webp", 
       "height":  1024 ,
       "width":  512 
 	  
@@ -59,8 +59,8 @@
 	},{
 		"@type": "ListItem",
 		"position": 3,
-		"name": "WordPress page pagination",
-		"item": "https:\/\/insertapps.com\/blog\/wordpress-page-pagination\/"
+		"name": "Menambah Gambar ke dalam RSS Feed WordPress",
+		"item": "https:\/\/insertapps.com\/blog\/wordpress-add-image-to-rss-feed\/"
 	}]
 }
 </script>
@@ -1790,287 +1790,242 @@ blockquote p {
 						<span class="block muted caps mb2 h5">WordPress</span>
 					
 			
-				<h1 class="h2 mb1">WordPress page pagination</h1>
+				<h1 class="h2 mb1">Menambah Gambar ke dalam RSS Feed WordPress</h1>
 
 				<div class="clearfix">
 					<time class="h6 muted" datetime="2020-08-08">
-						Wednesday, November 3, 2021
+						Wednesday, November 10, 2021
 					</time>
 				</div>
 			</header>
 
 			<div class="clearfix mxn2">
 			 
-				<amp-img class="mb2" src="/images/blog/2021/tutorial-wp-theme/05_wp-pagination.webp" alt="Desain page pagination. (© insertapps.com)"  height="512" width="1024"
+				<amp-img class="mb2" src="/images/blog/2021/tutorial-wp-theme/06_wp-rss-image.webp" alt="Ilustrasi"  height="512" width="1024"
 					layout="responsive"></amp-img>
 			</div>
 
 			<div id="content" class="mb2">
-				<p>Desain website yang baik harus didukung dengan struktur navigasi yang yang baik pula. Sehingga pengunjung yang datang tidak tersesat saat mengakses ribuan konten yang &lsquo;terkubur&rsquo; dalam database.</p>
-<p>Salah satunya adalah fitur page pagination atau juga dikenal dikenal sebagai paging. Pagination adalah proses membagi data posting menjadi halaman diskrit—grouping sejumlah halaman yang berbeda menjadi satu halaman yang rapi dan runut.</p>
-<p>Selain memudahkan pengunjung mengakses blog atau website, berikut segudang manfaat dari sebuah fitur pagination:</p>
-<ol>
-<li>Akses konten blog jadi lebih cepat karena list posting yang ditampilkan terbatas dalam jumlah tertentu, misalnya satu paging berisi 10 judul.</li>
-<li>Kinerja server jadi lebih ringan karena data yang diproses secara step by step dengan skala yang kecil.</li>
-<li>Pengalaman pengguna akan meningkat karena struktur navigasi yang mudah dan simpel lebih disukai selain akses yang cepat.</li>
-<li>Meningkatkan SEO karena search engine memberikan skor yang tinggi untuk website yang loadnya cepat serta pengalaman pengguna yang baik.</li>
-<li>Terakhir, page view juga ikut meningkat, sehingga potensi tampilan iklan lebih banyak dengan tingkat peluang klik iklan juga tinggi.</li>
-</ol>
-<h2 id="memasang-page-pagination-cms-wordpress">Memasang Page Pagination CMS WordPress</h2>
-<p>Malas coding?</p>
-<p>Tinggal pasang WP Plugin bukan?</p>
-<p>Meng-install plugin cara paling murah meriah untuk menambah fitur pagination dalam sistem WordPress.</p>
-<p>Salah satunya plugin WordPress yang cukup terkenal untuk masalah paged adalah WP-PageNavi. Plugin karya Lester Chan ini mendapat sudah terinstall 700.000 + di web blog dengan rating 4.5.</p>
-<p>Tertarik dengan plugin ini, install saja via dashboard <code>/wp-admin</code>.</p>
-<h2 id="membuat-wordpress-pagination-tampa-plugin">Membuat Wordpress pagination tampa plugin</h2>
-<p>Apapun tambahan fitur ke dalam sistem WordPress, plugin adalah solusinya. Masalahnya menginstall plugin ada efek sampingnya, baca (<strong>Plus-minus install WordPress Plugin</strong>).</p>
-<p>Solusi terbaik dengan mengcustom sendiri fitur WordPress pagination tampa menggunakan plugin</p>
-<p>Tentu untuk oprek WordPress custom pagination butuh skill coding, tapi tidak harus jago lo.</p>
-<p>Dengan modal paham dasar HTML, CSS dan cara kerja bahasa pemograman PHP sudah cukup untuk melakukan custom &lsquo;WP Page Navi&rsquo; sendiri.</p>
-<p>Ternyata, cara kerjanya cukup mudah berikut penjelasan step by stepnya:</p>
-<h3 id="steps-1---pahami-dulu-sintaknya">Steps 1 —  Pahami dulu sintaknya</h3>
-<p>WordPress sudah menyediakan beberapa fungsi bawaan khusus untuk menampilkan pagination, diantaranya:</p>
-<ul>
-<li><code>paginate_links()</code></li>
-<li><code>get_previous_posts_link()</code></li>
-<li><code>get_next_posts_link()</code></li>
-</ul>
-<p>Selain function, WordPress juga menyediakan hook untuk ketiga fungsi tersebut:</p>
-<ul>
-<li><code>apply_filters( 'next_posts_link_attributes', string $attributes )</code></li>
-<li><code>apply_filters( 'previous_posts_link_attributes', string $attributes )</code></li>
-<li><code>apply_filters( 'paginate_links', string $link )</code></li>
-</ul>
-<p>Untuk memanggil ketiga fungsi tersebut cukup mudah, tinggal echo saja:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">section</span>&gt;
-    
-    <span style="color:#1e889b">&lt;?php echo paginate_links(); ?&gt;</span>
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
-    
-    <span style="color:#1e889b">&lt;?php echo get_previous_posts_link(); ?&gt;</span>
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
-    
-    <span style="color:#1e889b">&lt;?php echo get_next_posts_link(); ?&gt;</span>
+				<p>Kayaknya, salah satu fitur WordPress yang jarang dipakai adalah RSS feed widget. Padahal kalau di explore lebih dalam lagi, fitur RSS dapat mempercantik tampilan blog dengan menampilkan konten sindikasi hasil kolaborasi antar web.</p>
+<p>Tapi kalau desain tampilannya harus bagus!</p>
+<p><em>Baca juga tutorial sebelumnya: <a href="https://insertapps.com/blog/wordpress-page-pagination/" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>Cara membuat WordPress page pagination</a></em></p>
+<p>RSS adalah singkatan dari <em><strong>Really Simple Syndication</strong></em>, artinya &ldquo;sindikasi yang sangat simple“. RSS memanfaatkan format XML untuk melakukan penyebaran dan pertukaran data antar website dengan mudah dan simple.</p>
+<p>Selain format <code>.xml</code>, ada juga format <code>.json</code> untuk melakukan melakukan distribusi dan pertukaran data melalui protokol HTTP.</p>
+<p>Nah mungpung fitur RSS feed sudah terintegrasi dalam sistem WP sejak versi 2.8.0, kali ini kita mencoba meredesain tampilan RSS feed ke dalam theme Pehthempress, dengan memanfaatkan fungsi <code>fetch_feed()</code>.</p>
+<p>Baca dokumentasi dulu tentang fungsi <code>fetch_feed()</code> di laman resmi
+<a href="https://developer.wordpress.org/reference/functions/fetch_feed/" class="blue a-hover text-decoration-none" title="developer.wordpress.org/reference/functions/fetch_feed/." target="_blank" rel="nofollow noopener noreferrer">developer.wordpress.org/reference/functions/fetch_feed/.</a></p>
+<p>Sistem WordPress sendiri memanfaatkan library SimplePie untuk memparser RSS melalui fitur widget. Masalahnya, memasang RSS web lain melalui widget bawaan WP, hasil desainnya sangat buruk sekali.</p>
+<p>Hanya menampilkan list judulnya saja, tidak adanya gambar.</p>
+<p>By default, hasil output RSS sistem WordPress memang tidak menyertakan gambar.</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#1e889b">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span style="color:#8b008b;font-weight:bold">&lt;rss</span> <span style="color:#658b00">xmlns:atom=</span><span style="color:#cd5555">&#34;http://www.w3.org/2005/Atom&#34;</span> <span style="color:#658b00">xmlns:content=</span><span style="color:#cd5555">&#34;http://purl.org/rss/1.0/modules/content/&#34;</span> <span style="color:#658b00">xmlns:dc=</span><span style="color:#cd5555">&#34;http://purl.org/dc/elements/1.1/&#34;</span> <span style="color:#658b00">xmlns:slash=</span><span style="color:#cd5555">&#34;http://purl.org/rss/1.0/modules/slash/&#34;</span> <span style="color:#658b00">xmlns:sy=</span><span style="color:#cd5555">&#34;http://purl.org/rss/1.0/modules/syndication/&#34;</span> <span style="color:#658b00">xmlns:wfw=</span><span style="color:#cd5555">&#34;http://wellformedweb.org/CommentAPI/&#34;</span> <span style="color:#658b00">version=</span><span style="color:#cd5555">&#34;2.0&#34;</span><span style="color:#8b008b;font-weight:bold">&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;channel&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;title&gt;</span>Pehthemepress<span style="color:#8b008b;font-weight:bold">&lt;/title&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;atom:link</span> <span style="color:#658b00">href=</span><span style="color:#cd5555">&#34;http://localhost/pehthemepress/feed&#34;</span> <span style="color:#658b00">rel=</span><span style="color:#cd5555">&#34;self&#34;</span> <span style="color:#658b00">type=</span><span style="color:#cd5555">&#34;application/rss+xml&#34;</span> <span style="color:#8b008b;font-weight:bold">/&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;link&gt;</span>http://localhost:8888/pehthemepress<span style="color:#8b008b;font-weight:bold">&lt;/link&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;description&gt;</span>Just another Simple WordPress Themes<span style="color:#8b008b;font-weight:bold">&lt;/description&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;lastBuildDate&gt;</span>Mon, 01 Nov 2021 07:55:06 +0000<span style="color:#8b008b;font-weight:bold">&lt;/lastBuildDate&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;language&gt;</span>en-US<span style="color:#8b008b;font-weight:bold">&lt;/language&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;sy:updatePeriod&gt;</span>hourly<span style="color:#8b008b;font-weight:bold">&lt;/sy:updatePeriod&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;sy:updateFrequency&gt;</span>1<span style="color:#8b008b;font-weight:bold">&lt;/sy:updateFrequency&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;generator&gt;</span>https://wordpress.org/?v=5.8.1<span style="color:#8b008b;font-weight:bold">&lt;/generator&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;item&gt;</span>
+         <span style="color:#8b008b;font-weight:bold">&lt;title&gt;</span>How do I add an image to an item in RSS 2.0?<span style="color:#8b008b;font-weight:bold">&lt;/title&gt;</span>
+         <span style="color:#8b008b;font-weight:bold">&lt;link&gt;</span>http://localhost:8888/pehthemepress/how-to-add-image-in-rss/<span style="color:#8b008b;font-weight:bold">&lt;/link&gt;</span>
+         <span style="color:#8b008b;font-weight:bold">&lt;comments&gt;</span>http://localhost:8888/pehthemepress/2021/11/01/how-to-add-image-in-rss/#respond<span style="color:#8b008b;font-weight:bold">&lt;/comments&gt;</span>
+         <span style="color:#8b008b;font-weight:bold">&lt;dc:creator&gt;</span><span style="color:#1e889b">&lt;![CDATA[Pehthempress]]&gt;</span><span style="color:#8b008b;font-weight:bold">&lt;/dc:creator&gt;</span>
+         <span style="color:#8b008b;font-weight:bold">&lt;pubDate&gt;</span>Mon, 01 Nov 2021 07:55:02 +0000<span style="color:#8b008b;font-weight:bold">&lt;/pubDate&gt;</span>
+         <span style="color:#8b008b;font-weight:bold">&lt;category&gt;</span><span style="color:#1e889b">&lt;![CDATA[News]]&gt;</span><span style="color:#8b008b;font-weight:bold">&lt;/category&gt;</span>
+         <span style="color:#8b008b;font-weight:bold">&lt;guid</span> <span style="color:#658b00">isPermaLink=</span><span style="color:#cd5555">&#34;false&#34;</span><span style="color:#8b008b;font-weight:bold">&gt;</span>http://localhost:8888/pehthemepress/?p=63<span style="color:#8b008b;font-weight:bold">&lt;/guid&gt;</span>
+         <span style="color:#8b008b;font-weight:bold">&lt;description&gt;</span><span style="color:#1e889b">&lt;![CDATA[Lorem ipsum, dolor sit amet..]]&gt;</span><span style="color:#8b008b;font-weight:bold">&lt;/description&gt;</span>
+         <span style="color:#8b008b;font-weight:bold">&lt;content:encoded&gt;</span><span style="color:#1e889b">&lt;![CDATA[&lt;p&gt;Lorem ipsum, dolor sit amet...&lt;/p&gt;]]&gt;</span><span style="color:#8b008b;font-weight:bold">&lt;/content:encoded&gt;</span>
+         <span style="color:#8b008b;font-weight:bold">&lt;wfw:commentRss&gt;</span>http://localhost:8888/pehthemepress/2021/11/01/how-to-add-image-in-rss/feed/<span style="color:#8b008b;font-weight:bold">&lt;/wfw:commentRss&gt;</span>
+         <span style="color:#8b008b;font-weight:bold">&lt;slash:comments&gt;</span>0<span style="color:#8b008b;font-weight:bold">&lt;/slash:comments&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;/item&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;item&gt;</span>
+        ...
+      <span style="color:#8b008b;font-weight:bold">&lt;/item&gt;</span>
+      <span style="color:#8b008b;font-weight:bold">&lt;item&gt;</span>
+        ...
+      <span style="color:#8b008b;font-weight:bold">&lt;/item&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;/channel&gt;</span>
+<span style="color:#8b008b;font-weight:bold">&lt;/rss&gt;</span>
+</code></pre></div><p>Pasalnya, sudah dari bawaan struktur markah RSS versi 2.0 pun tidak menyertakan tag <code>&lt;image&gt;</code> di dalam bagian <code>&lt;item&gt;</code> yang menampung data konten. Tag <code>&lt;image&gt;</code> berada dalam sub <code>&lt;channel&gt;</code> dalam struktur RSS format xml.</p>
+<p>Baca dokumentasi lengkap tentang aturan format RSS di <a href="https://cyber.harvard.edu/rss/rss.html#ltenclosuregtSubelementOfLtitemgt" class="blue a-hover text-decoration-none" title="https://cyber.harvard.edu/rss/rss.html" target="_blank" rel="nofollow noopener noreferrer">https://cyber.harvard.edu/rss/rss.html</a></p>
+<p>Tag <code>&lt;image&gt;</code> yang berada didalam sub tag <code>&lt;channel&gt;</code> bisa bermanfaat untuk menampung gambar favicon atau cover utama website, tapi tidak memungkin untuk image post.</p>
+<h2 id="cara-menambah-image-ke-dalam-item-rss-feed-wordpress">Cara Menambah Image ke dalam Item RSS Feed WordPress</h2>
+<p>Jadi, cara menambah gambar feature image ke dalam item RSS feed WordPress untul setiap post, yaitu dengan memanfaatkan tag enclosure yang berada dalam tag <code>&lt;item&gt;</code>.</p>
+<p><img src="/images/blog/2021/tutorial-wp-theme/07_wp-enclosure-rss-item.webp" alt="Enclosure-RSS-item.jpg"></p>
+<p>Tag <code>&lt;enclosure&gt;</code> memiliki tiga attribute, salah satunya attribute <code>url</code>.</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#8b008b;font-weight:bold">&lt;enclosure</span> <span style="color:#658b00">url=</span><span style="color:#cd5555">&#34;http://www.scripting.com/mp3s/weatherReportSuite.mp3&#34;</span> <span style="color:#658b00">length=</span><span style="color:#cd5555">&#34;12216320&#34;</span> <span style="color:#658b00">type=</span><span style="color:#cd5555">&#34;audio/mpeg&#34;</span> <span style="color:#8b008b;font-weight:bold">/&gt;</span> 
+</code></pre></div><p>Dengan demikian, kita bisa memerintahkan sistem WordPress untuk menambahkan satu elemen lagi ke dalam output RSS WordPress dengan menambahkan tag <code>&lt;enclosure url=&quot;&quot; length=&quot;&quot; type=&quot;&quot; /&gt;</code>.</p>
+<p>Caranya cukup mudah, tingga install plugin. No&hellip;no&hellip;no&hellip;</p>
+<p>Cukup insert micro script buatan Kaspars Dambis (<a href="https://github.com/kasparsd/feed-image-enclosure" class="blue a-hover text-decoration-none" title="https://github.com/kasparsd/feed-image-enclosure" target="_blank" rel="nofollow noopener noreferrer">https://github.com/kasparsd/feed-image-enclosure</a>) ke dalam file <code>function.php</code> WordPress theme:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#228b22">// Add feature image as RSS item
+</span><span style="color:#228b22"></span>
+add_action( <span style="color:#cd5555">&#39;rss2_item&#39;</span>, <span style="color:#cd5555">&#39;add_post_featured_image_as_rss_item_enclosure&#39;</span> );
 
-&lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt;
-</code></pre></div><p>Hasil output data mentah codenya seperti berikut:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">section</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;prev page-numbers&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/&#34;</span>&gt;« Previous&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-numbers&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/&#34;</span>&gt;1&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">aria-current</span>=<span style="color:#cd5555">&#34;page&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-numbers current&#34;</span>&gt;2&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-numbers&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;3&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;next page-numbers&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;Next »&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;« Previous Page&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;Next Page »&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+<span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">add_post_featured_image_as_rss_item_enclosure</span>() {
+  <span style="color:#8b008b;font-weight:bold">if</span> ( ! has_post_thumbnail() )
+    <span style="color:#8b008b;font-weight:bold">return</span>;
 
-&lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt; 
-</code></pre></div><p>Hasil render HTML menghasil bentuk desain pagination seperti berikut:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">« Previous 1 2 3 4 5 Next »
+  <span style="color:#00688b">$thumbnail_size</span> = apply_filters( <span style="color:#cd5555">&#39;rss_enclosure_image_size&#39;</span>, <span style="color:#cd5555">&#39;thumbnail&#39;</span> );
+  <span style="color:#00688b">$thumbnail_id</span> = get_post_thumbnail_id( get_the_ID() );
+  <span style="color:#00688b">$thumbnail</span> = image_get_intermediate_size( <span style="color:#00688b">$thumbnail_id</span>, <span style="color:#00688b">$thumbnail_size</span> );
 
---------------------------------------
+  <span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#8b008b;font-weight:bold">empty</span>( <span style="color:#00688b">$thumbnail</span> ) )
+    <span style="color:#8b008b;font-weight:bold">return</span>;
 
-« Previous Page
+  <span style="color:#00688b">$upload_dir</span> = wp_upload_dir();
 
---------------------------------------
-
-Next Page »
-</code></pre></div><p>Sedangkan script Hooks, biasanya untuk memanipulasi hasil output melalui file <code>function.php</code></p>
-<h3 id="steps-2---cara-menggunakannya">Steps 2 —  Cara menggunakannya</h3>
-<p>Setelah mengetahui isi yang dikandung dari fungsi-fungsi tersebut untuk mencetak page pagination, selanjutnya insert code tersebut ke dalam theme setelah looping atau setelah code <code>&lt;?php endwhile; ?&gt;</code>.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#1e889b">&lt;?php if (have_posts()) : while (have_posts()) : the_post(); ?&gt;</span>
-
-    <span style="color:#228b22">&lt;!-- Load posts loop. --&gt;</span>
-    
-    <span style="color:#1e889b">&lt;?php get_template_part(&#39;partials/content&#39;, &#39;home&#39;); ?&gt;</span>
-    <span style="color:#1e889b">&lt;?php endwhile; ?&gt;</span>
-    
-    <span style="color:#228b22">&lt;!-- Previous/next page navigation. --&gt;</span>
-
-    &lt;<span style="color:#8b008b;font-weight:bold">section</span>&gt;
-        <span style="color:#1e889b">&lt;?php echo paginate_links(); ?&gt;</span>
-    &lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt;
-
-    <span style="color:#1e889b">&lt;?php else : ?&gt;</span>
-    
-    <span style="color:#228b22">&lt;!-- If no content, include the &#34;No posts found&#34; template. --&gt;</span>
-    
-    <span style="color:#1e889b">&lt;?php get_template_part(&#39;partials/content&#39;, &#39;none&#39;); ?&gt;</span>
-<span style="color:#1e889b">&lt;?php endif; ?&gt;</span>
-</code></pre></div><h3 id="steps-3---kreasi-style-css">Steps 3 —  Kreasi style CSS</h3>
-<p>Terakhir, tinggal poles desainnya dengan memainkan style CSS berdasarkan nama-nama class bawaan output data mentahnya.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#008b45;font-weight:bold">prev</span> {
-    <span style="color:#228b22">/* do something */</span>
+  printf( 
+    <span style="color:#cd5555">&#39;&lt;enclosure url=&#34;%s&#34; length=&#34;%s&#34; type=&#34;%s&#34; /&gt;&#39;</span>,
+    <span style="color:#00688b">$thumbnail</span>[<span style="color:#cd5555">&#39;url&#39;</span>], 
+    filesize( path_join( <span style="color:#00688b">$upload_dir</span>[<span style="color:#cd5555">&#39;basedir&#39;</span>], <span style="color:#00688b">$thumbnail</span>[<span style="color:#cd5555">&#39;path&#39;</span>] ) ), 
+    get_post_mime_type( <span style="color:#00688b">$thumbnail_id</span> ) 
+  );
 }
+</code></pre></div><p>Maka output RSS Feed akan menghasilkan:</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#8b008b;font-weight:bold">&lt;item&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;title&gt;</span>How do I add an image to an item in RSS 2.0?<span style="color:#8b008b;font-weight:bold">&lt;/title&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;link&gt;</span>http://localhost:8888/pehthemepress/how-to-add-image-in-rss/<span style="color:#8b008b;font-weight:bold">&lt;/link&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;comments&gt;</span>http://localhost:8888/pehthemepress/2021/11/01/how-to-add-image-in-rss/#respond<span style="color:#8b008b;font-weight:bold">&lt;/comments&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;dc:creator&gt;</span><span style="color:#1e889b">&lt;![CDATA[Pehthempress]]&gt;</span><span style="color:#8b008b;font-weight:bold">&lt;/dc:creator&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;pubDate&gt;</span>Mon, 01 Nov 2021 07:55:02 +0000<span style="color:#8b008b;font-weight:bold">&lt;/pubDate&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;category&gt;</span><span style="color:#1e889b">&lt;![CDATA[News]]&gt;</span><span style="color:#8b008b;font-weight:bold">&lt;/category&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;guid</span> <span style="color:#658b00">isPermaLink=</span><span style="color:#cd5555">&#34;false&#34;</span><span style="color:#8b008b;font-weight:bold">&gt;</span>http://localhost:8888/pehthemepress/?p=63<span style="color:#8b008b;font-weight:bold">&lt;/guid&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;description&gt;</span><span style="color:#1e889b">&lt;![CDATA[Lorem ipsum, dolor sit amet..]]&gt;</span><span style="color:#8b008b;font-weight:bold">&lt;/description&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;content:encoded&gt;</span><span style="color:#1e889b">&lt;![CDATA[&lt;p&gt;Lorem ipsum, dolor sit amet...&lt;/p&gt;]]&gt;</span><span style="color:#8b008b;font-weight:bold">&lt;/content:encoded&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;wfw:commentRss&gt;</span>http://localhost:8888/pehthemepress/2021/11/01/how-to-add-image-in-rss/feed/<span style="color:#8b008b;font-weight:bold">&lt;/wfw:commentRss&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;slash:comments&gt;</span>0<span style="color:#8b008b;font-weight:bold">&lt;/slash:comments&gt;</span>
 
-.<span style="color:#008b45;font-weight:bold">page-numbers</span> {
-    <span style="color:#228b22">/* do something */</span>
-}
+  <span style="color:#228b22">&lt;!-- New item here --&gt;</span>
+   <span style="color:#8b008b;font-weight:bold">&lt;enclosure</span> <span style="color:#658b00">url=</span><span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/wp-content/uploads/2021/11/Logo-Tesla_pic_by_milan-csizmadia-unsplash.jpg&#34;</span> <span style="color:#658b00">length=</span><span style="color:#cd5555">&#34;140541&#34;</span> <span style="color:#658b00">type=</span><span style="color:#cd5555">&#34;image/jpeg&#34;</span> <span style="color:#8b008b;font-weight:bold">/&gt;</span>
 
-.<span style="color:#008b45;font-weight:bold">page-numbers</span> <span style="color:#8b008b;font-weight:bold">span</span> {
-    <span style="color:#228b22">/* do something */</span>
-}
-
-.<span style="color:#008b45;font-weight:bold">current</span> {
-    <span style="color:#228b22">/* do something */</span>
-}
-
-.<span style="color:#008b45;font-weight:bold">next</span> {
-    <span style="color:#228b22">/* do something */</span>
-}
-</code></pre></div><h2 id="custom-wordpress-paginate-dengan-css-framework">Custom WordPress Paginate dengan CSS Framework</h2>
-<p>Bagaimana kalau custom WordPress page pagination dengan meng-insert class class bawaan CSS framework? Mengawinkan komponen pagination Bootstrap ke dalam WP Paginate misalnya.</p>
-<p>Berikut caranya:</p>
-<h3 id="steps-1--ambil-komponen-pagination-bootstrap">Steps 1 — Ambil komponen pagination Bootstrap</h3>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">aria-label</span>=<span style="color:#cd5555">&#34;Page navigation&#34;</span>&gt;
-  &lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pagination&#34;</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Previous&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;1&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;2&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;3&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Next&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-  &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
-</code></pre></div><h3 id="steps-2--panggil-fungsi-paginate-wordpress">Steps 2 — Panggil fungsi Paginate WordPress</h3>
-<p>Sebelumnya, rubah dulu <code>type</code> return value <code>paginate_links()</code> menjadi data type array dan nonaktifkan tombol prev_next.</p>
+<span style="color:#8b008b;font-weight:bold">&lt;/item&gt;</span>
+</code></pre></div><h2 id="cara-menampilkan-rss-feature-image-wordpress">Cara menampilkan RSS feature image WordPress</h2>
+<p>Selanjutnya cara menampilkan RSS Feed beserta image yang baru saja ditambah dalam item enclosure ke dalam theme WordPress menggunakan function <code>fetch_feed()</code>.</p>
 <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
-	<span style="color:#228b22">// Insert data paginate kedalam sebuah variabel $paged dengan
-</span><span style="color:#228b22"></span>	<span style="color:#228b22">// return value type menjadi array
-</span><span style="color:#228b22"></span>	<span style="color:#00688b">$paged</span> = paginate_links( <span style="color:#8b008b;font-weight:bold">array</span>(
-	    <span style="color:#cd5555">&#39;type&#39;</span>       =&gt; <span style="color:#cd5555">&#39;array&#39;</span>,
-			<span style="color:#cd5555">&#39;prev_next&#39;</span>  =&gt; <span style="color:#8b008b;font-weight:bold">false</span>
-    ));
-<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span></code></pre></div><p>Insert variable <code>$paged</code> ke dalam komponen paginate Bootstrap dengan struktur code sebagai berikut;</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;nav aria-label=<span style="color:#cd5555">&#34;Page navigation&#34;</span>&gt;
 
-	&lt;?php
-		
-		<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$paged</span> ) :
+<span style="color:#228b22">// Panggil dulu librarynya
+</span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">include_once</span>(ABSPATH . WPINC . <span style="color:#cd5555">&#39;/feed.php&#39;</span>);
 
-			<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;ul class=&#34;pagination&#34;&gt;&#39;</span>;
+<span style="color:#228b22">// Mengambil objek RSS dari web yang dituju
+</span><span style="color:#228b22"></span><span style="color:#00688b">$rss</span> = fetch_feed(<span style="color:#cd5555">&#39;https://now.breedie.com/feed&#39;</span>);
 
-				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span> . <span style="color:#cd5555">&#39;&lt;a class=&#34;page-link&#34; href=&#34;#&#34;&gt;...&lt;/a&gt;&#39;</span> . <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>
+<span style="color:#228b22">// Tentutan jumlah feed, nilai awal kembali ke 0
+</span><span style="color:#228b22"></span><span style="color:#00688b">$maxitems</span> = <span style="color:#b452cd">0</span>;
 
-			<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/ul&gt;&#39;</span>;
+<span style="color:#8b008b;font-weight:bold">if</span> (!is_wp_error(<span style="color:#00688b">$rss</span>)) {
 
-		<span style="color:#8b008b;font-weight:bold">endif</span>;
-	<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span><span style="color:#a61717;background-color:#e3d2d2">&lt;/nav&gt;
-</span></code></pre></div><p>Berikutnya, replace dulu class bawaan <code>page-numbers</code>  paginate_links() dengan class <code>page-link</code> Bootstrap, dengan bantuan <code>str_replace()</code> PHP built-in functions.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;nav aria-label=<span style="color:#cd5555">&#34;Page navigation&#34;</span>&gt;
+    <span style="color:#228b22">// Dari jumlah feed item yang ada, cukup batasi saja menjadi 3, misalnya 
+</span><span style="color:#228b22"></span>    <span style="color:#00688b">$maxitems</span> = <span style="color:#00688b">$rss</span>-&gt;<span style="color:#658b00">get_item_quantity</span>(<span style="color:#b452cd">3</span>);
 
-	&lt;?php
-		
-		<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$paged</span> ) :
-			
-			<span style="color:#228b22">// Replace class &#39;page-numbers&#39; with &#39;page-link&#39;
-</span><span style="color:#228b22"></span>			<span style="color:#00688b">$paged</span> = str_replace(<span style="color:#cd5555">&#39;page-numbers&#39;</span>, <span style="color:#cd5555">&#39;page-link&#39;</span>, <span style="color:#00688b">$paged</span>);
-
-				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;ul class=&#34;pagination&#34;&gt;&#39;</span>;
-
-            <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>;
-
-            <span style="color:#8b008b;font-weight:bold">echo</span> join( <span style="color:#cd5555">&#39;&lt;/li&gt;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>, <span style="color:#00688b">$paged</span> );
-
-            <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>;
-
-        <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/ul&gt;&#39;</span>;
-
-		<span style="color:#8b008b;font-weight:bold">endif</span>;
-	<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span><span style="color:#a61717;background-color:#e3d2d2">&lt;/nav&gt;
-</span></code></pre></div><p>Hasil output HTML sementara:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pagination&#34;</span>&gt;
-
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">aria-current</span>=<span style="color:#cd5555">&#34;page&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link current&#34;</span>&gt;1&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;2&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;3&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-
-&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-</code></pre></div><h3 id="steps-3--menambah-tombol-prev-dan-next">Steps 3 — Menambah Tombol Prev dan Next</h3>
-<p>Berikutnya, memformat tombol &lsquo;<strong>Previous</strong>&rsquo; dan tombol &lsquo;<strong>Next</strong>&rsquo; dengan memanfaatkan dua buah fungsi lain, yaitu, <code>get_previous_posts_link()</code> dan <code>get_next_posts_link()</code>.</p>
-<p>By default, kedua fungsi tersebut hasil print out hanya mengeluarkan data mentah link <code>&lt;a href=&quot;/page/2/&quot;&gt;Next Page »&lt;/a&gt;</code> dan tidak menyertakan class bawaan, sehingga lebih mudah saat di custom.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php	
-	<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$paged</span> ) :
-
-		<span style="color:#00688b">$paged</span> = str_replace(<span style="color:#cd5555">&#39;page-numbers&#39;</span>, <span style="color:#cd5555">&#39;page-link&#39;</span>, <span style="color:#00688b">$paged</span>);
-
-			<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;ul class=&#34;pagination&#34;&gt;&#39;</span>;
-
-				<span style="color:#00688b">$previous</span> = get_next_posts_link();
-				<span style="color:#00688b">$next</span> = get_next_posts_link();
-			
-				<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$previous</span> ) {
-				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span> . <span style="color:#00688b">$previous</span> . <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>;
-				}
-				
-				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>;
-				
-					<span style="color:#8b008b;font-weight:bold">echo</span> join(<span style="color:#cd5555">&#39;&lt;/li&gt;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>, <span style="color:#00688b">$paged</span>);
-				
-				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>;
-				
-				<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$next</span> ) {
-				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span> . <span style="color:#00688b">$next</span> . <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>;
-				}
-				
-		<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/ul&gt;&#39;</span>;
-
-	<span style="color:#8b008b;font-weight:bold">endif</span>;
-<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span></code></pre></div><p>Hasil output sementara dari code tersebut :</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pagination&#34;</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;Next Page »&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">aria-current</span>=<span style="color:#cd5555">&#34;page&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link current&#34;</span>&gt;1&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;2&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;3&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;Next Page »&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-</code></pre></div><p>Sekarang, saatnya meng-injek <code>class=&quot;page-link&quot;</code> ke dalam tag <code>&lt;a href=&quot;/page/2/&quot;&gt;Next Page »&lt;/a&gt;</code> melalui sistem hooks WordPress.</p>
-<p>Caranya, insert code berikut ke dalam file <code>function.php</code></p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">insert_class_to_prev_next_posts_link_att</span>( <span style="color:#00688b">$attributes</span> ) {
-    <span style="color:#8b008b;font-weight:bold">return</span> <span style="color:#cd5555">&#39;class=&#34;page-link&#34;&#39;</span>;
+    <span style="color:#228b22">// Bungkus semua item feed ke dalam satu array baru dimulai dari index 0 hingga maxitems
+</span><span style="color:#228b22"></span>    <span style="color:#00688b">$rss_items</span> = <span style="color:#00688b">$rss</span>-&gt;<span style="color:#658b00">get_items</span>(<span style="color:#b452cd">0</span>, <span style="color:#00688b">$maxitems</span>);
 }
+</code></pre></div><p>Berikutnya, tinggal looping array <code>$rss_items</code> ke dalam theme WordPress.</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php <span style="color:#8b008b;font-weight:bold">if</span> (<span style="color:#00688b">$maxitems</span> == <span style="color:#b452cd">0</span>) : <span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">  &lt;!-- Tampilkan info error jika rss feed kosong --&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">  &lt;?php _e( &#39;No items ... &#39; ); ?&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">  &lt;?php else :
+</span><span style="color:#a61717;background-color:#e3d2d2">  // Jika RSS feed berisis list posting
+</span><span style="color:#a61717;background-color:#e3d2d2">  // Lakukan loop items
+</span><span style="color:#a61717;background-color:#e3d2d2">  foreach ($rss_items as $key =&gt; $item) : ?&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">  &lt;a href=&#34;&lt;?php echo esc_url( $item-&gt;get_link() ); ?&gt;&#34;&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">  &lt;figure class=&#34;card&#34;&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">    &lt;?php
+</span><span style="color:#a61717;background-color:#e3d2d2">    // Get image link
+</span><span style="color:#a61717;background-color:#e3d2d2">    if ( $enclosure = $item-&gt;get_enclosure() ) {
+</span><span style="color:#a61717;background-color:#e3d2d2">    echo &#39;&lt;img class=&#34;fluid&#34; src=&#34;&#39; . esc_url( $enclosure-&gt;link ) . &#39;&#34; alt=&#34;&#39; . esc_html( $item-&gt;get_title() . &#39;&#34;&gt;&#39;;
+</span><span style="color:#a61717;background-color:#e3d2d2">    }
+</span><span style="color:#a61717;background-color:#e3d2d2">    ?&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">    &lt;figcaption class=&#34;p2&#34;&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">      &lt;?php echo esc_html( $item-&gt;get_title() ); ?&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">    &lt;/figcaption&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">  &lt;/figure&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">  &lt;/a&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">  &lt;?php endforeach; ?&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">&lt;?php endif;?&gt;
+</span></code></pre></div><p>Bagaimana, mudah bukan?</p>
+<p>Hasil akhir keseluruhan code, simpan ke dalam satu part file baru, <code>content-rss.php</code> misalnya.</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
+<span style="color:#228b22">/*
+</span><span style="color:#228b22">* Template part for displaying card RSS Feed
+</span><span style="color:#228b22">*/</span>
 
-add_filter(<span style="color:#cd5555">&#39;previous_posts_link_attributes&#39;</span>, <span style="color:#cd5555">&#39;insert_class_to_prev_next_posts_link_att&#39;</span>);
-add_filter(<span style="color:#cd5555">&#39;next_posts_link_attributes&#39;</span>, <span style="color:#cd5555">&#39;insert_class_to_prev_next_posts_link_att&#39;</span>);
-</code></pre></div><p>Jangan lupa save dan reload ulang browser, hasilnya Bootstrap pagination WordPress pun berhasil.</p>
-<p>Hasil akhir coding, struktur codenya sebagai berikut:</p>
-<script type="application/javascript" src="https://gist.github.com/fauzanmy/a7d3852d1c9907d3ae8957e21c672aa9.js"></script>
+<span style="color:#228b22">// Panggil dulu librarynya
+</span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">include_once</span>(ABSPATH . WPINC . <span style="color:#cd5555">&#39;/feed.php&#39;</span>);
 
-<p>Demikian tutorial cara custom WordPress pagination baik dengan CSS sendiri maupun dengan komponen Bootstrap pagination.</p>
-<p>Kalau ada pertanyaan atau kendala saat mengikuti tutorial ini, silahkan ajukan komentar melalui kolo Disqus dibawah ini. Terima Kasih.</p>
+<span style="color:#228b22">// Mengambil objek RSS dari web yang dituju
+</span><span style="color:#228b22"></span><span style="color:#00688b">$rss</span> = fetch_feed(<span style="color:#cd5555">&#39;https://now.breedie.com/feed&#39;</span>);
+
+<span style="color:#228b22">// Tentutan jumlah feed, nilai awal kembali ke 0
+</span><span style="color:#228b22"></span><span style="color:#00688b">$maxitems</span> = <span style="color:#b452cd">0</span>;
+
+<span style="color:#8b008b;font-weight:bold">if</span> (!is_wp_error(<span style="color:#00688b">$rss</span>)) {
+
+    <span style="color:#228b22">// Dari jumlah feed item yang ada, cukup batasi saja menjadi 3, misalnya 
+</span><span style="color:#228b22"></span>    <span style="color:#00688b">$maxitems</span> = <span style="color:#00688b">$rss</span>-&gt;<span style="color:#658b00">get_item_quantity</span>(<span style="color:#b452cd">3</span>);
+
+    <span style="color:#228b22">// Bungkus semua item feed ke dalam satu array baru dimulai dari index 0 hingga maxitems
+</span><span style="color:#228b22"></span>    <span style="color:#00688b">$rss_items</span> = <span style="color:#00688b">$rss</span>-&gt;<span style="color:#658b00">get_items</span>(<span style="color:#b452cd">0</span>, <span style="color:#00688b">$maxitems</span>);
+}
+<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">&lt;div&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">  
+</span><span style="color:#a61717;background-color:#e3d2d2">  &lt;?php if ($maxitems == 0) : ?&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">    
+</span><span style="color:#a61717;background-color:#e3d2d2">    &lt;!-- Tampilkan info error jika rss feed kosong --&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">    &lt;?php _e( &#39;No items ... &#39; ); ?&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">    &lt;?php else :
+</span><span style="color:#a61717;background-color:#e3d2d2">        // Jika RSS feed berisis list posting
+</span><span style="color:#a61717;background-color:#e3d2d2">        // Lakukan loop items
+</span><span style="color:#a61717;background-color:#e3d2d2">        foreach ($rss_items as $key =&gt; $item) : ?&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">        &lt;a href=&#34;&lt;?php echo esc_url( $item-&gt;get_link() ); ?&gt;&#34;&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">          &lt;figure class=&#34;card&#34;&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">            &lt;?php
+</span><span style="color:#a61717;background-color:#e3d2d2">               // Get image link
+</span><span style="color:#a61717;background-color:#e3d2d2">               if ( $enclosure = $item-&gt;get_enclosure() ) {
+</span><span style="color:#a61717;background-color:#e3d2d2">                  echo &#39;&lt;img class=&#34;fluid&#34; src=&#34;&#39; . esc_url( $enclosure-&gt;link ) . &#39;&#34; alt=&#34;&#39; . esc_html( $item-&gt;get_title() . &#39;&#34;&gt;&#39;;
+</span><span style="color:#a61717;background-color:#e3d2d2">               }
+</span><span style="color:#a61717;background-color:#e3d2d2">              ?&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">            &lt;figcaption class=&#34;p2&#34;&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">                &lt;?php 
+</span><span style="color:#a61717;background-color:#e3d2d2">                  // Tampilkan judul                
+</span><span style="color:#a61717;background-color:#e3d2d2">                  echo esc_html( $item-&gt;get_title() ); ?&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">            &lt;/figcaption&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">          &lt;/figure&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">        &lt;/a&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">    &lt;?php endforeach; ?&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">  &lt;?php endif;?&gt;
+</span><span style="color:#a61717;background-color:#e3d2d2">
+</span><span style="color:#a61717;background-color:#e3d2d2">&lt;/div&gt;
+</span></code></pre></div><p><em>Note: Saat tutorial ini dibuat, script ini berjalan di WordPress 5.8.x. Kalau ada yang kurang jelas mengenai tips coding ini, silahkan bertanya via kolom komentar dibawah ini.</em></p>
 
 			</div>
 			<div class="mb2">
@@ -2085,9 +2040,9 @@ add_filter(<span style="color:#cd5555">&#39;next_posts_link_attributes&#39;</spa
 			</div>
 			
 			<h3 class="h6 caps muted mb2">Sharing</h3>
-  			<amp-social-share type="facebook" width="50" height="36" data-param-text="WordPress page pagination" data-param-href="https://insertapps.com/amp/blog/wordpress-page-pagination/?ref=URL" data-param-app_id="145634995501895" aria-label="Share this on Facebook"></amp-social-share>
-			<amp-social-share type="twitter" width="50" height="36" data-param-text="WordPress page pagination" data-param-url="https://insertapps.com/amp/blog/wordpress-page-pagination/" aria-label="Share this on Twitter"></amp-social-share>
-			<amp-social-share type="whatsapp" width="50" height="36" data-param-text="Check out this article: WordPress page pagination - https://insertapps.com/amp/blog/wordpress-page-pagination/"></amp-social-share>
+  			<amp-social-share type="facebook" width="50" height="36" data-param-text="Menambah Gambar ke dalam RSS Feed WordPress" data-param-href="https://insertapps.com/amp/blog/wordpress-add-image-to-rss-feed/?ref=URL" data-param-app_id="145634995501895" aria-label="Share this on Facebook"></amp-social-share>
+			<amp-social-share type="twitter" width="50" height="36" data-param-text="Menambah Gambar ke dalam RSS Feed WordPress" data-param-url="https://insertapps.com/amp/blog/wordpress-add-image-to-rss-feed/" aria-label="Share this on Twitter"></amp-social-share>
+			<amp-social-share type="whatsapp" width="50" height="36" data-param-text="Check out this article: Menambah Gambar ke dalam RSS Feed WordPress - https://insertapps.com/amp/blog/wordpress-add-image-to-rss-feed/"></amp-social-share>
 			
 		</article>
 		<aside class="clearfix mnx2">
@@ -2096,23 +2051,12 @@ add_filter(<span style="color:#cd5555">&#39;next_posts_link_attributes&#39;</spa
 			
 			
 			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
-				<a class="text-decoration-none" href="https://insertapps.com/blog/html-header-keren-menu-scroll/">
+				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/wordpress-page-pagination/">
 					<figure class="m0 block border rounded border-silver">
-						<amp-img src="/images/blog/HTML_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
-							alt="Membuat header HTML keren responsive horizontal navbar auto scroll" class="block m0"></amp-img>
+						<amp-img src="/images/blog/Cara-membuat-theme-wordpress-thumbnail.webp" width="500" height="333" layout="responsive"
+							alt="WordPress page pagination" class="block m0"></amp-img>
 						<figcaption class="p2 m0">
-							<h1 class="xs-h3 h5">Membuat header HTML keren responsive horizontal navbar auto scroll</h1>
-						</figcaption>
-					</figure>
-				</a></div>
-			
-			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
-				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/css-flexbox-fixed-width/">
-					<figure class="m0 block border rounded border-silver">
-						<amp-img src="/images/blog/CSS_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
-							alt="CSS flexbox: Trik mengatur lebar tetap atau fixed width" class="block m0"></amp-img>
-						<figcaption class="p2 m0">
-							<h1 class="xs-h3 h5">CSS flexbox: Trik mengatur lebar tetap atau fixed width</h1>
+							<h1 class="xs-h3 h5">WordPress page pagination</h1>
 						</figcaption>
 					</figure>
 				</a></div>
@@ -2124,6 +2068,17 @@ add_filter(<span style="color:#cd5555">&#39;next_posts_link_attributes&#39;</spa
 							alt="Cara membuat theme wordpress (2021)" class="block m0"></amp-img>
 						<figcaption class="p2 m0">
 							<h1 class="xs-h3 h5">Cara membuat theme wordpress (2021)</h1>
+						</figcaption>
+					</figure>
+				</a></div>
+			
+			<div class="sm-col sm-col-6 md-col-4 lg-col-4 px2 mb2">
+				<a class="text-decoration-none" href="https://insertapps.com/amp/blog/css-flexbox-fixed-width/">
+					<figure class="m0 block border rounded border-silver">
+						<amp-img src="/images/blog/CSS_cover-thumbnail.jpg" width="500" height="333" layout="responsive"
+							alt="CSS flexbox: Trik mengatur lebar tetap atau fixed width" class="block m0"></amp-img>
+						<figcaption class="p2 m0">
+							<h1 class="xs-h3 h5">CSS flexbox: Trik mengatur lebar tetap atau fixed width</h1>
 						</figcaption>
 					</figure>
 				</a></div>

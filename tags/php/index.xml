@@ -6,7 +6,19 @@
     <description>Recent content in php on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Nov 2021 22:02:08 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Nov 2021 12:31:01 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menambah Gambar ke dalam RSS Feed WordPress</title>
+      <link>https://insertapps.com/blog/wordpress-add-image-to-rss-feed/</link>
+      <pubDate>Wed, 10 Nov 2021 12:31:01 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/wordpress-add-image-to-rss-feed/</guid>
+      <description>Kayaknya, salah satu fitur WordPress yang jarang dipakai adalah RSS feed widget. Padahal kalau di explore lebih dalam lagi, fitur RSS dapat mempercantik tampilan blog dengan menampilkan konten sindikasi hasil kolaborasi antar web.
+Tapi kalau desain tampilannya harus bagus!
+Baca juga tutorial sebelumnya: Cara membuat WordPress page pagination
+RSS adalah singkatan dari Really Simple Syndication, artinya &amp;ldquo;sindikasi yang sangat simple“. RSS memanfaatkan format XML untuk melakukan penyebaran dan pertukaran data antar website dengan mudah dan simple.</description>
+    </item>
+    
     <item>
       <title>WordPress page pagination</title>
       <link>https://insertapps.com/blog/wordpress-page-pagination/</link>
@@ -64,8 +76,7 @@ Skil dasar yang harus dipenuhi adalah:
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
- Untuk bracket versi yang lebih lama, pesan erronya begini:
-PHP runtime not found.</description>
+Brackets error: PHP runtime not found.  Untuk bracket versi yang lebih lama, pesan erronya begini:</description>
     </item>
     
     <item>
