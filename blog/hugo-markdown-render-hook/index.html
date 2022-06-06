@@ -26,7 +26,7 @@
     
     <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/128.png" sizes="120x120">
     <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.80.0">
+    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.100.1">
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@https://www.twitter.com/insertapps" />
@@ -51,7 +51,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
 	 
 <script data-ad-client="ca-pub-5397255807284351" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script type="application/ld+json">
@@ -407,65 +406,65 @@ if (!doNotTrack) {
 	>mencoba meng-embed langsung script Codepen ke dalam posting</a>, hasil render laman web seolah tidak terjadi apa-apa. 😱</p>
 <p>Karena beda cara kerja antara mesin Goldmark dengan mesin Blackfriday dalam memformat plain text menjadi document HTML, diperlukan template <em>Markdown Render Hooks,</em> untuk menjembatani kode HTML mentah ke dalam file Markdown.</p>
 <p>Markdown versi CommonMark, untuk menambahkan tautan, bentuk penulisan shortcode seperti ini: <code>[]()</code></p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[<span style="color:#8b008b;font-weight:bold">Insertapps.com</span>](<span style="color:#658b00">https://insertapps.com/ &#34;Insert Apps&#34;</span>)`
-</code></pre></div><p>Hasil render mesin Goldmark menjadi document HTML, default-nya seperti ini:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://insertapps.com/&#34;</span> <span style="color:#658b00">title</span>=<span style="color:#cd5555">&#34;Insert Apps&#34;</span>&gt;Insertapps.com&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-</code></pre></div><p>Kalau linknya harus ada output seperti <code>target=&quot;_blank&quot;</code> atau sebuah tautan mendapatkan prilaku tambahan dofollow <code>rel=&quot;nofollow&quot;</code> atau <code>rel=&quot;noopener&quot;</code> cara menanganinya melalui sebuah template render hook.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>[<span style="color:#8b008b;font-weight:bold">Insertapps.com</span>](<span style="color:#658b00">https://insertapps.com/ &#34;Insert Apps&#34;</span>)`
+</span></span></code></pre></div><p>Hasil render mesin Goldmark menjadi document HTML, default-nya seperti ini:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://insertapps.com/&#34;</span> <span style="color:#658b00">title</span>=<span style="color:#cd5555">&#34;Insert Apps&#34;</span>&gt;Insertapps.com&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span></code></pre></div><p>Kalau linknya harus ada output seperti <code>target=&quot;_blank&quot;</code> atau sebuah tautan mendapatkan prilaku tambahan dofollow <code>rel=&quot;nofollow&quot;</code> atau <code>rel=&quot;noopener&quot;</code> cara menanganinya melalui sebuah template render hook.</p>
 <p>Buat file baru dengan nama <code>render-link.html</code> lalu tempatkan dalam folder:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">layouts
-└── _default
-    └── _markup
-        ├── render-image.html
-        ├── render-image.rss.xml
-        └── render-link.html
-</code></pre></div><p>Di dalam file template render hook, insert code spesial seperti berikut:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">&lt;a href=<span style="color:#cd5555">&#34;{{ .Destination | safeURL }}&#34;</span>
-	{{ with .Title}} <span style="color:#228b22">// Loop untuk mengecek apakah ada title link
-</span><span style="color:#228b22"></span>		title=<span style="color:#cd5555">&#34;{{ . }}&#34;</span>
-	{{ end }}
-	{{ <span style="color:#8b008b;font-weight:bold">if</span> strings.HasPrefix .Destination <span style="color:#cd5555">&#34;http&#34;</span> }} <span style="color:#228b22">// Kondisi bila link tidak secure
-</span><span style="color:#228b22"></span>		target=<span style="color:#cd5555">&#34;_blank&#34;</span> rel=<span style="color:#cd5555">&#34;noopener&#34;</span>
-	{{ end }}&gt;
-	{{ .Text | safeHTML }} <span style="color:#228b22">// Anchor text
-</span><span style="color:#228b22"></span>&lt;/a&gt;
-</code></pre></div><p>Maka hasil render di laman HTML menjadi:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://insertapps.com/&#34;</span> <span style="color:#658b00">title</span>=<span style="color:#cd5555">&#34;Insert Apps&#34;</span> <span style="color:#658b00">target</span>=<span style="color:#cd5555">&#34;_blank&#34;</span> <span style="color:#658b00">rel</span>=<span style="color:#cd5555">&#34;noopener&#34;</span>&gt;
-	Insertapps.com
-&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-</code></pre></div><p>Begitu juga untuk memformat gambar. Shortcode versi CommonMark untuk insert picture ke dalam  plain text Markdown seperti ini: <code>![]()</code></p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![<span style="color:#8b008b;font-weight:bold">Yout text for alt image</span>](<span style="color:#658b00">https://insertapps.com/assets/hero.jpg &#34;Text for your image title or caption&#34;</span>)
-</code></pre></div><p>Default output yang dihasilkan oleh mesin Goldmark di laman HTML seperti ini:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">&lt;p&gt;
-	&lt;img src=<span style="color:#cd5555">&#34;https://insertapps.com/assets/hero.jpg&#34;</span>
-		 alt=<span style="color:#cd5555">&#34;Yout text for alt image&#34;</span>
-		 title=<span style="color:#cd5555">&#34;Text for your image title or use caption&#34;</span>&gt;
-&lt;/p&gt;
-</code></pre></div><p>Bagaimana kalau tata letak gambar wajib di-render dalam tag <code>&lt;figure&gt;</code> misalnya, sekaligus menghias dengan tambahan style css card?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>layouts
+</span></span><span style="display:flex;"><span>└── _default
+</span></span><span style="display:flex;"><span>    └── _markup
+</span></span><span style="display:flex;"><span>        ├── render-image.html
+</span></span><span style="display:flex;"><span>        ├── render-image.rss.xml
+</span></span><span style="display:flex;"><span>        └── render-link.html
+</span></span></code></pre></div><p>Di dalam file template render hook, insert code spesial seperti berikut:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>&lt;a href=<span style="color:#cd5555">&#34;{{ .Destination | safeURL }}&#34;</span>
+</span></span><span style="display:flex;"><span>	{{ with .Title}} <span style="color:#228b22">// Loop untuk mengecek apakah ada title link
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>		title=<span style="color:#cd5555">&#34;{{ . }}&#34;</span>
+</span></span><span style="display:flex;"><span>	{{ end }}
+</span></span><span style="display:flex;"><span>	{{ <span style="color:#8b008b;font-weight:bold">if</span> strings.HasPrefix .Destination <span style="color:#cd5555">&#34;http&#34;</span> }} <span style="color:#228b22">// Kondisi bila link tidak secure
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>		target=<span style="color:#cd5555">&#34;_blank&#34;</span> rel=<span style="color:#cd5555">&#34;noopener&#34;</span>
+</span></span><span style="display:flex;"><span>	{{ end }}&gt;
+</span></span><span style="display:flex;"><span>	{{ .Text | safeHTML }} <span style="color:#228b22">// Anchor text
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>&lt;/a&gt;
+</span></span></code></pre></div><p>Maka hasil render di laman HTML menjadi:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://insertapps.com/&#34;</span> <span style="color:#658b00">title</span>=<span style="color:#cd5555">&#34;Insert Apps&#34;</span> <span style="color:#658b00">target</span>=<span style="color:#cd5555">&#34;_blank&#34;</span> <span style="color:#658b00">rel</span>=<span style="color:#cd5555">&#34;noopener&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	Insertapps.com
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span></code></pre></div><p>Begitu juga untuk memformat gambar. Shortcode versi CommonMark untuk insert picture ke dalam  plain text Markdown seperti ini: <code>![]()</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#8b008b;font-weight:bold">Yout text for alt image</span>](<span style="color:#658b00">https://insertapps.com/assets/hero.jpg &#34;Text for your image title or caption&#34;</span>)
+</span></span></code></pre></div><p>Default output yang dihasilkan oleh mesin Goldmark di laman HTML seperti ini:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>&lt;p&gt;
+</span></span><span style="display:flex;"><span>	&lt;img src=<span style="color:#cd5555">&#34;https://insertapps.com/assets/hero.jpg&#34;</span>
+</span></span><span style="display:flex;"><span>		 alt=<span style="color:#cd5555">&#34;Yout text for alt image&#34;</span>
+</span></span><span style="display:flex;"><span>		 title=<span style="color:#cd5555">&#34;Text for your image title or use caption&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/p&gt;
+</span></span></code></pre></div><p>Bagaimana kalau tata letak gambar wajib di-render dalam tag <code>&lt;figure&gt;</code> misalnya, sekaligus menghias dengan tambahan style css card?</p>
 <p>Prosesnya sama juga. Create file baru dengan nama <code>render-image.html</code>. Kemudian insert code tambahan tersebut, misalnya seperti ini:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">&lt;figure class=<span style="color:#cd5555">&#34;card&#34;</span> style=<span style="color:#cd5555">&#34;width: 18rem;&#34;</span>&gt;
-	&lt;img class=<span style="color:#cd5555">&#34;card-img-top&#34;</span> <span style="color:#228b22">// Add image class
-</span><span style="color:#228b22"></span>		 src=<span style="color:#cd5555">&#34;{{ .Destination | safeURL }}&#34;</span> <span style="color:#228b22">// Print url image here
-</span><span style="color:#228b22"></span>		 alt=<span style="color:#cd5555">&#34;{{ .Text }}&#34;</span> <span style="color:#228b22">// Print alt image here
-</span><span style="color:#228b22"></span>	{{ with .Title}} <span style="color:#228b22">// Checking image title
-</span><span style="color:#228b22"></span>		 title=<span style="color:#cd5555">&#34;{{ . }}&#34;</span>
-	{{ end }} /&gt;
-	<span style="color:#228b22">//
-</span><span style="color:#228b22"></span>	&lt;figcaption class=<span style="color:#cd5555">&#34;card-body&#34;</span>&gt;
-		 &lt;h5 class=<span style="color:#cd5555">&#34;card-title&#34;</span>&gt;{{ .Title }}&lt;/h5&gt; <span style="color:#228b22">// Print title
-</span><span style="color:#228b22"></span>	&lt;figcaption&gt;
-&lt;/figure&gt;
-</code></pre></div><p>Tak hanya itu, dengan template Markdown render hooks ini, bisa custom output ke format file AMP dengan tag <code>&lt;amp-img&gt;</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>&lt;figure class=<span style="color:#cd5555">&#34;card&#34;</span> style=<span style="color:#cd5555">&#34;width: 18rem;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;img class=<span style="color:#cd5555">&#34;card-img-top&#34;</span> <span style="color:#228b22">// Add image class
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>		 src=<span style="color:#cd5555">&#34;{{ .Destination | safeURL }}&#34;</span> <span style="color:#228b22">// Print url image here
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>		 alt=<span style="color:#cd5555">&#34;{{ .Text }}&#34;</span> <span style="color:#228b22">// Print alt image here
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>	{{ with .Title}} <span style="color:#228b22">// Checking image title
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>		 title=<span style="color:#cd5555">&#34;{{ . }}&#34;</span>
+</span></span><span style="display:flex;"><span>	{{ end }} /&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#228b22">//
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>	&lt;figcaption class=<span style="color:#cd5555">&#34;card-body&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		 &lt;h5 class=<span style="color:#cd5555">&#34;card-title&#34;</span>&gt;{{ .Title }}&lt;/h5&gt; <span style="color:#228b22">// Print title
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>	&lt;figcaption&gt;
+</span></span><span style="display:flex;"><span>&lt;/figure&gt;
+</span></span></code></pre></div><p>Tak hanya itu, dengan template Markdown render hooks ini, bisa custom output ke format file AMP dengan tag <code>&lt;amp-img&gt;</code>.</p>
 <p>Cukup buat document HTML baru atau duplicate saja file <code>render-image.html</code>,dan rename nama file menjadi <code>render-image.amp.html</code>.</p>
 <p>Lalu tinggal modifikasi saja dengan standar format file template AMP.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">amp-img</span>
-  <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;{{ .Text }}&#34;</span>
-  <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;{{ .Destination | safeURL }}&#34;</span>
-  <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;900&#34;</span>
-  <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;675&#34;</span>
-  <span style="color:#658b00">layout</span>=<span style="color:#cd5555">&#34;responsive&#34;</span>
-&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">amp-img</span>&gt;
-</code></pre></div><p>Mudahkan?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">amp-img</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;{{ .Text }}&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;{{ .Destination | safeURL }}&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;900&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;675&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#658b00">layout</span>=<span style="color:#cd5555">&#34;responsive&#34;</span>
+</span></span><span style="display:flex;"><span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">amp-img</span>&gt;
+</span></span></code></pre></div><p>Mudahkan?</p>
 <p>Untuk custom heading dan untuk membuat daftar isi yang body Markdown, caranya sama juga.</p>
 <p>Lebih jelasnya, silahkan baca documentasinya di <a href="https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks" class="blue a-hover text-decoration-none" title="configurasi markup" target="_blank" rel="nofollow noopener noreferrer">configurasi markup</a>. Soalnya kami belum mempraktekkannya, nanti kalau sudah pernah mencobnya, artikel ini kami update lagi.</p>
 <p>Intinya dengan template Markdown render hook ini akan memudahkan dalam mengelola custom output khusus image, link dan heading. 😏</p>
@@ -511,7 +510,7 @@ if (!doNotTrack) {
 			<h3 class="h4 m0">Comment</h3>
 			<div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -657,10 +656,10 @@ if (!doNotTrack) {
     
     <div id="sub-footer" class="clearfix bg-dark-light gray py1 px2">
         <div class="left">
-            <p class="h5 m0">&copy; 2021 InsertApps</p>
+            <p class="h5 m0">&copy; 2022 InsertApps</p>
         </div>
         <div class="right">
-            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.80.0</p>
+            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.100.1</p>
         </div>
     </div>
 <div id="overlay" class="fixed z3 top-0 left-0 bg-darken-4"></div>

@@ -6,7 +6,18 @@
     <description>Recent content in css on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Nov 2021 12:31:01 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 21:54:26 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tailwindcss template tutorial layout dua kolom</title>
+      <link>https://insertapps.com/blog/tailwindcss-template-two-columns/</link>
+      <pubDate>Sun, 05 Jun 2022 21:54:26 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/tailwindcss-template-two-columns/</guid>
+      <description>Berikut ini cara mudah membuat Tailwindcss template. Bentuk desainnya layout dua kolom perbandingan 7:3 untuk theme blog post. Kolom sebelah kiri untuk muatan artikel sebesar 2/3 ukuran layar atau 66.6%, dan sisi kanan untuk sidebar sebesar 1/3 ukuran layar atau 33.3%.
+Karena Tailwindcss hadir dalam bentuk CSS utility yang tidak menyediakan paket komponen siap pakai seperti framework Bootstrap CSS.
+Jadi saat kita membuat template HTML dengan Tailwind CSS harus memilih sendiri class-class utility yang sudah tersedia.</description>
+    </item>
+    
     <item>
       <title>Menambah Gambar ke dalam RSS Feed WordPress</title>
       <link>https://insertapps.com/blog/wordpress-add-image-to-rss-feed/</link>
@@ -25,7 +36,7 @@ RSS adalah singkatan dari Really Simple Syndication, artinya &amp;ldquo;sindikas
       <pubDate>Wed, 03 Nov 2021 22:02:08 +0700</pubDate>
       
       <guid>https://insertapps.com/blog/wordpress-page-pagination/</guid>
-      <description>Desain website yang baik harus didukung dengan struktur navigasi yang yang baik pula. Sehingga pengunjung yang datang tidak tersesat saat mengakses ribuan konten yang &amp;lsquo;terkubur&amp;rsquo; dalam database.
+      <description>Desain website yang baik harus didukung dengan struktur navigasi yang yang baik pula. Sehingga pengunjung yang datang tidak tersesat saat mengakses ribuan konten yang &amp;rsquo;terkubur&amp;rsquo; dalam database.
 Salah satunya adalah fitur page pagination atau juga dikenal dikenal sebagai paging. Pagination adalah proses membagi data posting menjadi halaman diskrit—grouping sejumlah halaman yang berbeda menjadi satu halaman yang rapi dan runut.
 Selain memudahkan pengunjung mengakses blog atau website, berikut segudang manfaat dari sebuah fitur pagination:</description>
     </item>
@@ -62,7 +73,7 @@ Mudah-mudahan serial membuat tema WordPress sendiri dari 0, bisa terus berlanjut
 Bahkan theme hasil coding sedikit demi sedikit bisa kalian jual di marketplace themeforest. 😎 Semoga saja.
 Prerequisite tutorial coding theme Wordpress Ada prasyarat untuk mengikuti seri tutorial cara membuat template wordpress ini!
 Skil dasar yang harus dipenuhi adalah:
- Menguasai HTML dan CSS 😆 Mengerti pemrograman PHP 😨 Paham bahasa JavaScript 😖  ☝️ QUICK FAQ: Pertanyaannya: Saya belum menguasai betul bahasa pemrograman web?</description>
+Menguasai HTML dan CSS 😆 Mengerti pemrograman PHP 😨 Paham bahasa JavaScript 😖 ☝️ QUICK FAQ: Pertanyaannya: Saya belum menguasai betul bahasa pemrograman web?</description>
     </item>
     
     <item>
@@ -85,9 +96,10 @@ Alih-alih untuk mengurangi panjang halaman web dan memberikan jeda scroll ke baw
       <description>Tutorial simple membuat sidebar menu yang responsive dengan vanilla JavaScript memanfaatkan fungsi classList add/remove tampa menggunakan library jQuery.
 Alat dan Bahan
 Untuk alat coding silahkan menggunakan editor favorit kalian, boleh Visual Code, Brackets atau Sublime text editor.
-HTML Sidenav menu  Bahan untuk membuat side menu navigation
+HTML Sidenav menu Bahan untuk membuat side menu navigation
 Terlebih dahulu persiapkan template HTML dasar yang sudah berisi sidebar menu.
-Dalam tutorial ini, kami menggunakan CSS framework Basscss yang full packet https://unpkg.com/ace-css/css/ace.min.css.</description>
+Dalam tutorial ini, kami menggunakan CSS framework Basscss yang full packet https://unpkg.com/ace-css/css/ace.min.css.
+Berikut isi file template HTML dasar untuk membuat sidebar nav menu yang sederhana saja.</description>
     </item>
     
     <item>
@@ -109,7 +121,7 @@ Main container yang akan menampung isi konten dibelah dua kolom dengan perbandin
       
       <guid>https://insertapps.com/blog/tutorial-header-navigation-bar/</guid>
       <description>Tutorial desain header navigation bar ini adalah part ke dua dari seri tutorial membuat website bagian pertama. Sesi ini mulai coding secara &amp;lsquo;drag and drop&amp;rsquo; kepingan ‘puzzle’ class-class Basscss, lalu insert ke dalam file HTML.
-Sebelum &amp;lsquo;lets go to coding&amp;rsquo;, seperti biasa izinkan InsertApps menjelaskan beberapa rule dan konsep koding nya seperti apa? Yang sudah paham dasar web design, silahkan scroll down ke cara membuat header navigation bar yang responsive.</description>
+Sebelum &amp;rsquo;lets go to coding&amp;rsquo;, seperti biasa izinkan InsertApps menjelaskan beberapa rule dan konsep koding nya seperti apa? Yang sudah paham dasar web design, silahkan scroll down ke cara membuat header navigation bar yang responsive.</description>
     </item>
     
     <item>
@@ -157,7 +169,7 @@ Cara Pertama</description>
       
       <guid>https://insertapps.com/blog/css-dropcap/</guid>
       <description>Drop cap dekorasi karakter pertama di awal paragraf pertama dibuat lebih menonjol dengan memperbesar ukuran huruf.
-Drop Cap  Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.
+Drop Cap Teknik drop cap sering dibuat dalam karya tulis media cetak, koran, majalah, buku dan media cetak lainnya. Teknik dekorasi drop cap dalam artikel blog sudah tidak asing lagi.
 Beberapa theme blog WordPress sudah menyediakan fitur tambahan untuk membuat &amp;lsquo;Drop Cap&amp;rsquo;.
 Bila thema WordPress atau Blogspot kamu tidak ada fitur tersebut, jangan berkecil hati.</description>
     </item>
@@ -206,10 +218,10 @@ Sama halnya seperti isi dalam sebuah hamburger, ada sayuran, daging, telur dadar
       <guid>https://insertapps.com/blog/convert-pixel-to-rem/</guid>
       <description>1 rem sama dengan 16 pixel.
 Cara menulis nilai angka rem di bawah nilai angka 1, boleh dengan:
-0.5rem  Kebanyakan programmer cukup menulis dengan:
-.5rem  Menghilangkan angka nol.
+0.5rem Kebanyakan programmer cukup menulis dengan:
+.5rem Menghilangkan angka nol.
 Berikut tabel ukuran konversi pixel ke ukuran rem.
-   Pixel  REM     1px = 0.0625rem   2px = 0.125rem   3px = 0.1875rem   4px = 0.25rem   5px = 0.</description>
+Pixel REM 1px = 0.0625rem 2px = 0.125rem 3px = 0.1875rem 4px = 0.25rem 5px = 0.3125rem 6px = 0.375rem 7px = 0.4375rem 8px = 0.5rem 9px = 0.5625rem 10px = 0.625rem 11px = 0.</description>
     </item>
     
     <item>
@@ -233,7 +245,7 @@ html, body { height: 100%; margin: 0; } .container { height: 100%; display: flex
       <description>Sebelum jatuh hati dan mantap menggunakan framework Basscss, InsertApps sudah mencoba framework CSS Bootstrap sejak versi 2.3.
 Setelah sekian lama ngulik Bootstrap, kami baru berhasil menyelesai sebuah WordPress theme siap pakai saat rilis Bootstrap 4 beta 2.
 Begitu Bootstrap 4.0 versi stabil release ke publik, kami sudah migrasi ke Basscss karya Brent Jackson dari Brooklyn, New York.
-Hasil rapid test kecepatan loading web InsertApps, peringatan &amp;#39;optimasi CSS&amp;#39; sudah clear.  Alasan beralih ke framework Basscss karena Bootstrap susah lolos Google PageSpeed Insights ke predikat hijau—performa dengan nilai skor 50–89 Google PageSpeed test.</description>
+Hasil rapid test kecepatan loading web InsertApps, peringatan &amp;#39;optimasi CSS&amp;#39; sudah clear. Alasan beralih ke framework Basscss karena Bootstrap susah lolos Google PageSpeed Insights ke predikat hijau—performa dengan nilai skor 50–89 Google PageSpeed test.</description>
     </item>
     
   </channel>

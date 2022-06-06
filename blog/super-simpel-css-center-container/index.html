@@ -24,7 +24,7 @@
     
     <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/128.png" sizes="120x120">
     <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.80.0">
+    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.100.1">
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@https://www.twitter.com/insertapps" />
@@ -49,7 +49,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
 	 
 <script data-ad-client="ca-pub-5397255807284351" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script type="application/ld+json">
@@ -379,56 +378,56 @@ if (!doNotTrack) {
 <p>Saya sendiri menggunakan kode simple ini untuk membuat form login Hotspot WiFI server Mikrotik.</p>
 <p><img src="/images/blog/2020/07_Simple-center-login-form-css.jpg" alt="CSS layout center thing"></p>
 <p>Berikut ini style CSS yang super simple untuk layout secara vertical dan horizontal.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">	&lt;<span style="color:#8b008b;font-weight:bold">style</span>&gt;
-	<span style="color:#228b22">/* Input parent value */</span>
-		<span style="color:#8b008b;font-weight:bold">html</span>,<span style="color:#8b008b;font-weight:bold">body</span> {
-			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>
-		}
-	<span style="color:#228b22">/* Input child value */</span>
-		.<span style="color:#008b45;font-weight:bold">container</span> {
-			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
-			<span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
-			<span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-			<span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-		}
-	&lt;/<span style="color:#8b008b;font-weight:bold">style</span>&gt;
-</code></pre></div><p>Template HTML CSS layout secara vertikal dan horizontal.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#1e889b">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#8b008b;font-weight:bold">html</span> <span style="color:#658b00">lang</span>=<span style="color:#cd5555">&#34;en&#34;</span>&gt;
-  &lt;<span style="color:#8b008b;font-weight:bold">head</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">charset</span>=<span style="color:#cd5555">&#34;UTF-8&#34;</span> /&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">name</span>=<span style="color:#cd5555">&#34;viewport&#34;</span> <span style="color:#658b00">content</span>=<span style="color:#cd5555">&#34;width=device-width, initial-scale=1&#34;</span> /&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;InsertApps - Super Simple CSS Layout Vertikal Horizontal&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">style</span>&gt;
-      <span style="color:#8b008b;font-weight:bold">html</span>,
-      <span style="color:#8b008b;font-weight:bold">body</span> {
-		<span style="color:#228b22">/* Set parent value */</span>
-        <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
-      }
-      .<span style="color:#008b45;font-weight:bold">container</span> {
-		<span style="color:#228b22">/* Set child value */</span>
-        <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
-        <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
-        <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-        <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-      }
-    &lt;/<span style="color:#8b008b;font-weight:bold">style</span>&gt;
-  &lt;/<span style="color:#8b008b;font-weight:bold">head</span>&gt;
-
-  &lt;<span style="color:#8b008b;font-weight:bold">body</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;container&#34;</span>&gt;
-      &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;item&#34;</span>&gt;
-        Hello Word!
-      &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-  &lt;/<span style="color:#8b008b;font-weight:bold">body</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">html</span>&gt;
-</code></pre></div><p>Untuk hasil yang lebih baik, tambahkan css reserter seperti <code>normalize.css</code> untuk menormal style default browser Chrome, Firefox, Opera, Safari dan browser lainnya.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">link</span>
-  <span style="color:#658b00">rel</span>=<span style="color:#cd5555">&#34;stylesheet&#34;</span>
-  <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://necolas.github.io/normalize.css/8.0.1/normalize.css&#34;</span>
-/&gt;
-</code></pre></div><p><a href="https://beewifi.my.id/" class="blue text-decoration-none"
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">style</span>&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#228b22">/* Input parent value */</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">html</span>,<span style="color:#8b008b;font-weight:bold">body</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	<span style="color:#228b22">/* Input child value */</span>
+</span></span><span style="display:flex;"><span>		.<span style="color:#008b45;font-weight:bold">container</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">style</span>&gt;
+</span></span></code></pre></div><p>Template HTML CSS layout secara vertikal dan horizontal.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#1e889b">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">html</span> <span style="color:#658b00">lang</span>=<span style="color:#cd5555">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">charset</span>=<span style="color:#cd5555">&#34;UTF-8&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">name</span>=<span style="color:#cd5555">&#34;viewport&#34;</span> <span style="color:#658b00">content</span>=<span style="color:#cd5555">&#34;width=device-width, initial-scale=1&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;InsertApps - Super Simple CSS Layout Vertikal Horizontal&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">style</span>&gt;
+</span></span><span style="display:flex;"><span>      <span style="color:#8b008b;font-weight:bold">html</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#8b008b;font-weight:bold">body</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#228b22">/* Set parent value */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      .<span style="color:#008b45;font-weight:bold">container</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#228b22">/* Set child value */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">style</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        Hello Word!
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">html</span>&gt;
+</span></span></code></pre></div><p>Untuk hasil yang lebih baik, tambahkan css reserter seperti <code>normalize.css</code> untuk menormal style default browser Chrome, Firefox, Opera, Safari dan browser lainnya.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">link</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#658b00">rel</span>=<span style="color:#cd5555">&#34;stylesheet&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://necolas.github.io/normalize.css/8.0.1/normalize.css&#34;</span>
+</span></span><span style="display:flex;"><span>/&gt;
+</span></span></code></pre></div><p><a href="https://beewifi.my.id/" class="blue text-decoration-none"
 	
 	
 		target="_blank"
@@ -436,44 +435,47 @@ if (!doNotTrack) {
 <h3 id="tampa-property-height">Tampa property Height</h3>
 <p>Kode di atas bergantung pada ukuran tinggi body lebih dulu set ke 100%. Kemudian ukuran <code>container</code> juga harus di setting ke <code>height:100%</code> juga.</p>
 <p>Pertanyaanya: Hi CSS, Why doesn’t percentage height work?</p>
-<p>Jawabannya silahkan baca sendiri di <a href="https://stackoverflow.com/questions/1622027/percentage-height-html-5-css">https://stackoverflow.com/questions/1622027/percentage-height-html-5-css</a>.</p>
+<p>Jawabannya silahkan baca sendiri di <a href="https://stackoverflow.com/questions/1622027/percentage-height-html-5-css" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>https://stackoverflow.com/questions/1622027/percentage-height-html-5-css</a>.</p>
 <p>CSS height baru berfungsi kalau <code>div</code> parent (induk) memiliki nilai property <code>height</code> yang eksplisit, artinya : jelas, tegas, gamblang, tidak tersembunyi, tidak bertele-tele.</p>
 <p>Maka nilai <code>height: 100%</code> akan berfungsi pada <code>div</code> turunannya.</p>
 <p>Untuk menghilangkan ketergantungan pada <code>div</code> indux, cukup ganti property <code>height: 100%</code> dengan property <code>position: absolute;</code>.</p>
 <p>Kemudian set lebar dan tingginya dengan nilai <code>top</code>, <code>right</code>, <code>bottom</code> dan <code>left</code>.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#008b45;font-weight:bold">container</span> {
-	<span style="color:#228b22">/*Set height*/</span>
-	<span style="color:#8b008b;font-weight:bold">position</span>: <span style="color:#8b008b;font-weight:bold">absolute</span>;
-    <span style="color:#8b008b;font-weight:bold">top</span>: <span style="color:#b452cd">0</span>;
-    <span style="color:#8b008b;font-weight:bold">right</span>: <span style="color:#b452cd">0</span>;
-    <span style="color:#8b008b;font-weight:bold">bottom</span>: <span style="color:#b452cd">0</span>;
-	<span style="color:#8b008b;font-weight:bold">left</span>: <span style="color:#b452cd">0</span>;
-	<span style="color:#228b22">/*Layout */</span>
-	<span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
-    <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-    <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-}
-
-</code></pre></div><h3 id="tampa-property-position">Tampa property position</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">container</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#228b22">/*Set height*/</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8b008b;font-weight:bold">position</span>: <span style="color:#8b008b;font-weight:bold">absolute</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">top</span>: <span style="color:#b452cd">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">right</span>: <span style="color:#b452cd">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">bottom</span>: <span style="color:#b452cd">0</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#8b008b;font-weight:bold">left</span>: <span style="color:#b452cd">0</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#228b22">/*Layout */</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="tampa-property-position">Tampa property position</h3>
 <p>Dengan menghilangkan property <code>position: absolute;</code> dan <code>top: 0;</code>, <code>right: 0;</code>, <code>bottom: 0;</code> dan <code>left: 0;</code> cukup ganti dengan property <code>height:</code> dengan value <code>100vh;</code></p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#008b45;font-weight:bold">container</span> {
-  <span style="color:#8b008b;font-weight:bold">height</span>:<span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">vh</span>;
-  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
-  <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-  <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-}
-</code></pre></div><p>Jadinya lebih ringkas.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">container</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">height</span>:<span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">vh</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Jadinya lebih ringkas.</p>
 <h3 id="menggunakan-css-grid">Menggunakan CSS Grid</h3>
 <p>Masih ada code lain yang lebih super simple sakti, menggunakan CSS grid.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#008b45;font-weight:bold">parent</span> {
-    <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">grid</span>;
-    place-items: <span style="color:#8b008b;font-weight:bold">center</span>;
-  }
-</code></pre></div><div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;parent bg-blue&#34;</span> &gt;
-  &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;box bg-orange&#34;</span>&gt;
-    Hello Word..
-  &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">parent</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">grid</span>;
+</span></span><span style="display:flex;"><span>    place-items: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;parent bg-blue&#34;</span> &gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;box bg-orange&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    Hello Word..
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span></code></pre></div>
 		</div>
 		
 		<section class="social mb3">
@@ -510,7 +512,7 @@ if (!doNotTrack) {
 			<h3 class="h4 m0">Comment</h3>
 			<div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -656,10 +658,10 @@ if (!doNotTrack) {
     
     <div id="sub-footer" class="clearfix bg-dark-light gray py1 px2">
         <div class="left">
-            <p class="h5 m0">&copy; 2021 InsertApps</p>
+            <p class="h5 m0">&copy; 2022 InsertApps</p>
         </div>
         <div class="right">
-            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.80.0</p>
+            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.100.1</p>
         </div>
     </div>
 <div id="overlay" class="fixed z3 top-0 left-0 bg-darken-4"></div>

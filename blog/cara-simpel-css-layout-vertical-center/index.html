@@ -26,7 +26,7 @@
     
     <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/128.png" sizes="120x120">
     <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.80.0">
+    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.100.1">
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@https://www.twitter.com/insertapps" />
@@ -51,7 +51,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
 	 
 <script data-ad-client="ca-pub-5397255807284351" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script type="application/ld+json">
@@ -387,39 +386,39 @@ if (!doNotTrack) {
 		<div class="article mb3">
 			<p>Dengan hadirnya fitur CSS Flexbox sangat dimudahkan untuk layout suatu blok elemen HTML tepat berada ditengah-tengah secara vertical maupun horizontal.</p>
 <p>Berikut cara simple CSS centering layout.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;container&#34;</span>&gt;
-
-	&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;box&#34;</span>&gt;
-
-		Hello world 
-
-	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-
-&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-</code></pre></div><p>CSS flexbox:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#8b008b;font-weight:bold">html</span>,
-<span style="color:#8b008b;font-weight:bold">body</span> {
-  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
-  <span style="color:#8b008b;font-weight:bold">margin</span>: <span style="color:#b452cd">0</span>;
-}
-
-.<span style="color:#008b45;font-weight:bold">container</span> {
-  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
-  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
-  <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-  <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-}
-
-.<span style="color:#008b45;font-weight:bold">box</span> {
-  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
-  <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-  <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-  <span style="color:#8b008b;font-weight:bold">width</span>: <span style="color:#b452cd">20</span><span style="color:#00688b;font-weight:bold">%</span>;
-  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">20</span><span style="color:#00688b;font-weight:bold">%</span>;
-  <span style="color:#8b008b;font-weight:bold">border</span>: <span style="color:#b452cd">1</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#8b008b;font-weight:bold">solid</span> <span style="color:#8b008b;font-weight:bold">silver</span>;
-  <span style="color:#8b008b;font-weight:bold">border-radius</span>: <span style="color:#b452cd">5</span><span style="color:#00688b;font-weight:bold">px</span>;
-}
-</code></pre></div><p>Silahkan disederhanakan lagi bentuk penulisan sintak CSSnys.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;box&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		Hello world 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span></code></pre></div><p>CSS flexbox:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">html</span>,
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">body</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">margin</span>: <span style="color:#b452cd">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">container</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">box</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">width</span>: <span style="color:#b452cd">20</span><span style="color:#00688b;font-weight:bold">%</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">20</span><span style="color:#00688b;font-weight:bold">%</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">border</span>: <span style="color:#b452cd">1</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#8b008b;font-weight:bold">solid</span> <span style="color:#8b008b;font-weight:bold">silver</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">border-radius</span>: <span style="color:#b452cd">5</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Silahkan disederhanakan lagi bentuk penulisan sintak CSSnys.</p>
 <p><a href="https://codepen.io/fauzanmy/pen/MWbyPaL" class="blue text-decoration-none"
 	
 	
@@ -462,7 +461,7 @@ if (!doNotTrack) {
 			<h3 class="h4 m0">Comment</h3>
 			<div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -608,10 +607,10 @@ if (!doNotTrack) {
     
     <div id="sub-footer" class="clearfix bg-dark-light gray py1 px2">
         <div class="left">
-            <p class="h5 m0">&copy; 2021 InsertApps</p>
+            <p class="h5 m0">&copy; 2022 InsertApps</p>
         </div>
         <div class="right">
-            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.80.0</p>
+            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.100.1</p>
         </div>
     </div>
 <div id="overlay" class="fixed z3 top-0 left-0 bg-darken-4"></div>

@@ -25,7 +25,7 @@ RSS adalah singkatan dari Really Simple Syndication, artinya &amp;ldquo;sindikas
       <pubDate>Wed, 03 Nov 2021 22:02:08 +0700</pubDate>
       
       <guid>https://insertapps.com/blog/wordpress-page-pagination/</guid>
-      <description>Desain website yang baik harus didukung dengan struktur navigasi yang yang baik pula. Sehingga pengunjung yang datang tidak tersesat saat mengakses ribuan konten yang &amp;lsquo;terkubur&amp;rsquo; dalam database.
+      <description>Desain website yang baik harus didukung dengan struktur navigasi yang yang baik pula. Sehingga pengunjung yang datang tidak tersesat saat mengakses ribuan konten yang &amp;rsquo;terkubur&amp;rsquo; dalam database.
 Salah satunya adalah fitur page pagination atau juga dikenal dikenal sebagai paging. Pagination adalah proses membagi data posting menjadi halaman diskrit—grouping sejumlah halaman yang berbeda menjadi satu halaman yang rapi dan runut.
 Selain memudahkan pengunjung mengakses blog atau website, berikut segudang manfaat dari sebuah fitur pagination:</description>
     </item>
@@ -50,7 +50,7 @@ Mulai dari nempel sintag yang sederhana hingga custom function walker_nav_menu()
       <guid>https://insertapps.com/blog/upload-webp-to-wordpress/</guid>
       <description>By default WordPress belum mendukung upload file gambar format WebP (baca webppy) ke dalam library gallery WordPress. Padahal semua browser modern saat ini telah mendukung format WebP.
 WordPress sangat membatasi file berextensi apa saja yang boleh di upload ke sistem WP, demi menjaga keamana sitem WP itu sendiri. Secara default, WP cuma mengizinkan extensi file populer seperti;
- Image files: .jpg, .jpeg, .png, .gif, .ico Document files: .pdf, .doc, .xls, .</description>
+Image files: .jpg, .jpeg, .png, .gif, .ico Document files: .pdf, .doc, .xls, .ppt, .</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ Mudah-mudahan serial membuat tema WordPress sendiri dari 0, bisa terus berlanjut
 Bahkan theme hasil coding sedikit demi sedikit bisa kalian jual di marketplace themeforest. 😎 Semoga saja.
 Prerequisite tutorial coding theme Wordpress Ada prasyarat untuk mengikuti seri tutorial cara membuat template wordpress ini!
 Skil dasar yang harus dipenuhi adalah:
- Menguasai HTML dan CSS 😆 Mengerti pemrograman PHP 😨 Paham bahasa JavaScript 😖  ☝️ QUICK FAQ: Pertanyaannya: Saya belum menguasai betul bahasa pemrograman web?</description>
+Menguasai HTML dan CSS 😆 Mengerti pemrograman PHP 😨 Paham bahasa JavaScript 😖 ☝️ QUICK FAQ: Pertanyaannya: Saya belum menguasai betul bahasa pemrograman web?</description>
     </item>
     
     <item>
@@ -76,7 +76,7 @@ Skil dasar yang harus dipenuhi adalah:
       <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
 Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
 PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
-Brackets error: PHP runtime not found.  Untuk bracket versi yang lebih lama, pesan erronya begini:</description>
+Brackets error: PHP runtime not found. Untuk bracket versi yang lebih lama, pesan erronya begini:</description>
     </item>
     
     <item>

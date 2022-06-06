@@ -8,14 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Feb 2021 20:51:07 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cara install hugo di Windows (2021)</title>
+      <title>Cara install hugo di Windows (2022)</title>
       <link>https://insertapps.com/blog/install-hugo-di-windows/</link>
       <pubDate>Sat, 06 Feb 2021 20:51:07 +0700</pubDate>
       
       <guid>https://insertapps.com/blog/install-hugo-di-windows/</guid>
-      <description>Sepertiga website dunia ditenagai mesin CMS WordPress, namun 1% website dunia sudah migrasi ke mesin SSG Hugo. Ternyata banyak pemula masih bingung bagaimana cara install Hugo di Windows?
-Karena sudah terbiasa dengan cara starter mesin WordPress auto engine dalam paket hosting, untuk menghidupkan server Hugo memang sedikit membingungkan, terutama buat user sekedar mencoba rasa SSG Hugo.
-Di laman dokumentasi Hugo, sudah ada juknis (petunjuk teknis) cara install Hugo di berbagai operating system.</description>
+      <description>Sepertiga website dunia ditenagai mesin CMS WordPress. Data terkini dari w3techs.com/technologies/details/cm-wordpress hingga Juni 2022, 64.1% website dunia menggunakan WP.
+Lanjut dari data w3techs.com/technologies/details/cm-hugo, baru 0.2% website dunia sudah migrasi ke mesin SSG Hugo. Ternyata banyak pemula masih bingung bagaimana cara install Hugo di Windows?
+Karena sudah terbiasa dengan cara starter mesin WordPress auto engine dalam paket hosting, untuk menghidupkan server Hugo memang sedikit membingungkan, terutama buat user sekedar mencoba rasa SSG Hugo.</description>
     </item>
     
     <item>
@@ -61,7 +61,7 @@ Nama extensions-nya: &amp;ldquo;gotemplate-syntax Language support for go text/t
       
       <guid>https://insertapps.com/blog/hugo-last-modified-date-setting/</guid>
       <description>Memperbaharui posting blog yang sudah lama termasuk salah satu cara optimasi SEO pada artikel lama.
-Artikel yang diperbaharui, biasanya tanggal posting ikut berubah, menjadi &amp;lsquo;telah di perbaharui&amp;rsquo; atau &amp;lsquo;last update&amp;rsquo; dan &amp;lsquo;last modified&amp;rsquo;.
+Artikel yang diperbaharui, biasanya tanggal posting ikut berubah, menjadi &amp;rsquo;telah di perbaharui&amp;rsquo; atau &amp;rsquo;last update&amp;rsquo; dan &amp;rsquo;last modified&#39;.
 Blog berbasis WordPress atau Blogger, sistem tanggal berjalan secara dinamis, setiap ada perubahan dalam isi posting, system juga akan mencatat log tanggal perubahan terakhir dalam database.
 Log itu yang akan ditampilkan dalam single page artikel.
 Bagaimana dengan blog berbasis Hugo yang men generate posting secara statis?</description>

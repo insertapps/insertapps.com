@@ -6,14 +6,25 @@
     <description>Recent content in code on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Nov 2021 22:02:08 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 21:54:26 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tailwindcss template tutorial layout dua kolom</title>
+      <link>https://insertapps.com/blog/tailwindcss-template-two-columns/</link>
+      <pubDate>Sun, 05 Jun 2022 21:54:26 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/tailwindcss-template-two-columns/</guid>
+      <description>Berikut ini cara mudah membuat Tailwindcss template. Bentuk desainnya layout dua kolom perbandingan 7:3 untuk theme blog post. Kolom sebelah kiri untuk muatan artikel sebesar 2/3 ukuran layar atau 66.6%, dan sisi kanan untuk sidebar sebesar 1/3 ukuran layar atau 33.3%.
+Karena Tailwindcss hadir dalam bentuk CSS utility yang tidak menyediakan paket komponen siap pakai seperti framework Bootstrap CSS.
+Jadi saat kita membuat template HTML dengan Tailwind CSS harus memilih sendiri class-class utility yang sudah tersedia.</description>
+    </item>
+    
     <item>
       <title>WordPress page pagination</title>
       <link>https://insertapps.com/blog/wordpress-page-pagination/</link>
       <pubDate>Wed, 03 Nov 2021 22:02:08 +0700</pubDate>
       
       <guid>https://insertapps.com/blog/wordpress-page-pagination/</guid>
-      <description>Desain website yang baik harus didukung dengan struktur navigasi yang yang baik pula. Sehingga pengunjung yang datang tidak tersesat saat mengakses ribuan konten yang &amp;lsquo;terkubur&amp;rsquo; dalam database.
+      <description>Desain website yang baik harus didukung dengan struktur navigasi yang yang baik pula. Sehingga pengunjung yang datang tidak tersesat saat mengakses ribuan konten yang &amp;rsquo;terkubur&amp;rsquo; dalam database.
 Salah satunya adalah fitur page pagination atau juga dikenal dikenal sebagai paging. Pagination adalah proses membagi data posting menjadi halaman diskrit—grouping sejumlah halaman yang berbeda menjadi satu halaman yang rapi dan runut.
 Selain memudahkan pengunjung mengakses blog atau website, berikut segudang manfaat dari sebuah fitur pagination:</description>
     </item>

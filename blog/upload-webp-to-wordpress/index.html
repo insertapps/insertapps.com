@@ -26,7 +26,7 @@
     
     <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/128.png" sizes="120x120">
     <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.80.0">
+    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.100.1">
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@https://www.twitter.com/insertapps" />
@@ -51,7 +51,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
 	 
 <script data-ad-client="ca-pub-5397255807284351" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script type="application/ld+json">
@@ -391,32 +390,32 @@ if (!doNotTrack) {
 <p>InsertApps sendiri termasuk webdev yang tidak suka pasang plugin kalau membuat web/blog dengan CMS WordPress, kecuali tidak ada cara lain, baru pilah pilih install plugin.</p>
 <p>Cara yang paling kami sukai dengan membuka permisi upload file WebP Ke sistem WP, cukup dengan trick simple saja, insert script ke dalam file <code>functions.php</code>.</p>
 <p>Berikut code php untuk &lsquo;unlock&rsquo; allow upload file .webp CMS WordPress tampa plugin:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#228b22">// Allow upload .webp file format.
-</span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">allow_upload_webp_file</span>(<span style="color:#00688b">$existing_mimes</span>) {
-    <span style="color:#00688b">$existing_mimes</span>[<span style="color:#cd5555">&#39;webp&#39;</span>] = <span style="color:#cd5555">&#39;image/webp&#39;</span>;
-    <span style="color:#8b008b;font-weight:bold">return</span> <span style="color:#00688b">$existing_mimes</span>;
-}
-add_filter(<span style="color:#cd5555">&#39;mime_types&#39;</span>, <span style="color:#cd5555">&#39;allow_upload_webp_file&#39;</span>);
-
-<span style="color:#228b22">// Allow view thumbnail for webp format files.
-</span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">allow_webp_file_view</span>(<span style="color:#00688b">$result</span>, <span style="color:#00688b">$path</span>) {
-    <span style="color:#8b008b;font-weight:bold">if</span> (<span style="color:#00688b">$result</span> === <span style="color:#8b008b;font-weight:bold">false</span>) {
-        <span style="color:#00688b">$displayable_image_types</span> = <span style="color:#8b008b;font-weight:bold">array</span>( IMAGETYPE_WEBP );
-        <span style="color:#00688b">$info</span> = @getimagesize( <span style="color:#00688b">$path</span> );
-
-        <span style="color:#8b008b;font-weight:bold">if</span> (<span style="color:#8b008b;font-weight:bold">empty</span>(<span style="color:#00688b">$info</span>)) {
-            <span style="color:#00688b">$result</span> = <span style="color:#8b008b;font-weight:bold">false</span>;
-        } <span style="color:#8b008b;font-weight:bold">elseif</span> (!in_array(<span style="color:#00688b">$info</span>[<span style="color:#b452cd">2</span>], <span style="color:#00688b">$displayable_image_types</span>)) {
-            <span style="color:#00688b">$result</span> = <span style="color:#8b008b;font-weight:bold">false</span>;
-        } <span style="color:#8b008b;font-weight:bold">else</span> {
-            <span style="color:#00688b">$result</span> = <span style="color:#8b008b;font-weight:bold">true</span>;
-        }
-    }
-
-    <span style="color:#8b008b;font-weight:bold">return</span> <span style="color:#00688b">$result</span>;
-}
-add_filter(<span style="color:#cd5555">&#39;file_is_displayable_image&#39;</span>, <span style="color:#cd5555">&#39;allow_webp_file_view&#39;</span>, <span style="color:#b452cd">10</span>, <span style="color:#b452cd">2</span>);
-</code></pre></div><p>Penjelasan code:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#228b22">// Allow upload .webp file format.
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">allow_upload_webp_file</span>(<span style="color:#00688b">$existing_mimes</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#00688b">$existing_mimes</span>[<span style="color:#cd5555">&#39;webp&#39;</span>] = <span style="color:#cd5555">&#39;image/webp&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">return</span> <span style="color:#00688b">$existing_mimes</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>add_filter(<span style="color:#cd5555">&#39;mime_types&#39;</span>, <span style="color:#cd5555">&#39;allow_upload_webp_file&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22">// Allow view thumbnail for webp format files.
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">allow_webp_file_view</span>(<span style="color:#00688b">$result</span>, <span style="color:#00688b">$path</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">if</span> (<span style="color:#00688b">$result</span> === <span style="color:#8b008b;font-weight:bold">false</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#00688b">$displayable_image_types</span> = <span style="color:#8b008b;font-weight:bold">array</span>( IMAGETYPE_WEBP );
+</span></span><span style="display:flex;"><span>        <span style="color:#00688b">$info</span> = @getimagesize( <span style="color:#00688b">$path</span> );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">if</span> (<span style="color:#8b008b;font-weight:bold">empty</span>(<span style="color:#00688b">$info</span>)) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00688b">$result</span> = <span style="color:#8b008b;font-weight:bold">false</span>;
+</span></span><span style="display:flex;"><span>        } <span style="color:#8b008b;font-weight:bold">elseif</span> (!in_array(<span style="color:#00688b">$info</span>[<span style="color:#b452cd">2</span>], <span style="color:#00688b">$displayable_image_types</span>)) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00688b">$result</span> = <span style="color:#8b008b;font-weight:bold">false</span>;
+</span></span><span style="display:flex;"><span>        } <span style="color:#8b008b;font-weight:bold">else</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#00688b">$result</span> = <span style="color:#8b008b;font-weight:bold">true</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">return</span> <span style="color:#00688b">$result</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>add_filter(<span style="color:#cd5555">&#39;file_is_displayable_image&#39;</span>, <span style="color:#cd5555">&#39;allow_webp_file_view&#39;</span>, <span style="color:#b452cd">10</span>, <span style="color:#b452cd">2</span>);
+</span></span></code></pre></div><p>Penjelasan code:</p>
 <ul>
 <li>Blok code pertama, <code>function allow_upload_webp_file() {  }</code> adalah sebuah fungsi—method—untuk menambah daftar extensi file <code>.webp</code> yang boleh di upload ke dalam sistem WordPress.</li>
 <li>Block code kedua, <code>function allow_webp_file_view() { }</code> adalah fungsi untuk menambah kemampuan preview gambar dalam media gallery WP. Kalau function ini tidak ada, maka file WebP yang di upload tidak tampil thumbnail preview.</li>
@@ -426,15 +425,14 @@ add_filter(<span style="color:#cd5555">&#39;file_is_displayable_image&#39;</span
 <p>Bagaimana mudah bukan?</p>
 <p>Tambahan. Untuk nama function bebas saja, boleh mengganti dengan nama sesuka hati, asal jangan sama dengan nama functions yang sudah ada, juga tidak boleh ada spasi, ataupun dimulai dengan angka.</p>
 <p>Misal;</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#228b22">// Fungsi allow upload file WebP WP tampa plugin
-</span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">mantan_sayang_izinkan_upload_file_webp_ke_dalam_wordpress</span>() {
-	<span style="color:#228b22">// do something
-</span><span style="color:#228b22"></span>}
-
-<span style="color:#228b22">// Menambah fungsi mantan ke sistem wp dengan mendaftar ke bagian wp add_filter
-</span><span style="color:#228b22"></span>add_filter(<span style="color:#cd5555">&#39;mime_types&#39;</span>, <span style="color:#cd5555">&#39;mantan_sayang_izinkan_upload_file_webp_ke_dalam_wordpress&#39;</span>);
-
-</code></pre></div><p>Baca aturan pakai <code>add_filter</code> selengkapnya di laman resmi dokumentasi WordPress: <a href="https://developer.wordpress.org/reference/functions/add_filter/" class="blue a-hover text-decoration-none" title="add filter function code reference." target="_blank" rel="nofollow noopener noreferrer">add filter function code reference.</a></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#228b22">// Fungsi allow upload file WebP WP tampa plugin
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">mantan_sayang_izinkan_upload_file_webp_ke_dalam_wordpress</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#228b22">// do something
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22">// Menambah fungsi mantan ke sistem wp dengan mendaftar ke bagian wp add_filter
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>add_filter(<span style="color:#cd5555">&#39;mime_types&#39;</span>, <span style="color:#cd5555">&#39;mantan_sayang_izinkan_upload_file_webp_ke_dalam_wordpress&#39;</span>);
+</span></span></code></pre></div><p>Baca aturan pakai <code>add_filter</code> selengkapnya di laman resmi dokumentasi WordPress: <a href="https://developer.wordpress.org/reference/functions/add_filter/" class="blue a-hover text-decoration-none" title="add filter function code reference." target="_blank" rel="nofollow noopener noreferrer">add filter function code reference.</a></p>
 <p><strong>Kesimpulan:</strong></p>
 <p>Hanya dengan beberapa baris script, portal news, blog, website pemda memakai CMS WordPress sudah bisa support upload file gambar .webp. Cara ini lebih super simple, mudah, dan sangat elegant ketimbang harus menginstall plugin khusus .webp. 🙏</p>
 <p><strong>FAQ:</strong></p>
@@ -477,7 +475,7 @@ add_filter(<span style="color:#cd5555">&#39;file_is_displayable_image&#39;</span
 			<h3 class="h4 m0">Comment</h3>
 			<div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -623,10 +621,10 @@ add_filter(<span style="color:#cd5555">&#39;file_is_displayable_image&#39;</span
     
     <div id="sub-footer" class="clearfix bg-dark-light gray py1 px2">
         <div class="left">
-            <p class="h5 m0">&copy; 2021 InsertApps</p>
+            <p class="h5 m0">&copy; 2022 InsertApps</p>
         </div>
         <div class="right">
-            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.80.0</p>
+            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.100.1</p>
         </div>
     </div>
 <div id="overlay" class="fixed z3 top-0 left-0 bg-darken-4"></div>

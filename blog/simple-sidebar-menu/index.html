@@ -26,7 +26,7 @@
     
     <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/128.png" sizes="120x120">
     <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.80.0">
+    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.100.1">
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@https://www.twitter.com/insertapps" />
@@ -51,7 +51,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
 	 
 <script data-ad-client="ca-pub-5397255807284351" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script type="application/ld+json">
@@ -412,229 +411,229 @@ if (!doNotTrack) {
 <p>Terlebih dahulu persiapkan template HTML dasar yang sudah berisi sidebar menu.</p>
 <p>Dalam tutorial ini, kami menggunakan CSS framework Basscss yang full packet <code>https://unpkg.com/ace-css/css/ace.min.css</code>.</p>
 <p>Berikut isi file template HTML dasar untuk membuat sidebar nav menu yang sederhana saja.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#1e889b">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#8b008b;font-weight:bold">html</span> <span style="color:#658b00">lang</span>=<span style="color:#cd5555">&#34;en&#34;</span>&gt;
-
-&lt;<span style="color:#8b008b;font-weight:bold">head</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">charset</span>=<span style="color:#cd5555">&#34;UTF-8&#34;</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">name</span>=<span style="color:#cd5555">&#34;viewport&#34;</span> <span style="color:#658b00">content</span>=<span style="color:#cd5555">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;HTML Template Simple Sidebar Menu → by InsertApps.com&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">link</span> <span style="color:#658b00">rel</span>=<span style="color:#cd5555">&#34;stylesheet&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://unpkg.com/ace-css/css/ace.min.css&#34;</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">style</span>&gt;
-		<span style="color:#228b22">/*Additional Style */</span>
-
-		<span style="color:#228b22">/* ######## START FOCUS CSS CODE HERE */</span>
-		#<span style="color:#008b45;text-decoration:underline">sidenav</span> {
-			<span style="color:#8b008b;font-weight:bold">max-height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">vh</span>;
-			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">vh</span>;
-			<span style="color:#8b008b;font-weight:bold">max-width</span>: <span style="color:#b452cd">70</span><span style="color:#00688b;font-weight:bold">vw</span>;
-			<span style="color:#8b008b;font-weight:bold">min-width</span>: <span style="color:#b452cd">300</span><span style="color:#00688b;font-weight:bold">px</span>;
-			<span style="color:#8b008b;font-weight:bold">overflow-x</span>: <span style="color:#8b008b;font-weight:bold">hidden</span>;
-			<span style="color:#8b008b;font-weight:bold">overflow-y</span>: <span style="color:#8b008b;font-weight:bold">auto</span>;
-			<span style="color:#8b008b;font-weight:bold">transition</span>: <span style="color:#8b008b;font-weight:bold">all</span> <span style="color:#b452cd">.3</span><span style="color:#00688b;font-weight:bold">s</span> <span style="color:#8b008b;font-weight:bold">ease</span>-in-out;
-			<span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">-150</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
-			<span style="color:#8b008b;font-weight:bold">-webkit-</span><span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">-150</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
-			<span style="color:#228b22">/* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */</span>
-			<span style="color:#8b008b;font-weight:bold">-ms-</span><span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">-150</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
-		}
-
-		#<span style="color:#008b45;text-decoration:underline">sidenav</span>.<span style="color:#008b45;font-weight:bold">active</span> {
-			<span style="color:#8b008b;font-weight:bold">transition</span>: <span style="color:#8b008b;font-weight:bold">all</span> <span style="color:#b452cd">.3</span><span style="color:#00688b;font-weight:bold">s</span> <span style="color:#8b008b;font-weight:bold">ease</span>-in-out;
-			<span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
-			<span style="color:#8b008b;font-weight:bold">-webkit-</span><span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
-			<span style="color:#8b008b;font-weight:bold">-ms-</span><span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
-			<span style="color:#8b008b;font-weight:bold">box-shadow</span>: <span style="color:#b452cd">0</span> <span style="color:#b452cd">4</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#b452cd">6</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#658b00">rgba</span>(<span style="color:#b452cd">0</span>, <span style="color:#b452cd">0</span>, <span style="color:#b452cd">0</span>, <span style="color:#b452cd">.4</span>);
-		}
-
-		<span style="color:#228b22">/* ######## END FOCUS CSS CODE HERE */</span>
-
-		.<span style="color:#008b45;font-weight:bold">burger</span> {
-			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">16</span><span style="color:#00688b;font-weight:bold">px</span>
-		}
-		.<span style="color:#008b45;font-weight:bold">burger</span> <span style="color:#8b008b;font-weight:bold">span</span> {
-			<span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">block</span>;
-			<span style="color:#8b008b;font-weight:bold">width</span>: <span style="color:#b452cd">20</span><span style="color:#00688b;font-weight:bold">px</span>;
-			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">2</span><span style="color:#00688b;font-weight:bold">px</span>;
-			<span style="color:#8b008b;font-weight:bold">border-radius</span>: <span style="color:#b452cd">3</span><span style="color:#00688b;font-weight:bold">px</span>;
-		}
-		.<span style="color:#008b45;font-weight:bold">pointer</span> {
-			<span style="color:#8b008b;font-weight:bold">cursor</span>: <span style="color:#8b008b;font-weight:bold">pointer</span>;
-		}
-		.<span style="color:#008b45;font-weight:bold">close</span> {
-			<span style="color:#8b008b;font-weight:bold">width</span>: <span style="color:#b452cd">23</span><span style="color:#00688b;font-weight:bold">px</span>;
-			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">23</span><span style="color:#00688b;font-weight:bold">px</span>;
-		}
-		.<span style="color:#008b45;font-weight:bold">cross</span> {
-			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">23</span><span style="color:#00688b;font-weight:bold">px</span>;
-			<span style="color:#8b008b;font-weight:bold">width</span>: <span style="color:#b452cd">2</span><span style="color:#00688b;font-weight:bold">px</span>;
-			<span style="color:#8b008b;font-weight:bold">border-radius</span>: <span style="color:#b452cd">3</span><span style="color:#00688b;font-weight:bold">px</span>;
-		}
-		.<span style="color:#008b45;font-weight:bold">cross</span>.<span style="color:#008b45;font-weight:bold">left</span> {
-			<span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">rotate</span>(<span style="color:#b452cd">45</span><span style="color:#00688b;font-weight:bold">deg</span>);
-		}
-		.<span style="color:#008b45;font-weight:bold">cross</span>.<span style="color:#008b45;font-weight:bold">right</span> {
-			<span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">rotate</span>(<span style="color:#b452cd">-45</span><span style="color:#00688b;font-weight:bold">deg</span>);
-		}
-		.<span style="color:#008b45;font-weight:bold">align-middle</span> {
-			<span style="color:#8b008b;font-weight:bold">vertical-align</span>: <span style="color:#8b008b;font-weight:bold">middle</span>
-		}
-	&lt;/<span style="color:#8b008b;font-weight:bold">style</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">head</span>&gt;
-&lt;<span style="color:#8b008b;font-weight:bold">body</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-blue px2 py1 m0 flex items-center white&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;burger pointer flex flex-column justify-between mr2&#34;</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-white&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-white&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-white&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-		&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;white caps text-decoration-none h3 bold&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Logo&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;ml-auto&#34;</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset m0 h5 caps&#34;</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn p0 mr1&#34;</span>&gt;About&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn p0&#34;</span>&gt;Blog&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-			&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-		&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
-<span style="color:#228b22">&lt;!-- ######## START FOCUS SIDEBAR CODE HERE --&gt;</span>
-	&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;sidenav&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;fixed z4 top-0 left-0 bg-white p2&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;close flex items-center justify-center relative pointer mb2 right&#34;</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;absolute cross bg-gray left&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;absolute cross bg-gray right&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-		&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-
-		&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-blue circle mb2 flex items-center justify-center white&#34;</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;width: 68px;height: 68px&#34;</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">aria-hidden</span>=<span style="color:#cd5555">&#34;true&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;block&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;36&#34;</span> <span style="color:#658b00">role</span>=<span style="color:#cd5555">&#34;img&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>
-				<span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 22 20&#34;</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">g</span> <span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span>&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M15,0.7L12.6,0c-0.1,0-0.2,0-0.2,0.1l-0.7,2.4c0,0.1,0,0.2,0.1,0.2l2.4,0.7c0.1,0,0.2,0,0.2-0.1l0.7-2.4
-</span><span style="color:#cd5555">                    C15.1,0.8,15.1,0.7,15,0.7z&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">path</span>&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M13.8,4.8l-2.4-0.7c-0.1,0-0.2,0-0.2,0.1L6.9,19.1c0,0.1,0,0.2,0.1,0.2L9.4,20c0.1,0,0.2,0,0.2-0.1L13.9,5
-</span><span style="color:#cd5555">                    C14,4.9,13.9,4.8,13.8,4.8z&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">path</span>&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M4.9,11.1l-0.8-0.8l-0.3-0.3l0.3-0.3l0.6-0.6l2.4-2.4c0.1-0.1,0.1-0.4,0-0.5L5.7,4.7c-0.1-0.1-0.4-0.1-0.5,0L0.1,9.8
-</span><span style="color:#cd5555">                    C0,10,0,10.2,0.1,10.4l5.1,5.1c0.1,0.1,0.4,0.1,0.5,0L7.2,14c0.1-0.1,0.1-0.4,0-0.5L4.9,11.1z&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">path</span>&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M17.1,9.1l0.8,0.8l0.3,0.3l-0.3,0.3L17.2,11l-2.4,2.4c-0.1,0.1-0.1,0.4,0,0.5l1.5,1.5c0.1,0.1,0.4,0.1,0.5,0l5.1-5.1
-</span><span style="color:#cd5555">                    c0.1-0.1,0.1-0.4,0-0.5l-5.1-5.1c-0.1-0.1-0.4-0.1-0.5,0l-1.5,1.5c-0.1,0.1-0.1,0.4,0,0.5L17.1,9.1z&#34;</span>&gt;
-					&lt;/<span style="color:#8b008b;font-weight:bold">path</span>&gt;
-				&lt;/<span style="color:#8b008b;font-weight:bold">g</span>&gt;
-			&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
-		&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">p</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;m0 muted bold&#34;</span>&gt;InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-
-		&lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
-
-		&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset muted m0&#34;</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;h6 caps mb2&#34;</span>&gt;about&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pointer mb2&#34;</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block align-middle mr2&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 16 16&#34;</span>
-					<span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
-						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z&#34;</span> /&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
-						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z&#34;</span> /&gt;
-				&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;align-middle&#34;</span>&gt;About&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-			&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pointer mb2&#34;</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block align-middle mr2&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 16 16&#34;</span>
-					<span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
-						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z&#34;</span> /&gt;
-				&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;align-middle&#34;</span>&gt;Email&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-			&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pointer mb2&#34;</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block align-middle mr2&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 16 16&#34;</span>
-					<span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
-						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z&#34;</span> /&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34;</span> /&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
-						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M2.5 3.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z&#34;</span> /&gt;
-				&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;align-middle&#34;</span>&gt;RSS&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-			&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-		&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-
-		&lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
-
-		&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset muted m0&#34;</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;h6 caps mb2&#34;</span>&gt;Categories&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pointer mb2&#34;</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block align-middle mr2&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 16 16&#34;</span>
-					<span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span>
-						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z&#34;</span> /&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z&#34;</span> /&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
-						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z&#34;</span> /&gt;
-				&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;align-middle&#34;</span>&gt;Category Item&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-			&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pointer mb2&#34;</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block align-middle mr2&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 16 16&#34;</span>
-					<span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span>
-						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z&#34;</span> /&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z&#34;</span> /&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
-						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z&#34;</span> /&gt;
-				&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;align-middle&#34;</span>&gt;Category Item&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-			&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pointer mb2&#34;</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block align-middle mr2&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 16 16&#34;</span>
-					<span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span>
-						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z&#34;</span> /&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z&#34;</span> /&gt;
-					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
-						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z&#34;</span> /&gt;
-				&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
-				&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;align-middle&#34;</span>&gt;Category Item&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-			&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-		&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-<span style="color:#228b22">&lt;!-- ######## END FOCUS SIDEBAR CODE HERE --&gt;</span>
-
-	&lt;<span style="color:#8b008b;font-weight:bold">main</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;max-width-4 mx-auto bg-white p2&#34;</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;min-height: 100vh&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;fit block&#34;</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;https://freebiespic.com/images/2017/01/IMG_9916_Asia-child-smile-in-the-garden.jpg&#34;</span>
-			<span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;Red ros flower&#34;</span>&gt;
-
-		&lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;HTML Template Simple Sidebar Menu&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
-
-		&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, deleniti molestias consectetur iure
-			consequuntur quisquam hic culpa voluptatibus sint quos reprehenderit. Fugiat distinctio dolorem rerum ipsa
-			quisquam quam, atque enim.&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-
-		&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Image source by &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://freebiespic.com/photos/wireless-keyboard-image/&#34;</span>&gt;Freebiespic.com&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-
-	&lt;/<span style="color:#8b008b;font-weight:bold">main</span>&gt;
-
-	&lt;<span style="color:#8b008b;font-weight:bold">footer</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;px2 py3 bg-silver navy center&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">p</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;muted&#34;</span>&gt;Copyright ©2020 → &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;text-decoration-none navy&#34;</span>
-				<span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://insertapps.com/&#34;</span>&gt;InsertApps.com&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;. All rights reserved. &lt;<span style="color:#8b008b;font-weight:bold">a</span>
-				<span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;text-decoration-none navy&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://insertapps.com/privacy/&#34;</span>&gt;Privacy&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
-
-	<span style="color:#228b22">&lt;!-- ######## START FOCUS JS CODE HERE --&gt;</span>
-	&lt;<span style="color:#8b008b;font-weight:bold">script</span>&gt;
-		<span style="color:#8b008b;font-weight:bold">let</span> burger = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;.burger&#39;</span>);
-		<span style="color:#8b008b;font-weight:bold">let</span> close = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;.close&#39;</span>);
-		<span style="color:#8b008b;font-weight:bold">let</span> sidenav = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;#sidenav&#39;</span>);
-
-		<span style="color:#228b22">// Burger click function
-</span><span style="color:#228b22"></span>		burger.addEventListener(<span style="color:#cd5555">&#39;click&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span> () {
-			sidenav.classList.add(<span style="color:#cd5555">&#39;active&#39;</span>);
-		});
-		<span style="color:#228b22">// Close click function
-</span><span style="color:#228b22"></span>		close.addEventListener(<span style="color:#cd5555">&#39;click&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span> () {
-			sidenav.classList.remove(<span style="color:#cd5555">&#39;active&#39;</span>);
-		});
-	&lt;/<span style="color:#8b008b;font-weight:bold">script</span>&gt;
-	<span style="color:#228b22">&lt;!-- ######## /END FOCUS JS CODE HERE --&gt;</span>
-&lt;/<span style="color:#8b008b;font-weight:bold">body</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">html</span>&gt;
-</code></pre></div><p>Wow&hellip;.  😱 Code dasarnya saja panjang sekali!</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#1e889b">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">html</span> <span style="color:#658b00">lang</span>=<span style="color:#cd5555">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">charset</span>=<span style="color:#cd5555">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">name</span>=<span style="color:#cd5555">&#34;viewport&#34;</span> <span style="color:#658b00">content</span>=<span style="color:#cd5555">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;HTML Template Simple Sidebar Menu → by InsertApps.com&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">link</span> <span style="color:#658b00">rel</span>=<span style="color:#cd5555">&#34;stylesheet&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://unpkg.com/ace-css/css/ace.min.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">style</span>&gt;
+</span></span><span style="display:flex;"><span>		<span style="color:#228b22">/*Additional Style */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#228b22">/* ######## START FOCUS CSS CODE HERE */</span>
+</span></span><span style="display:flex;"><span>		#<span style="color:#008b45;text-decoration:underline">sidenav</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">max-height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">vh</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">vh</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">max-width</span>: <span style="color:#b452cd">70</span><span style="color:#00688b;font-weight:bold">vw</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">min-width</span>: <span style="color:#b452cd">300</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">overflow-x</span>: <span style="color:#8b008b;font-weight:bold">hidden</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">overflow-y</span>: <span style="color:#8b008b;font-weight:bold">auto</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">transition</span>: <span style="color:#8b008b;font-weight:bold">all</span> <span style="color:#b452cd">.3</span><span style="color:#00688b;font-weight:bold">s</span> <span style="color:#8b008b;font-weight:bold">ease-in-out</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">-150</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">-webkit-</span><span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">-150</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
+</span></span><span style="display:flex;"><span>			<span style="color:#228b22">/* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">-ms-</span><span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">-150</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		#<span style="color:#008b45;text-decoration:underline">sidenav</span>.<span style="color:#008b45;font-weight:bold">active</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">transition</span>: <span style="color:#8b008b;font-weight:bold">all</span> <span style="color:#b452cd">.3</span><span style="color:#00688b;font-weight:bold">s</span> <span style="color:#8b008b;font-weight:bold">ease-in-out</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">-webkit-</span><span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">-ms-</span><span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">box-shadow</span>: <span style="color:#b452cd">0</span> <span style="color:#b452cd">4</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#b452cd">6</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#658b00">rgba</span>(<span style="color:#b452cd">0</span>, <span style="color:#b452cd">0</span>, <span style="color:#b452cd">0</span>, <span style="color:#b452cd">.4</span>);
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#228b22">/* ######## END FOCUS CSS CODE HERE */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		.<span style="color:#008b45;font-weight:bold">burger</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">16</span><span style="color:#00688b;font-weight:bold">px</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		.<span style="color:#008b45;font-weight:bold">burger</span> <span style="color:#8b008b;font-weight:bold">span</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">block</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">width</span>: <span style="color:#b452cd">20</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">2</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">border-radius</span>: <span style="color:#b452cd">3</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		.<span style="color:#008b45;font-weight:bold">pointer</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">cursor</span>: <span style="color:#8b008b;font-weight:bold">pointer</span>;
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		.<span style="color:#008b45;font-weight:bold">close</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">width</span>: <span style="color:#b452cd">23</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">23</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		.<span style="color:#008b45;font-weight:bold">cross</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">23</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">width</span>: <span style="color:#b452cd">2</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">border-radius</span>: <span style="color:#b452cd">3</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		.<span style="color:#008b45;font-weight:bold">cross</span>.<span style="color:#008b45;font-weight:bold">left</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">rotate</span>(<span style="color:#b452cd">45</span><span style="color:#00688b;font-weight:bold">deg</span>);
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		.<span style="color:#008b45;font-weight:bold">cross</span>.<span style="color:#008b45;font-weight:bold">right</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">rotate</span>(<span style="color:#b452cd">-45</span><span style="color:#00688b;font-weight:bold">deg</span>);
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		.<span style="color:#008b45;font-weight:bold">align-middle</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">vertical-align</span>: <span style="color:#8b008b;font-weight:bold">middle</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">style</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-blue px2 py1 m0 flex items-center white&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;burger pointer flex flex-column justify-between mr2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-white&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-white&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-white&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;white caps text-decoration-none h3 bold&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Logo&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;ml-auto&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset m0 h5 caps&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn p0 mr1&#34;</span>&gt;About&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn p0&#34;</span>&gt;Blog&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- ######## START FOCUS SIDEBAR CODE HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;sidenav&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;fixed z4 top-0 left-0 bg-white p2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;close flex items-center justify-center relative pointer mb2 right&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;absolute cross bg-gray left&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;absolute cross bg-gray right&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-blue circle mb2 flex items-center justify-center white&#34;</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;width: 68px;height: 68px&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">aria-hidden</span>=<span style="color:#cd5555">&#34;true&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;block&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;36&#34;</span> <span style="color:#658b00">role</span>=<span style="color:#cd5555">&#34;img&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 22 20&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">g</span> <span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M15,0.7L12.6,0c-0.1,0-0.2,0-0.2,0.1l-0.7,2.4c0,0.1,0,0.2,0.1,0.2l2.4,0.7c0.1,0,0.2,0,0.2-0.1l0.7-2.4
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">                    C15.1,0.8,15.1,0.7,15,0.7z&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">path</span>&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M13.8,4.8l-2.4-0.7c-0.1,0-0.2,0-0.2,0.1L6.9,19.1c0,0.1,0,0.2,0.1,0.2L9.4,20c0.1,0,0.2,0,0.2-0.1L13.9,5
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">                    C14,4.9,13.9,4.8,13.8,4.8z&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">path</span>&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M4.9,11.1l-0.8-0.8l-0.3-0.3l0.3-0.3l0.6-0.6l2.4-2.4c0.1-0.1,0.1-0.4,0-0.5L5.7,4.7c-0.1-0.1-0.4-0.1-0.5,0L0.1,9.8
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">                    C0,10,0,10.2,0.1,10.4l5.1,5.1c0.1,0.1,0.4,0.1,0.5,0L7.2,14c0.1-0.1,0.1-0.4,0-0.5L4.9,11.1z&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">path</span>&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M17.1,9.1l0.8,0.8l0.3,0.3l-0.3,0.3L17.2,11l-2.4,2.4c-0.1,0.1-0.1,0.4,0,0.5l1.5,1.5c0.1,0.1,0.4,0.1,0.5,0l5.1-5.1
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">                    c0.1-0.1,0.1-0.4,0-0.5l-5.1-5.1c-0.1-0.1-0.4-0.1-0.5,0l-1.5,1.5c-0.1,0.1-0.1,0.4,0,0.5L17.1,9.1z&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>					&lt;/<span style="color:#8b008b;font-weight:bold">path</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;/<span style="color:#8b008b;font-weight:bold">g</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">p</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;m0 muted bold&#34;</span>&gt;InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset muted m0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;h6 caps mb2&#34;</span>&gt;about&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pointer mb2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block align-middle mr2&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 16 16&#34;</span>
+</span></span><span style="display:flex;"><span>					<span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
+</span></span><span style="display:flex;"><span>						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
+</span></span><span style="display:flex;"><span>						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>				&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;align-middle&#34;</span>&gt;About&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pointer mb2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block align-middle mr2&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 16 16&#34;</span>
+</span></span><span style="display:flex;"><span>					<span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
+</span></span><span style="display:flex;"><span>						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>				&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;align-middle&#34;</span>&gt;Email&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pointer mb2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block align-middle mr2&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 16 16&#34;</span>
+</span></span><span style="display:flex;"><span>					<span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
+</span></span><span style="display:flex;"><span>						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
+</span></span><span style="display:flex;"><span>						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M2.5 3.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>				&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;align-middle&#34;</span>&gt;RSS&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset muted m0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;h6 caps mb2&#34;</span>&gt;Categories&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pointer mb2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block align-middle mr2&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 16 16&#34;</span>
+</span></span><span style="display:flex;"><span>					<span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span>
+</span></span><span style="display:flex;"><span>						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
+</span></span><span style="display:flex;"><span>						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>				&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;align-middle&#34;</span>&gt;Category Item&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pointer mb2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block align-middle mr2&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 16 16&#34;</span>
+</span></span><span style="display:flex;"><span>					<span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span>
+</span></span><span style="display:flex;"><span>						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
+</span></span><span style="display:flex;"><span>						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>				&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;align-middle&#34;</span>&gt;Category Item&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pointer mb2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">svg</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block align-middle mr2&#34;</span> <span style="color:#658b00">width</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">height</span>=<span style="color:#cd5555">&#34;22&#34;</span> <span style="color:#658b00">viewBox</span>=<span style="color:#cd5555">&#34;0 0 16 16&#34;</span>
+</span></span><span style="display:flex;"><span>					<span style="color:#658b00">fill</span>=<span style="color:#cd5555">&#34;currentColor&#34;</span> <span style="color:#658b00">xmlns</span>=<span style="color:#cd5555">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span>
+</span></span><span style="display:flex;"><span>						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>					&lt;<span style="color:#8b008b;font-weight:bold">path</span> <span style="color:#658b00">fill-rule</span>=<span style="color:#cd5555">&#34;evenodd&#34;</span>
+</span></span><span style="display:flex;"><span>						<span style="color:#658b00">d</span>=<span style="color:#cd5555">&#34;M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>				&lt;/<span style="color:#8b008b;font-weight:bold">svg</span>&gt;
+</span></span><span style="display:flex;"><span>				&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;align-middle&#34;</span>&gt;Category Item&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- ######## END FOCUS SIDEBAR CODE HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">main</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;max-width-4 mx-auto bg-white p2&#34;</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;min-height: 100vh&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;fit block&#34;</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;https://freebiespic.com/images/2017/01/IMG_9916_Asia-child-smile-in-the-garden.jpg&#34;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;Red ros flower&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;HTML Template Simple Sidebar Menu&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, deleniti molestias consectetur iure
+</span></span><span style="display:flex;"><span>			consequuntur quisquam hic culpa voluptatibus sint quos reprehenderit. Fugiat distinctio dolorem rerum ipsa
+</span></span><span style="display:flex;"><span>			quisquam quam, atque enim.&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Image source by &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://freebiespic.com/photos/wireless-keyboard-image/&#34;</span>&gt;Freebiespic.com&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">main</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">footer</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;px2 py3 bg-silver navy center&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">p</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;muted&#34;</span>&gt;Copyright ©2020 → &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;text-decoration-none navy&#34;</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://insertapps.com/&#34;</span>&gt;InsertApps.com&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;. All rights reserved. &lt;<span style="color:#8b008b;font-weight:bold">a</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;text-decoration-none navy&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://insertapps.com/privacy/&#34;</span>&gt;Privacy&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#228b22">&lt;!-- ######## START FOCUS JS CODE HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">script</span>&gt;
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">let</span> burger = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;.burger&#39;</span>);
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">let</span> close = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;.close&#39;</span>);
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">let</span> sidenav = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;#sidenav&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#228b22">// Burger click function
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>		burger.addEventListener(<span style="color:#cd5555">&#39;click&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>			sidenav.classList.add(<span style="color:#cd5555">&#39;active&#39;</span>);
+</span></span><span style="display:flex;"><span>		});
+</span></span><span style="display:flex;"><span>		<span style="color:#228b22">// Close click function
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>		close.addEventListener(<span style="color:#cd5555">&#39;click&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>			sidenav.classList.remove(<span style="color:#cd5555">&#39;active&#39;</span>);
+</span></span><span style="display:flex;"><span>		});
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">script</span>&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#228b22">&lt;!-- ######## /END FOCUS JS CODE HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">html</span>&gt;
+</span></span></code></pre></div><p>Wow&hellip;.  😱 Code dasarnya saja panjang sekali!</p>
 <p>Yups&hellip; Biar tidak bingung, lihat <a href="https://insertapps.com/demo/simple-sidebar-menu.html" class="blue text-decoration-none"
 	
 	
@@ -644,12 +643,12 @@ if (!doNotTrack) {
 <p>Selebihnya hanya template HTML biasa dengan sentuhan desain yang lumayan rapi dan enak dilihat.</p>
 <h3 id="tombol-menu-burger">Tombol Menu Burger</h3>
 <p><strong>Pertama</strong> siapkan sebuah tombol click yang akan men-trigger tampilan sidebar menu.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;burger pointer&#34;</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-white&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-white&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-white&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-</code></pre></div><p><em>Penjelasan lengkap untuk kode tombol burger, silahkan baca tutorial singkat <a href="https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/" class="blue text-decoration-none"
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;burger pointer&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-white&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-white&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-white&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span></code></pre></div><p><em>Penjelasan lengkap untuk kode tombol burger, silahkan baca tutorial singkat <a href="https://insertapps.com/blog/cara-simple-membuat-icon-burger-website/" class="blue text-decoration-none"
 	
 	
 		target="_blank"
@@ -657,39 +656,39 @@ if (!doNotTrack) {
 <p>Class <code>burger</code> sekaligus menjadi identifier untuk script JavaScript.</p>
 <h3 id="html-design-sidebar-menu">HTML Design Sidebar Menu</h3>
 <p><strong>Kedua</strong> mari fokus pada potongan kode HTML yang membentuk desain menu sidebar.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;sidenav&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;fixed z4 top-0 left-0 bg-white p2&#34;</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">div</span>&gt;...&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">div</span>&gt;...&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">div</span>&gt;...&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-</code></pre></div><p>Apapun model desain sidebar nav yang kalian bentuk, pastikan elemen blok sidenav ditandai dengan salah satu id unik atau boleh juga memanggil salah satu class yang unik.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;sidenav&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;fixed z4 top-0 left-0 bg-white p2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">div</span>&gt;...&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">div</span>&gt;...&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">div</span>&gt;...&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span></code></pre></div><p>Apapun model desain sidebar nav yang kalian bentuk, pastikan elemen blok sidenav ditandai dengan salah satu id unik atau boleh juga memanggil salah satu class yang unik.</p>
 <p>Di tutorial ini, id uniknya: <code>id=&quot;sidenav&quot;</code></p>
 <p>Mengapa perlu id unik atau salah satu class yang unik?</p>
 <p>Id unik ini yang akan dieksekusi oleh javascript untuk tujuan manipulasi object element HTML.</p>
 <p><strong>Ketiga</strong> desain element blok menu sidebar setidaknya memiliki style seperti berikut:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">&lt;<span style="color:#8b008b;font-weight:bold">style</span>&gt;
-	#<span style="color:#008b45;text-decoration:underline">sidenav</span> {
-		<span style="color:#8b008b;font-weight:bold">max-height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">vh</span>;
-		<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">vh</span>;
-		<span style="color:#8b008b;font-weight:bold">max-width</span>: <span style="color:#b452cd">70</span><span style="color:#00688b;font-weight:bold">vw</span>;
-		<span style="color:#8b008b;font-weight:bold">min-width</span>: <span style="color:#b452cd">300</span><span style="color:#00688b;font-weight:bold">px</span>;
-		<span style="color:#8b008b;font-weight:bold">overflow-x</span>: <span style="color:#8b008b;font-weight:bold">hidden</span>;
-		<span style="color:#8b008b;font-weight:bold">overflow-y</span>: <span style="color:#8b008b;font-weight:bold">auto</span>;
-		<span style="color:#228b22">/* Default hide effect*/</span>
-		<span style="color:#8b008b;font-weight:bold">transition</span>: <span style="color:#8b008b;font-weight:bold">all</span> <span style="color:#b452cd">.3</span><span style="color:#00688b;font-weight:bold">s</span> <span style="color:#8b008b;font-weight:bold">ease</span>-in-out;
-		<span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">-150</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
-	}
-
-	#<span style="color:#008b45;text-decoration:underline">sidenav</span>.<span style="color:#008b45;font-weight:bold">active</span> {
-		<span style="color:#228b22">/* Reactivate hide effect*/</span>
-		<span style="color:#8b008b;font-weight:bold">transition</span>: <span style="color:#8b008b;font-weight:bold">all</span> <span style="color:#b452cd">.3</span><span style="color:#00688b;font-weight:bold">s</span> <span style="color:#8b008b;font-weight:bold">ease</span>-in-out;
-		<span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
-		
-		<span style="color:#228b22">/* Effect shadow for sidebar*/</span>
-		<span style="color:#8b008b;font-weight:bold">box-shadow</span>: <span style="color:#b452cd">0</span> <span style="color:#b452cd">4</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#b452cd">6</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#658b00">rgba</span>(<span style="color:#b452cd">0</span>, <span style="color:#b452cd">0</span>, <span style="color:#b452cd">0</span>, <span style="color:#b452cd">.4</span>);
-	}
-&lt;/<span style="color:#8b008b;font-weight:bold">style</span>&gt;
-</code></pre></div><p><em>Penjelasan style CSS:</em></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">style</span>&gt;
+</span></span><span style="display:flex;"><span>	#<span style="color:#008b45;text-decoration:underline">sidenav</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">max-height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">vh</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">vh</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">max-width</span>: <span style="color:#b452cd">70</span><span style="color:#00688b;font-weight:bold">vw</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">min-width</span>: <span style="color:#b452cd">300</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">overflow-x</span>: <span style="color:#8b008b;font-weight:bold">hidden</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">overflow-y</span>: <span style="color:#8b008b;font-weight:bold">auto</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#228b22">/* Default hide effect*/</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">transition</span>: <span style="color:#8b008b;font-weight:bold">all</span> <span style="color:#b452cd">.3</span><span style="color:#00688b;font-weight:bold">s</span> <span style="color:#8b008b;font-weight:bold">ease-in-out</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">-150</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	#<span style="color:#008b45;text-decoration:underline">sidenav</span>.<span style="color:#008b45;font-weight:bold">active</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#228b22">/* Reactivate hide effect*/</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">transition</span>: <span style="color:#8b008b;font-weight:bold">all</span> <span style="color:#b452cd">.3</span><span style="color:#00688b;font-weight:bold">s</span> <span style="color:#8b008b;font-weight:bold">ease-in-out</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">transform</span>: <span style="color:#658b00">translate</span>(<span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">%</span>, <span style="color:#b452cd">0</span><span style="color:#00688b;font-weight:bold">px</span>);
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#228b22">/* Effect shadow for sidebar*/</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">box-shadow</span>: <span style="color:#b452cd">0</span> <span style="color:#b452cd">4</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#b452cd">6</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#658b00">rgba</span>(<span style="color:#b452cd">0</span>, <span style="color:#b452cd">0</span>, <span style="color:#b452cd">0</span>, <span style="color:#b452cd">.4</span>);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">style</span>&gt;
+</span></span></code></pre></div><p><em>Penjelasan style CSS:</em></p>
 <p>Blok style class dengan id <code>#sidenav { }</code> akan merender sebuah balok element sidebar secara vertikal memanjang ke kebawah sepanjang layar browser.</p>
 <p>Sidebar menu ini disembunyikan lewat fungsi <code>transform: translate(-150%, 0px);</code> sebanyak minus 150px.</p>
 <p>CSS property <code>transform:</code> dengan nilai inputan <code>translate()</code> adalah untuk memindahkan sebuah element. Dengan memberikan niai pada parameter <code>x</code> dan <code>y</code> dapat menentukan jarak pemindahan suatu element.</p>
@@ -697,22 +696,22 @@ if (!doNotTrack) {
 <p>Property CSS <code>transition: ;</code> berfungsi untuk membuat efek animasi perpindahan suatu elemen HTML secara smoth (halus).</p>
 <h3 id="javascript-show-hide-sidebar-menu">Javascript show hide sidebar menu</h3>
 <p><strong>Ketiga</strong> dan yang terakhir, script JavaScript yang akan mengeksekusi sidebar menu.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">&lt;script&gt;
-	<span style="color:#8b008b;font-weight:bold">let</span> burger = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;.burger&#39;</span>);
-	<span style="color:#8b008b;font-weight:bold">let</span> close = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;.close&#39;</span>);
-	<span style="color:#8b008b;font-weight:bold">let</span> sidenav = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;#sidenav&#39;</span>);
-
-	<span style="color:#228b22">// Burger click function
-</span><span style="color:#228b22"></span>	burger.addEventListener(<span style="color:#cd5555">&#39;click&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span> () {
-		sidenav.classList.add(<span style="color:#cd5555">&#39;active&#39;</span>);
-	});
-
-	<span style="color:#228b22">// Close click function
-</span><span style="color:#228b22"></span>	close.addEventListener(<span style="color:#cd5555">&#39;click&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span> () {
-		sidenav.classList.remove(<span style="color:#cd5555">&#39;active&#39;</span>);
-	});
-&lt;<span style="color:#a61717;background-color:#e3d2d2">/script&gt;</span>
-</code></pre></div><p><em>Penjelasan kode vanilla JavaScript open hide sidebar navigation menu:</em></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>&lt;script&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#8b008b;font-weight:bold">let</span> burger = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;.burger&#39;</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#8b008b;font-weight:bold">let</span> close = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;.close&#39;</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#8b008b;font-weight:bold">let</span> sidenav = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;#sidenav&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#228b22">// Burger click function
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>	burger.addEventListener(<span style="color:#cd5555">&#39;click&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>		sidenav.classList.add(<span style="color:#cd5555">&#39;active&#39;</span>);
+</span></span><span style="display:flex;"><span>	});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#228b22">// Close click function
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>	close.addEventListener(<span style="color:#cd5555">&#39;click&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span> () {
+</span></span><span style="display:flex;"><span>		sidenav.classList.remove(<span style="color:#cd5555">&#39;active&#39;</span>);
+</span></span><span style="display:flex;"><span>	});
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#a61717;background-color:#e3d2d2">/script&gt;</span>
+</span></span></code></pre></div><p><em>Penjelasan kode vanilla JavaScript open hide sidebar navigation menu:</em></p>
 <p>Siapkan tiga variabel untuk memanggil element HTML mana saja yang akan di eksekusi oleh JavaScript.</p>
 <p>Tiga variable tersebut <code>let burger = ... ;</code>, <code>let close = ... ;</code> dan <code>let sidenav = ... ;</code> berisi nilai <code>document.querySelector('.burger')</code> khusus menyeleksi HTML DOM.</p>
 <p>Kemudian tambahkan event click <code>addEventListener('click', function() { ... });</code>.</p>
@@ -762,7 +761,7 @@ if (!doNotTrack) {
 			<h3 class="h4 m0">Comment</h3>
 			<div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -908,10 +907,10 @@ if (!doNotTrack) {
     
     <div id="sub-footer" class="clearfix bg-dark-light gray py1 px2">
         <div class="left">
-            <p class="h5 m0">&copy; 2021 InsertApps</p>
+            <p class="h5 m0">&copy; 2022 InsertApps</p>
         </div>
         <div class="right">
-            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.80.0</p>
+            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.100.1</p>
         </div>
     </div>
 <div id="overlay" class="fixed z3 top-0 left-0 bg-darken-4"></div>

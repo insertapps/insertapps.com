@@ -1806,7 +1806,7 @@ blockquote p {
 			</div>
 
 			<div id="content" class="mb2">
-				<p>Desain website yang baik harus didukung dengan struktur navigasi yang yang baik pula. Sehingga pengunjung yang datang tidak tersesat saat mengakses ribuan konten yang &lsquo;terkubur&rsquo; dalam database.</p>
+				<p>Desain website yang baik harus didukung dengan struktur navigasi yang yang baik pula. Sehingga pengunjung yang datang tidak tersesat saat mengakses ribuan konten yang &rsquo;terkubur&rsquo; dalam database.</p>
 <p>Salah satunya adalah fitur page pagination atau juga dikenal dikenal sebagai paging. Pagination adalah proses membagi data posting menjadi halaman diskrit—grouping sejumlah halaman yang berbeda menjadi satu halaman yang rapi dan runut.</p>
 <p>Selain memudahkan pengunjung mengakses blog atau website, berikut segudang manfaat dari sebuah fitur pagination:</p>
 <ol>
@@ -1842,230 +1842,230 @@ blockquote p {
 <li><code>apply_filters( 'paginate_links', string $link )</code></li>
 </ul>
 <p>Untuk memanggil ketiga fungsi tersebut cukup mudah, tinggal echo saja:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">section</span>&gt;
-    
-    <span style="color:#1e889b">&lt;?php echo paginate_links(); ?&gt;</span>
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
-    
-    <span style="color:#1e889b">&lt;?php echo get_previous_posts_link(); ?&gt;</span>
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
-    
-    <span style="color:#1e889b">&lt;?php echo get_next_posts_link(); ?&gt;</span>
-
-&lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt;
-</code></pre></div><p>Hasil output data mentah codenya seperti berikut:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">section</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;prev page-numbers&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/&#34;</span>&gt;« Previous&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-numbers&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/&#34;</span>&gt;1&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">aria-current</span>=<span style="color:#cd5555">&#34;page&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-numbers current&#34;</span>&gt;2&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-numbers&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;3&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;next page-numbers&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;Next »&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;« Previous Page&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;Next Page »&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-
-&lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt; 
-</code></pre></div><p>Hasil render HTML menghasil bentuk desain pagination seperti berikut:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">« Previous 1 2 3 4 5 Next »
-
---------------------------------------
-
-« Previous Page
-
---------------------------------------
-
-Next Page »
-</code></pre></div><p>Sedangkan script Hooks, biasanya untuk memanipulasi hasil output melalui file <code>function.php</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">section</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#1e889b">&lt;?php echo paginate_links(); ?&gt;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#1e889b">&lt;?php echo get_previous_posts_link(); ?&gt;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#1e889b">&lt;?php echo get_next_posts_link(); ?&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt;
+</span></span></code></pre></div><p>Hasil output data mentah codenya seperti berikut:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">section</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;prev page-numbers&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/&#34;</span>&gt;« Previous&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-numbers&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/&#34;</span>&gt;1&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">aria-current</span>=<span style="color:#cd5555">&#34;page&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-numbers current&#34;</span>&gt;2&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-numbers&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;3&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;next page-numbers&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;Next »&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;« Previous Page&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;Next Page »&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt; 
+</span></span></code></pre></div><p>Hasil render HTML menghasil bentuk desain pagination seperti berikut:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>« Previous 1 2 3 4 5 Next »
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>--------------------------------------
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>« Previous Page
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>--------------------------------------
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Next Page »
+</span></span></code></pre></div><p>Sedangkan script Hooks, biasanya untuk memanipulasi hasil output melalui file <code>function.php</code></p>
 <h3 id="steps-2---cara-menggunakannya">Steps 2 —  Cara menggunakannya</h3>
 <p>Setelah mengetahui isi yang dikandung dari fungsi-fungsi tersebut untuk mencetak page pagination, selanjutnya insert code tersebut ke dalam theme setelah looping atau setelah code <code>&lt;?php endwhile; ?&gt;</code>.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#1e889b">&lt;?php if (have_posts()) : while (have_posts()) : the_post(); ?&gt;</span>
-
-    <span style="color:#228b22">&lt;!-- Load posts loop. --&gt;</span>
-    
-    <span style="color:#1e889b">&lt;?php get_template_part(&#39;partials/content&#39;, &#39;home&#39;); ?&gt;</span>
-    <span style="color:#1e889b">&lt;?php endwhile; ?&gt;</span>
-    
-    <span style="color:#228b22">&lt;!-- Previous/next page navigation. --&gt;</span>
-
-    &lt;<span style="color:#8b008b;font-weight:bold">section</span>&gt;
-        <span style="color:#1e889b">&lt;?php echo paginate_links(); ?&gt;</span>
-    &lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt;
-
-    <span style="color:#1e889b">&lt;?php else : ?&gt;</span>
-    
-    <span style="color:#228b22">&lt;!-- If no content, include the &#34;No posts found&#34; template. --&gt;</span>
-    
-    <span style="color:#1e889b">&lt;?php get_template_part(&#39;partials/content&#39;, &#39;none&#39;); ?&gt;</span>
-<span style="color:#1e889b">&lt;?php endif; ?&gt;</span>
-</code></pre></div><h3 id="steps-3---kreasi-style-css">Steps 3 —  Kreasi style CSS</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#1e889b">&lt;?php if (have_posts()) : while (have_posts()) : the_post(); ?&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">&lt;!-- Load posts loop. --&gt;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#1e889b">&lt;?php get_template_part(&#39;partials/content&#39;, &#39;home&#39;); ?&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1e889b">&lt;?php endwhile; ?&gt;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">&lt;!-- Previous/next page navigation. --&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">section</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#1e889b">&lt;?php echo paginate_links(); ?&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1e889b">&lt;?php else : ?&gt;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">&lt;!-- If no content, include the &#34;No posts found&#34; template. --&gt;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#1e889b">&lt;?php get_template_part(&#39;partials/content&#39;, &#39;none&#39;); ?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">&lt;?php endif; ?&gt;</span>
+</span></span></code></pre></div><h3 id="steps-3---kreasi-style-css">Steps 3 —  Kreasi style CSS</h3>
 <p>Terakhir, tinggal poles desainnya dengan memainkan style CSS berdasarkan nama-nama class bawaan output data mentahnya.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#008b45;font-weight:bold">prev</span> {
-    <span style="color:#228b22">/* do something */</span>
-}
-
-.<span style="color:#008b45;font-weight:bold">page-numbers</span> {
-    <span style="color:#228b22">/* do something */</span>
-}
-
-.<span style="color:#008b45;font-weight:bold">page-numbers</span> <span style="color:#8b008b;font-weight:bold">span</span> {
-    <span style="color:#228b22">/* do something */</span>
-}
-
-.<span style="color:#008b45;font-weight:bold">current</span> {
-    <span style="color:#228b22">/* do something */</span>
-}
-
-.<span style="color:#008b45;font-weight:bold">next</span> {
-    <span style="color:#228b22">/* do something */</span>
-}
-</code></pre></div><h2 id="custom-wordpress-paginate-dengan-css-framework">Custom WordPress Paginate dengan CSS Framework</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">prev</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">/* do something */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">page-numbers</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">/* do something */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">page-numbers</span> <span style="color:#8b008b;font-weight:bold">span</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">/* do something */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">current</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">/* do something */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">next</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">/* do something */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="custom-wordpress-paginate-dengan-css-framework">Custom WordPress Paginate dengan CSS Framework</h2>
 <p>Bagaimana kalau custom WordPress page pagination dengan meng-insert class class bawaan CSS framework? Mengawinkan komponen pagination Bootstrap ke dalam WP Paginate misalnya.</p>
 <p>Berikut caranya:</p>
 <h3 id="steps-1--ambil-komponen-pagination-bootstrap">Steps 1 — Ambil komponen pagination Bootstrap</h3>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">aria-label</span>=<span style="color:#cd5555">&#34;Page navigation&#34;</span>&gt;
-  &lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pagination&#34;</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Previous&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;1&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;2&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;3&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Next&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-  &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
-</code></pre></div><h3 id="steps-2--panggil-fungsi-paginate-wordpress">Steps 2 — Panggil fungsi Paginate WordPress</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">aria-label</span>=<span style="color:#cd5555">&#34;Page navigation&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pagination&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Previous&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;1&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;2&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;3&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Next&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
+</span></span></code></pre></div><h3 id="steps-2--panggil-fungsi-paginate-wordpress">Steps 2 — Panggil fungsi Paginate WordPress</h3>
 <p>Sebelumnya, rubah dulu <code>type</code> return value <code>paginate_links()</code> menjadi data type array dan nonaktifkan tombol prev_next.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
-	<span style="color:#228b22">// Insert data paginate kedalam sebuah variabel $paged dengan
-</span><span style="color:#228b22"></span>	<span style="color:#228b22">// return value type menjadi array
-</span><span style="color:#228b22"></span>	<span style="color:#00688b">$paged</span> = paginate_links( <span style="color:#8b008b;font-weight:bold">array</span>(
-	    <span style="color:#cd5555">&#39;type&#39;</span>       =&gt; <span style="color:#cd5555">&#39;array&#39;</span>,
-			<span style="color:#cd5555">&#39;prev_next&#39;</span>  =&gt; <span style="color:#8b008b;font-weight:bold">false</span>
-    ));
-<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span></code></pre></div><p>Insert variable <code>$paged</code> ke dalam komponen paginate Bootstrap dengan struktur code sebagai berikut;</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;nav aria-label=<span style="color:#cd5555">&#34;Page navigation&#34;</span>&gt;
-
-	&lt;?php
-		
-		<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$paged</span> ) :
-
-			<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;ul class=&#34;pagination&#34;&gt;&#39;</span>;
-
-				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span> . <span style="color:#cd5555">&#39;&lt;a class=&#34;page-link&#34; href=&#34;#&#34;&gt;...&lt;/a&gt;&#39;</span> . <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>
-
-			<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/ul&gt;&#39;</span>;
-
-		<span style="color:#8b008b;font-weight:bold">endif</span>;
-	<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span><span style="color:#a61717;background-color:#e3d2d2">&lt;/nav&gt;
-</span></code></pre></div><p>Berikutnya, replace dulu class bawaan <code>page-numbers</code>  paginate_links() dengan class <code>page-link</code> Bootstrap, dengan bantuan <code>str_replace()</code> PHP built-in functions.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;nav aria-label=<span style="color:#cd5555">&#34;Page navigation&#34;</span>&gt;
-
-	&lt;?php
-		
-		<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$paged</span> ) :
-			
-			<span style="color:#228b22">// Replace class &#39;page-numbers&#39; with &#39;page-link&#39;
-</span><span style="color:#228b22"></span>			<span style="color:#00688b">$paged</span> = str_replace(<span style="color:#cd5555">&#39;page-numbers&#39;</span>, <span style="color:#cd5555">&#39;page-link&#39;</span>, <span style="color:#00688b">$paged</span>);
-
-				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;ul class=&#34;pagination&#34;&gt;&#39;</span>;
-
-            <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>;
-
-            <span style="color:#8b008b;font-weight:bold">echo</span> join( <span style="color:#cd5555">&#39;&lt;/li&gt;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>, <span style="color:#00688b">$paged</span> );
-
-            <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>;
-
-        <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/ul&gt;&#39;</span>;
-
-		<span style="color:#8b008b;font-weight:bold">endif</span>;
-	<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span><span style="color:#a61717;background-color:#e3d2d2">&lt;/nav&gt;
-</span></code></pre></div><p>Hasil output HTML sementara:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pagination&#34;</span>&gt;
-
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">aria-current</span>=<span style="color:#cd5555">&#34;page&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link current&#34;</span>&gt;1&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;2&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;3&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-
-&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-</code></pre></div><h3 id="steps-3--menambah-tombol-prev-dan-next">Steps 3 — Menambah Tombol Prev dan Next</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>&lt;?php
+</span></span><span style="display:flex;"><span>	<span style="color:#228b22">// Insert data paginate kedalam sebuah variabel $paged dengan
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>	<span style="color:#228b22">// return value type menjadi array
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>	<span style="color:#00688b">$paged</span> = paginate_links( <span style="color:#8b008b;font-weight:bold">array</span>(
+</span></span><span style="display:flex;"><span>	    <span style="color:#cd5555">&#39;type&#39;</span>       =&gt; <span style="color:#cd5555">&#39;array&#39;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#cd5555">&#39;prev_next&#39;</span>  =&gt; <span style="color:#8b008b;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>    ));
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span></code></pre></div><p>Insert variable <code>$paged</code> ke dalam komponen paginate Bootstrap dengan struktur code sebagai berikut;</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>&lt;nav aria-label=<span style="color:#cd5555">&#34;Page navigation&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;?php
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$paged</span> ) :
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;ul class=&#34;pagination&#34;&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span> . <span style="color:#cd5555">&#39;&lt;a class=&#34;page-link&#34; href=&#34;#&#34;&gt;...&lt;/a&gt;&#39;</span> . <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/ul&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">endif</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">&lt;/nav&gt;
+</span></span></span></code></pre></div><p>Berikutnya, replace dulu class bawaan <code>page-numbers</code>  paginate_links() dengan class <code>page-link</code> Bootstrap, dengan bantuan <code>str_replace()</code> PHP built-in functions.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>&lt;nav aria-label=<span style="color:#cd5555">&#34;Page navigation&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;?php
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$paged</span> ) :
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>			<span style="color:#228b22">// Replace class &#39;page-numbers&#39; with &#39;page-link&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>			<span style="color:#00688b">$paged</span> = str_replace(<span style="color:#cd5555">&#39;page-numbers&#39;</span>, <span style="color:#cd5555">&#39;page-link&#39;</span>, <span style="color:#00688b">$paged</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;ul class=&#34;pagination&#34;&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#8b008b;font-weight:bold">echo</span> join( <span style="color:#cd5555">&#39;&lt;/li&gt;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>, <span style="color:#00688b">$paged</span> );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/ul&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">endif</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">&lt;/nav&gt;
+</span></span></span></code></pre></div><p>Hasil output HTML sementara:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pagination&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">aria-current</span>=<span style="color:#cd5555">&#34;page&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link current&#34;</span>&gt;1&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;2&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;3&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span></code></pre></div><h3 id="steps-3--menambah-tombol-prev-dan-next">Steps 3 — Menambah Tombol Prev dan Next</h3>
 <p>Berikutnya, memformat tombol &lsquo;<strong>Previous</strong>&rsquo; dan tombol &lsquo;<strong>Next</strong>&rsquo; dengan memanfaatkan dua buah fungsi lain, yaitu, <code>get_previous_posts_link()</code> dan <code>get_next_posts_link()</code>.</p>
 <p>By default, kedua fungsi tersebut hasil print out hanya mengeluarkan data mentah link <code>&lt;a href=&quot;/page/2/&quot;&gt;Next Page »&lt;/a&gt;</code> dan tidak menyertakan class bawaan, sehingga lebih mudah saat di custom.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php	
-	<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$paged</span> ) :
-
-		<span style="color:#00688b">$paged</span> = str_replace(<span style="color:#cd5555">&#39;page-numbers&#39;</span>, <span style="color:#cd5555">&#39;page-link&#39;</span>, <span style="color:#00688b">$paged</span>);
-
-			<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;ul class=&#34;pagination&#34;&gt;&#39;</span>;
-
-				<span style="color:#00688b">$previous</span> = get_next_posts_link();
-				<span style="color:#00688b">$next</span> = get_next_posts_link();
-			
-				<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$previous</span> ) {
-				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span> . <span style="color:#00688b">$previous</span> . <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>;
-				}
-				
-				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>;
-				
-					<span style="color:#8b008b;font-weight:bold">echo</span> join(<span style="color:#cd5555">&#39;&lt;/li&gt;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>, <span style="color:#00688b">$paged</span>);
-				
-				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>;
-				
-				<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$next</span> ) {
-				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span> . <span style="color:#00688b">$next</span> . <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>;
-				}
-				
-		<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/ul&gt;&#39;</span>;
-
-	<span style="color:#8b008b;font-weight:bold">endif</span>;
-<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span></code></pre></div><p>Hasil output sementara dari code tersebut :</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pagination&#34;</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;Next Page »&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">aria-current</span>=<span style="color:#cd5555">&#34;page&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link current&#34;</span>&gt;1&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;2&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;3&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;Next Page »&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-</code></pre></div><p>Sekarang, saatnya meng-injek <code>class=&quot;page-link&quot;</code> ke dalam tag <code>&lt;a href=&quot;/page/2/&quot;&gt;Next Page »&lt;/a&gt;</code> melalui sistem hooks WordPress.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>&lt;?php	
+</span></span><span style="display:flex;"><span>	<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$paged</span> ) :
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#00688b">$paged</span> = str_replace(<span style="color:#cd5555">&#39;page-numbers&#39;</span>, <span style="color:#cd5555">&#39;page-link&#39;</span>, <span style="color:#00688b">$paged</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>			<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;ul class=&#34;pagination&#34;&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				<span style="color:#00688b">$previous</span> = get_next_posts_link();
+</span></span><span style="display:flex;"><span>				<span style="color:#00688b">$next</span> = get_next_posts_link();
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>				<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$previous</span> ) {
+</span></span><span style="display:flex;"><span>				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span> . <span style="color:#00688b">$previous</span> . <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>				}
+</span></span><span style="display:flex;"><span>				
+</span></span><span style="display:flex;"><span>				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>				
+</span></span><span style="display:flex;"><span>					<span style="color:#8b008b;font-weight:bold">echo</span> join(<span style="color:#cd5555">&#39;&lt;/li&gt;&lt;li class=&#34;page-item&#34;&gt;&#39;</span>, <span style="color:#00688b">$paged</span>);
+</span></span><span style="display:flex;"><span>				
+</span></span><span style="display:flex;"><span>				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>				
+</span></span><span style="display:flex;"><span>				<span style="color:#8b008b;font-weight:bold">if</span> ( <span style="color:#00688b">$next</span> ) {
+</span></span><span style="display:flex;"><span>				<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;li class=&#34;page-item&#34;&gt;&#39;</span> . <span style="color:#00688b">$next</span> . <span style="color:#cd5555">&#39;&lt;/li&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>				}
+</span></span><span style="display:flex;"><span>				
+</span></span><span style="display:flex;"><span>		<span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/ul&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8b008b;font-weight:bold">endif</span>;
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span></code></pre></div><p>Hasil output sementara dari code tersebut :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;pagination&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;Next Page »&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">aria-current</span>=<span style="color:#cd5555">&#34;page&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link current&#34;</span>&gt;1&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;2&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-link&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/3/&#34;</span>&gt;3&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;page-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;http://localhost:8888/pehthemepress/page/2/&#34;</span>&gt;Next Page »&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span></code></pre></div><p>Sekarang, saatnya meng-injek <code>class=&quot;page-link&quot;</code> ke dalam tag <code>&lt;a href=&quot;/page/2/&quot;&gt;Next Page »&lt;/a&gt;</code> melalui sistem hooks WordPress.</p>
 <p>Caranya, insert code berikut ke dalam file <code>function.php</code></p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">insert_class_to_prev_next_posts_link_att</span>( <span style="color:#00688b">$attributes</span> ) {
-    <span style="color:#8b008b;font-weight:bold">return</span> <span style="color:#cd5555">&#39;class=&#34;page-link&#34;&#39;</span>;
-}
-
-add_filter(<span style="color:#cd5555">&#39;previous_posts_link_attributes&#39;</span>, <span style="color:#cd5555">&#39;insert_class_to_prev_next_posts_link_att&#39;</span>);
-add_filter(<span style="color:#cd5555">&#39;next_posts_link_attributes&#39;</span>, <span style="color:#cd5555">&#39;insert_class_to_prev_next_posts_link_att&#39;</span>);
-</code></pre></div><p>Jangan lupa save dan reload ulang browser, hasilnya Bootstrap pagination WordPress pun berhasil.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">function</span> <span style="color:#008b45">insert_class_to_prev_next_posts_link_att</span>( <span style="color:#00688b">$attributes</span> ) {
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">return</span> <span style="color:#cd5555">&#39;class=&#34;page-link&#34;&#39;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>add_filter(<span style="color:#cd5555">&#39;previous_posts_link_attributes&#39;</span>, <span style="color:#cd5555">&#39;insert_class_to_prev_next_posts_link_att&#39;</span>);
+</span></span><span style="display:flex;"><span>add_filter(<span style="color:#cd5555">&#39;next_posts_link_attributes&#39;</span>, <span style="color:#cd5555">&#39;insert_class_to_prev_next_posts_link_att&#39;</span>);
+</span></span></code></pre></div><p>Jangan lupa save dan reload ulang browser, hasilnya Bootstrap pagination WordPress pun berhasil.</p>
 <p>Hasil akhir coding, struktur codenya sebagai berikut:</p>
 <script type="application/javascript" src="https://gist.github.com/fauzanmy/a7d3852d1c9907d3ae8957e21c672aa9.js"></script>
 

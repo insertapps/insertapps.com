@@ -1811,7 +1811,7 @@ blockquote p {
 	
 		target="_blank"
 	>membuat website bagian pertama</a>. Sesi ini mulai coding secara &lsquo;drag and drop&rsquo; kepingan ‘puzzle’ class-class Basscss, lalu insert ke dalam file HTML.</p>
-<p>Sebelum &lsquo;lets go to coding&rsquo;, seperti biasa izinkan InsertApps menjelaskan beberapa rule dan konsep koding nya seperti apa? Yang sudah paham dasar web design, silahkan scroll down ke <strong>cara membuat header navigation bar yang responsive.</strong></p>
+<p>Sebelum &rsquo;lets go to coding&rsquo;, seperti biasa izinkan InsertApps menjelaskan beberapa rule dan konsep koding nya seperti apa? Yang sudah paham dasar web design, silahkan scroll down ke <strong>cara membuat header navigation bar yang responsive.</strong></p>
 <p>Untuk lebih mudah memahami konsep <em>web design programming.</em> tutorial ini, InsertApps mencoba pendekatan konsep desain grafis. Desainer biasanya menggunakan beberapa alat bantu untuk memvisualisasi bentuk desain.</p>
 <p>Layaknya tukang bangunan, konstruksi bangunan tidak terlepas dari namanya alat bantu perancah (scaffolding). Tampa menggunakan perancah, sulit sekali membangun dan membentuk sebuah bangunan.</p>
 <p>Graphic Designer pun tidak terlepas dari alat bantu saat layout majalah, desain logo dan lainnya. Alat bantu yang sering sekali dipakai desainer grafis adalah grid (garis bantu), colorful (warna-warni), rectangle dan circle tool untuk membuat objek kotak maupun bulat.</p>
@@ -1822,7 +1822,11 @@ blockquote p {
 		target="_blank"
 	>basscss-border</a>.</p>
 <p>Cat warna-warni, nama class sesuai dengan identitas warna asli, seperti; <code>black</code>, <code>gray</code>, <code>siver</code>, <code>purple</code> dll untuk warna text. Class <code>bg-blue</code> untuk mewarnai isi (fill) kotak container dan class <code>border-teal</code> untuk mewarnai garis kotak container.</p>
-<p>Utilitas dan variasi warna yang sudah include dalam <code>Basscss Ace</code> ini jumlahnya terbatas, modul warna hasil import dari <em>color palette</em> pihak ketiga clrs.cc. Lihat juga dokumentasi masing-masing perilaku dari class Basscss beserta class Add on di <a href="https://github.com/basscss/addons">https://github.com/basscss/addons</a>.</p>
+<p>Utilitas dan variasi warna yang sudah include dalam <code>Basscss Ace</code> ini jumlahnya terbatas, modul warna hasil import dari <em>color palette</em> pihak ketiga clrs.cc. Lihat juga dokumentasi masing-masing perilaku dari class Basscss beserta class Add on di <a href="https://github.com/basscss/addons" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>https://github.com/basscss/addons</a>.</p>
 <p>Sedangkan &lsquo;grid&rsquo; dalam framework css adalah real grid untuk layout kolom dalam berbagai variasi (responsive) web desain. Oya, tidak ada nama class <code>grid</code>, <a href="https://basscss.com/#basscss-grid" class="blue text-decoration-none"
 	
 	
@@ -1830,36 +1834,36 @@ blockquote p {
 	>grid</a> hanya istilah saja.</p>
 <h3 id="coding-cara-membuat-header-navigator-bar-yang-responsive">Coding cara membuat header navigator bar yang responsive</h3>
 <p>Buka kembali file template dasar <code>index.html</code> lalu fokus codingnya di bagian tag <code>&lt;header&gt; &lt;p&gt;InsertApps&lt;/p&gt; &lt;/header&gt;</code> dan abaikan dulu tag yang lain.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#1e889b">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#8b008b;font-weight:bold">html</span> <span style="color:#658b00">lang</span>=<span style="color:#cd5555">&#34;en&#34;</span>&gt;
-&lt;<span style="color:#8b008b;font-weight:bold">head</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">charset</span>=<span style="color:#cd5555">&#34;UTF-8&#34;</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">name</span>=<span style="color:#cd5555">&#34;viewport&#34;</span> <span style="color:#658b00">content</span>=<span style="color:#cd5555">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;Tutorial Web Desain oleh InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">link</span> <span style="color:#658b00">rel</span>=<span style="color:#cd5555">&#34;stylesheet&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://unpkg.com/ace-css/css/ace.min.css&#34;</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">head</span>&gt;
-&lt;<span style="color:#8b008b;font-weight:bold">body</span>&gt;
-
-	<span style="color:#228b22">&lt;!-- ## START FOCUS ON CODING HERE --&gt;</span>
-
-    &lt;<span style="color:#8b008b;font-weight:bold">header</span>&gt;
-
-        &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-
-    &lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
-
-    <span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
-
-    &lt;<span style="color:#8b008b;font-weight:bold">main</span>&gt;
-        &lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;Hello World...&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
-    &lt;/<span style="color:#8b008b;font-weight:bold">main</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
-        &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Copyright&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-    &lt;/<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">body</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">html</span>&gt;
-</code></pre></div><p>🔥 <em><strong>QUICK TIPS:</strong> Penjelasan lengkap kode di atas baca tutorial Part #1: <a href="https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/" class="blue text-decoration-none"
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#1e889b">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">html</span> <span style="color:#658b00">lang</span>=<span style="color:#cd5555">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">charset</span>=<span style="color:#cd5555">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">name</span>=<span style="color:#cd5555">&#34;viewport&#34;</span> <span style="color:#658b00">content</span>=<span style="color:#cd5555">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;Tutorial Web Desain oleh InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">link</span> <span style="color:#658b00">rel</span>=<span style="color:#cd5555">&#34;stylesheet&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://unpkg.com/ace-css/css/ace.min.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#228b22">&lt;!-- ## START FOCUS ON CODING HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">main</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;Hello World...&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">main</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Copyright&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">html</span>&gt;
+</span></span></code></pre></div><p>🔥 <em><strong>QUICK TIPS:</strong> Penjelasan lengkap kode di atas baca tutorial Part #1: <a href="https://insertapps.com/blog/tutorial-membuat-website-menyiapkan-template-dasar/" class="blue text-decoration-none"
 	
 	
 		target="_blank"
@@ -1872,53 +1876,53 @@ blockquote p {
 <p>Selanjutnya kembali fokus ke bagian <code>#FOCUS ON CODING</code> tag <code>&lt;header&gt;</code> hingga selesai coding tutorial part kedua ini.</p>
 <p>Tambahkan lagi class <code>bg-blue</code> ke dalam tag header pembuka <code>&lt;header class=&quot;border bg-blue&quot;&gt;</code> dan jangan pernah mengganggu tag penutup <code>&lt;/header&gt;</code>. Tapi jaga-jaga saja, agar tidak hilang, otomatis desain kamu berubah berantakan.</p>
 <p>Masih dalam tag header, tambah class <code>px2</code> untuk menambah white space di dalam wadah container <code>&lt;header&gt; &lt;header&gt;</code>. Class <code>px2</code> adalah class name Basscss dari struktur style CSS berikut: <code>.px2 { padding-left: 1rem; padding-right: 1rem; }</code>.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#228b22">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
-
-&lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;border bg-blue px2&#34;</span>&gt;
-
-	&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-	
-&lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
-
-<span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
-</code></pre></div><p><code>Padding</code> adalah properti CSS untuk menciptakan white space dari dalam element <code>HTML</code>, memberi spasi di antara konten dan border wadah pembungkus itu sendiri. Lawan dari property padding adalah property <code>margin</code> untuk menciptakan white space ke luar elemen <code>HTML</code>, sama seperti perilaku setting margin dalam dokumen MS Word and friend.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;border bg-blue px2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+</span></span></code></pre></div><p><code>Padding</code> adalah properti CSS untuk menciptakan white space dari dalam element <code>HTML</code>, memberi spasi di antara konten dan border wadah pembungkus itu sendiri. Lawan dari property padding adalah property <code>margin</code> untuk menciptakan white space ke luar elemen <code>HTML</code>, sama seperti perilaku setting margin dalam dokumen MS Word and friend.</p>
 <p>Kemudian tambahkan satu elemen kosong tag <code>div</code>, lalu isi dengan karakter burger → ☰ ← <em>Copy paste saja kode itu</em>.</p>
 <p>Tambakan juga tag <code>&lt;nav&gt;</code> beserta isi menu-menu web dev—di sini terserah kamu ketik apapun boleh—misalnya <code>&lt;nav&gt; About Blog Contact &lt;/nav&gt;</code>. Tag nav adalah elemen HTML yang semantik untuk membungkus menu-menu navigasi website; | <code>About</code> | <code>Blog</code> | <code>Contact</code> |.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#228b22">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
-&lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;border bg-blue px2&#34;</span>&gt;
-	
-	&lt;<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-		☰
-	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-	
-	&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-
-	&lt;<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
-		About Blog Contact
-	&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
-	
-&lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
-<span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
-</code></pre></div><p>Sementara hasil render desain <code>&lt;header&gt;</code> kamu di peramban sedikit berantakan. 😱 Jangan panik, enjoy saja, namanya juga web desain.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;border bg-blue px2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>		☰
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
+</span></span><span style="display:flex;"><span>		About Blog Contact
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+</span></span></code></pre></div><p>Sementara hasil render desain <code>&lt;header&gt;</code> kamu di peramban sedikit berantakan. 😱 Jangan panik, enjoy saja, namanya juga web desain.</p>
 <p>Kemudian add class <code>flex</code> dan <code>items-center</code> ke dalam tag <code>&lt;header class=&quot;border bg-blue px2 flex items-center&quot;&gt;</code>. Tambah juga utility <code>mr1</code> ke dalam tag <code>div</code> pembungkus tombol burger <code>&lt;div class=&quot;mr1&quot;&gt;</code>.</p>
 <p>Sedangkan dalam tag <code>&lt;nav&gt;</code> add class <code>ml-auto</code> menjadi seperti ini: <code>&lt;nav class=&quot;ml-auto&quot;&gt;</code>.</p>
 <p>Struktur code sementara menjadi seperti ini:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#228b22">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
-&lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;border bg-blue px2 flex items-center&#34;</span>&gt;
-	
-	&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;mr1&#34;</span>&gt;
-		☰
-	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-	
-	&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-	
-	&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;ml-auto&#34;</span>&gt;
-		About Blog Contact 
-	&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
-	
-&lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
-<span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
-</code></pre></div><p>Hasil render peramban web sudah membentuk sebuah navbar yang lengkap dengan tombol burger, logo web, dan menu category di posisi kanan. 😄</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;border bg-blue px2 flex items-center&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;mr1&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		☰
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;ml-auto&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		About Blog Contact 
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+</span></span></code></pre></div><p>Hasil render peramban web sudah membentuk sebuah navbar yang lengkap dengan tombol burger, logo web, dan menu category di posisi kanan. 😄</p>
 <p>Berikut penjelasan code yang sudah berhasil kamu insert ke dalam file web desain kamu.</p>
 <ul>
 <li>Class name <code>border bg-blue px2</code> adalah utility style Basscss, perilaku dari class tersebut sudah dijelaskan di bagian atas.</li>
@@ -1938,61 +1942,61 @@ blockquote p {
 </ul>
 <p>Lanjut coding lagi. Penulisan sintak berikutnya perbaikan dan penambahan warna, agar hasilnya lebih cantik.</p>
 <p>Pada baris kode <code>&lt;header class=&quot;border bg-blue px2 flex items-center&quot;&gt;</code> tambahkan class warna <code>white</code>, kemudian hapus class <code>border</code>. Boleh add class bantu <code>mb4</code> untuk menambah jarak <em>white space</em> antara batas tag <code>&lt;header&gt;</code> dengan batas tag <code>&lt;main&gt;</code>.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#228b22">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
-&lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-blue px2 flex items-center white mb4&#34;</span>&gt;
-	
-	&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;mr1&#34;</span>&gt;
-		☰
-	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-	
-	&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-	
-	&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;ml-auto&#34;</span>&gt;
-		About Blog Contact 
-	&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
-	
-&lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
-<span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
-</code></pre></div><p>Dalam wadah pembungkus tombol burger, tambah class name <code>btn</code>. Add juga class <code>px0</code> untuk reset space padding, lalu sertakan <code>mr2</code> untuk jarak margin kanan sejauh <code>1rem</code> (16pixel) dengan batas logo.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-blue px2 flex items-center white mb4&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;mr1&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		☰
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;ml-auto&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		About Blog Contact 
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+</span></span></code></pre></div><p>Dalam wadah pembungkus tombol burger, tambah class name <code>btn</code>. Add juga class <code>px0</code> untuk reset space padding, lalu sertakan <code>mr2</code> untuk jarak margin kanan sejauh <code>1rem</code> (16pixel) dengan batas logo.</p>
 <p>Baris code <code>&lt;p&gt;InsertApps&lt;/p&gt;</code> yang dari tadi belum ada sentuhan manis, rombak sintak code-nya menjadi link hidup <code>&lt;a href=&quot;#&quot;&gt;Brand&lt;/a&gt;</code>.</p>
 <p>Perbaiki juga struktur kode <code>&lt;nav&gt; ... &lt;/nav&gt;</code> yang membungkus menu-menu website kalian dengan cara yang benar, seperti berikut ini;</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;ml-auto&#34;</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;About&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;BLog&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;Contact&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
-</code></pre></div><p>Kalau hasilnya berantakan lagi, mari lanjutkan dengan menghias lagi header website nya.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;ml-auto&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;About&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;BLog&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;Contact&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
+</span></span></code></pre></div><p>Kalau hasilnya berantakan lagi, mari lanjutkan dengan menghias lagi header website nya.</p>
 <p>Drop lagi class name Basscss berikut: <code>btn</code>, <code>caps</code>, <code>h3</code> dan jangan lupa add class <code>px0</code> reset padding, insert ke dalam baris kode <code>&lt;a href=&quot;#&quot;&gt;Logo&lt;/a&gt;</code> sehingga menjadi:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;btn caps h3 px0&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Logo&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt; <span style="color:#228b22">&lt;!-- Ganti logo dengan nama yang kamu suka --&gt;</span>
-</code></pre></div><p>Insert juga class name <code>list-reset</code> ke dalam tag <code>&lt;ul&gt;</code> menjadi:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset&#34;</span>&gt;
-</code></pre></div><p>Baris code tersebut untuk menghilangkan bullet dalam tag <code>&lt;li&gt;</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;btn caps h3 px0&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Logo&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt; <span style="color:#228b22">&lt;!-- Ganti logo dengan nama yang kamu suka --&gt;</span>
+</span></span></code></pre></div><p>Insert juga class name <code>list-reset</code> ke dalam tag <code>&lt;ul&gt;</code> menjadi:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset&#34;</span>&gt;
+</span></span></code></pre></div><p>Baris code tersebut untuk menghilangkan bullet dalam tag <code>&lt;li&gt;</code>.</p>
 <p>Dalam list <code>&lt;li&gt; ... &lt;/li&gt;</code> insert class name Basscss <code>inline-block</code> menjadi:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;About&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-</code></pre></div><p>Code itu berfungsi merubah listing secara default: vertical menjadi listing berjejer secara horizontal.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;About&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span></code></pre></div><p>Code itu berfungsi merubah listing secara default: vertical menjadi listing berjejer secara horizontal.</p>
 <p>Hasil akhir perbaikan kode menjadi:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#228b22">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
-&lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-blue px2 flex items-center white mb4&#34;</span>&gt;
-	
-	&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;btn px0 mr2&#34;</span>&gt;
-		☰
-	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-	
-	&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;btn caps h3 px0&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Logo&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-	
-	&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;ml-auto&#34;</span>&gt;
-		&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset&#34;</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;About&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;Blog&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;Contact&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-		&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-	&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
-	
-&lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
-<span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
-</code></pre></div><p>Hasil akhir rendering di peramban setelah perbaikan kode di atas, lihat <a href="https://insertapps.com/demo/tutorial-basscss/2-desain-header#" class="blue text-decoration-none"
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-blue px2 flex items-center white mb4&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;btn px0 mr2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		☰
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;btn caps h3 px0&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Logo&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;ml-auto&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;About&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;Blog&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;Contact&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+</span></span></code></pre></div><p>Hasil akhir rendering di peramban setelah perbaikan kode di atas, lihat <a href="https://insertapps.com/demo/tutorial-basscss/2-desain-header#" class="blue text-decoration-none"
 	
 	
 		target="_blank"
@@ -2001,49 +2005,53 @@ blockquote p {
 <ul>
 <li>Setiap baris yang ada penambahan code <code>btn</code>, berarti element yang dibungkus akan berubah sifatnya menjadi sebuah tombol. Pointer mouse secara otomatis berubah menjadi fungsi click.</li>
 <li>Bari code yang ditambah class name <code>caps</code> adalah struktur style CSS dari <code>.caps { text-transform: uppercase; letter-spacing: .2em;</code> untuk merubah text, menjadi huruf besar semua (uppercase), dan jarak antar karakter sedikit renggang (<code>letter-spacing: .2em</code>)</li>
-<li>Sedangkan <code>h3</code> bukanlah tag heading <code>&lt;h3&gt;</code>, tapi sebuah class name Basscss dari struktur kode style css <code>.h3 { font-size: 1.25rem; }</code> untuk memperbesar ukuran huruf (font size) logo sebesar <code>20px</code> (1.25rem). Kreator Basscss secara sengaja menulis class name yang modular dan readable seperti itu, selengkapnya baca dokumentasinya di <a href="https://basscss.com/#basscss-type-scale">https://basscss.com/#basscss-type-scale</a>.</li>
+<li>Sedangkan <code>h3</code> bukanlah tag heading <code>&lt;h3&gt;</code>, tapi sebuah class name Basscss dari struktur kode style css <code>.h3 { font-size: 1.25rem; }</code> untuk memperbesar ukuran huruf (font size) logo sebesar <code>20px</code> (1.25rem). Kreator Basscss secara sengaja menulis class name yang modular dan readable seperti itu, selengkapnya baca dokumentasinya di <a href="https://basscss.com/#basscss-type-scale" class="blue text-decoration-none"
+	
+	
+		target="_blank"
+	>https://basscss.com/#basscss-type-scale</a>.</li>
 </ul>
 <p><strong>Rekap Kode Keseluruhan</strong></p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#1e889b">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#8b008b;font-weight:bold">html</span> <span style="color:#658b00">lang</span>=<span style="color:#cd5555">&#34;en&#34;</span>&gt;
-&lt;<span style="color:#8b008b;font-weight:bold">head</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">charset</span>=<span style="color:#cd5555">&#34;UTF-8&#34;</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">name</span>=<span style="color:#cd5555">&#34;viewport&#34;</span> <span style="color:#658b00">content</span>=<span style="color:#cd5555">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;Tutorial Web Desain oleh InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
-	&lt;<span style="color:#8b008b;font-weight:bold">link</span> <span style="color:#658b00">rel</span>=<span style="color:#cd5555">&#34;stylesheet&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://unpkg.com/ace-css/css/ace.min.css&#34;</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">head</span>&gt;
-&lt;<span style="color:#8b008b;font-weight:bold">body</span>&gt;
-   
-    <span style="color:#228b22">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
-    &lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-blue px2 flex items-center white mb4&#34;</span>&gt;
-       
-        &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;btn px0 mr2&#34;</span>&gt;
-            ☰
-        &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-        
-        &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;btn caps h3 px0&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Logo&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
-        
-        &lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;ml-auto&#34;</span>&gt;
-            &lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset&#34;</span>&gt;
-                &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;About&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-                &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;BLog&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-                &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;Contact&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
-            &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
-        &lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
-        
-    &lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
-    <span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">main</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;border&#34;</span>&gt;
-        &lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;Hello World...&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
-    &lt;/<span style="color:#8b008b;font-weight:bold">main</span>&gt;
-    
-    &lt;<span style="color:#8b008b;font-weight:bold">footer</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;border&#34;</span>&gt;
-        &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Copyright&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-    &lt;/<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">body</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">html</span>&gt;
-</code></pre></div><p><strong>CONCLUSION</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#1e889b">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">html</span> <span style="color:#658b00">lang</span>=<span style="color:#cd5555">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">charset</span>=<span style="color:#cd5555">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">name</span>=<span style="color:#cd5555">&#34;viewport&#34;</span> <span style="color:#658b00">content</span>=<span style="color:#cd5555">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;Tutorial Web Desain oleh InsertApps&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#8b008b;font-weight:bold">link</span> <span style="color:#658b00">rel</span>=<span style="color:#cd5555">&#34;stylesheet&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;https://unpkg.com/ace-css/css/ace.min.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">&lt;!-- ## START FOCUS CODING HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">header</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;bg-blue px2 flex items-center white mb4&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>       
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;btn px0 mr2&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            ☰
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;btn caps h3 px0&#34;</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span>&gt;Logo&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">nav</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;ml-auto&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#8b008b;font-weight:bold">ul</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;list-reset&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;About&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;BLog&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#8b008b;font-weight:bold">li</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;inline-block btn&#34;</span>&gt;Contact&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#8b008b;font-weight:bold">nav</span>&gt;
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">&lt;!-- ## END FOCUS CODING HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">main</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;border&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;Hello World...&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">main</span>&gt;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">footer</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;border&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Copyright&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">html</span>&gt;
+</span></span></code></pre></div><p><strong>CONCLUSION</strong></p>
 <ul>
 <li>Hingga kode terakhir sudah diketik dalam tutorial ini, belum ada satupun kode CSS tambahan lainnya. Semua class yang barusan kalian insert satu-persatu hingga menjadi banyak, murni class utility bawaan dari framework Basscss.</li>
 <li>Untuk lebih familiar lagi dengan class Basscss, sering-sering baca dokumentasinya.</li>

@@ -6,11 +6,20 @@
     <description>Recent content in Tags on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Nov 2021 12:31:01 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 21:54:26 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>code</title>
+      <link>https://insertapps.com/tags/code/</link>
+      <pubDate>Sun, 05 Jun 2022 21:54:26 +0700</pubDate>
+      
+      <guid>https://insertapps.com/tags/code/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>css</title>
       <link>https://insertapps.com/tags/css/</link>
-      <pubDate>Wed, 10 Nov 2021 12:31:01 +0700</pubDate>
+      <pubDate>Sun, 05 Jun 2022 21:54:26 +0700</pubDate>
       
       <guid>https://insertapps.com/tags/css/</guid>
       <description></description>
@@ -19,9 +28,27 @@
     <item>
       <title>html</title>
       <link>https://insertapps.com/tags/html/</link>
-      <pubDate>Wed, 10 Nov 2021 12:31:01 +0700</pubDate>
+      <pubDate>Sun, 05 Jun 2022 21:54:26 +0700</pubDate>
       
       <guid>https://insertapps.com/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tailwindcss</title>
+      <link>https://insertapps.com/tags/tailwindcss/</link>
+      <pubDate>Sun, 05 Jun 2022 21:54:26 +0700</pubDate>
+      
+      <guid>https://insertapps.com/tags/tailwindcss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
+      <link>https://insertapps.com/tags/tips/</link>
+      <pubDate>Sun, 05 Jun 2022 21:54:26 +0700</pubDate>
+      
+      <guid>https://insertapps.com/tags/tips/</guid>
       <description></description>
     </item>
     
@@ -40,24 +67,6 @@
       <pubDate>Wed, 03 Nov 2021 22:02:08 +0700</pubDate>
       
       <guid>https://insertapps.com/tags/bootstrap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>code</title>
-      <link>https://insertapps.com/tags/code/</link>
-      <pubDate>Wed, 03 Nov 2021 22:02:08 +0700</pubDate>
-      
-      <guid>https://insertapps.com/tags/code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tips</title>
-      <link>https://insertapps.com/tags/tips/</link>
-      <pubDate>Wed, 03 Nov 2021 22:02:08 +0700</pubDate>
-      
-      <guid>https://insertapps.com/tags/tips/</guid>
       <description></description>
     </item>
     

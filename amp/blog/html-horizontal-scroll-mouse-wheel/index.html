@@ -1815,11 +1815,11 @@ blockquote p {
 <p>Bagaimana dengan layar desktop yang masih mengandal scroll mouse cuma bisa up and down?</p>
 <p>Browser desktop masih mempertahankan fungsi roda bulat scroll mouse tetap pada jalurnya, menggulir naik/turun secara vertikal.</p>
 <p>Sedangkan scroll untuk swipe horizontal kiri-kanan masih belum ada tanda-tanda penambahan fungsi tersebut.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#228b22">/*	Sintag CSS ini fiktif */</span>
-<span style="color:#8b008b;font-weight:bold">div</span> {
-  scroll-direction: <span style="color:#8b008b;font-weight:bold">horizontal</span>;
-}
-</code></pre></div><p>🔥 <em><strong>QUICK TIPS:</strong> Properti CSS <code>scroll-direction: horizontal;</code> adalah sintak CSS fiktif khayalan Pieter Biesemans. Semoga style gagasan ini menjadi kenyataan pada update CSS masa depan.</em></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#228b22">/*	Sintag CSS ini fiktif */</span>
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">div</span> {
+</span></span><span style="display:flex;"><span>  scroll-direction: <span style="color:#8b008b;font-weight:bold">horizontal</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>🔥 <em><strong>QUICK TIPS:</strong> Properti CSS <code>scroll-direction: horizontal;</code> adalah sintak CSS fiktif khayalan Pieter Biesemans. Semoga style gagasan ini menjadi kenyataan pada update CSS masa depan.</em></p>
 <p>Walau aplikasi mobile dengan desktop dibuat berfungsi sama, hanya saja sedikit berbeda pada jalur aksesnya saja.</p>
 <p>Dan pengembang aplikasi oke-oke saja untuk mendevelop satu aplikasi dengan beragam versi, baik versi desktop; web base, plus dua apps lagi masing-masing khusus untuk Android dan IOS. 😭</p>
 <p>Bagaimana dengan saya, hanya ingin satu aplikasi saja web saja, namun berfungsi dan responsive seutuhnya di semua jenis perangkat yang beragam ukuran layar? 😚</p>
@@ -1847,93 +1847,93 @@ blockquote p {
 <p>Dengan struktur code yang simple, cara yang elegen, bisa langsung insert code ke dalam proyek besar. 💘</p>
 <h3 id="begini-cara-implementasi-fungsi-horizontal-scroll-mouse-wheel">Begini cara implementasi fungsi horizontal scroll mouse wheel</h3>
 <p><strong>PERTAMA</strong> siapkan satu blok element HTML sebagai berikut:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;container&#34;</span>&gt;
-  &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;box-scroll&#34;</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;card ml&#34;</span>&gt;
-      &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;https://freebiespic.com/images/2018/0821_sneakers-shoes-men-on-the-shelf-thumb.jpg&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;Text image&#34;</span>&gt;
-      &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Sneakers shoes for men&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;card ml&#34;</span>&gt;
-      &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;https://freebiespic.com/images/2018/0820_shoes-for-men-leather-thumbnail.jpg&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;Text image&#34;</span>&gt;
-      &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Product Title&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;card ml&#34;</span>&gt;
-      &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;https://freebiespic.com/images/2018/0911_various-sneakers-on-the-showcase-at-the-store-thumb.jpg&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;Text image&#34;</span>&gt;
-      &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Product Title&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;card ml&#34;</span>&gt;
-      &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;https://freebiespic.com/images/2018/0821_sneakers-shoes-men-on-the-shelf-thumb.jpg&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;Text image&#34;</span>&gt;
-      &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Product Title&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;    
-  &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-</code></pre></div><p><strong>KEDUA</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;box-scroll&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;card ml&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;https://freebiespic.com/images/2018/0821_sneakers-shoes-men-on-the-shelf-thumb.jpg&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;Text image&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Sneakers shoes for men&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;card ml&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;https://freebiespic.com/images/2018/0820_shoes-for-men-leather-thumbnail.jpg&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;Text image&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Product Title&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;card ml&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;https://freebiespic.com/images/2018/0911_various-sneakers-on-the-showcase-at-the-store-thumb.jpg&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;Text image&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Product Title&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;card ml&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;https://freebiespic.com/images/2018/0821_sneakers-shoes-men-on-the-shelf-thumb.jpg&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;Text image&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Product Title&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;    
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span></code></pre></div><p><strong>KEDUA</strong></p>
 <p>Insert property CSS ke dalam element HTML yang sudah ada sebagai berikut:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#8b008b;font-weight:bold">html</span>,<span style="color:#8b008b;font-weight:bold">body</span> {
-  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
-  <span style="color:#8b008b;font-weight:bold">background-color</span>: <span style="color:#8b008b;font-weight:bold">ghostwhite</span>;
-}
-
-<span style="color:#228b22">/* CSS centering things
-</span><span style="color:#228b22">	from here https://insertapps.com/blog/super-simpel-css-center-container/ 
-</span><span style="color:#228b22">*/</span>
-.<span style="color:#008b45;font-weight:bold">container</span> {
-  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
-  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
-  <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-  <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
-}
-
-.<span style="color:#008b45;font-weight:bold">box-scroll</span> {
-  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
-  <span style="color:#8b008b;font-weight:bold">flex-wrap</span>: <span style="color:#8b008b;font-weight:bold">nowrap</span>;
-  <span style="color:#8b008b;font-weight:bold">width</span>: <span style="color:#b452cd">70</span><span style="color:#00688b;font-weight:bold">%</span>;
-  <span style="color:#8b008b;font-weight:bold">overflow</span>: <span style="color:#8b008b;font-weight:bold">auto</span>;
-  <span style="color:#228b22">/* Hidden scroll bar */</span>
-  scrollbar-width: <span style="color:#8b008b;font-weight:bold">none</span>;  <span style="color:#228b22">/* Firefox */</span>
-  <span style="color:#8b008b;font-weight:bold">-ms-</span><span style="color:#8b008b;font-weight:bold">overflow-style</span>: <span style="color:#8b008b;font-weight:bold">none</span>;  <span style="color:#228b22">/* IE and Edge */</span>
-}
-
-<span style="color:#228b22">/* Hide scrollbar for Chrome, Safari and Opera */</span>
-.<span style="color:#008b45;font-weight:bold">box-scroll</span>::<span style="color:#707a7c">-webkit-scrollbar</span> {
-  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">none</span>;
-}
-
-.<span style="color:#008b45;font-weight:bold">card</span> {
-  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">inline</span>-<span style="color:#8b008b;font-weight:bold">block</span>;
-  <span style="color:#8b008b;font-weight:bold">border</span>: <span style="color:#b452cd">1</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#8b008b;font-weight:bold">solid</span> <span style="color:#8b008b;font-weight:bold">gray</span>;
-  <span style="color:#8b008b;font-weight:bold">border-radius</span>: <span style="color:#b452cd">5</span><span style="color:#00688b;font-weight:bold">px</span>;
-  <span style="color:#8b008b;font-weight:bold">background-color</span>: <span style="color:#8b008b;font-weight:bold">white</span>;
-}
-
-.<span style="color:#008b45;font-weight:bold">ml</span> {
-  <span style="color:#8b008b;font-weight:bold">margin-right</span>: <span style="color:#b452cd">10</span><span style="color:#00688b;font-weight:bold">px</span>;
-}
-
-<span style="color:#8b008b;font-weight:bold">img</span> {
-  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">block</span>;
-}
-
-<span style="color:#8b008b;font-weight:bold">p</span> {
-  <span style="color:#8b008b;font-weight:bold">padding</span>: <span style="color:#b452cd">0</span> <span style="color:#b452cd">10</span><span style="color:#00688b;font-weight:bold">px</span>;
-}
-</code></pre></div><p><strong>KETIGA</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">html</span>,<span style="color:#8b008b;font-weight:bold">body</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">background-color</span>: <span style="color:#8b008b;font-weight:bold">ghostwhite</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22">/* CSS centering things
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22">	from here https://insertapps.com/blog/super-simpel-css-center-container/ 
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22">*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">container</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">height</span>: <span style="color:#b452cd">100</span><span style="color:#00688b;font-weight:bold">%</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">justify-content</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">align-items</span>: <span style="color:#8b008b;font-weight:bold">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">box-scroll</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">flex-wrap</span>: <span style="color:#8b008b;font-weight:bold">nowrap</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">width</span>: <span style="color:#b452cd">70</span><span style="color:#00688b;font-weight:bold">%</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">overflow</span>: <span style="color:#8b008b;font-weight:bold">auto</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#228b22">/* Hidden scroll bar */</span>
+</span></span><span style="display:flex;"><span>  scrollbar-width: <span style="color:#8b008b;font-weight:bold">none</span>;  <span style="color:#228b22">/* Firefox */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">-ms-</span><span style="color:#8b008b;font-weight:bold">overflow-style</span>: <span style="color:#8b008b;font-weight:bold">none</span>;  <span style="color:#228b22">/* IE and Edge */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22">/* Hide scrollbar for Chrome, Safari and Opera */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">box-scroll</span>::<span style="color:#707a7c">-webkit-scrollbar</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">card</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">inline-block</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">border</span>: <span style="color:#b452cd">1</span><span style="color:#00688b;font-weight:bold">px</span> <span style="color:#8b008b;font-weight:bold">solid</span> <span style="color:#8b008b;font-weight:bold">gray</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">border-radius</span>: <span style="color:#b452cd">5</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">background-color</span>: <span style="color:#8b008b;font-weight:bold">white</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">ml</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">margin-right</span>: <span style="color:#b452cd">10</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">img</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">display</span>: <span style="color:#8b008b;font-weight:bold">block</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">p</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">padding</span>: <span style="color:#b452cd">0</span> <span style="color:#b452cd">10</span><span style="color:#00688b;font-weight:bold">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>KETIGA</strong></p>
 <p>Terakhir tambahkan sedikit script javascript untuk menjalan fungsi scroll direction horizontal ke dalam element HTML.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#228b22">// Declaring variable to target a div element
-</span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">const</span> mouseWheel = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;.box-scroll&#39;</span>);
-
-<span style="color:#228b22">// Add wheel function
-</span><span style="color:#228b22"></span>mouseWheel.addEventListener(<span style="color:#cd5555">&#39;wheel&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span>(e) {
-
-    <span style="color:#8b008b;font-weight:bold">const</span> race = <span style="color:#b452cd">10</span>; <span style="color:#228b22">// &lt;= set scroll mouse move the wheels
-</span><span style="color:#228b22"></span>
-    <span style="color:#8b008b;font-weight:bold">if</span> (e.deltaY &gt; <span style="color:#b452cd">0</span>) <span style="color:#228b22">// &lt;= Scroll right
-</span><span style="color:#228b22"></span>        mouseWheel.scrollLeft += race;
-    <span style="color:#8b008b;font-weight:bold">else</span> <span style="color:#228b22">// Scroll left
-</span><span style="color:#228b22"></span>        mouseWheel.scrollLeft -= race;
-	e.preventDefault();
-});
-</code></pre></div><p><strong>Hasil Akhir Coding</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#228b22">// Declaring variable to target a div element
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span><span style="color:#8b008b;font-weight:bold">const</span> mouseWheel = <span style="color:#658b00">document</span>.querySelector(<span style="color:#cd5555">&#39;.box-scroll&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22">// Add wheel function
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>mouseWheel.addEventListener(<span style="color:#cd5555">&#39;wheel&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span>(e) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">const</span> race = <span style="color:#b452cd">10</span>; <span style="color:#228b22">// &lt;= set scroll mouse move the wheels
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">if</span> (e.deltaY &gt; <span style="color:#b452cd">0</span>) <span style="color:#228b22">// &lt;= Scroll right
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>        mouseWheel.scrollLeft += race;
+</span></span><span style="display:flex;"><span>    <span style="color:#8b008b;font-weight:bold">else</span> <span style="color:#228b22">// Scroll left
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>        mouseWheel.scrollLeft -= race;
+</span></span><span style="display:flex;"><span>	e.preventDefault();
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p><strong>Hasil Akhir Coding</strong></p>
 <p>Berikut hasil render code yang tidak seberapa itu.</p>
 <div class="mxn2"><p class="codepen" data-height="327" data-theme-id="light" data-default-tab="html,result" data-user="fauzanmy" data-slug-hash="dyprKRd" style="height: 327px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Super simple horizontal horizontal scroll mouse wheel">
   <span>See the Pen <a href="https://codepen.io/fauzanmy/pen/dyprKRd">

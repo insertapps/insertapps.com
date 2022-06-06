@@ -16,9 +16,10 @@
       <description>Tutorial simple membuat sidebar menu yang responsive dengan vanilla JavaScript memanfaatkan fungsi classList add/remove tampa menggunakan library jQuery.
 Alat dan Bahan
 Untuk alat coding silahkan menggunakan editor favorit kalian, boleh Visual Code, Brackets atau Sublime text editor.
-HTML Sidenav menu  Bahan untuk membuat side menu navigation
+HTML Sidenav menu Bahan untuk membuat side menu navigation
 Terlebih dahulu persiapkan template HTML dasar yang sudah berisi sidebar menu.
-Dalam tutorial ini, kami menggunakan CSS framework Basscss yang full packet https://unpkg.com/ace-css/css/ace.min.css.</description>
+Dalam tutorial ini, kami menggunakan CSS framework Basscss yang full packet https://unpkg.com/ace-css/css/ace.min.css.
+Berikut isi file template HTML dasar untuk membuat sidebar nav menu yang sederhana saja.</description>
     </item>
     
     <item>
@@ -40,7 +41,7 @@ Main container yang akan menampung isi konten dibelah dua kolom dengan perbandin
       
       <guid>https://insertapps.com/blog/tutorial-header-navigation-bar/</guid>
       <description>Tutorial desain header navigation bar ini adalah part ke dua dari seri tutorial membuat website bagian pertama. Sesi ini mulai coding secara &amp;lsquo;drag and drop&amp;rsquo; kepingan ‘puzzle’ class-class Basscss, lalu insert ke dalam file HTML.
-Sebelum &amp;lsquo;lets go to coding&amp;rsquo;, seperti biasa izinkan InsertApps menjelaskan beberapa rule dan konsep koding nya seperti apa? Yang sudah paham dasar web design, silahkan scroll down ke cara membuat header navigation bar yang responsive.</description>
+Sebelum &amp;rsquo;lets go to coding&amp;rsquo;, seperti biasa izinkan InsertApps menjelaskan beberapa rule dan konsep koding nya seperti apa? Yang sudah paham dasar web design, silahkan scroll down ke cara membuat header navigation bar yang responsive.</description>
     </item>
     
     <item>

@@ -28,18 +28,18 @@ Mudah-mudahan serial membuat tema WordPress sendiri dari 0, bisa terus berlanjut
 Bahkan theme hasil coding sedikit demi sedikit bisa kalian jual di marketplace themeforest. 😎 Semoga saja.
 Prerequisite tutorial coding theme Wordpress Ada prasyarat untuk mengikuti seri tutorial cara membuat template wordpress ini!
 Skil dasar yang harus dipenuhi adalah:
- Menguasai HTML dan CSS 😆 Mengerti pemrograman PHP 😨 Paham bahasa JavaScript 😖  ☝️ QUICK FAQ: Pertanyaannya: Saya belum menguasai betul bahasa pemrograman web?</description>
+Menguasai HTML dan CSS 😆 Mengerti pemrograman PHP 😨 Paham bahasa JavaScript 😖 ☝️ QUICK FAQ: Pertanyaannya: Saya belum menguasai betul bahasa pemrograman web?</description>
     </item>
     
     <item>
-      <title>Cara install hugo di Windows (2021)</title>
+      <title>Cara install hugo di Windows (2022)</title>
       <link>https://insertapps.com/blog/install-hugo-di-windows/</link>
       <pubDate>Sat, 06 Feb 2021 20:51:07 +0700</pubDate>
       
       <guid>https://insertapps.com/blog/install-hugo-di-windows/</guid>
-      <description>Sepertiga website dunia ditenagai mesin CMS WordPress, namun 1% website dunia sudah migrasi ke mesin SSG Hugo. Ternyata banyak pemula masih bingung bagaimana cara install Hugo di Windows?
-Karena sudah terbiasa dengan cara starter mesin WordPress auto engine dalam paket hosting, untuk menghidupkan server Hugo memang sedikit membingungkan, terutama buat user sekedar mencoba rasa SSG Hugo.
-Di laman dokumentasi Hugo, sudah ada juknis (petunjuk teknis) cara install Hugo di berbagai operating system.</description>
+      <description>Sepertiga website dunia ditenagai mesin CMS WordPress. Data terkini dari w3techs.com/technologies/details/cm-wordpress hingga Juni 2022, 64.1% website dunia menggunakan WP.
+Lanjut dari data w3techs.com/technologies/details/cm-hugo, baru 0.2% website dunia sudah migrasi ke mesin SSG Hugo. Ternyata banyak pemula masih bingung bagaimana cara install Hugo di Windows?
+Karena sudah terbiasa dengan cara starter mesin WordPress auto engine dalam paket hosting, untuk menghidupkan server Hugo memang sedikit membingungkan, terutama buat user sekedar mencoba rasa SSG Hugo.</description>
     </item>
     
   </channel>

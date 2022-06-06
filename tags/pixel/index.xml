@@ -15,10 +15,10 @@
       <guid>https://insertapps.com/blog/convert-pixel-to-rem/</guid>
       <description>1 rem sama dengan 16 pixel.
 Cara menulis nilai angka rem di bawah nilai angka 1, boleh dengan:
-0.5rem  Kebanyakan programmer cukup menulis dengan:
-.5rem  Menghilangkan angka nol.
+0.5rem Kebanyakan programmer cukup menulis dengan:
+.5rem Menghilangkan angka nol.
 Berikut tabel ukuran konversi pixel ke ukuran rem.
-   Pixel  REM     1px = 0.0625rem   2px = 0.125rem   3px = 0.1875rem   4px = 0.25rem   5px = 0.</description>
+Pixel REM 1px = 0.0625rem 2px = 0.125rem 3px = 0.1875rem 4px = 0.25rem 5px = 0.3125rem 6px = 0.375rem 7px = 0.4375rem 8px = 0.5rem 9px = 0.5625rem 10px = 0.625rem 11px = 0.</description>
     </item>
     
   </channel>

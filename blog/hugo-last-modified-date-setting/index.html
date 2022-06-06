@@ -24,7 +24,7 @@
     
     <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/128.png" sizes="120x120">
     <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.80.0">
+    <link rel="apple-touch-icon" href="https://insertapps.com/assets/favicon/180.png" sizes="180x180"><meta name="generator" content="Hugo 0.100.1">
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@https://www.twitter.com/insertapps" />
@@ -49,7 +49,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
 	 
 <script data-ad-client="ca-pub-5397255807284351" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script type="application/ld+json">
@@ -376,51 +375,51 @@ if (!doNotTrack) {
 		</div>
 		<div class="article mb3">
 			<p>Memperbaharui posting blog yang sudah lama termasuk salah satu cara optimasi SEO pada artikel lama.</p>
-<p>Artikel yang diperbaharui, biasanya tanggal posting ikut berubah, menjadi &lsquo;telah di perbaharui&rsquo; atau &lsquo;last update&rsquo; dan &lsquo;last modified&rsquo;.</p>
+<p>Artikel yang diperbaharui, biasanya tanggal posting ikut berubah, menjadi &rsquo;telah di perbaharui&rsquo; atau &rsquo;last update&rsquo; dan &rsquo;last modified'.</p>
 <p>Blog berbasis WordPress atau Blogger, sistem tanggal berjalan secara dinamis, setiap ada perubahan dalam isi posting, system juga akan mencatat log tanggal perubahan terakhir dalam database.</p>
 <p>Log itu yang akan ditampilkan dalam single page artikel.</p>
 <p>Bagaimana dengan blog berbasis Hugo yang men generate posting secara statis? 😓</p>
 <p>Basis data manajemen artikel di Hugo hanya sebuah file text berformat Markdown .md, yang ditaruh dalam folder &lsquo;content&rsquo; bukan disimpan dalam sistem database yang dinamis.</p>
-<p>Perubahan tanggal &lsquo;last updated&rsquo; di dapat dari mana?</p>
+<p>Perubahan tanggal &rsquo;last updated&rsquo; di dapat dari mana?</p>
 <p>Pada blog static, cara kerjanya juga static, artinya setiap perubahan yang bersifat &lsquo;sistematis&rsquo; dikerjakan juga secara manual.</p>
 <p>Seperti melakukan perubahan tanggal <code>Lastmod</code> yang seharusnya auto system yang mengerjakan, di Hugo perubahanya harus dilakukan secara manual. 😱</p>
 <p>Jadi, kalau kamu edit lagi artikel lama, edit juga info tanggal di front matter artikel.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">date: 2020-07-07T18:18:07+07:00
-publishdate: 2020-07-07
-lastmod: 2020-07-17
-</code></pre></div><p>Ribet banget ya??? 😜</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>date: 2020-07-07T18:18:07+07:00
+</span></span><span style="display:flex;"><span>publishdate: 2020-07-07
+</span></span><span style="display:flex;"><span>lastmod: 2020-07-17
+</span></span></code></pre></div><p>Ribet banget ya??? 😜</p>
 <p>Kalau gak mau ribet, jangan hijrah ke Hugo. 😅</p>
 <p>Konsisten saja di WordPress, Blogspot atau develop saja sendiri CMS blog lain.</p>
-<p><strong>Berikut cara menampilkan tanggal update terakhir atau &lsquo;last updated&rsquo; atau &lsquo;last modified date&rsquo; pada postingan blog statik berbasis Hugo.</strong></p>
+<p><strong>Berikut cara menampilkan tanggal update terakhir atau &rsquo;last updated&rsquo; atau &rsquo;last modified date&rsquo; pada postingan blog statik berbasis Hugo.</strong></p>
 <p>Referensi lengkat fungsi tanggal Hugo, baca dokumentasi <a href="https://Hugo.io/functions/format/" class="blue text-decoration-none"
 	
 	
 		target="_blank"
 	>Hugo.io/functions/</a></p>
 <p><strong>Fungsi tanggal Hugo</strong></p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-	Last updated {{ .Date }}
-&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-</code></pre></div><p>Hasilnya Hugo akan mencetak tanggal dengan format <code>2020-07-07 18:18:07 +0700 WIB</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>	Last updated {{ .Date }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span></code></pre></div><p>Hasilnya Hugo akan mencetak tanggal dengan format <code>2020-07-07 18:18:07 +0700 WIB</code>.</p>
 <p><strong>Fungsi tanggal last modified Hugo</strong></p>
-<p>Untuk kode &lsquo;last modified&rsquo;, parameternya <code>{{ .Lastmod }}</code>.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-	Last updated {{ .Lastmod }}
-&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-</code></pre></div><p>Hasilnya, Hugo akan mencetak tanggal perubahan dengan format <code>2020-07-07</code> yang diambil dari data front metter saat membuat file artikel terbaru.</p>
+<p>Untuk kode &rsquo;last modified&rsquo;, parameternya <code>{{ .Lastmod }}</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>	Last updated {{ .Lastmod }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span></code></pre></div><p>Hasilnya, Hugo akan mencetak tanggal perubahan dengan format <code>2020-07-07</code> yang diambil dari data front metter saat membuat file artikel terbaru.</p>
 <p>Tambahkan kode <code>.Format &quot;2 January 2006&quot;</code>.</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-	Last updated {{ .Lastmod.Format &#34;2 January 2006&#34; }}
-&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
-</code></pre></div><p>Hasilnya Hugo akan mencetak tanggal dengan format <code>07 July 2020</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span><span style="display:flex;"><span>	Last updated {{ .Lastmod.Format &#34;2 January 2006&#34; }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span></code></pre></div><p>Hasilnya Hugo akan mencetak tanggal dengan format <code>07 July 2020</code>.</p>
 <p>Terus parameter <code>&quot;2 January 2006&quot;</code> di Hugo itu apa?</p>
 <p>Itu adalah bentuk format tanggal pada bahasa Go yang lebih human readable.</p>
 <p>Coba bandingkan format tanggal dalam bahasa PHP:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">&lt;?php
-	<span style="color:#00688b">$date</span> = date_create(<span style="color:#cd5555">&#34;2020-07-07&#34;</span>);
-	<span style="color:#8b008b;font-weight:bold">echo</span> date_format(<span style="color:#00688b">$date</span>,<span style="color:#cd5555">&#34;j F y&#34;</span>);
-<span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
-</span></code></pre></div><p>Hasilya <code>7 July 20</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>&lt;?php
+</span></span><span style="display:flex;"><span>	<span style="color:#00688b">$date</span> = date_create(<span style="color:#cd5555">&#34;2020-07-07&#34;</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#8b008b;font-weight:bold">echo</span> date_format(<span style="color:#00688b">$date</span>,<span style="color:#cd5555">&#34;j F y&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span></code></pre></div><p>Hasilya <code>7 July 20</code>.</p>
 <p>Format untuk mencetak tanggalnya <code>j F y</code>. 😰 Sungguh Code-nya tidak human readable banget kan?</p>
 <p>Terus kenapa diambil tanggal <code>&quot;2 January 2006&quot;</code>? Kalau itu tanyakan saja kepada kepada Google sebagai pemilik bahasa pemrograman Go.</p>
 <p>Atau bisa baca petunjuk teknisnya langsung di <a href="https://golang.org/pkg/time/#example_Time_Format" class="blue text-decoration-none"
@@ -430,18 +429,18 @@ lastmod: 2020-07-17
 	>Golang.org/pkg/time/</a></p>
 <p>Ok penjelasannya sudah jelas. 👍</p>
 <p>Pertanyaan terakhir?</p>
-<p><strong>Bisa tidak menampilkan tanggal &lsquo;last update&rsquo; atau &lsquo;last modified&rsquo; posting Hugo dipaksa secara auto system?</strong></p>
+<p><strong>Bisa tidak menampilkan tanggal &rsquo;last update&rsquo; atau &rsquo;last modified&rsquo; posting Hugo dipaksa secara auto system?</strong></p>
 <p>Soalnya, sudah kebiasaan hal-hal remeh seperti itu, biar auto system saja yang melakukannya.</p>
 <p>Jawabannya bisa banget. 😃</p>
 <p>Dalam konfigurasi website berbasis Hugo, di file <code>config.toml</code> tambahkan code setting auto lastmod berikut ini:</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[frontmatter]
-	lastmod = [<span style="color:#cd5555">&#34;lastmod&#34;</span>, <span style="color:#cd5555">&#34;:fileModTime&#34;</span>, <span style="color:#cd5555">&#34;:default&#34;</span>]
-</code></pre></div><p>Pada dasarnya, cara kerja statik konten tidak auto system. Tapi, para developer Hugo terus mencari cara untuk menemukan solusinya.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[frontmatter]
+</span></span><span style="display:flex;"><span>	lastmod = [<span style="color:#cd5555">&#34;lastmod&#34;</span>, <span style="color:#cd5555">&#34;:fileModTime&#34;</span>, <span style="color:#cd5555">&#34;:default&#34;</span>]
+</span></span></code></pre></div><p>Pada dasarnya, cara kerja statik konten tidak auto system. Tapi, para developer Hugo terus mencari cara untuk menemukan solusinya.</p>
 <p>Dengan cara membaca perubahan log file <code>.md</code> di dalam sistem komputer kamu. Maka parameter <code>:fileModTime&quot;, &quot;:default&quot;</code> akan mengacu ke tanggal perubahan file dalam komputer.</p>
 <p>Jadi, fungsi <code>{{ .Lastmod }}</code> tidak lagi mengacu ke <code>lastmod: 2020-07-17</code> yang ada di dalam front matter konten pos.</p>
 <p>Tapi mengambil data dari &lsquo;Date Modified&rsquo; meta file info dalam sistem komputer.</p>
 <p><img src="/images/blog/2020/07_macOS-get-info-dialog-box.jpg" alt="macOS get info dialog box"></p>
-<p>Sistem komputer kamu, selalu melakukan rakam jejak &lsquo;log&rsquo; pada setiap perubahan file yang kamu CRUD: create, read, update (edit) dan delete.</p>
+<p>Sistem komputer kamu, selalu melakukan rakam jejak &rsquo;log&rsquo; pada setiap perubahan file yang kamu CRUD: create, read, update (edit) dan delete.</p>
 <p>Semoga bermanfaat. Tunggu apa lagi, yuk hijrah ke Hugo. 😏</p>
 
 		</div>
@@ -480,7 +479,7 @@ lastmod: 2020-07-17
 			<h3 class="h4 m0">Comment</h3>
 			<div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -626,10 +625,10 @@ lastmod: 2020-07-17
     
     <div id="sub-footer" class="clearfix bg-dark-light gray py1 px2">
         <div class="left">
-            <p class="h5 m0">&copy; 2021 InsertApps</p>
+            <p class="h5 m0">&copy; 2022 InsertApps</p>
         </div>
         <div class="right">
-            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.80.0</p>
+            <p class="h6 m0">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="vertical-align-middle" width="12"><path fill="red" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg> using Hugo 0.100.1</p>
         </div>
     </div>
 <div id="overlay" class="fixed z3 top-0 left-0 bg-darken-4"></div>

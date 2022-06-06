@@ -15,7 +15,7 @@
       <guid>https://insertapps.com/blog/upload-webp-to-wordpress/</guid>
       <description>By default WordPress belum mendukung upload file gambar format WebP (baca webppy) ke dalam library gallery WordPress. Padahal semua browser modern saat ini telah mendukung format WebP.
 WordPress sangat membatasi file berextensi apa saja yang boleh di upload ke sistem WP, demi menjaga keamana sitem WP itu sendiri. Secara default, WP cuma mengizinkan extensi file populer seperti;
- Image files: .jpg, .jpeg, .png, .gif, .ico Document files: .pdf, .doc, .xls, .</description>
+Image files: .jpg, .jpeg, .png, .gif, .ico Document files: .pdf, .doc, .xls, .ppt, .</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@ Mudah-mudahan serial membuat tema WordPress sendiri dari 0, bisa terus berlanjut
 Bahkan theme hasil coding sedikit demi sedikit bisa kalian jual di marketplace themeforest. 😎 Semoga saja.
 Prerequisite tutorial coding theme Wordpress Ada prasyarat untuk mengikuti seri tutorial cara membuat template wordpress ini!
 Skil dasar yang harus dipenuhi adalah:
- Menguasai HTML dan CSS 😆 Mengerti pemrograman PHP 😨 Paham bahasa JavaScript 😖  ☝️ QUICK FAQ: Pertanyaannya: Saya belum menguasai betul bahasa pemrograman web?</description>
+Menguasai HTML dan CSS 😆 Mengerti pemrograman PHP 😨 Paham bahasa JavaScript 😖 ☝️ QUICK FAQ: Pertanyaannya: Saya belum menguasai betul bahasa pemrograman web?</description>
     </item>
     
     <item>

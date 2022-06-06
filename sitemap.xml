@@ -1,6 +1,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
+    <loc>https://insertapps.com/blog/tailwindcss-template-two-columns/</loc>
+    
+    <lastmod>2022-06-05T00:00:00+00:00</lastmod>
+	
+	<changefreq>monthly</changefreq>
+  </url>
+
+  <url>
     <loc>https://insertapps.com/blog/wordpress-add-image-to-rss-feed/</loc>
     
     <lastmod>2021-11-10T00:00:00+00:00</lastmod>
@@ -75,7 +83,7 @@
   <url>
     <loc>https://insertapps.com/blog/install-hugo-di-windows/</loc>
     
-    <lastmod>2021-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-06T00:00:00+00:00</lastmod>
 	
 	<changefreq>monthly</changefreq>
   </url>
