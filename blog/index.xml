@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://insertapps.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Solusi kursor Terminal VSCode muncul artefak</title>
+      <link>https://insertapps.com/blog/kursor-terminal-vscode-muncul-artefak/</link>
+      <pubDate>Fri, 05 Aug 2022 09:52:13 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/kursor-terminal-vscode-muncul-artefak/</guid>
+      <description>Lagi enak-enak menulis konten Hugo via editor VS Code, pas testing running dengan perintah hugo server di Terminal internal VS-code, cursor jadi acak meninggalkan jejak artefak. Seperti kebanyakan kasus VGA rusak, akan mengalami artefak kalau sudah tak kuat diajak main game.
+Masalah layar komputer mengalami artefak sangat erat hubungannya dengan grafis rendering, salah satu tugas berat yang diemban oleh &amp;lsquo;dept&amp;rsquo; GPU aka (also known as) VGA.
+Pada kasus cursor terminal VSCode muncul artefak saat mengetik perintah-perintah CLI juga berkaitan dengan grafis rendering.</description>
+    </item>
+    
+    <item>
       <title>Tailwindcss template: tutorial layout dua kolom</title>
       <link>https://insertapps.com/blog/tailwindcss-template-two-columns/</link>
       <pubDate>Sun, 05 Jun 2022 21:54:26 +0700</pubDate>

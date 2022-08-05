@@ -6,33 +6,7 @@
     <description>Recent content in Code on InsertApps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 16:48:32 +0700</lastBuildDate><atom:link href="https://insertapps.com/categories/code/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>App VS Code error: The window has crashed (reason: &#39;clean exit&#39;)</title>
-      <link>https://insertapps.com/blog/visual-studio-code-the-window-has-crashed/</link>
-      <pubDate>Wed, 06 Jan 2021 16:48:32 +0700</pubDate>
-      
-      <guid>https://insertapps.com/blog/visual-studio-code-the-window-has-crashed/</guid>
-      <description>Lama tidak membuka app visual studio code, pas opening lagi aplikasi VS Code, malah dapat pesan error. ❌
-Layar jendela aplikasi yang tampil bukan seperti biasanya, tapi layar blank dengan dialog box pesan error:
-The window has crashed (reason: &#39;clean exit&#39;)
-We are sorry for the inconvenience! You can reopen the window to continue where you left off.
-Kayaknya app editor Visual Studio Code versi mac yang saya pakai mengalami crash &amp;rsquo;landing&amp;rsquo;.</description>
-    </item>
-    
-    <item>
-      <title>Extensions VS Code untuk support code Golang dengan Emmet snippet</title>
-      <link>https://insertapps.com/blog/extension-vs-code-golang-emmet-snippet/</link>
-      <pubDate>Sat, 15 Aug 2020 19:26:02 +0700</pubDate>
-      
-      <guid>https://insertapps.com/blog/extension-vs-code-golang-emmet-snippet/</guid>
-      <description>Blogging sambil coding dengan SSG Hugo enaknya di app Visual Studio Code. Editor VS Code sudah auto built in dengan Emmet, plugin snippet untuk mempercepat penulisan sintag html.
-Hugo di program dengan bahasa Golang.
-Untuk mencampuraduk sintak html dengan sintak template engine Hugo, perlu install sebuah ektensi khusus agar &amp;lsquo;perkawinan&amp;rsquo; antara Go dengan HTML akur, sintagnya tidak berantakan.
-Sebenarnya biar lebih enak dilihat saja.
-Nama extensions-nya: &amp;ldquo;gotemplate-syntax Language support for go text/template&amp;rdquo; karya Casualjim.</description>
-    </item>
-    
+    <lastBuildDate>Thu, 23 Jul 2020 22:40:09 +0700</lastBuildDate><atom:link href="https://insertapps.com/categories/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cara membuat dropcap di website</title>
       <link>https://insertapps.com/blog/css-dropcap/</link>
@@ -56,18 +30,6 @@ Sebelumnya, sudah ada juga code Cara simpel css layout vertical center, tapi men
 Code itu, baru bisa jalan sempurna di lingkungan Basscss, untuk menampilkan box di browser pas tepat ditengah-tengah.
 Insert code yang baru ini, tampa menggunakan css framework. Kode ini memamfaatkan css flexbox.
 Implementasi yang sering digunakan pada halaman login sebuah website, seperti halaman login wp-admin WordPress, box form login pas berada di tengah-tengah.</description>
-    </item>
-    
-    <item>
-      <title>Editor Brackets Error: PHP7 runtime not found</title>
-      <link>https://insertapps.com/blog/brackets-error-php7-runtime/</link>
-      <pubDate>Fri, 05 Jun 2020 22:58:33 +0700</pubDate>
-      
-      <guid>https://insertapps.com/blog/brackets-error-php7-runtime/</guid>
-      <description>Brackets editor alternative teks editor untuk ngoding asyik. Selain cepat dan ringan, salah fitur yang paling saya suka di Brackets adalah, built in fungsi &amp;lsquo;Live Preview&amp;rsquo;.
-Nah&amp;hellip; Saat ngoding PHP tiba-tiba muncul pesan error:
-PHP runtime not found. Install PHP7 runtime for enabling PHP-related tooling such as Code Hints. Parameter Hints, Jump To Definition and more. Version found: 5.5.38.
-Brackets error: PHP runtime not found. Untuk bracket versi yang lebih lama, pesan erronya begini:</description>
     </item>
     
     <item>
