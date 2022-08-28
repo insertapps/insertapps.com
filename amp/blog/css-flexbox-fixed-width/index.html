@@ -1815,26 +1815,26 @@ blockquote p {
 <p>Namun, adakalanya saat proses desain komponen element web sering kali stuck, padahal kemampuan CSS sudah semakin sakti. Misal, saat bermain-main dengan CSS flexbox, lebar container yang diinginkan tidak sesuai harapan pada mode layar responsive yang mengecil. Lebar <code>width</code> suatu kotak juga ikut mengecil.</p>
 <p>Sangat menjengkelkan sekali bukan?</p>
 <p>Kalau iya, bukan hanya saya dan kamu saja, bahkan ratusan web designer luar sana juga mengalami hal yang sama. Seperti salah satu questions <strong>Stackoverflow</strong> berikut: <a href="https://stackoverflow.com/questions/29885284/how-to-set-a-fixed-width-column-with-css-flexbox/29885495" class="blue a-hover text-decoration-none" title="How to set a fixed width column with CSS flexbox" target="_blank" rel="nofollow noopener noreferrer">How to set a fixed width column with CSS flexbox</a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;flex&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;box-1 border&#34;</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;width:200px;&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>        Lorem ipsum dolor sit amet
-</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;box-2 border&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s.
-</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;flex&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;box-1 border&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width:200px;&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        Lorem ipsum dolor sit amet
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;box-2 border&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s.
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><p>Hasil render browser, <code>box-1</code> yang sudah ditetapkan lebar <code>200px</code> akan fix lebar 200 pixel di layar lebar, namun akan ikut mengecil juga di layar smartphone.</p>
 <p>Untuk mengatur lebar tetap atau fixed width dengan CSS flexbox, wajib menentukan CSS property <code>flex basis</code>, <code>flex grow</code> dan <code>flex shrink</code>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">box-1</span> {
-</span></span><span style="display:flex;"><span>	<span style="color:#8b008b;font-weight:bold">flex-grow</span>: <span style="color:#b452cd">0</span>;		<span style="color:#228b22">/* do not grow		- initial value: 0 */</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#8b008b;font-weight:bold">flex-shrink</span>: <span style="color:#b452cd">0</span>;		<span style="color:#228b22">/* do not shrink	- initial value: 1 */</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#8b008b;font-weight:bold">flex-basis</span>: <span style="color:#b452cd">200</span><span style="color:#00688b;font-weight:bold">px</span>;	<span style="color:#228b22">/* width/height		- initial value: auto */</span>
-</span></span><span style="display:flex;"><span>}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box-1</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">flex-grow</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>		<span class="c">/* do not grow		- initial value: 0 */</span>
+</span></span><span class="line"><span class="cl">	<span class="k">flex-shrink</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>		<span class="c">/* do not shrink	- initial value: 1 */</span>
+</span></span><span class="line"><span class="cl">	<span class="k">flex-basis</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>	<span class="c">/* width/height		- initial value: auto */</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>Maka, hasil render elemen <code>box-1</code> ukurannya akan tetap atau fixed 200px di ukuran layar manapun. Sedangkan elemen <code>box-2</code> masih fleksibel dan dinamis sebagaimana fungsinya CSS flexbox.</p>
 <p>Bentuk penulisan flex basis dapat disederhanakan menjadi:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#008b45;font-weight:bold">box-1</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">flex</span>: <span style="color:#b452cd">0</span> <span style="color:#b452cd">0</span> <span style="color:#b452cd">200</span><span style="color:#00688b;font-weight:bold">px</span>;
-</span></span><span style="display:flex;"><span>}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box-1</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">flex</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>Bagaimana? Mudah dan simple sekali bukan?</p>
 
 			</div>
