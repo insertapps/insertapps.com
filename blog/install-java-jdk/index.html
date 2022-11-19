@@ -40,18 +40,17 @@
   <meta property="fb:app_id" content="2000697846886370" />
   <script async src="https://cdn.splitbee.io/sb.js"></script>
   
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZ5VS9ZC6P"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-35787794-4', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-DZ5VS9ZC6P', { 'anonymize_ip': false });
 }
 </script>
+
 
   
   <script data-ad-client="ca-pub-5397255807284351" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script type="application/ld+json">
@@ -390,7 +389,7 @@ if (!doNotTrack) {
 			</ul>
 		</div>
 		<div class="article mb3">
-			<p>Di antara sekian banyak bahasa pemograman, Java salah satu bahasa pemograman yang paling ribet. Bukan hanya soal syntax bahasanya yang ‘menakutkan’, keribetan Java dimulai sejak proses installasi Java itu sendiri.</p>
+			<p>Di antara sekian banyak bahasa pemograman, Java salah satu bahasa pemograman yang dinilai paling ribet. Bukan hanya soal syntax bahasanya yang ‘menakutkan’, keribetan Java dimulai sejak proses installasi Java itu sendiri.</p>
 <p>Walaupun begitu, bahasa Java hasil kreasi James Gosling yang terkenal dengan jargon <em>“Write Once, Run Anywhere”</em> merupakan bahasa pemograman paling powerful, tingkat keamanan paling tinggi dan yang paling banyak digunakan saat ini, salah satunya Android.</p>
   <figure class="mb3 m0 center mxn2">
     <img class="fit m0 lozad" data-src="/images/blog/2022/10-24_meme-install-java.webp" alt="Meme install Java">
@@ -435,11 +434,14 @@ if (!doNotTrack) {
     <img class="fit m0 lozad" data-src="/images/blog/2022/10-24_Java_home-path-environment.webp" alt="Setting &#39;JAVA_HOME&#39; path environment variable">
     <figcaption class="muted italic h5">Setting &#39;JAVA_HOME&#39; path environment variable</figcaption>
   </figure>
-<p>Cara setting Java PATH Environment variable sistem Windows sama petunjuknya seperti dalam posting <a href="https://insertapps.com/blog/install-hugo-di-windows/" class="blue text-decoration-none"
+<p>Cara setting Java PATH Environment variable sistem Windows 10, tekan tombol Windows -&gt; di kolom search ketik &rsquo;env&rsquo;. Kemudian akan muncul dan klik <code>'Edit the system environment variable'</code>.</p>
+<p>Di dalam kotak dialok <strong>System Properties</strong> klik tombol <strong>Environment Variables&hellip;</strong> di sudut kanan bawah.</p>
+<p>Didalam kotak dialok <strong>Environment Variables</strong>, pada kolom bagian bawah System Variables, cari dan klik variable <strong>PATH</strong> lalu klik tombol Edit&hellip; kemudian muncul kotak dialok <strong>Edit environment variable</strong>, selanjutnya klik tombol <strong>New</strong>, lalu paste lokasi path direktori instalasi Java, misalnya <code>C:\Program File\Java\jdk-18.0.2.1.jdk\Contents\Home\bin</code>, jangan lupa klik Ok Ok Ok semua. Done.</p>
+<p>Cara setting PATH environtment Windows 7, sama langkah-langkahnya seperti dalam posting <a href="https://insertapps.com/blog/install-hugo-di-windows/" class="blue text-decoration-none"
 	
 	
 		target="_blank"
-	>ini</a></p>
+	>ini</a>.</p>
 <h2 id="step-4--testing-run-java-jdk">Step 4 — Testing run Java JDK</h2>
 <p>Untuk mengetahui berhasil tidaknya install Java secara manual, atau install Java via macOS homebrew, dengan mengetik perintah berikut:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ java -version
