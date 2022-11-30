@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>laptop on InsertApps</title>
+    <link>https://insertapps.com/tags/laptop/</link>
+    <description>Recent content in laptop on InsertApps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Nov 2022 11:02:34 +0700</lastBuildDate><atom:link href="https://insertapps.com/tags/laptop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara mudah masuk BIOS laptop</title>
+      <link>https://insertapps.com/blog/cara-mudah-masuk-bios/</link>
+      <pubDate>Wed, 30 Nov 2022 11:02:34 +0700</pubDate>
+      
+      <guid>https://insertapps.com/blog/cara-mudah-masuk-bios/</guid>
+      <description>BIOS (Basic Input Output System) atau yang terbaru disebut dengan UEFI, merupakan firmware khusus yang di flash di dalam chip ROM mothorboard, untuk menyimpan informasi dan memenginisialisasi semua perangkat keras yang terpasang.
+Untuk masuk ke BIOS laptop cukup mudah sebernarnya, khusus laptop Acer Aspire cukup pencet tombol F2. Untuk brand laptop lain seperi BIOS Lenovo, BIOS Asus, BIOS HP dan laptop lainnya, biasanya deretan tombol function keyboard mulai dari tombol Esc, F1 hingga F12.</description>
+    </item>
+    
+  </channel>
+</rss>
